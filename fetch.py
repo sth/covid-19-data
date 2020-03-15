@@ -4,9 +4,10 @@ import argparse
 
 ap = argparse.ArgumentParser()
 ap.add_argument('--rawfile')
+ap.add_argument('--only-changed', action="store_true")
 args = ap.parse_args()
 
-import subprocess, datetime, re, csv
+import subprocess, datetime, re, csv, os
 from bs4 import BeautifulSoup
 
 def parse_table(tab, stand, outf):
@@ -25,6 +26,12 @@ if args.rawfile is None:
     subprocess.run(['curl', '-sS', '-o', args.rawfile,
             'https://www.lgl.bayern.de/gesundheit/infektionsschutz/infektionskrankheiten_a_z/coronavirus/karte_coronavirus/index.htm'
             ])
+    if args.only_changed:
+        last2 = [os.path.join('raw', fn) for fn in sorted(os.listdir('raw'))[-2:]]
+        diff = subprocess.run(['diff', '-q'] + last2)
+        if diff.returncode == 0:
+            print("downloaded file unchanged")
+            exit(0)
 
 with open(args.rawfile) as f:
     raw = f.read()
@@ -46,6 +53,18 @@ for p in html.select('.bildunterschrift'):
 if stand is None:
     print("Couldn't find date")
     exit(1)
+
+# Sometimes the "stand" is still old while the data is already updated...
+# Default to download date
+re_timestamp = re.compile(r'\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d')
+mo = re_timestamp.search(args.rawfile)
+if mo is None:
+    print("warning: cannot determine donload date")
+else:
+    dldate = datetime.datetime.strptime(mo.group(), '%Y-%m-%dT%H:%M:%S')
+    if stand.date() != dldate.date():
+        print("adjust date:", stand.date(), '->', dldate.date())
+        stand = dldate
 
 day = stand.strftime('%F')
 with open('days/regierungsbezirk_%s.csv' % day, 'w') as outf:
