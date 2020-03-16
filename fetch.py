@@ -7,31 +7,51 @@ ap.add_argument('--rawfile')
 ap.add_argument('--only-changed', action="store_true")
 args = ap.parse_args()
 
-import subprocess, datetime, re, csv, os
+import subprocess, datetime, re, csv, os, glob, shutil
 from bs4 import BeautifulSoup
+from dataclasses import dataclass
 
-def parse_table(tab, stand, outf):
-    cout = csv.writer(outf)
-    for tr in tab.select('tr')[1:-1]:
-        tds = tr.select('td')
-        assert(len(tds) == 2)
-        cout.writerow([tds[0].string, stand.isoformat(), tds[1].string])
-        #outf.write('%s,%s,%s\n' % (tds[0].string, tds[1].string, stand.isoformat()))
+@dataclass
+class DiffState:
+    first : bool
+    changed : bool
+
+def diff_previous(filename):
+    # try to find previous file name
+    pat = os.path.join(os.path.dirname(filename), '*' + os.path.splitext(filename)[1])
+    names = sorted(glob.glob(pat))
+    idx = names.index(filename)
+    if idx == -1:
+        # Something went wrong but ignore this
+        print("error checking for changed data")
+        return True
+    if idx == 0:
+        # First file
+        return DiffState(True, True)
+    diff = subprocess.run(['diff', '-q', names[idx-1], filename], stdout=subprocess.DEVNULL)
+    if diff.returncode == 2:
+        raise Exception("Diff failed")
+    return DiffState(False, diff.returncode == 1)
+
 
 if args.rawfile is None:
-    ts = datetime.datetime.utcnow()
-    args.rawfile = 'raw/%s.html' % ts.isoformat()
-
-    print('fetching to %s' % args.rawfile)
+    args.rawfile = 'raw/%s.html' % datetime.datetime.now().isoformat()
+    print('fetching raw %s' % args.rawfile)
     subprocess.run(['curl', '-sS', '-o', args.rawfile,
             'https://www.lgl.bayern.de/gesundheit/infektionsschutz/infektionskrankheiten_a_z/coronavirus/karte_coronavirus/index.htm'
             ])
-    if args.only_changed:
-        last2 = [os.path.join('raw', fn) for fn in sorted(os.listdir('raw'))[-2:]]
-        diff = subprocess.run(['diff', '-q'] + last2)
-        if diff.returncode == 0:
-            print("downloaded file unchanged")
-            exit(0)
+
+if args.only_changed:
+    if not diff_previous(args.rawfile).changed:
+        print("downloaded raw data unchanged")
+        exit(0)
+
+
+rawname = os.path.splitext(os.path.basename(args.rawfile))[0]
+try:
+    rawtime = datetime.datetime.fromisoformat(rawname)
+except:
+    rawtime = None
 
 with open(args.rawfile) as f:
     raw = f.read()
@@ -39,75 +59,51 @@ with open(args.rawfile) as f:
 
 html = BeautifulSoup(raw, 'html.parser')
 
-stand = None
-bezirk = stadt = None
-
+contenttime = None
 for p in html.select('.bildunterschrift'):
     text = p.get_text()
     mo = re.search('Stand: (\S* \S*)', text)
     if mo is None:
         continue
-    stand = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y %H:%M')
+    contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y %H:%M')
     break
 
-if stand is None:
-    print("Couldn't find date")
+if contenttime is None:
+    print("Couldn't find content time")
     exit(1)
 
-# Sometimes the "stand" is still old while the data is already updated...
-# Default to download date
-re_timestamp = re.compile(r'\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d')
-mo = re_timestamp.search(args.rawfile)
-if mo is None:
-    print("warning: cannot determine donload date")
-else:
-    dldate = datetime.datetime.strptime(mo.group(), '%Y-%m-%dT%H:%M:%S')
-    if stand.date() != dldate.date():
-        print("adjust date:", stand.date(), '->', dldate.date())
-        stand = dldate
+bezirk = stadt = None
 
-day = stand.strftime('%F')
-with open('days/regierungsbezirk_%s.csv' % day, 'w') as outf:
+def parse_table(html, contenttime, group, tabselect):
+    parsedfn = 'parsed/%s_%s.csv' % (rawname, group)
     for tab in html.select('table'):
-        if tab.select_one('th').string == 'Regierungsbezirk':
-            parse_table(tab, stand, outf)
+        if tabselect(tab):
+            with open(parsedfn, 'w') as outf:
+                cout = csv.writer(outf)
+                cout.writerow(['Area', 'Date', 'Confirmed'])
+                for tr in tab.select('tr')[1:-1]:
+                    tds = tr.select('td')
+                    assert(len(tds) == 2)
+                    cout.writerow([tds[0].string, contenttime.isoformat(), tds[1].string])
             break
+    else:
+        print("couldn't find table %s" % group)
+        exit(1)
 
-with open('days/landkreis_%s.csv' % day, 'w') as outf:
-    for tab in html.select('table'):
-        if tab.select_one('th').string == 'Landkreis':
-            parse_table(tab, stand, outf)
-            break
+    if args.only_changed:
+        if not diff_previous(parsedfn).changed:
+            print("parsed content \"%s\" unchanged" % group)
+            return
 
-_comment = '''
-def compile_timeseries(areagroup):
-    re_fn = re.compile('data_' + areagroup + r'_(\d\d\d\d-\d\d-\d\d)\.csv')
+    # It changed. If the current day is later than the contenttime we assume the
+    # content time is a mistake and we adjust it to the current day.
+    # (This problem has happend before)
+    if rawtime.date() > contenttime.date():
+        if not diff_previous(parsedfn).first:
+            print("Adjust date", contenttime, "->", rawtime)
+            contenttime = rawtime
 
-    datasets = {}
+    shutil.copy(parsedfn, 'days/%s_%s.csv' % (group, contenttime.date().isoformat()))
 
-    lastdate = None
-    for fn in sorted(os.listdir('.')):
-        mo = re_fn.match(fn)
-        if mo is None:
-            continue
-
-        thisdate = datetime.datetime.strptime(mo.group(1)).date()
-
-        with open(fn) as f:
-            cf = csv.reader(f)
-
-            for area, timestamp, count in cf:
-                if thisdate is None:
-                    # First entry
-
-        if lastdate is None:
-            # This is the first line
-            lastdate.strftime('%F')
-        if lastdate is not None:
-            # Check for missing days
-            and lastdate + datetime.timedelta(days=1) < thisdate:
-            lastdate = 
-
-    with open('timeseries_' + areagroup + '.csv', 'w') as fts:
-        cts = csv.writer(fts)
-'''
+parse_table(html, contenttime, 'regierungsbezirk', (lambda tab: tab.select_one('th').string == 'Regierungsbezirk'))
+parse_table(html, contenttime, 'landkreis', (lambda tab: tab.select_one('th').string in ['Landkreis', 'Land-/Stadtkreis']))
