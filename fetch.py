@@ -70,6 +70,7 @@ class ParseData(object):
         self.parsedfile = 'parsed/%s_%s.csv' % (update.rawname, label)
         self.parsedtime = update.contenttime
         self.parseddiff = None
+        self.deployfile = None
 
     def diff(self):
         self.parseddiff = diff_previous(self.parsedfile, 'parsed/*_%s.csv' % self.label)
