@@ -5,6 +5,8 @@ import argparse
 ap = argparse.ArgumentParser()
 ap.add_argument('--rawfile')
 ap.add_argument('--only-changed', action="store_true")
+ap.add_argument('--git-commit', action='store_true')
+ap.add_argument('--git-push', action='store_true')
 args = ap.parse_args()
 
 import subprocess, datetime, re, csv, os, glob, shutil
@@ -68,13 +70,15 @@ class ParseData(object):
         self.parsedfile = 'parsed/%s_%s.csv' % (update.rawname, label)
         self.parsedtime = update.contenttime
         self.parseddiff = None
+        self.deployfile = None
 
     def diff(self):
         self.parseddiff = diff_previous(self.parsedfile, 'parsed/*_%s.csv' % self.label)
         return self.parseddiff
 
     def deploy(self):
-        shutil.copy(self.parsedfile, 'days/%s_%s.csv' % (self.label, self.parsedtime.date().isoformat()))
+        self.deployfile = 'days/%s_%s.csv' % (self.label, self.parsedtime.date().isoformat())
+        shutil.copy(self.parsedfile, self.deployfile)
 
 
 
@@ -142,3 +146,10 @@ if parse.update.rawtime.date() > parse.parsedtime.date():
         parse.parsedtime = parse.update.rawtime
 
 parse.deploy()
+
+if args.git_commit:
+    if parse.deployfile is not None and parse.parseddiff.changed:
+        subprocess.run(['git', 'add', parse.deployfile], check=True)
+        subprocess.run(['git', 'commit', '-m', 'Update data', parse.deployfile], check=True)
+        if args.git_push:
+            subprocess.run(['git', 'push'], check=True)
