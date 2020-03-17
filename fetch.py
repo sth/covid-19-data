@@ -146,6 +146,7 @@ if parse.update.rawtime.date() > parse.parsedtime.date():
         parse.parsedtime = parse.update.rawtime
 
 parse.deploy()
+print("written %s" % parse.deployfile)
 
 if args.git_commit:
     if parse.deployfile is not None and parse.parseddiff.changed:
