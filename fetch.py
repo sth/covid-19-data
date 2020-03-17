@@ -29,7 +29,6 @@ def diff_previous(filename, globpattern=None):
     if idx == 0:
         # First file
         return DiffState(True, True)
-    print(names[idx-1], filename)
     diff = subprocess.run(['diff', '-q', names[idx-1], filename], stdout=subprocess.DEVNULL)
     if diff.returncode == 2:
         raise Exception("Diff failed")
