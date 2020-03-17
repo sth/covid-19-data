@@ -5,6 +5,8 @@ import argparse
 ap = argparse.ArgumentParser()
 ap.add_argument('--rawfile')
 ap.add_argument('--only-changed', action="store_true")
+ap.add_argument('--git-commit', action='store_true')
+ap.add_argument('--git-push', action='store_true')
 args = ap.parse_args()
 
 import subprocess, datetime, re, csv, os, glob, shutil
@@ -74,7 +76,8 @@ class ParseData(object):
         return self.parseddiff
 
     def deploy(self):
-        shutil.copy(self.parsedfile, 'days/%s_%s.csv' % (self.label, self.parsedtime.date().isoformat()))
+        self.deployfile = 'days/%s_%s.csv' % (self.label, self.parsedtime.date().isoformat())
+        shutil.copy(self.parsedfile, self.deployfile)
 
 
 
@@ -131,8 +134,21 @@ def parse_table(parse, html, tabselect):
 
     parse.deploy()
 
-parse_table(ParseData(update, 'regierungsbezirk'), html,
+rparse = ParseData(update, 'regierungsbezirk')
+parse_table(rparse, html,
         (lambda tab: tab.select_one('th').string == 'Regierungsbezirk'))
-parse_table(ParseData(update, 'landkreis'), html,
+lparse = ParseData(update, 'landkreis')
+parse_table(lparse, html,
         (lambda tab: tab.select_one('th').string in ['Landkreis', 'Land-/Stadtkreis']))
 
+if args.git_commit:
+    addfiles = []
+    if rparse.deployfile is not None and rparse.parseddiff.changed:
+        addfiles.append(rparse.deployfile)
+    if lparse.deployfile is not None and lparse.parseddiff.changed:
+        addfiles.append(lparse.deployfile)
+    if addfiles:
+        subprocess.run(['git', 'add', *addfiles], check=True)
+        subprocess.run(['git', 'commit', '-m', 'Update data', *addfiles], check=True)
+        if args.git_push:
+            subprocess.run(['git', 'push'], check=True)
