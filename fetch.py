@@ -16,10 +16,11 @@ class DiffState:
     first : bool
     changed : bool
 
-def diff_previous(filename):
+def diff_previous(filename, globpattern=None):
     # try to find previous file name
-    pat = os.path.join(os.path.dirname(filename), '*' + os.path.splitext(filename)[1])
-    names = sorted(glob.glob(pat))
+    if globpattern is None:
+        globpattern = os.path.join(os.path.dirname(filename), '*' + os.path.splitext(filename)[1])
+    names = sorted(glob.glob(globpattern))
     idx = names.index(filename)
     if idx == -1:
         # Something went wrong but ignore this
@@ -28,82 +29,111 @@ def diff_previous(filename):
     if idx == 0:
         # First file
         return DiffState(True, True)
+    print(names[idx-1], filename)
     diff = subprocess.run(['diff', '-q', names[idx-1], filename], stdout=subprocess.DEVNULL)
     if diff.returncode == 2:
         raise Exception("Diff failed")
     return DiffState(False, diff.returncode == 1)
 
+class Updater(object):
+    def __init__(self, fetchurl):
+        self.fetchurl = fetchurl
+        self.rawfile = self.rawdiff = self.rawname = self.rawtime = self.rawdata = None
+        self.contenttime = None
 
-if args.rawfile is None:
-    args.rawfile = 'raw/%s.html' % datetime.datetime.now().isoformat()
-    print('fetching raw %s' % args.rawfile)
-    subprocess.run(['curl', '-sS', '-o', args.rawfile,
-            'https://www.lgl.bayern.de/gesundheit/infektionsschutz/infektionskrankheiten_a_z/coronavirus/karte_coronavirus/index.htm'
-            ])
+    def check_fetch(self, rawfile=None):
+        if rawfile is None:
+            self.rawfile = 'raw/%s.html' % datetime.datetime.now().isoformat()
+            print('fetching raw %s' % self.rawfile)
+            subprocess.run(['curl', '-sS', '-o', self.rawfile, self.fetchurl])
+        else:
+            self.rawfile = rawfile
 
+        self.rawdiff = diff_previous(self.rawfile, 'raw/*.html')
+        self.rawname = os.path.splitext(os.path.basename(self.rawfile))[0]
+        try:
+            self.rawtime = datetime.datetime.fromisoformat(self.rawname)
+        except:
+            self.rawtime = None
+
+        with open(self.rawfile) as f:
+            self.rawdata = f.read()
+
+    def raw_changed(self):
+        return self.rawdiff.changed
+
+class ParseData(object):
+    def __init__(self, update, label):
+        self.update = update
+        self.label = label
+        self.parsedfile = 'parsed/%s_%s.csv' % (update.rawname, label)
+        self.parsedtime = update.contenttime
+        self.parseddiff = None
+
+    def diff(self):
+        self.parseddiff = diff_previous(self.parsedfile, 'parsed/*_%s.csv' % self.label)
+        return self.parseddiff
+
+    def deploy(self):
+        shutil.copy(self.parsedfile, 'days/%s_%s.csv' % (self.label, self.parsedtime.date().isoformat()))
+
+
+
+update = Updater('https://www.lgl.bayern.de/gesundheit/infektionsschutz/infektionskrankheiten_a_z/coronavirus/karte_coronavirus/index.htm')
+update.check_fetch(rawfile=args.rawfile)
 if args.only_changed:
-    if not diff_previous(args.rawfile).changed:
+    if not update.raw_changed():
         print("downloaded raw data unchanged")
         exit(0)
 
+html = BeautifulSoup(update.rawdata, 'html.parser')
 
-rawname = os.path.splitext(os.path.basename(args.rawfile))[0]
-try:
-    rawtime = datetime.datetime.fromisoformat(rawname)
-except:
-    rawtime = None
-
-with open(args.rawfile) as f:
-    raw = f.read()
-
-
-html = BeautifulSoup(raw, 'html.parser')
-
-contenttime = None
 for p in html.select('.bildunterschrift'):
     text = p.get_text()
     mo = re.search('Stand: (\S* \S*)', text)
     if mo is None:
         continue
-    contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y %H:%M')
+    update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y %H:%M')
     break
 
-if contenttime is None:
+if update.contenttime is None:
     print("Couldn't find content time")
     exit(1)
 
-bezirk = stadt = None
 
-def parse_table(html, contenttime, group, tabselect):
-    parsedfn = 'parsed/%s_%s.csv' % (rawname, group)
+def parse_table(parse, html, tabselect):
     for tab in html.select('table'):
         if tabselect(tab):
-            with open(parsedfn, 'w') as outf:
+            with open(parse.parsedfile, 'w') as outf:
                 cout = csv.writer(outf)
                 cout.writerow(['Area', 'Date', 'Confirmed'])
                 for tr in tab.select('tr')[1:-1]:
                     tds = tr.select('td')
                     assert(len(tds) == 2)
-                    cout.writerow([tds[0].string, contenttime.isoformat(), tds[1].string])
+                    cout.writerow([tds[0].string, parse.parsedtime.isoformat(), tds[1].string])
+            parse.diff()
             break
     else:
-        print("couldn't find table %s" % group)
+        print("couldn't find table %s" % parse.label)
         exit(1)
 
     if args.only_changed:
-        if not diff_previous(parsedfn).changed:
-            print("parsed content \"%s\" unchanged" % group)
+        if not parse.parseddiff.changed:
+            print("parsed content \"%s\" unchanged" % parse.label)
             return
 
     # It changed. If the current day is later than the contenttime we assume the
     # content time is a mistake and we adjust it to the current day.
     # (This problem has happend before)
-    if rawtime.date() > contenttime.date():
-        if not diff_previous(parsedfn).first:
-            print("Adjust date", contenttime, "->", rawtime)
-            contenttime = rawtime
+    if parse.update.rawtime.date() > parse.parsedtime.date():
+        if parse.parseddiff.changed and not parse.parseddiff.first:
+            print("Adjust date", parse.parsedtime, "->", parse.update.rawtime)
+            parse.parsedtime = parse.update.rawtime
 
-    shutil.copy(parsedfn, 'days/%s_%s.csv' % (group, contenttime.date().isoformat()))
+    parse.deploy()
 
-parse_table(html, contenttime, 'regierungsbezirk', (lambda tab: tab.select_one('th').string == 'Regierungsbezirk'))
-parse_table(html, contenttime, 'landkreis', (lambda tab: tab.select_one('th').string in ['Landkreis', 'Land-/Stadtkreis']))
+parse_table(ParseData(update, 'regierungsbezirk'), html,
+        (lambda tab: tab.select_one('th').string == 'Regierungsbezirk'))
+parse_table(ParseData(update, 'landkreis'), html,
+        (lambda tab: tab.select_one('th').string in ['Landkreis', 'Land-/Stadtkreis']))
+
