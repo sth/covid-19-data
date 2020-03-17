@@ -118,14 +118,14 @@ for tab in header.parent.parent.select('table'):
         continue
     with open(parse.parsedfile, 'w') as outf:
         cout = csv.writer(outf)
-        cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths', 'EConfirmed', 'EDeaths'])
-        for tr in tab.select('table tr')[1:-1]:
+        cout.writerow(['Area', 'Date', 'EConfirmed', 'EDeaths'])
+        for tr in tab.select('table tbody tr')[:-1]:
             tds = tr.select('td')
-            assert(len(tds) == 4)
-            reported = parse_td(tds[1].get_text())
-            ereported = parse_td(tds[2].get_text())
+            assert(len(tds) == 6)
+            econfirmed = clean_num(tds[1].get_text())
+            edeaths = clean_num(tds[4].get_text())
             cout.writerow([tds[0].string, parse.parsedtime.isoformat(),
-                reported[0], reported[1], ereported[0], ereported[1]])
+                econfirmed, edeaths])
     parse.diff()
     break
 else:
