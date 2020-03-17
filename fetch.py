@@ -134,6 +134,7 @@ def parse_table(parse, html, tabselect):
             parse.parsedtime = parse.update.rawtime
 
     parse.deploy()
+    print("written %s" % parse.deployfile)
 
 rparse = ParseData(update, 'regierungsbezirk')
 parse_table(rparse, html,
