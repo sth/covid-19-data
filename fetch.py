@@ -12,6 +12,7 @@ args = ap.parse_args()
 import subprocess, datetime, re, csv, os, glob, shutil
 from bs4 import BeautifulSoup
 from dataclasses import dataclass
+import dateutil.tz
 
 @dataclass
 class DiffState:
@@ -96,7 +97,8 @@ for p in html.select('.bildunterschrift'):
     mo = re.search('Stand: (\S* \S*)', text)
     if mo is None:
         continue
-    update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y %H:%M')
+    update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y %H:%M') \
+        .replace(tzinfo=dateutil.tz.gettz('Europe/Berlin'))
     break
 
 if update.contenttime is None:
