@@ -12,6 +12,7 @@ args = ap.parse_args()
 import subprocess, datetime, re, csv, os, glob, shutil
 from bs4 import BeautifulSoup
 from dataclasses import dataclass
+import dateutil.tz
 
 @dataclass
 class DiffState:
@@ -100,7 +101,8 @@ mo = re.search('Stand: (\S*, \S*) Uhr', par.get_text())
 if mo is None:
     print("Couldn't find content time")
     exit(1)
-update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M')
+update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M') \
+    .replace(tzinfo=dateutil.tz.gettz('Europe/Berlin'))
 
 def clean_num(numstr):
     return int(numstr.replace('.', '').strip())
