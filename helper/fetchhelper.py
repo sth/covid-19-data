@@ -91,3 +91,16 @@ class ParseData(object):
         self.deployfile = 'data/%s.csv' % (self.label,)
         shutil.copy(self.parsedfile, self.deployfile)
 
+def git_commit(parsedlist, args):
+    if not args.git_commit:
+        return
+    addfiles = []
+    for parse in parsedlist:
+        if parse.deployfile is not None and parse.parseddiff.changed:
+            addfiles.append(parse.deployfile)
+    if addfiles:
+        subprocess.run(['git', 'add', *addfiles], check=True)
+        subprocess.run(['git', 'commit', '-m', 'Update data', *addfiles], check=True)
+        if args.git_push:
+            subprocess.run(['git', 'push'], check=True)
+
