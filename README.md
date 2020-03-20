@@ -23,3 +23,7 @@ Data for Austria from Bundesministerium für Soziales, Gesundheit, Pflege und Ko
 ## fr\_sp
 
 Data for France from Santé Publique France
+
+# us\_cvtr
+
+Data for United States from https://covidtracking.com/
