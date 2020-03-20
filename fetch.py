@@ -6,6 +6,7 @@ failed = False
 for sub in os.listdir('.'):
     if not os.path.exists(os.path.join(sub, 'fetch.py')):
         continue
+    print("processing:", sub)
     cp = subprocess.run(['./fetch.py'] + sys.argv[1:], cwd=sub)
     failed = failed or (cp.returncode != 0)
 
