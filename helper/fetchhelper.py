@@ -86,6 +86,12 @@ class ParseData(object):
         self.deployfile = 'days/%s_%s.csv' % (self.label, self.parsedtime.date().isoformat())
         shutil.copy(self.parsedfile, self.deployfile)
 
+    def deploy_timestamp(self):
+        checkdir('data')
+        parsedutc = self.parsedtime.astimezone(datetime.timezone.utc).replace(tzinfo=None)
+        self.deployfile = 'data/%s_%s.csv' % (self.label, parsedutc.isoformat(timespec='minutes'))
+        shutil.copy(self.parsedfile, self.deployfile)
+
     def deploy_combined(self):
         checkdir('data')
         self.deployfile = 'data/%s.csv' % (self.label,)

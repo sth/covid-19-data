@@ -11,3 +11,7 @@ Data for Bayern, Germany by Bayerisches Landesamt für Gesundheit und Lebensmitt
 ## de\_bw\_soz
 
 Data for Baden-Württemberg, Germany by Ministerium für Soziales und Integration Baden-Württemberg
+
+## at\_sgpk
+
+Data for Austria from Bundesministerium für Soziales, Gesundheit, Pflege und Konsumentenschutz
