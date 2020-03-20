@@ -20,7 +20,7 @@ def cleannum(s):
 
 datatz = dateutil.tz.gettz('America/New York')
 
-update = fetchhelper.Updater('https://covidtracking.com/api/states.csv')
+update = fetchhelper.Updater('https://covidtracking.com/api/states.csv', ext='csv')
 update.check_fetch(rawfile=args.rawfile)
 if args.only_changed:
     if not update.raw_changed():
@@ -32,18 +32,28 @@ parse.parsedtime = update.rawtime
 with open(update.rawfile) as inf:
     cr = csv.reader(inf)
     header = next(cr)
-    assert(header[0] == 'state')
-    assert(header[1] == 'positive')
-    assert(header[4] == 'death')
-    assert(header[6] == 'lastUpdateEt')
+
+    selector_labels = ['state', 'lastUpdateEt', 'positive', 'death']
+    selector = []
+    for sl in selector_labels:
+        for (i, h) in enumerate(header):
+            if h == sl:
+                selector.append(i)
+                break
+        else:
+            print("Couldn't mach header", file=sys.stderr)
+            sys.exit(1)
 
     with open(parse.parsedfile, 'w') as outf:
         cw = csv.writer(outf)
         cw.writerow(['Area', 'Date', 'Confirmed', 'Deaths'])
 
         for line in cr:
-            timestamp = datetime.strptime('2020 ' + line[6], '%Y %m/%d %H:%M').replace(tzinfo=datatz)
-            cw.writerow([line[0], timestamp, line[1] or '0', line[4] or '0'])
+            values = [line[i] for i in selector]
+            if not values[0]:
+                continue
+            timestamp = datetime.strptime('2020 ' + values[1], '%Y %m/%d %H:%M').replace(tzinfo=datatz)
+            cw.writerow([values[0], timestamp, values[2] or '0', values[3] or '0'])
 
 parse.diff()
 if args.only_changed:
