@@ -76,6 +76,6 @@ parse_table(rparse, html,
         (lambda tab: tab.select_one('th').string == 'Regierungsbezirk'))
 lparse = fetchhelper.ParseData(update, 'landkreis')
 parse_table(lparse, html,
-        (lambda tab: tab.select_one('th').string in ['Landkreis', 'Land-/Stadtkreis']))
+        (lambda tab: tab.select_one('th').string in ['Landkreis', 'Land-/Stadtkreis', 'Landkreis/Stadt']))
 
 fetchhelper.git_commit([rparse, lparse], args)
