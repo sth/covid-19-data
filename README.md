@@ -15,3 +15,7 @@ Data for Baden-Württemberg, Germany by Ministerium für Soziales und Integratio
 ## at\_sgpk
 
 Data for Austria from Bundesministerium für Soziales, Gesundheit, Pflege und Konsumentenschutz
+
+## fr\_sp
+
+Data for France from Santé Publique France
