@@ -46,6 +46,7 @@ def parse_counts(parse, base, lead):
             value = cleannum(mop.group(2))
             cout.writerow([key, parse.parsedtime.isoformat(), value])
 
+    parse.diff()
     if args.only_changed:
         if not parse.parseddiff.changed:
             print("parsed content \"%s\" unchanged" % parse.label)
