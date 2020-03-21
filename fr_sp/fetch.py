@@ -45,6 +45,9 @@ with open(parse.parsedfile, 'w') as outf:
     for tr in tab.find('tbody').find_all('tr'):
         tds = tr.find_all('td')
         area = tds[0].get_text()
+        counttxt = tds[1].get_text()
+        if '**' in counttxt:
+            continue
         count = cleannum(tds[1].get_text())
         if area == 'Total Métropole':
             group = 'Outre Mer'
