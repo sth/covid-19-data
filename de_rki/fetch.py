@@ -47,7 +47,8 @@ def parse_td(content):
 
 parse = fetchhelper.ParseData(update, 'data')
 for tab in header.parent.parent.select('table'):
-    if tab.select('thead th')[0].text != 'Bundesland':
+    # There was a stray character in the middle of the word
+    if not re.search(r'^Bundes.?land', tab.select('thead th')[0].text):
         continue
     with open(parse.parsedfile, 'w') as outf:
         cout = csv.writer(outf)
