@@ -35,6 +35,9 @@ if mo is None:
 update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M') \
     .replace(tzinfo=datatz)
 
+def clean_label(lstr):
+    return lstr.replace('\xad', '')
+
 def clean_num(numstr):
     return int(numstr.replace('.', '').strip())
 
@@ -48,7 +51,7 @@ def parse_td(content):
 parse = fetchhelper.ParseData(update, 'data')
 for tab in header.parent.parent.select('table'):
     # There was a stray character in the middle of the word
-    if not re.search(r'^Bundes.?land', tab.select('thead th')[0].text):
+    if clean_label(tab.select('thead th')[0].text) != 'Bundesland':
         continue
     with open(parse.parsedfile, 'w') as outf:
         cout = csv.writer(outf)
@@ -56,9 +59,11 @@ for tab in header.parent.parent.select('table'):
         for tr in tab.select('table tbody tr')[:-1]:
             tds = tr.select('td')
             assert(len(tds) == 6)
+            area = clean_label(tds[0].string)
+
             econfirmed = clean_num(tds[1].get_text())
             edeaths = clean_num(tds[4].get_text())
-            cout.writerow([tds[0].string, parse.parsedtime.isoformat(),
+            cout.writerow([area, parse.parsedtime.isoformat(),
                 econfirmed, edeaths])
     parse.diff()
     break
