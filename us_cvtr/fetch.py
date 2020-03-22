@@ -59,7 +59,7 @@ parse.diff()
 if args.only_changed:
     if not parse.parseddiff.changed:
         print("parsed content \"%s\" unchanged" % parse.label)
-        #return
+        exit(0)
 
 parse.deploy_timestamp()
 
