@@ -34,6 +34,7 @@ def parse_counts(parse, base, lead):
     mo = re.search(r'Stand (\d\d.\d\d.\d\d\d\d, \d\d:\d\d) Uhr', txt)
     parse.parsedtime = datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M').replace(tzinfo=datatz)
 
+    txt = txt.replace('\xa0', ' ')
     mo = re.search(r': ([0-9.]+)(?: Fälle)?, nach Bundesl.*ndern: (.*)\.\s*$', txt)
     total = cleannum(mo.group(1))
 
