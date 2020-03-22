@@ -39,7 +39,7 @@ def clean_label(lstr):
     return lstr.replace('\xad', '')
 
 def clean_num(numstr):
-    return int(numstr.replace('.', '').strip())
+    return int(numstr.replace('.', '').strip() or '0')
 
 def parse_td(content):
     mo = re.search(r'(.*)\((.*)\)\s*', content)
