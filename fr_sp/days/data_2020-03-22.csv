@@ -1,0 +1,20 @@
+Area,Region,Date,Confirmed
+Auvergne-Rhône-Alpes,Métropole,2020-03-22 14:00:00+01:00,1431
+Bourgogne-Franche-Comté,Métropole,2020-03-22 14:00:00+01:00,1178
+Bretagne,Métropole,2020-03-22 14:00:00+01:00,397
+Centre-Val de Loire,Métropole,2020-03-22 14:00:00+01:00,291
+Corse,Métropole,2020-03-22 14:00:00+01:00,183
+Grand Est,Métropole,2020-03-22 14:00:00+01:00,3395
+Ile-de-France,Métropole,2020-03-22 14:00:00+01:00,5283
+Normandie,Métropole,2020-03-22 14:00:00+01:00,462
+Nouvelle-Aquitaine,Métropole,2020-03-22 14:00:00+01:00,612
+Occitanie,Métropole,2020-03-22 14:00:00+01:00,671
+Pays de la Loire,Métropole,2020-03-22 14:00:00+01:00,270
+Provence-Alpes-Côte d’Azur,Métropole,2020-03-22 14:00:00+01:00,1372
+Guadeloupe,Outre Mer,2020-03-22 14:00:00+01:00,58
+Saint-Barthélémy,Outre Mer,2020-03-22 14:00:00+01:00,3
+Saint-Martin,Outre Mer,2020-03-22 14:00:00+01:00,6
+Guyane,Outre Mer,2020-03-22 14:00:00+01:00,19
+Martinique,Outre Mer,2020-03-22 14:00:00+01:00,44
+Mayotte,Outre Mer,2020-03-22 14:00:00+01:00,14
+La Réunion,Outre Mer,2020-03-22 14:00:00+01:00,64
