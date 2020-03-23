@@ -1,0 +1,21 @@
+Area,Region,Date,Confirmed
+Auvergne-Rhône-Alpes,Métropole,2020-03-23 14:00:00+01:00,1730
+Bourgogne-Franche-Comté,Métropole,2020-03-23 14:00:00+01:00,1347
+Bretagne,Métropole,2020-03-23 14:00:00+01:00,490
+Centre-Val de Loire,Métropole,2020-03-23 14:00:00+01:00,361
+Corse,Métropole,2020-03-23 14:00:00+01:00,194
+Grand Est,Métropole,2020-03-23 14:00:00+01:00,4256
+Hauts-de-France,Métropole,2020-03-23 14:00:00+01:00,1269
+Ile-de-France,Métropole,2020-03-23 14:00:00+01:00,6211
+Normandie,Métropole,2020-03-23 14:00:00+01:00,511
+Nouvelle-Aquitaine,Métropole,2020-03-23 14:00:00+01:00,676
+Occitanie,Métropole,2020-03-23 14:00:00+01:00,767
+Pays de la Loire,Métropole,2020-03-23 14:00:00+01:00,293
+Provence-Alpes-Côte d’Azur,Métropole,2020-03-23 14:00:00+01:00,1510
+Guadeloupe,Outre Mer,2020-03-23 14:00:00+01:00,62
+Saint-Barthélémy,Outre Mer,2020-03-23 14:00:00+01:00,3
+Saint-Martin,Outre Mer,2020-03-23 14:00:00+01:00,8
+Guyane,Outre Mer,2020-03-23 14:00:00+01:00,20
+Martinique,Outre Mer,2020-03-23 14:00:00+01:00,53
+Mayotte,Outre Mer,2020-03-23 14:00:00+01:00,24
+La Réunion,Outre Mer,2020-03-23 14:00:00+01:00,71
