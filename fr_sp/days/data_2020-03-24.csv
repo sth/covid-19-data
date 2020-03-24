@@ -1,0 +1,21 @@
+Area,Region,Date,Confirmed
+Auvergne-Rhône-Alpes,Métropole,2020-03-24 14:00:00+01:00,1857
+Bourgogne-Franche-Comté,Métropole,2020-03-24 14:00:00+01:00,1510
+Bretagne,Métropole,2020-03-24 14:00:00+01:00,526
+Centre-Val de Loire,Métropole,2020-03-24 14:00:00+01:00,450
+Corse,Métropole,2020-03-24 14:00:00+01:00,217
+Grand Est,Métropole,2020-03-24 14:00:00+01:00,4922
+Hauts-de-France,Métropole,2020-03-24 14:00:00+01:00,1532
+Ile-de-France,Métropole,2020-03-24 14:00:00+01:00,6798
+Normandie,Métropole,2020-03-24 14:00:00+01:00,586
+Nouvelle-Aquitaine,Métropole,2020-03-24 14:00:00+01:00,789
+Occitanie,Métropole,2020-03-24 14:00:00+01:00,900
+Pays de la Loire,Métropole,2020-03-24 14:00:00+01:00,343
+Provence-Alpes-Côte d’Azur,Métropole,2020-03-24 14:00:00+01:00,1595
+Guadeloupe,Outre Mer,2020-03-24 14:00:00+01:00,73
+Saint-Barthélémy,Outre Mer,2020-03-24 14:00:00+01:00,3
+Saint-Martin,Outre Mer,2020-03-24 14:00:00+01:00,8
+Guyane,Outre Mer,2020-03-24 14:00:00+01:00,23
+Martinique,Outre Mer,2020-03-24 14:00:00+01:00,57
+Mayotte,Outre Mer,2020-03-24 14:00:00+01:00,30
+La Réunion,Outre Mer,2020-03-24 14:00:00+01:00,83
