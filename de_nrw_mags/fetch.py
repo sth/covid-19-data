@@ -28,7 +28,7 @@ html = BeautifulSoup(update.rawdata, 'html.parser')
 
 
 def clean_num(numstr):
-    return int(numstr.replace('.', '').strip())
+    return int(numstr.replace('.', '').strip() or '0')
 
 header = html.find(text="Bestätigte Fälle")
 
@@ -49,14 +49,29 @@ if tab is None:
 
 with open(parse.parsedfile, 'w') as outf:
     cout = csv.writer(outf)
-    cout.writerow(['Area', 'Date', 'Confirmed'])
+    rows = tab.find_all('tr')
+    assert('Landkreis' in rows[0].find('th').get_text())
+    assert('Gesamt' in rows[-1].find('td').get_text())
+    rows = rows[1:-1]
 
-    for tr in tab.find_all('tr')[1:-1]:
+    colnum = len(rows[0].find_all('td'))
+    if colnum == 2:
+        cout.writerow(['Area', 'Date', 'Confirmed'])
+    elif colnum == 3:
+        cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths'])
+    else:
+        raise Exception("unknown table structure")
+
+    for tr in rows:
         tds = tr.find_all('td')
         area = tds[0].get_text()
-        value = clean_num(tds[1].get_text())
-
-        cout.writerow([area, parse.parsedtime.isoformat(), value])
+        confirmed = clean_num(tds[1].get_text())
+        if colnum > 2:
+            deceased = clean_num(tds[2].get_text())
+        if colnum == 2:
+            cout.writerow([area, parse.parsedtime.isoformat(), confirmed])
+        else:
+            cout.writerow([area, parse.parsedtime.isoformat(), confirmed, deceased])
 parse.diff()
 
 if args.only_changed:
