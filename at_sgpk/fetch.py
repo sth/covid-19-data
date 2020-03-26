@@ -57,13 +57,21 @@ def parse_counts(parse, base, lead):
 
 infobox = html.find("div", class_="infobox")
 
+parses = []
 parse_c = fetchhelper.ParseData(update, 'confirmed')
 parse_counts(parse_c, infobox, "Best.*tigte F.*lle")
+parses.append(parse_c)
 
 parse_r = fetchhelper.ParseData(update, 'recovered')
-parse_counts(parse_r, infobox, "Genesene Personen")
+try:
+    parse_counts(parse_r, infobox, "Genesene Personen")
+    parses.append(parse_r)
+except AttributeError as err:
+    # It seems to be removed, we ignore it
+    print(err)
 
 parse_d = fetchhelper.ParseData(update, 'deceased')
 parse_counts(parse_d, infobox, "Todesf.*lle")
+parses.append(parse_d)
 
-fetchhelper.git_commit([parse_c, parse_r, parse_d], args)
+fetchhelper.git_commit(parses, args)
