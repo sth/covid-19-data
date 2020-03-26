@@ -53,3 +53,5 @@ for row in cr:
 
 parse.deploy_combined()
 print("written %s" % parse.deployfile)
+
+fetchhelper.git_commit([parse], args)
