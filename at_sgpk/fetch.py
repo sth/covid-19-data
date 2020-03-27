@@ -61,13 +61,14 @@ parse_c = fetchhelper.ParseData(update, 'confirmed')
 parse_counts(parse_c, infobox, "Best.*tigte F.*lle")
 parses.append(parse_c)
 
-parse_r = fetchhelper.ParseData(update, 'recovered')
-try:
-    parse_counts(parse_r, infobox, "Genesene Personen")
-    parses.append(parse_r)
-except AttributeError as err:
-    # It seems to be removed, we ignore it
-    print(err)
+# Seems to be removed for good
+#parse_r = fetchhelper.ParseData(update, 'recovered')
+#try:
+#    parse_counts(parse_r, infobox, "Genesene Personen")
+#    parses.append(parse_r)
+#except AttributeError as err:
+#    # It seems to be removed, we ignore it
+#    print(err)
 
 parse_d = fetchhelper.ParseData(update, 'deceased')
 parse_counts(parse_d, infobox, "Todesf.*lle")
