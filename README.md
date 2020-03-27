@@ -29,7 +29,7 @@ Data for Austria from Bundesministerium für Soziales, Gesundheit, Pflege und Ko
 
 ### fr\_sp
 
-Data for France from Santé Publique France
+Data for France from Santé Publique France (currently not updated)
 
 ### us\_cvtr
 
