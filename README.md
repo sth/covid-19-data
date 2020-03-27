@@ -1,5 +1,7 @@
 # Collected SARS-CoV-2 Timeline Data
 
+Current and historic data about the number of Coronavitus infections.
+
 ## Visualization
 
 Graphs of this data, showing the number of Coronavirus infections over time, can
