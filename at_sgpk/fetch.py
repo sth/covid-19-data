@@ -30,7 +30,10 @@ if args.only_changed:
 html = BeautifulSoup(update.rawdata, 'html.parser')
 
 def parse_counts(parse, base, lead):
-    txt = base.find(string=re.compile(lead)).find_parent('p').get_text()
+    infotext = base.find("div", class_="infobox").find(string=re.compile(lead))
+    if infotext is None:
+        infotext = base.find("main", id="content").find(string=re.compile(lead))
+    txt = infotext.find_parent('p').get_text()
     mo = re.search(r'Stand (\d\d.\d\d.\d\d\d\d, \d\d:\d\d) Uhr', txt)
     parse.parsedtime = datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M').replace(tzinfo=datatz)
 
@@ -54,11 +57,9 @@ def parse_counts(parse, base, lead):
 
     parse.deploy_timestamp()
 
-infobox = html.find("div", class_="infobox")
-
 parses = []
 parse_c = fetchhelper.ParseData(update, 'confirmed')
-parse_counts(parse_c, infobox, "Best.*tigte F.*lle")
+parse_counts(parse_c, html, "Best.*tigte F.*lle")
 parses.append(parse_c)
 
 # Seems to be removed for good
@@ -71,7 +72,7 @@ parses.append(parse_c)
 #    print(err)
 
 parse_d = fetchhelper.ParseData(update, 'deceased')
-parse_counts(parse_d, infobox, "Todesf.*lle")
+parse_counts(parse_d, html, "Todesf.*lle")
 parses.append(parse_d)
 
 fetchhelper.git_commit(parses, args)
