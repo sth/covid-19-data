@@ -10,7 +10,7 @@ ap = argparse.ArgumentParser()
 fetchhelper.add_arguments(ap)
 args = ap.parse_args()
 
-import re, csv, os
+import re, csv, os, sys
 from datetime import datetime
 from bs4 import BeautifulSoup
 import dateutil.tz
@@ -38,13 +38,13 @@ txt = str(html.find(text=re.compile('Aktueller Stand:')))
 txt = txt.replace('März', '03').replace('April', '04').replace('Mai', '05')
 mo = re.search(r'Aktueller Stand: (\d\d\. \d\d \d\d\d\d, \d\d\.\d\d) Uhr', txt)
 if mo is None:
-    print("Couldn't find date.", file=sys.stdout)
+    print("Couldn't find date.", file=sys.stderr)
     sys.exit(1)
 parse.parsedtime = datetime.strptime(mo.group(1), '%d. %m %Y, %H.%M').replace(tzinfo=datatz)
 
 tab = header.find_parent('table')
 if tab is None:
-    print("couldn't find table")
+    print("couldn't find table", file=sys.stderr)
     exit(1)
 
 with open(parse.parsedfile, 'w') as outf:

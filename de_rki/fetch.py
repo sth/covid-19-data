@@ -30,7 +30,7 @@ par = header.parent.next_sibling.next_sibling
 
 mo = re.search('Stand: (\S*, \S*) Uhr', par.get_text())
 if mo is None:
-    print("Couldn't find content time")
+    print("Couldn't find content time", file=sys.stderr)
     exit(1)
 update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M') \
     .replace(tzinfo=datatz)
@@ -68,7 +68,7 @@ for tab in header.parent.parent.select('table'):
     parse.diff()
     break
 else:
-    print("couldn't find table %s" % parse.label)
+    print("couldn't find table %s" % parse.label, file=sys.stderr)
     exit(1)
 
 if args.only_changed:
