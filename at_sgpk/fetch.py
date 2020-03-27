@@ -41,8 +41,7 @@ def parse_counts(parse, base, lead):
     with open(parse.parsedfile, 'w') as outf:
         cout = csv.writer(outf)
         cout.writerow(['Area', 'Date', 'Value'])
-        for part in mo.group(2).split(','):
-            mop = re.search(r'^(.*) \((.*)\)', part.strip())
+        for mop in re.finditer(r'(.*?) \((.*?)\),?', mo.group(2)):
             key = mop.group(1).strip()
             value = cleannum(mop.group(2))
             cout.writerow([key, parse.parsedtime.isoformat(), value])
