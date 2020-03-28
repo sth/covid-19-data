@@ -24,7 +24,9 @@ if args.only_changed:
         exit(0)
 
 # accidentally duplicated <tr>
-update.rawdata = re.sub(r'<tr>\s*<tr>', '<tr>', update.rawdata)
+update.rawdata = re.sub(r'<tr>\s*<tr>', r'<tr>', update.rawdata)
+update.rawdata = re.sub(r'(<th><span>[^<>]*</span>)</(td|div)>', r'\1</th>', update.rawdata)
+#print(update.rawdata)
 html = BeautifulSoup(update.rawdata, 'html.parser')
 
 def get_labeltime(text):
@@ -56,10 +58,14 @@ def tab_rows(tab):
 
     rows = []
     for tr in trs:
-        tds = tr.select('td')
-        assert(len(tds) == 2)
-        rows.append((tds[0].get_text(), int(tds[1].get_text())))
+        yield tr.select('td')
     return rows
+
+def clean_num(s):
+    if s == '-':
+        s = '0'
+    s = s.replace('.', '')
+    return int(s)
 
 def parse_table(parse, html, select, *, optional=False):
     tables = []
@@ -77,6 +83,8 @@ def parse_table(parse, html, select, *, optional=False):
         print("found multiple tables %s" % parse.label, file=sys.stderr)
         exit(1)
 
+    combined = is_combined(tables[0])
+
     caption = tables[0].find('caption')
     if caption is not None:
         datatime = get_labeltime(caption.get_text())
@@ -88,9 +96,22 @@ def parse_table(parse, html, select, *, optional=False):
 
     with open(parse.parsedfile, 'w') as outf:
         cout = csv.writer(outf)
-        cout.writerow(['Area', 'Date', 'Deaths' if 'deaths' in parse.label else 'Confirmed'])
+        header = ['Area', 'Date', 'Deaths' if 'deaths' in parse.label else 'Confirmed']
+        if combined:
+            ths = tables[0].find_all('th')
+            assert('Fälle' in ths[1].get_text())
+            assert('Todesfälle' in ths[4].get_text())
+            header.append('Deaths')
+        cout.writerow(header)
+
         for tds in tab_rows(tables[0]):
-            cout.writerow([tds[0], datatime.isoformat(), tds[1]])
+            cols = [tds[0].get_text(), datatime.isoformat()]
+            if combined:
+                cols += [clean_num(tds[1].get_text()), clean_num(tds[4].get_text())]
+            else:
+                cols.append(clean_num(tds[1].get_text()))
+
+            cout.writerow(cols)
     parse.diff()
 
     if args.only_changed:
@@ -119,18 +140,21 @@ def is_confirmed(tab):
     cap = tab.select_one('caption')
     return cap is None or 'Coronavirusinfektionen' in cap.get_text()
 
+def is_combined(tab):
+    return len(tab.find_all('th')) == 6
+
 def is_deaths(tab):
     cap = tab.select_one('caption')
     return cap is not None and 'Todesfälle' in cap.get_text()
 
 rparse = fetchhelper.ParseData(update, 'regierungsbezirk')
-parse_table(rparse, html, select=(lambda tab: is_regierungsbezirk(tab) and is_confirmed(tab)))
+parse_table(rparse, html, select=(lambda tab: is_regierungsbezirk(tab) and (is_confirmed(tab) or is_combined(tab))))
 
 rdparse = fetchhelper.ParseData(update, 'regierungsbezirk_deaths')
 parse_table(rdparse, html, select=(lambda tab: is_regierungsbezirk(tab) and is_deaths(tab)), optional=True)
 
 lparse = fetchhelper.ParseData(update, 'landkreis')
-parse_table(lparse, html, select=(lambda tab: is_landkreis(tab) and is_confirmed(tab)))
+parse_table(lparse, html, select=(lambda tab: is_landkreis(tab) and (is_confirmed(tab) or is_combined(tab))))
 
 ldparse = fetchhelper.ParseData(update, 'landkreis_deaths')
 parse_table(ldparse, html, select=(lambda tab: is_landkreis(tab) and is_deaths(tab)), optional=True)
