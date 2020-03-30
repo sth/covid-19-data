@@ -79,10 +79,11 @@ if args.only_changed:
 # It changed. If the current day is later than the contenttime we assume the
 # content time is a mistake and we adjust it to the current day.
 # (This problem has happend before)
-if parse.update.rawtime.date() > parse.parsedtime.date():
-    if parse.parseddiff.changed and not parse.parseddiff.first:
-        print("Adjust date", parse.parsedtime, "->", parse.update.rawtime)
-        parse.parsedtime = parse.update.rawtime
+# Let's hope it doesn't happen again.
+#if parse.update.rawtime.date() > parse.parsedtime.date():
+#    if parse.parseddiff.changed and not parse.parseddiff.first:
+#        print("Adjust date", parse.parsedtime, "->", parse.update.rawtime)
+#        parse.parsedtime = parse.update.rawtime
 
 parse.deploy_timestamp()
 print("written %s" % parse.deployfile)
