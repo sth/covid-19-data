@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-03-27T10:00:00+01:00,79,0
+Altötting,Oberbayern,2020-03-27T10:00:00+01:00,79,1
+Amberg Stadt,Oberpfalz,2020-03-27T10:00:00+01:00,7,0
+Amberg-Sulzbach,Oberpfalz,2020-03-27T10:00:00+01:00,47,2
+Ansbach,Mittelfranken,2020-03-27T10:00:00+01:00,100,0
+Ansbach Stadt,Mittelfranken,2020-03-27T10:00:00+01:00,15,0
+Aschaffenburg,Unterfranken,2020-03-27T10:00:00+01:00,90,1
+Aschaffenburg Stadt,Unterfranken,2020-03-27T10:00:00+01:00,36,0
+Augsburg,Schwaben,2020-03-27T10:00:00+01:00,135,0
+Augsburg Stadt,Schwaben,2020-03-27T10:00:00+01:00,109,2
+Bad Kissingen,Unterfranken,2020-03-27T10:00:00+01:00,42,0
+Bad Tölz-Wolfratshausen,Oberbayern,2020-03-27T10:00:00+01:00,126,0
+Bamberg,Oberfranken,2020-03-27T10:00:00+01:00,144,1
+Bamberg Stadt,Oberfranken,2020-03-27T10:00:00+01:00,55,0
+Bayreuth,Oberfranken,2020-03-27T10:00:00+01:00,80,1
+Bayreuth Stadt,Oberfranken,2020-03-27T10:00:00+01:00,36,0
+Berchtesgadener Land,Oberbayern,2020-03-27T10:00:00+01:00,59,0
+Cham,Oberpfalz,2020-03-27T10:00:00+01:00,120,0
+Coburg,Oberfranken,2020-03-27T10:00:00+01:00,37,0
+Coburg Stadt,Oberfranken,2020-03-27T10:00:00+01:00,14,0
+Dachau,Oberbayern,2020-03-27T10:00:00+01:00,152,0
+Deggendorf,Niederbayern,2020-03-27T10:00:00+01:00,90,0
+Dillingen an der Donau,Schwaben,2020-03-27T10:00:00+01:00,29,1
+Dingolfing-Landau,Niederbayern,2020-03-27T10:00:00+01:00,69,0
+Donau-Ries,Schwaben,2020-03-27T10:00:00+01:00,57,0
+Ebersberg,Oberbayern,2020-03-27T10:00:00+01:00,133,0
+Eichstätt,Oberbayern,2020-03-27T10:00:00+01:00,48,0
+Erding,Oberbayern,2020-03-27T10:00:00+01:00,213,0
+Erlangen Stadt,Mittelfranken,2020-03-27T10:00:00+01:00,43,0
+Erlangen-Höchstadt,Mittelfranken,2020-03-27T10:00:00+01:00,44,1
+Forchheim,Oberfranken,2020-03-27T10:00:00+01:00,61,1
+Freising,Oberbayern,2020-03-27T10:00:00+01:00,352,3
+Freyung-Grafenau,Niederbayern,2020-03-27T10:00:00+01:00,39,1
+Fürstenfeldbruck,Oberbayern,2020-03-27T10:00:00+01:00,222,0
+Fürth,Mittelfranken,2020-03-27T10:00:00+01:00,65,0
+Fürth Stadt,Mittelfranken,2020-03-27T10:00:00+01:00,44,0
+Garmisch-Partenkirchen,Oberbayern,2020-03-27T10:00:00+01:00,76,0
+Günzburg,Schwaben,2020-03-27T10:00:00+01:00,53,0
+Haßberge,Unterfranken,2020-03-27T10:00:00+01:00,34,0
+Hof,Oberfranken,2020-03-27T10:00:00+01:00,73,0
+Hof Stadt,Oberfranken,2020-03-27T10:00:00+01:00,20,0
+Ingolstadt Stadt,Oberbayern,2020-03-27T10:00:00+01:00,31,0
+Kaufbeuren Stadt,Schwaben,2020-03-27T10:00:00+01:00,16,0
+Kelheim,Niederbayern,2020-03-27T10:00:00+01:00,85,2
+Kempten Stadt,Schwaben,2020-03-27T10:00:00+01:00,29,0
+Kitzingen,Unterfranken,2020-03-27T10:00:00+01:00,23,0
+Kronach,Oberfranken,2020-03-27T10:00:00+01:00,34,0
+Kulmbach,Oberfranken,2020-03-27T10:00:00+01:00,51,0
+Landsberg am Lech,Oberbayern,2020-03-27T10:00:00+01:00,109,1
+Landshut,Niederbayern,2020-03-27T10:00:00+01:00,200,1
+Landshut Stadt,Niederbayern,2020-03-27T10:00:00+01:00,71,0
+Lichtenfels,Oberfranken,2020-03-27T10:00:00+01:00,54,0
+Lindau (Bodensee),Schwaben,2020-03-27T10:00:00+01:00,93,0
+Main-Spessart,Unterfranken,2020-03-27T10:00:00+01:00,41,1
+Memmingen Stadt,Schwaben,2020-03-27T10:00:00+01:00,22,0
+Miesbach,Oberbayern,2020-03-27T10:00:00+01:00,212,0
+Miltenberg,Unterfranken,2020-03-27T10:00:00+01:00,69,0
+Mühldorf am Inn,Oberbayern,2020-03-27T10:00:00+01:00,77,0
+München,Oberbayern,2020-03-27T10:00:00+01:00,437,1
+München Stadt,Oberbayern,2020-03-27T10:00:00+01:00,1673,2
+Neu-Ulm,Schwaben,2020-03-27T10:00:00+01:00,88,1
+Neuburg-Schrobenhausen,Oberbayern,2020-03-27T10:00:00+01:00,51,0
+Neumarkt in der Oberpfalz,Oberpfalz,2020-03-27T10:00:00+01:00,43,0
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-03-27T10:00:00+01:00,35,0
+Neustadt an der Waldnaab,Oberpfalz,2020-03-27T10:00:00+01:00,99,2
+Nürnberg Stadt,Mittelfranken,2020-03-27T10:00:00+01:00,186,0
+Nürnberger Land,Mittelfranken,2020-03-27T10:00:00+01:00,95,2
+Oberallgäu,Schwaben,2020-03-27T10:00:00+01:00,64,1
+Ostallgäu,Schwaben,2020-03-27T10:00:00+01:00,95,2
+Passau,Niederbayern,2020-03-27T10:00:00+01:00,64,0
+Passau Stadt,Niederbayern,2020-03-27T10:00:00+01:00,20,0
+Pfaffenhofen an der Ilm,Oberbayern,2020-03-27T10:00:00+01:00,54,0
+Regen,Niederbayern,2020-03-27T10:00:00+01:00,40,0
+Regensburg,Oberpfalz,2020-03-27T10:00:00+01:00,121,0
+Regensburg Stadt,Oberpfalz,2020-03-27T10:00:00+01:00,133,1
+Rhön-Grabfeld,Unterfranken,2020-03-27T10:00:00+01:00,30,0
+Rosenheim,Oberbayern,2020-03-27T10:00:00+01:00,359,1
+Rosenheim Stadt,Oberbayern,2020-03-27T10:00:00+01:00,71,0
+Roth,Mittelfranken,2020-03-27T10:00:00+01:00,60,0
+Rottal-Inn,Niederbayern,2020-03-27T10:00:00+01:00,170,0
+Schwabach Stadt,Mittelfranken,2020-03-27T10:00:00+01:00,17,0
+Schwandorf,Oberpfalz,2020-03-27T10:00:00+01:00,72,0
+Schweinfurt,Unterfranken,2020-03-27T10:00:00+01:00,74,0
+Schweinfurt Stadt,Unterfranken,2020-03-27T10:00:00+01:00,19,0
+Starnberg,Oberbayern,2020-03-27T10:00:00+01:00,135,1
+Straubing Stadt,Niederbayern,2020-03-27T10:00:00+01:00,59,0
+Straubing-Bogen,Niederbayern,2020-03-27T10:00:00+01:00,61,0
+Tirschenreuth,Oberpfalz,2020-03-27T10:00:00+01:00,251,5
+Traunstein,Oberbayern,2020-03-27T10:00:00+01:00,145,2
+Unterallgäu,Schwaben,2020-03-27T10:00:00+01:00,94,2
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-03-27T10:00:00+01:00,47,0
+Weilheim-Schongau,Oberbayern,2020-03-27T10:00:00+01:00,146,1
+Weißenburg-Gunzenhausen,Mittelfranken,2020-03-27T10:00:00+01:00,64,0
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-03-27T10:00:00+01:00,112,2
+Würzburg,Unterfranken,2020-03-27T10:00:00+01:00,148,1
+Würzburg Stadt,Unterfranken,2020-03-27T10:00:00+01:00,204,10
