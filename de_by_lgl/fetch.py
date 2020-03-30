@@ -278,6 +278,8 @@ def parse_table(parse, html, kind, *, optional=False):
             lk = None
             if parse_landkreis:
                 lk = clean_landkreis(tds[0].get_text())
+                if lk == '' and tds[0].find_parent('tr').find_next_sibling('tr').find('td').get_text() == 'Altötting':
+                    lk = 'Aichach-Friedberg'
                 cols = [lk, get_regierungsbezirk(lk)]
             else:
                 cols = [tds[0].get_text()]
