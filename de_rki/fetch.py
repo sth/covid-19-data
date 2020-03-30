@@ -55,7 +55,7 @@ for tab in header.parent.parent.select('table'):
         continue
     with open(parse.parsedfile, 'w') as outf:
         cout = csv.writer(outf)
-        cout.writerow(['Area', 'Date', 'EConfirmed', 'EDeaths'])
+        cout.writerow(['Bundesland', 'Timestamp', 'EConfirmed', 'EDeaths'])
         for tr in tab.select('table tbody tr')[:-1]:
             tds = tr.select('td')
             assert(len(tds) == 6)
@@ -84,7 +84,7 @@ if parse.update.rawtime.date() > parse.parsedtime.date():
         print("Adjust date", parse.parsedtime, "->", parse.update.rawtime)
         parse.parsedtime = parse.update.rawtime
 
-parse.deploy_day()
+parse.deploy_timestamp()
 print("written %s" % parse.deployfile)
 
 fetchhelper.git_commit([parse], args)

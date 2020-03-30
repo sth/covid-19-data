@@ -1,4 +1,4 @@
-Area,Date,EConfirmed,EDeaths
+Bundesland,Timestamp,EConfirmed,EDeaths
 Baden-Württemberg,2020-03-25T00:00:00+01:00,6069,37
 Bayern,2020-03-25T00:00:00+01:00,6558,37
 Berlin,2020-03-25T00:00:00+01:00,1428,2

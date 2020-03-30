@@ -1,4 +1,4 @@
-Area,Date,Confirmed,Deaths
+Bundesland,Timestamp,Confirmed,Deaths
 Brandenburg,2020-03-06T15:00:00+01:00,2,0
 Berlin,2020-03-06T15:00:00+01:00,19,0
 Baden-Württemberg,2020-03-06T15:00:00+01:00,96,0

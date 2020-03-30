@@ -1,4 +1,4 @@
-Area,Date,Confirmed,Deaths,EConfirmed,EDeaths
+Bundesland,Timestamp,Confirmed,Deaths,EConfirmed,EDeaths
 Baden-Württemberg,2020-03-13T15:00:00+01:00,454,1,401,1
 Bayern,2020-03-13T15:00:00+01:00,558,1,412,0
 Berlin,2020-03-13T15:00:00+01:00,174,0,174,0
