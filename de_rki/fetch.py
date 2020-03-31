@@ -36,7 +36,7 @@ update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M') 
     .replace(tzinfo=datatz)
 
 def clean_label(lstr):
-    return lstr.replace('\xad', '')
+    return lstr.replace('\n', '').replace('\xad', '')
 
 def clean_num(numstr):
     return int(numstr.replace('.', '').strip() or '0')
@@ -58,8 +58,8 @@ for tab in header.parent.parent.select('table'):
         cout.writerow(['Bundesland', 'Timestamp', 'EConfirmed', 'EDeaths'])
         for tr in tab.select('table tbody tr')[:-1]:
             tds = tr.select('td')
-            assert(len(tds) == 6)
-            area = clean_label(tds[0].string)
+            assert(len(tds) in [5, 6])
+            area = clean_label(tds[0].get_text())
 
             econfirmed = clean_num(tds[1].get_text())
             edeaths = clean_num(tds[4].get_text())
