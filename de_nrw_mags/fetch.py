@@ -34,12 +34,19 @@ header = html.find(text="Bestätigte Fälle")
 
 parse = fetchhelper.ParseData(update, 'data')
 
+def clean_date(s):
+    for i, m in enumerate(['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
+        'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']):
+        s = s.replace(m, '%02d' % (i+1))
+    return s
+
 txt = str(html.find(text=re.compile('Aktueller Stand:')))
-txt = txt.replace('März', '03').replace('April', '04').replace('Mai', '05')
-mo = re.search(r'Aktueller Stand: (\d\d\. \d\d \d\d\d\d, \d\d\.\d\d) Uhr', txt)
+txt = clean_date(txt)
+mo = re.search(r'Aktueller Stand: (\d?\d\. \d\d \d\d\d\d, *\d\d\.\d\d) Uhr', txt)
 if mo is None:
     print("Couldn't find date.", file=sys.stderr)
     sys.exit(1)
+
 parse.parsedtime = datetime.strptime(mo.group(1), '%d. %m %Y, %H.%M').replace(tzinfo=datatz)
 
 tab = header.find_parent('table')
