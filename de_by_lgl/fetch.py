@@ -205,7 +205,7 @@ def is_confirmed(tab):
     return cap is None or 'Coronavirusinfektionen' in cap.get_text()
 
 def is_combined(tab):
-    return len(tab.find_all('th')) == 6
+    return len(tab.find_all('th')) in [6, 7]
 
 def is_deaths(tab):
     cap = tab.select_one('caption')
@@ -234,7 +234,7 @@ def parse_table(parse, html, kind, *, optional=False):
         elif is_combined(tab):
             tab_combined.append(tab)
         else:
-            print("unrecognized table", tab)
+            print("unrecognized table")
             exit(1)
 
     if len(tab_confirmed) + len(tab_combined) > 1 or len(tab_deaths) + len(tab_combined) > 1:
@@ -265,7 +265,11 @@ def parse_table(parse, html, kind, *, optional=False):
         if tab_combined:
             ths = tab_combined[0].find_all('th')
             assert('Fälle' in ths[1].get_text())
-            assert('Todesfälle' in ths[4].get_text())
+            if 'Todesfälle' in ths[4].get_text():
+                n_deaths = 4
+            else:
+                assert('Todesfälle' in ths[5].get_text())
+                n_deaths = 5
         cout.writerow(header)
 
         deaths = {}
@@ -285,7 +289,7 @@ def parse_table(parse, html, kind, *, optional=False):
                 cols = [tds[0].get_text()]
             cols.append(datatime.isoformat())
             if tab_combined:
-                cols += [clean_num(tds[1].get_text()), clean_num(tds[4].get_text())]
+                cols += [clean_num(tds[1].get_text()), clean_num(tds[n_deaths].get_text())]
             else:
                 cols.append(clean_num(tds[1].get_text()))
                 if deaths:
