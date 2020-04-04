@@ -17,6 +17,10 @@ Data for Germany by Robert Koch-Institut
 
 Data for Bayern, Germany by Bayerisches Landesamt für Gesundheit und Lebensmittelsicherheit
 
+### de\_by\_muc\_lra
+
+Data for München, Bayern, Germany by Landratsamt München
+
 ### de\_bw\_soz
 
 Data for Baden-Württemberg, Germany by Ministerium für Soziales und Integration Baden-Württemberg
