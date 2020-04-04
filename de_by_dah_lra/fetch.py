@@ -31,7 +31,7 @@ parse = fetchhelper.ParseData(update, 'data')
 
 txt = str(html.find(text=re.compile('Landkreis-Statistik für den ')))
 mo = re.search(r'Landkreis-Statistik für den (\d\d.\d\d.\d\d\d\d)', txt)
-parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1) + ' 21:30', '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
+datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1) + ' 21:30', '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
 
 table = html.find(text=re.compile('Sars-CoV-2 Infizierte')).find_parent('table')
 rows = table.find_all('tr')
@@ -42,13 +42,12 @@ assert('Geheilt' in ths[2].get_text())
 
 with open(parse.parsedfile, 'w') as outf:
     cout = csv.writer(outf)
-    header = ['Gemeinde', 'Confirmed', 'Recovered']
-    cout.writerow(header)
+    cout.writerow(['Kommune', 'Timestamp', 'Confirmed', 'Recovered'])
 
     assert('Gesamt' in rows[-1].get_text())
     for row in rows[1:-1]:
         tds = row.find_all('td')
-        cout.writerow((tds[0].get_text(), int(tds[1].get_text()), int(tds[2].get_text())))
+        cout.writerow((tds[0].get_text(), datatime.isoformat(), int(tds[1].get_text()), int(tds[2].get_text())))
 parse.diff()
 
 if args.only_changed:
