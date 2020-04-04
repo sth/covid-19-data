@@ -21,6 +21,10 @@ Data for Bayern, Germany by Bayerisches Landesamt für Gesundheit und Lebensmitt
 
 Data for München, Bayern, Germany by Landratsamt München
 
+### de\_by\_dah\_lra
+
+Data for Dachau, Bayern, Germany by Landratsamt Dachau
+
 ### de\_bw\_soz
 
 Data for Baden-Württemberg, Germany by Ministerium für Soziales und Integration Baden-Württemberg
