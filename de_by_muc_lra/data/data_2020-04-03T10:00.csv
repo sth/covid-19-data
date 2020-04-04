@@ -1,30 +1,30 @@
-Gemeinde,Confirmed
-Aschheim,18
-Aying,16
-Baierbrunn,13
-Brunnthal,12
-Feldkirchen,7
-Garching b. München,47
-Gräfelfing,31
-Grasbrunn,8
-Grünwald,49
-Haar,36
-Hohenbrunn,15
-Höhenkirchen-Siegertsbrunn,19
-Ismaning,65
-Kirchheim b. München,33
-Neubiberg,34
-Neuried,17
-Oberhaching,43
-Oberschleißheim,19
-Ottobrunn,37
-Planegg,19
-Pullach im Isartal,25
-Putzbrunn,11
-Sauerlach,13
-Schäftlarn,15
-Straßlach-Dingharting,5
-Taufkirchen,25
-Unterföhring,20
-Unterhaching,83
-Unterschleißheim,48
+Kommune,Timestamp,Confirmed
+Aschheim,2020-04-03T12:00:00+02:00,18
+Aying,2020-04-03T12:00:00+02:00,16
+Baierbrunn,2020-04-03T12:00:00+02:00,13
+Brunnthal,2020-04-03T12:00:00+02:00,12
+Feldkirchen,2020-04-03T12:00:00+02:00,7
+Garching b. München,2020-04-03T12:00:00+02:00,47
+Gräfelfing,2020-04-03T12:00:00+02:00,31
+Grasbrunn,2020-04-03T12:00:00+02:00,8
+Grünwald,2020-04-03T12:00:00+02:00,49
+Haar,2020-04-03T12:00:00+02:00,36
+Hohenbrunn,2020-04-03T12:00:00+02:00,15
+Höhenkirchen-Siegertsbrunn,2020-04-03T12:00:00+02:00,19
+Ismaning,2020-04-03T12:00:00+02:00,65
+Kirchheim b. München,2020-04-03T12:00:00+02:00,33
+Neubiberg,2020-04-03T12:00:00+02:00,34
+Neuried,2020-04-03T12:00:00+02:00,17
+Oberhaching,2020-04-03T12:00:00+02:00,43
+Oberschleißheim,2020-04-03T12:00:00+02:00,19
+Ottobrunn,2020-04-03T12:00:00+02:00,37
+Planegg,2020-04-03T12:00:00+02:00,19
+Pullach im Isartal,2020-04-03T12:00:00+02:00,25
+Putzbrunn,2020-04-03T12:00:00+02:00,11
+Sauerlach,2020-04-03T12:00:00+02:00,13
+Schäftlarn,2020-04-03T12:00:00+02:00,15
+Straßlach-Dingharting,2020-04-03T12:00:00+02:00,5
+Taufkirchen,2020-04-03T12:00:00+02:00,25
+Unterföhring,2020-04-03T12:00:00+02:00,20
+Unterhaching,2020-04-03T12:00:00+02:00,83
+Unterschleißheim,2020-04-03T12:00:00+02:00,48

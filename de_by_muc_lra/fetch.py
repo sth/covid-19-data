@@ -31,19 +31,19 @@ parse = fetchhelper.ParseData(update, 'data')
 
 txt = str(html.find(text=re.compile('Stand: ')))
 mo = re.search(r'Stand: (\d\d.\d\d.\d\d\d\d, \d\d:\d\d) Uhr', txt)
-parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M').replace(tzinfo=datatz)
+datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M').replace(tzinfo=datatz)
 
 title = html.find(text=re.compile('Fallzahlen Infizierte nach Gemeinden')).find_parent('h2')
 rows = title.find_next_sibling('table').find_all('tr')
 
 with open(parse.parsedfile, 'w') as outf:
     cout = csv.writer(outf)
-    header = ['Gemeinde', 'Confirmed']
+    header = ('Kommune', 'Timestamp', 'Confirmed')
     cout.writerow(header)
 
     for row in rows:
         tds = row.find_all('td')
-        cout.writerow((tds[0].get_text(), int(tds[1].get_text())))
+        cout.writerow((tds[0].get_text(), datatime.isoformat(), int(tds[1].get_text())))
 parse.diff()
 
 if args.only_changed:
