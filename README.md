@@ -41,6 +41,10 @@ Data for Austria from Bundesministerium für Soziales, Gesundheit, Pflege und Ko
 
 Data for France from Santé Publique France (currently not updated)
 
+### uk\_eph
+
+Data for United Kingdom from England Public Health
+
 ### us\_cvtr
 
 Data for United States from https://covidtracking.com/

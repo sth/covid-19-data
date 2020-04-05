@@ -1,0 +1,150 @@
+Code,UTLA,NHSRegion,Region,Timestamp,Confirmed
+E09000002,Barking and Dagenham,London,London,2020-03-24T23:59:00+00:00,45
+E09000003,Barnet,London,London,2020-03-24T23:59:00+00:00,99
+E08000016,Barnsley,Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,15
+E06000022,Bath and North East Somerset,South West,South West,2020-03-24T23:59:00+00:00,17
+E06000055,Bedford,East of England,East of England,2020-03-24T23:59:00+00:00,7
+E09000004,Bexley,London,London,2020-03-24T23:59:00+00:00,47
+E08000025,Birmingham,West Midlands,West Midlands,2020-03-24T23:59:00+00:00,187
+E06000008,Blackburn with Darwen,North West,North West,2020-03-24T23:59:00+00:00,2
+E06000009,Blackpool,North West,North West,2020-03-24T23:59:00+00:00,8
+E08000001,Bolton,North West,North West,2020-03-24T23:59:00+00:00,19
+E06000058,"Bournemouth, Christchurch and Poole",South West,South West,2020-03-24T23:59:00+00:00,14
+E06000036,Bracknell Forest,South East,South East,2020-03-24T23:59:00+00:00,3
+E08000032,Bradford,Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,14
+E09000005,Brent,London,London,2020-03-24T23:59:00+00:00,170
+E06000043,Brighton and Hove,South East,South East,2020-03-24T23:59:00+00:00,25
+E06000023,"Bristol, City of",South West,South West,2020-03-24T23:59:00+00:00,37
+E09000006,Bromley,London,London,2020-03-24T23:59:00+00:00,93
+E10000002,Buckinghamshire,South East,South East,2020-03-24T23:59:00+00:00,50
+E08000002,Bury,North West,North West,2020-03-24T23:59:00+00:00,17
+E08000033,Calderdale,Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,7
+E10000003,Cambridgeshire,East of England,East of England,2020-03-24T23:59:00+00:00,37
+E09000007,Camden,London,London,2020-03-24T23:59:00+00:00,64
+E06000056,Central Bedfordshire,East of England,East of England,2020-03-24T23:59:00+00:00,22
+E06000049,Cheshire East,North West,North West,2020-03-24T23:59:00+00:00,25
+E06000050,Cheshire West and Chester,North West,North West,2020-03-24T23:59:00+00:00,18
+E06000052,Cornwall and Isles of Scilly,South West,South West,2020-03-24T23:59:00+00:00,30
+E06000047,County Durham,North East,North East,2020-03-24T23:59:00+00:00,18
+E08000026,Coventry,West Midlands,West Midlands,2020-03-24T23:59:00+00:00,24
+E09000008,Croydon,London,London,2020-03-24T23:59:00+00:00,128
+E10000006,Cumbria,North West,North West,2020-03-24T23:59:00+00:00,129
+E06000005,Darlington,North East,North East,2020-03-24T23:59:00+00:00,3
+E06000015,Derby,East Midlands,East Midlands,2020-03-24T23:59:00+00:00,37
+E10000007,Derbyshire,East Midlands,East Midlands,2020-03-24T23:59:00+00:00,101
+E10000008,Devon,South West,South West,2020-03-24T23:59:00+00:00,48
+E08000017,Doncaster,Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,13
+E06000059,Dorset,South West,South West,2020-03-24T23:59:00+00:00,15
+E08000027,Dudley,West Midlands,West Midlands,2020-03-24T23:59:00+00:00,40
+E09000009,Ealing,London,London,2020-03-24T23:59:00+00:00,123
+E06000011,East Riding of Yorkshire,Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,16
+E10000011,East Sussex,South East,South East,2020-03-24T23:59:00+00:00,21
+E09000010,Enfield,London,London,2020-03-24T23:59:00+00:00,84
+E10000012,Essex,East of England,East of England,2020-03-24T23:59:00+00:00,80
+E08000037,Gateshead,North East,North East,2020-03-24T23:59:00+00:00,5
+E10000013,Gloucestershire,South West,South West,2020-03-24T23:59:00+00:00,49
+E09000011,Greenwich,London,London,2020-03-24T23:59:00+00:00,77
+E09000012,Hackney and City of London,London,London,2020-03-24T23:59:00+00:00,74
+E06000006,Halton,North West,North West,2020-03-24T23:59:00+00:00,8
+E09000013,Hammersmith and Fulham,London,London,2020-03-24T23:59:00+00:00,70
+E10000014,Hampshire,South East,South East,2020-03-24T23:59:00+00:00,207
+E09000014,Haringey,London,London,2020-03-24T23:59:00+00:00,72
+E09000015,Harrow,London,London,2020-03-24T23:59:00+00:00,134
+E06000001,Hartlepool,North East,North East,2020-03-24T23:59:00+00:00,3
+E09000016,Havering,London,London,2020-03-24T23:59:00+00:00,44
+E06000019,"Herefordshire, County of",West Midlands,West Midlands,2020-03-24T23:59:00+00:00,15
+E10000015,Hertfordshire,East of England,East of England,2020-03-24T23:59:00+00:00,139
+E09000017,Hillingdon,London,London,2020-03-24T23:59:00+00:00,85
+E09000018,Hounslow,London,London,2020-03-24T23:59:00+00:00,82
+E06000046,Isle of Wight,South East,South East,2020-03-24T23:59:00+00:00,3
+E09000019,Islington,London,London,2020-03-24T23:59:00+00:00,66
+E09000020,Kensington and Chelsea,London,London,2020-03-24T23:59:00+00:00,91
+E10000016,Kent,South East,South East,2020-03-24T23:59:00+00:00,72
+E06000010,"Kingston upon Hull, City of",Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,1
+E09000021,Kingston upon Thames,London,London,2020-03-24T23:59:00+00:00,36
+E08000034,Kirklees,Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,17
+E08000011,Knowsley,North West,North West,2020-03-24T23:59:00+00:00,8
+E09000022,Lambeth,London,London,2020-03-24T23:59:00+00:00,188
+E10000017,Lancashire,North West,North West,2020-03-24T23:59:00+00:00,71
+E08000035,Leeds,Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,42
+E06000016,Leicester,East Midlands,East Midlands,2020-03-24T23:59:00+00:00,24
+E10000018,Leicestershire,East Midlands,East Midlands,2020-03-24T23:59:00+00:00,65
+E09000023,Lewisham,London,London,2020-03-24T23:59:00+00:00,97
+E10000019,Lincolnshire,East Midlands,East Midlands,2020-03-24T23:59:00+00:00,24
+E08000012,Liverpool,North West,North West,2020-03-24T23:59:00+00:00,41
+E06000032,Luton,East of England,East of England,2020-03-24T23:59:00+00:00,19
+E08000003,Manchester,North West,North West,2020-03-24T23:59:00+00:00,41
+E06000035,Medway,South East,South East,2020-03-24T23:59:00+00:00,19
+E09000024,Merton,London,London,2020-03-24T23:59:00+00:00,84
+E06000002,Middlesbrough,North East,North East,2020-03-24T23:59:00+00:00,7
+E06000042,Milton Keynes,South East,South East,2020-03-24T23:59:00+00:00,25
+E08000021,Newcastle upon Tyne,North East,North East,2020-03-24T23:59:00+00:00,49
+E09000025,Newham,London,London,2020-03-24T23:59:00+00:00,76
+E10000020,Norfolk,East of England,East of England,2020-03-24T23:59:00+00:00,42
+E06000012,North East Lincolnshire,Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,3
+E06000013,North Lincolnshire,Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,5
+E06000024,North Somerset,South West,South West,2020-03-24T23:59:00+00:00,21
+E08000022,North Tyneside,North East,North East,2020-03-24T23:59:00+00:00,20
+E10000023,North Yorkshire,Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,30
+E10000021,Northamptonshire,East Midlands,East Midlands,2020-03-24T23:59:00+00:00,37
+E06000057,Northumberland,North East,North East,2020-03-24T23:59:00+00:00,13
+E06000018,Nottingham,East Midlands,East Midlands,2020-03-24T23:59:00+00:00,49
+E10000024,Nottinghamshire,East Midlands,East Midlands,2020-03-24T23:59:00+00:00,78
+E08000004,Oldham,North West,North West,2020-03-24T23:59:00+00:00,34
+E10000025,Oxfordshire,South East,South East,2020-03-24T23:59:00+00:00,69
+E06000031,Peterborough,East of England,East of England,2020-03-24T23:59:00+00:00,6
+E06000026,Plymouth,South West,South West,2020-03-24T23:59:00+00:00,16
+E06000044,Portsmouth,South East,South East,2020-03-24T23:59:00+00:00,29
+E06000038,Reading,South East,South East,2020-03-24T23:59:00+00:00,8
+E09000026,Redbridge,London,London,2020-03-24T23:59:00+00:00,57
+E06000003,Redcar and Cleveland,North East,North East,2020-03-24T23:59:00+00:00,7
+E09000027,Richmond upon Thames,London,London,2020-03-24T23:59:00+00:00,36
+E08000005,Rochdale,North West,North West,2020-03-24T23:59:00+00:00,24
+E08000018,Rotherham,Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,16
+E06000017,Rutland,East Midlands,East Midlands,2020-03-24T23:59:00+00:00,0
+E08000006,Salford,North West,North West,2020-03-24T23:59:00+00:00,31
+E08000028,Sandwell,West Midlands,West Midlands,2020-03-24T23:59:00+00:00,47
+E08000014,Sefton,North West,North West,2020-03-24T23:59:00+00:00,13
+E08000019,Sheffield,Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,130
+E06000051,Shropshire,West Midlands,West Midlands,2020-03-24T23:59:00+00:00,27
+E06000039,Slough,South East,South East,2020-03-24T23:59:00+00:00,22
+E08000029,Solihull,West Midlands,West Midlands,2020-03-24T23:59:00+00:00,12
+E10000027,Somerset,South West,South West,2020-03-24T23:59:00+00:00,21
+E06000025,South Gloucestershire,South West,South West,2020-03-24T23:59:00+00:00,19
+E08000023,South Tyneside,North East,North East,2020-03-24T23:59:00+00:00,8
+E06000045,Southampton,South East,South East,2020-03-24T23:59:00+00:00,24
+E06000033,Southend-on-Sea,East of England,East of England,2020-03-24T23:59:00+00:00,8
+E09000028,Southwark,London,London,2020-03-24T23:59:00+00:00,181
+E08000013,St. Helens,North West,North West,2020-03-24T23:59:00+00:00,8
+E10000028,Staffordshire,West Midlands,West Midlands,2020-03-24T23:59:00+00:00,76
+E08000007,Stockport,North West,North West,2020-03-24T23:59:00+00:00,42
+E06000004,Stockton-on-Tees,North East,North East,2020-03-24T23:59:00+00:00,12
+E06000021,Stoke-on-Trent,West Midlands,West Midlands,2020-03-24T23:59:00+00:00,9
+E10000029,Suffolk,East of England,East of England,2020-03-24T23:59:00+00:00,28
+E08000024,Sunderland,North East,North East,2020-03-24T23:59:00+00:00,20
+E10000030,Surrey,South East,South East,2020-03-24T23:59:00+00:00,110
+E09000029,Sutton,London,London,2020-03-24T23:59:00+00:00,40
+E06000030,Swindon,South West,South West,2020-03-24T23:59:00+00:00,7
+E08000008,Tameside,North West,North West,2020-03-24T23:59:00+00:00,32
+E06000020,Telford and Wrekin,West Midlands,West Midlands,2020-03-24T23:59:00+00:00,9
+E06000034,Thurrock,East of England,East of England,2020-03-24T23:59:00+00:00,15
+E06000027,Torbay,South West,South West,2020-03-24T23:59:00+00:00,17
+E09000030,Tower Hamlets,London,London,2020-03-24T23:59:00+00:00,70
+E08000009,Trafford,North West,North West,2020-03-24T23:59:00+00:00,31
+E08000036,Wakefield,Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,13
+E08000030,Walsall,West Midlands,West Midlands,2020-03-24T23:59:00+00:00,43
+E09000031,Waltham Forest,London,London,2020-03-24T23:59:00+00:00,61
+E09000032,Wandsworth,London,London,2020-03-24T23:59:00+00:00,155
+E06000007,Warrington,North West,North West,2020-03-24T23:59:00+00:00,8
+E10000031,Warwickshire,West Midlands,West Midlands,2020-03-24T23:59:00+00:00,52
+E06000037,West Berkshire,South East,South East,2020-03-24T23:59:00+00:00,12
+E10000032,West Sussex,South East,South East,2020-03-24T23:59:00+00:00,52
+E09000033,Westminster,London,London,2020-03-24T23:59:00+00:00,143
+E08000010,Wigan,North West,North West,2020-03-24T23:59:00+00:00,11
+E06000054,Wiltshire,South West,South West,2020-03-24T23:59:00+00:00,34
+E06000040,Windsor and Maidenhead,South East,South East,2020-03-24T23:59:00+00:00,13
+E08000015,Wirral,North West,North West,2020-03-24T23:59:00+00:00,15
+E06000041,Wokingham,South East,South East,2020-03-24T23:59:00+00:00,13
+E08000031,Wolverhampton,West Midlands,West Midlands,2020-03-24T23:59:00+00:00,81
+E10000034,Worcestershire,West Midlands,West Midlands,2020-03-24T23:59:00+00:00,38
+E06000014,York,Yorkshire and The Humber,Yorkshire and The Humber,2020-03-24T23:59:00+00:00,11
