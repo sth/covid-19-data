@@ -42,12 +42,15 @@ def clean_date(s):
 
 txt = str(html.find(text=re.compile('Aktueller Stand:')))
 txt = clean_date(txt)
-mo = re.search(r'Aktueller Stand: (\d?\d\. \d\d \d\d\d\d, *\d\d\.\d\d) Uhr', txt)
+mo = re.search(r'Aktueller Stand: (\d?\d\. \d\d \d\d\d\d, *\d\d[.:]\d\d) Uhr', txt)
 if mo is None:
     print("Couldn't find date.", file=sys.stderr)
     sys.exit(1)
 
-parse.parsedtime = datetime.strptime(mo.group(1), '%d. %m %Y, %H.%M').replace(tzinfo=datatz)
+try:
+    parse.parsedtime = datetime.strptime(mo.group(1), '%d. %m %Y, %H.%M').replace(tzinfo=datatz)
+except ValueError:
+    parse.parsedtime = datetime.strptime(mo.group(1), '%d. %m %Y, %H:%M').replace(tzinfo=datatz)
 
 tab = header.find_parent('table')
 if tab is None:
