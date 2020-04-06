@@ -9,12 +9,12 @@ E08000025,Birmingham,West Midlands,2020-03-10T23:59:00+00:00,1
 E06000008,Blackburn with Darwen,North West,2020-03-10T23:59:00+00:00,0
 E06000009,Blackpool,North West,2020-03-10T23:59:00+00:00,0
 E08000001,Bolton,North West,2020-03-10T23:59:00+00:00,3
-E06000058,"Bournemouth, Christchurch and Poole"," Christchurch and Poole"",South West",2020-03-10T23:59:00+00:00,3
+E06000058,"Bournemouth, Christchurch and Poole",South West,2020-03-10T23:59:00+00:00,3
 E06000036,Bracknell Forest,South East,2020-03-10T23:59:00+00:00,2
 E08000032,Bradford,Yorkshire and The Humber,2020-03-10T23:59:00+00:00,1
 E09000005,Brent,London,2020-03-10T23:59:00+00:00,3
 E06000043,Brighton and Hove,South East,2020-03-10T23:59:00+00:00,8
-E06000023,"Bristol, City of"," City of"",South West",2020-03-10T23:59:00+00:00,2
+E06000023,"Bristol, City of",South West,2020-03-10T23:59:00+00:00,2
 E09000006,Bromley,London,2020-03-10T23:59:00+00:00,2
 E10000002,Buckinghamshire,South East,2020-03-10T23:59:00+00:00,2
 E08000002,Bury,North West,2020-03-10T23:59:00+00:00,3
@@ -52,7 +52,7 @@ E09000014,Haringey,London,2020-03-10T23:59:00+00:00,1
 E09000015,Harrow,London,2020-03-10T23:59:00+00:00,1
 E06000001,Hartlepool,North East,2020-03-10T23:59:00+00:00,0
 E09000016,Havering,London,2020-03-10T23:59:00+00:00,2
-E06000019,"Herefordshire, County of"," County of"",West Midlands",2020-03-10T23:59:00+00:00,1
+E06000019,"Herefordshire, County of",West Midlands,2020-03-10T23:59:00+00:00,1
 E10000015,Hertfordshire,East of England,2020-03-10T23:59:00+00:00,16
 E09000017,Hillingdon,London,2020-03-10T23:59:00+00:00,1
 E09000018,Hounslow,London,2020-03-10T23:59:00+00:00,5
@@ -60,7 +60,7 @@ E06000046,Isle of Wight,South East,2020-03-10T23:59:00+00:00,1
 E09000019,Islington,London,2020-03-10T23:59:00+00:00,1
 E09000020,Kensington and Chelsea,London,2020-03-10T23:59:00+00:00,13
 E10000016,Kent,South East,2020-03-10T23:59:00+00:00,5
-E06000010,"Kingston upon Hull, City of"," City of"",Yorkshire and The Humber",2020-03-10T23:59:00+00:00,1
+E06000010,"Kingston upon Hull, City of",Yorkshire and The Humber,2020-03-10T23:59:00+00:00,1
 E09000021,Kingston upon Thames,London,2020-03-10T23:59:00+00:00,1
 E08000034,Kirklees,Yorkshire and The Humber,2020-03-10T23:59:00+00:00,0
 E08000011,Knowsley,North West,2020-03-10T23:59:00+00:00,0
@@ -77,7 +77,7 @@ E08000003,Manchester,North West,2020-03-10T23:59:00+00:00,5
 E06000035,Medway,South East,2020-03-10T23:59:00+00:00,2
 E09000024,Merton,London,2020-03-10T23:59:00+00:00,2
 E06000002,Middlesbrough,North East,2020-03-10T23:59:00+00:00,0
-E06000042,Milton Keynes,"South East,South East",2020-03-10T23:59:00+00:00,2
+E06000042,Milton Keynes,South East,2020-03-10T23:59:00+00:00,2
 E08000021,Newcastle upon Tyne,North East,2020-03-10T23:59:00+00:00,4
 E09000025,Newham,London,2020-03-10T23:59:00+00:00,0
 E10000020,Norfolk,East of England,2020-03-10T23:59:00+00:00,0
@@ -95,7 +95,7 @@ E10000025,Oxfordshire,South East,2020-03-10T23:59:00+00:00,7
 E06000031,Peterborough,East of England,2020-03-10T23:59:00+00:00,1
 E06000026,Plymouth,South West,2020-03-10T23:59:00+00:00,0
 E06000044,Portsmouth,South East,2020-03-10T23:59:00+00:00,0
-E06000038,Reading,"South East,South East",2020-03-10T23:59:00+00:00,0
+E06000038,Reading,South East,2020-03-10T23:59:00+00:00,0
 E09000026,Redbridge,London,2020-03-10T23:59:00+00:00,1
 E06000003,Redcar and Cleveland,North East,2020-03-10T23:59:00+00:00,0
 E09000027,Richmond upon Thames,London,2020-03-10T23:59:00+00:00,1
@@ -107,7 +107,7 @@ E08000028,Sandwell,West Midlands,2020-03-10T23:59:00+00:00,0
 E08000014,Sefton,North West,2020-03-10T23:59:00+00:00,0
 E08000019,Sheffield,Yorkshire and The Humber,2020-03-10T23:59:00+00:00,0
 E06000051,Shropshire,West Midlands,2020-03-10T23:59:00+00:00,1
-E06000039,Slough,"South East,South East",2020-03-10T23:59:00+00:00,1
+E06000039,Slough,South East,2020-03-10T23:59:00+00:00,1
 E08000029,Solihull,West Midlands,2020-03-10T23:59:00+00:00,0
 E10000027,Somerset,South West,2020-03-10T23:59:00+00:00,2
 E06000025,South Gloucestershire,South West,2020-03-10T23:59:00+00:00,0
@@ -144,7 +144,7 @@ E08000010,Wigan,North West,2020-03-10T23:59:00+00:00,3
 E06000054,Wiltshire,South West,2020-03-10T23:59:00+00:00,4
 E06000040,Windsor and Maidenhead,South East,2020-03-10T23:59:00+00:00,1
 E08000015,Wirral,North West,2020-03-10T23:59:00+00:00,1
-E06000041,Wokingham,"South East,South East",2020-03-10T23:59:00+00:00,3
+E06000041,Wokingham,South East,2020-03-10T23:59:00+00:00,3
 E08000031,Wolverhampton,West Midlands,2020-03-10T23:59:00+00:00,3
 E10000034,Worcestershire,West Midlands,2020-03-10T23:59:00+00:00,0
 E06000014,York,Yorkshire and The Humber,2020-03-10T23:59:00+00:00,3
