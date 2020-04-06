@@ -68,17 +68,18 @@ class Updater(object):
         return self.rawdiff.changed
 
 class ParseData(object):
-    def __init__(self, update, label):
+    def __init__(self, update, label, variant=''):
         self.update = update
         self.label = label
+        self.variant = variant
         checkdir('parsed')
-        self.parsedfile = 'parsed/%s_%s.csv' % (update.rawname, label)
+        self.parsedfile = 'parsed/%s_%s%s.csv' % (update.rawname, self.label, self.variant)
         self.parsedtime = update.contenttime
         self.parseddiff = None
         self.deployfile = None
 
     def diff(self):
-        self.parseddiff = diff_previous(self.parsedfile, 'parsed/*_%s.csv' % self.label)
+        self.parseddiff = diff_previous(self.parsedfile, 'parsed/*_%s%s.csv' % (self.label, self.variant))
         return self.parseddiff
 
     def deploy_day(self):

@@ -45,6 +45,10 @@ Data for France from Santé Publique France (currently not updated)
 
 Data for United Kingdom from England Public Health
 
+### se\_fhm
+
+Data for Sweden from Folkhälsomyndigheten
+
 ### us\_cvtr
 
 Data for United States from https://covidtracking.com/
