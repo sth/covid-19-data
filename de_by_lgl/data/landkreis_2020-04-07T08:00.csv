@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-04-07T10:00:00+02:00,189,5
+Altötting,Oberbayern,2020-04-07T10:00:00+02:00,313,8
+Amberg Stadt,Oberpfalz,2020-04-07T10:00:00+02:00,41,2
+Amberg-Sulzbach,Oberpfalz,2020-04-07T10:00:00+02:00,184,3
+Ansbach,Mittelfranken,2020-04-07T10:00:00+02:00,278,3
+Ansbach Stadt,Mittelfranken,2020-04-07T10:00:00+02:00,61,1
+Aschaffenburg,Unterfranken,2020-04-07T10:00:00+02:00,256,13
+Aschaffenburg Stadt,Unterfranken,2020-04-07T10:00:00+02:00,76,0
+Augsburg,Schwaben,2020-04-07T10:00:00+02:00,276,1
+Augsburg Stadt,Schwaben,2020-04-07T10:00:00+02:00,256,4
+Bad Kissingen,Unterfranken,2020-04-07T10:00:00+02:00,128,1
+Bad Tölz-Wolfratshausen,Oberbayern,2020-04-07T10:00:00+02:00,279,4
+Bamberg,Oberfranken,2020-04-07T10:00:00+02:00,285,11
+Bamberg Stadt,Oberfranken,2020-04-07T10:00:00+02:00,109,1
+Bayreuth,Oberfranken,2020-04-07T10:00:00+02:00,206,4
+Bayreuth Stadt,Oberfranken,2020-04-07T10:00:00+02:00,104,3
+Berchtesgadener Land,Oberbayern,2020-04-07T10:00:00+02:00,154,3
+Cham,Oberpfalz,2020-04-07T10:00:00+02:00,292,5
+Coburg,Oberfranken,2020-04-07T10:00:00+02:00,82,1
+Coburg Stadt,Oberfranken,2020-04-07T10:00:00+02:00,30,0
+Dachau,Oberbayern,2020-04-07T10:00:00+02:00,476,5
+Deggendorf,Niederbayern,2020-04-07T10:00:00+02:00,157,4
+Dillingen an der Donau,Schwaben,2020-04-07T10:00:00+02:00,90,1
+Dingolfing-Landau,Niederbayern,2020-04-07T10:00:00+02:00,137,1
+Donau-Ries,Schwaben,2020-04-07T10:00:00+02:00,225,6
+Ebersberg,Oberbayern,2020-04-07T10:00:00+02:00,292,1
+Eichstätt,Oberbayern,2020-04-07T10:00:00+02:00,144,2
+Erding,Oberbayern,2020-04-07T10:00:00+02:00,421,5
+Erlangen Stadt,Mittelfranken,2020-04-07T10:00:00+02:00,110,1
+Erlangen-Höchstadt,Mittelfranken,2020-04-07T10:00:00+02:00,139,2
+Forchheim,Oberfranken,2020-04-07T10:00:00+02:00,145,2
+Freising,Oberbayern,2020-04-07T10:00:00+02:00,716,15
+Freyung-Grafenau,Niederbayern,2020-04-07T10:00:00+02:00,115,3
+Fürstenfeldbruck,Oberbayern,2020-04-07T10:00:00+02:00,549,7
+Fürth,Mittelfranken,2020-04-07T10:00:00+02:00,290,7
+Fürth Stadt,Mittelfranken,2020-04-07T10:00:00+02:00,180,6
+Garmisch-Partenkirchen,Oberbayern,2020-04-07T10:00:00+02:00,185,1
+Günzburg,Schwaben,2020-04-07T10:00:00+02:00,155,1
+Haßberge,Unterfranken,2020-04-07T10:00:00+02:00,89,0
+Hof,Oberfranken,2020-04-07T10:00:00+02:00,221,4
+Hof Stadt,Oberfranken,2020-04-07T10:00:00+02:00,64,1
+Ingolstadt Stadt,Oberbayern,2020-04-07T10:00:00+02:00,209,4
+Kaufbeuren Stadt,Schwaben,2020-04-07T10:00:00+02:00,62,2
+Kelheim,Niederbayern,2020-04-07T10:00:00+02:00,276,12
+Kempten Stadt,Schwaben,2020-04-07T10:00:00+02:00,56,4
+Kitzingen,Unterfranken,2020-04-07T10:00:00+02:00,65,0
+Kronach,Oberfranken,2020-04-07T10:00:00+02:00,69,0
+Kulmbach,Oberfranken,2020-04-07T10:00:00+02:00,114,2
+Landsberg am Lech,Oberbayern,2020-04-07T10:00:00+02:00,236,4
+Landshut,Niederbayern,2020-04-07T10:00:00+02:00,421,9
+Landshut Stadt,Niederbayern,2020-04-07T10:00:00+02:00,161,3
+Lichtenfels,Oberfranken,2020-04-07T10:00:00+02:00,131,1
+Lindau (Bodensee),Schwaben,2020-04-07T10:00:00+02:00,194,4
+Main-Spessart,Unterfranken,2020-04-07T10:00:00+02:00,113,2
+Memmingen Stadt,Schwaben,2020-04-07T10:00:00+02:00,40,0
+Miesbach,Oberbayern,2020-04-07T10:00:00+02:00,421,3
+Miltenberg,Unterfranken,2020-04-07T10:00:00+02:00,180,0
+Mühldorf am Inn,Oberbayern,2020-04-07T10:00:00+02:00,291,6
+München,Oberbayern,2020-04-07T10:00:00+02:00,902,8
+München Stadt,Oberbayern,2020-04-07T10:00:00+02:00,3699,11
+Neu-Ulm,Schwaben,2020-04-07T10:00:00+02:00,259,3
+Neuburg-Schrobenhausen,Oberbayern,2020-04-07T10:00:00+02:00,131,0
+Neumarkt in der Oberpfalz,Oberpfalz,2020-04-07T10:00:00+02:00,146,2
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-04-07T10:00:00+02:00,102,2
+Neustadt an der Waldnaab,Oberpfalz,2020-04-07T10:00:00+02:00,424,16
+Nürnberg Stadt,Mittelfranken,2020-04-07T10:00:00+02:00,498,5
+Nürnberger Land,Mittelfranken,2020-04-07T10:00:00+02:00,354,12
+Oberallgäu,Schwaben,2020-04-07T10:00:00+02:00,139,3
+Ostallgäu,Schwaben,2020-04-07T10:00:00+02:00,319,8
+Passau,Niederbayern,2020-04-07T10:00:00+02:00,272,7
+Passau Stadt,Niederbayern,2020-04-07T10:00:00+02:00,82,3
+Pfaffenhofen an der Ilm,Oberbayern,2020-04-07T10:00:00+02:00,221,3
+Regen,Niederbayern,2020-04-07T10:00:00+02:00,95,0
+Regensburg,Oberpfalz,2020-04-07T10:00:00+02:00,290,0
+Regensburg Stadt,Oberpfalz,2020-04-07T10:00:00+02:00,296,3
+Rhön-Grabfeld,Unterfranken,2020-04-07T10:00:00+02:00,79,0
+Rosenheim,Oberbayern,2020-04-07T10:00:00+02:00,1189,29
+Rosenheim Stadt,Oberbayern,2020-04-07T10:00:00+02:00,198,5
+Roth,Mittelfranken,2020-04-07T10:00:00+02:00,205,3
+Rottal-Inn,Niederbayern,2020-04-07T10:00:00+02:00,514,18
+Schwabach Stadt,Mittelfranken,2020-04-07T10:00:00+02:00,50,0
+Schwandorf,Oberpfalz,2020-04-07T10:00:00+02:00,257,7
+Schweinfurt,Unterfranken,2020-04-07T10:00:00+02:00,236,4
+Schweinfurt Stadt,Unterfranken,2020-04-07T10:00:00+02:00,87,9
+Starnberg,Oberbayern,2020-04-07T10:00:00+02:00,395,3
+Straubing Stadt,Niederbayern,2020-04-07T10:00:00+02:00,169,5
+Straubing-Bogen,Niederbayern,2020-04-07T10:00:00+02:00,225,7
+Tirschenreuth,Oberpfalz,2020-04-07T10:00:00+02:00,820,48
+Traunstein,Oberbayern,2020-04-07T10:00:00+02:00,495,12
+Unterallgäu,Schwaben,2020-04-07T10:00:00+02:00,190,4
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-04-07T10:00:00+02:00,143,4
+Weilheim-Schongau,Oberbayern,2020-04-07T10:00:00+02:00,290,1
+Weißenburg-Gunzenhausen,Mittelfranken,2020-04-07T10:00:00+02:00,166,2
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-04-07T10:00:00+02:00,422,11
+Würzburg,Unterfranken,2020-04-07T10:00:00+02:00,298,0
+Würzburg Stadt,Unterfranken,2020-04-07T10:00:00+02:00,372,33
