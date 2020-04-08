@@ -62,28 +62,40 @@ if tab is None:
 with open(parse.parsedfile, 'w') as outf:
     cout = csv.writer(outf)
     rows = tab.find_all('tr')
-    assert('Landkreis' in rows[0].find('th').get_text())
+    ths = rows[0].find_all('th')
+    assert('Landkreis' in ths[0].get_text())
     assert('Gesamt' in rows[-1].find('td').get_text())
     rows = rows[1:-1]
 
-    colnum = len(rows[0].find_all('td'))
+    colnum = len(ths)
     if colnum == 2:
         cout.writerow(['Area', 'Date', 'Confirmed'])
     elif colnum == 3:
+        assert('Todesfälle' in ths[2].get_text())
         cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths'])
+    elif colnum == 4:
+        assert('Genesene' in ths[3].get_text())
+        cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths', 'Recovered'])
     else:
         raise Exception("unknown table structure")
 
     for tr in rows:
         tds = tr.find_all('td')
+        assert(len(tds) == len(ths))
         area = tds[0].get_text()
         confirmed = clean_num(tds[1].get_text())
         if colnum > 2:
             deceased = clean_num(tds[2].get_text())
+        if colnum > 3:
+            recovered = clean_num(tds[3].get_text())
         if colnum == 2:
             cout.writerow([area, parse.parsedtime.isoformat(), confirmed])
-        else:
+        elif colnum == 3:
             cout.writerow([area, parse.parsedtime.isoformat(), confirmed, deceased])
+        elif colnum == 4:
+            cout.writerow([area, parse.parsedtime.isoformat(), confirmed, deceased, recovered])
+        else:
+            raise Exception("internal error")
 parse.diff()
 
 if args.only_changed:
