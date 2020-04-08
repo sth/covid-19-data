@@ -29,8 +29,8 @@ html = BeautifulSoup(update.rawdata, 'html.parser')
 
 parse = fetchhelper.ParseData(update, 'data')
 
-txt = str(html.find(text=re.compile('Landkreis-Statistik für den ')))
-mo = re.search(r'Landkreis-Statistik für den (\d\d.\d\d.\d\d\d\d)', txt)
+txt = str(html.find(text=re.compile('Landkreis-Statistik ')))
+mo = re.search(r'Landkreis-Statistik(?: nach Gemeinden)? für den (\d\d.\d\d.\d\d\d\d)', txt)
 datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1) + ' 21:30', '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
 
 table = html.find(text=re.compile('Sars-CoV-2 Infizierte')).find_parent('table')
