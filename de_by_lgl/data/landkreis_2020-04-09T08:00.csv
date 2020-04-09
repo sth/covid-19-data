@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-04-09T10:00:00+02:00,217,8
+Altötting,Oberbayern,2020-04-09T10:00:00+02:00,372,13
+Amberg Stadt,Oberpfalz,2020-04-09T10:00:00+02:00,45,2
+Amberg-Sulzbach,Oberpfalz,2020-04-09T10:00:00+02:00,226,3
+Ansbach,Mittelfranken,2020-04-09T10:00:00+02:00,320,4
+Ansbach Stadt,Mittelfranken,2020-04-09T10:00:00+02:00,69,1
+Aschaffenburg,Unterfranken,2020-04-09T10:00:00+02:00,296,15
+Aschaffenburg Stadt,Unterfranken,2020-04-09T10:00:00+02:00,84,1
+Augsburg,Schwaben,2020-04-09T10:00:00+02:00,294,1
+Augsburg Stadt,Schwaben,2020-04-09T10:00:00+02:00,279,6
+Bad Kissingen,Unterfranken,2020-04-09T10:00:00+02:00,151,3
+Bad Tölz-Wolfratshausen,Oberbayern,2020-04-09T10:00:00+02:00,317,4
+Bamberg,Oberfranken,2020-04-09T10:00:00+02:00,323,13
+Bamberg Stadt,Oberfranken,2020-04-09T10:00:00+02:00,122,2
+Bayreuth,Oberfranken,2020-04-09T10:00:00+02:00,248,4
+Bayreuth Stadt,Oberfranken,2020-04-09T10:00:00+02:00,130,3
+Berchtesgadener Land,Oberbayern,2020-04-09T10:00:00+02:00,188,3
+Cham,Oberpfalz,2020-04-09T10:00:00+02:00,323,7
+Coburg,Oberfranken,2020-04-09T10:00:00+02:00,95,1
+Coburg Stadt,Oberfranken,2020-04-09T10:00:00+02:00,36,0
+Dachau,Oberbayern,2020-04-09T10:00:00+02:00,534,5
+Deggendorf,Niederbayern,2020-04-09T10:00:00+02:00,173,4
+Dillingen an der Donau,Schwaben,2020-04-09T10:00:00+02:00,99,1
+Dingolfing-Landau,Niederbayern,2020-04-09T10:00:00+02:00,144,1
+Donau-Ries,Schwaben,2020-04-09T10:00:00+02:00,251,10
+Ebersberg,Oberbayern,2020-04-09T10:00:00+02:00,310,1
+Eichstätt,Oberbayern,2020-04-09T10:00:00+02:00,160,3
+Erding,Oberbayern,2020-04-09T10:00:00+02:00,464,5
+Erlangen Stadt,Mittelfranken,2020-04-09T10:00:00+02:00,129,1
+Erlangen-Höchstadt,Mittelfranken,2020-04-09T10:00:00+02:00,158,2
+Forchheim,Oberfranken,2020-04-09T10:00:00+02:00,154,2
+Freising,Oberbayern,2020-04-09T10:00:00+02:00,756,20
+Freyung-Grafenau,Niederbayern,2020-04-09T10:00:00+02:00,117,5
+Fürstenfeldbruck,Oberbayern,2020-04-09T10:00:00+02:00,594,15
+Fürth,Mittelfranken,2020-04-09T10:00:00+02:00,316,22
+Fürth Stadt,Mittelfranken,2020-04-09T10:00:00+02:00,204,10
+Garmisch-Partenkirchen,Oberbayern,2020-04-09T10:00:00+02:00,200,5
+Günzburg,Schwaben,2020-04-09T10:00:00+02:00,161,1
+Haßberge,Unterfranken,2020-04-09T10:00:00+02:00,94,0
+Hof,Oberfranken,2020-04-09T10:00:00+02:00,248,6
+Hof Stadt,Oberfranken,2020-04-09T10:00:00+02:00,66,1
+Ingolstadt Stadt,Oberbayern,2020-04-09T10:00:00+02:00,266,8
+Kaufbeuren Stadt,Schwaben,2020-04-09T10:00:00+02:00,69,2
+Kelheim,Niederbayern,2020-04-09T10:00:00+02:00,314,16
+Kempten Stadt,Schwaben,2020-04-09T10:00:00+02:00,66,5
+Kitzingen,Unterfranken,2020-04-09T10:00:00+02:00,77,0
+Kronach,Oberfranken,2020-04-09T10:00:00+02:00,77,0
+Kulmbach,Oberfranken,2020-04-09T10:00:00+02:00,125,4
+Landsberg am Lech,Oberbayern,2020-04-09T10:00:00+02:00,271,6
+Landshut,Niederbayern,2020-04-09T10:00:00+02:00,481,18
+Landshut Stadt,Niederbayern,2020-04-09T10:00:00+02:00,201,4
+Lichtenfels,Oberfranken,2020-04-09T10:00:00+02:00,141,1
+Lindau (Bodensee),Schwaben,2020-04-09T10:00:00+02:00,207,4
+Main-Spessart,Unterfranken,2020-04-09T10:00:00+02:00,118,2
+Memmingen Stadt,Schwaben,2020-04-09T10:00:00+02:00,40,0
+Miesbach,Oberbayern,2020-04-09T10:00:00+02:00,439,4
+Miltenberg,Unterfranken,2020-04-09T10:00:00+02:00,182,0
+Mühldorf am Inn,Oberbayern,2020-04-09T10:00:00+02:00,331,9
+München,Oberbayern,2020-04-09T10:00:00+02:00,988,9
+München Stadt,Oberbayern,2020-04-09T10:00:00+02:00,3699,11
+Neu-Ulm,Schwaben,2020-04-09T10:00:00+02:00,298,4
+Neuburg-Schrobenhausen,Oberbayern,2020-04-09T10:00:00+02:00,160,3
+Neumarkt in der Oberpfalz,Oberpfalz,2020-04-09T10:00:00+02:00,178,3
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-04-09T10:00:00+02:00,112,3
+Neustadt an der Waldnaab,Oberpfalz,2020-04-09T10:00:00+02:00,506,19
+Nürnberg Stadt,Mittelfranken,2020-04-09T10:00:00+02:00,578,5
+Nürnberger Land,Mittelfranken,2020-04-09T10:00:00+02:00,400,12
+Oberallgäu,Schwaben,2020-04-09T10:00:00+02:00,147,3
+Ostallgäu,Schwaben,2020-04-09T10:00:00+02:00,368,13
+Passau,Niederbayern,2020-04-09T10:00:00+02:00,311,9
+Passau Stadt,Niederbayern,2020-04-09T10:00:00+02:00,93,5
+Pfaffenhofen an der Ilm,Oberbayern,2020-04-09T10:00:00+02:00,247,6
+Regen,Niederbayern,2020-04-09T10:00:00+02:00,107,1
+Regensburg,Oberpfalz,2020-04-09T10:00:00+02:00,328,3
+Regensburg Stadt,Oberpfalz,2020-04-09T10:00:00+02:00,327,3
+Rhön-Grabfeld,Unterfranken,2020-04-09T10:00:00+02:00,97,0
+Rosenheim,Oberbayern,2020-04-09T10:00:00+02:00,1310,34
+Rosenheim Stadt,Oberbayern,2020-04-09T10:00:00+02:00,218,6
+Roth,Mittelfranken,2020-04-09T10:00:00+02:00,224,3
+Rottal-Inn,Niederbayern,2020-04-09T10:00:00+02:00,568,22
+Schwabach Stadt,Mittelfranken,2020-04-09T10:00:00+02:00,61,0
+Schwandorf,Oberpfalz,2020-04-09T10:00:00+02:00,297,8
+Schweinfurt,Unterfranken,2020-04-09T10:00:00+02:00,258,7
+Schweinfurt Stadt,Unterfranken,2020-04-09T10:00:00+02:00,97,9
+Starnberg,Oberbayern,2020-04-09T10:00:00+02:00,415,4
+Straubing Stadt,Niederbayern,2020-04-09T10:00:00+02:00,204,9
+Straubing-Bogen,Niederbayern,2020-04-09T10:00:00+02:00,274,9
+Tirschenreuth,Oberpfalz,2020-04-09T10:00:00+02:00,903,52
+Traunstein,Oberbayern,2020-04-09T10:00:00+02:00,573,15
+Unterallgäu,Schwaben,2020-04-09T10:00:00+02:00,213,4
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-04-09T10:00:00+02:00,171,5
+Weilheim-Schongau,Oberbayern,2020-04-09T10:00:00+02:00,304,1
+Weißenburg-Gunzenhausen,Mittelfranken,2020-04-09T10:00:00+02:00,186,3
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-04-09T10:00:00+02:00,469,18
+Würzburg,Unterfranken,2020-04-09T10:00:00+02:00,318,1
+Würzburg Stadt,Unterfranken,2020-04-09T10:00:00+02:00,383,34
