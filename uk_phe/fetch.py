@@ -324,6 +324,8 @@ for row in cr:
     for n in range(basecol, len(header)):
         # There is no consistent date for these numbers, but we assume there are published at the end of the day
         timestamp = datetime.datetime.strptime(header[n] + ' 23:59', '%m-%d-%y %H:%M').replace(tzinfo=datatz)
+        if header[n] == '04-09-20' and header[n] == header[n-1]:
+            timestamp += datetime.timedelta(days=1)
         confirmed = clean_num(row[n])
         if timestamp not in regdata:
             regdata[timestamp] = {}
