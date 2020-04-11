@@ -68,7 +68,7 @@ for feat in sorted(jd['features'], key=(lambda f: f['attributes']['Statistikdatu
         header = ['Area', 'Timestamp', 'Confirmed']
         cw.writerow(header)
         for area, count in sorted(areasum.items()):
-            cw.writerow([area, datatime.isoformat(), count])
+            cw.writerow([area.replace('_', ' '), datatime.isoformat(), count])
 
     parse.diff()
     if args.only_changed:
