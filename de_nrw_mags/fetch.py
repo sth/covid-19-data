@@ -68,13 +68,26 @@ with open(parse.parsedfile, 'w') as outf:
     rows = rows[1:-1]
 
     colnum = len(ths)
+    cn_deaths = None
+    cn_recovered = None
     if colnum == 2:
         cout.writerow(['Area', 'Date', 'Confirmed'])
     elif colnum == 3:
         assert('Todesfälle' in ths[2].get_text())
+        cn_deaths = 2
         cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths'])
     elif colnum == 4:
+        assert('Todesfälle' in ths[2].get_text())
         assert('Genesene' in ths[3].get_text())
+        cn_deaths = 2
+        cn_recovered = 3
+        cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths', 'Recovered'])
+    elif colnum == 5:
+        assert('Bestätigt' in ths[1].get_text())
+        assert('Todesfälle' in ths[3].get_text())
+        assert('Genesene' in ths[4].get_text())
+        cn_deaths = 3
+        cn_recovered = 4
         cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths', 'Recovered'])
     else:
         raise Exception("unknown table structure")
@@ -84,18 +97,16 @@ with open(parse.parsedfile, 'w') as outf:
         assert(len(tds) == len(ths))
         area = tds[0].get_text()
         confirmed = clean_num(tds[1].get_text())
-        if colnum > 2:
-            deceased = clean_num(tds[2].get_text())
-        if colnum > 3:
-            recovered = clean_num(tds[3].get_text())
-        if colnum == 2:
+        if cn_deaths is not None:
+            deceased = clean_num(tds[cn_deaths].get_text())
+        if cn_recovered is not None:
+            recovered = clean_num(tds[cn_recovered].get_text())
+        if cn_deaths is None:
             cout.writerow([area, parse.parsedtime.isoformat(), confirmed])
-        elif colnum == 3:
+        elif cn_recovered is None:
             cout.writerow([area, parse.parsedtime.isoformat(), confirmed, deceased])
-        elif colnum == 4:
-            cout.writerow([area, parse.parsedtime.isoformat(), confirmed, deceased, recovered])
         else:
-            raise Exception("internal error")
+            cout.writerow([area, parse.parsedtime.isoformat(), confirmed, deceased, recovered])
 parse.diff()
 
 if args.only_changed:
