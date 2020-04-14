@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-04-14T10:00:00+02:00,237,12
+Altötting,Oberbayern,2020-04-14T10:00:00+02:00,424,15
+Amberg Stadt,Oberpfalz,2020-04-14T10:00:00+02:00,55,2
+Amberg-Sulzbach,Oberpfalz,2020-04-14T10:00:00+02:00,329,8
+Ansbach,Mittelfranken,2020-04-14T10:00:00+02:00,365,4
+Ansbach Stadt,Mittelfranken,2020-04-14T10:00:00+02:00,76,2
+Aschaffenburg,Unterfranken,2020-04-14T10:00:00+02:00,369,16
+Aschaffenburg Stadt,Unterfranken,2020-04-14T10:00:00+02:00,90,1
+Augsburg,Schwaben,2020-04-14T10:00:00+02:00,321,3
+Augsburg Stadt,Schwaben,2020-04-14T10:00:00+02:00,295,7
+Bad Kissingen,Unterfranken,2020-04-14T10:00:00+02:00,175,5
+Bad Tölz-Wolfratshausen,Oberbayern,2020-04-14T10:00:00+02:00,352,5
+Bamberg,Oberfranken,2020-04-14T10:00:00+02:00,335,20
+Bamberg Stadt,Oberfranken,2020-04-14T10:00:00+02:00,131,3
+Bayreuth,Oberfranken,2020-04-14T10:00:00+02:00,289,6
+Bayreuth Stadt,Oberfranken,2020-04-14T10:00:00+02:00,145,4
+Berchtesgadener Land,Oberbayern,2020-04-14T10:00:00+02:00,209,3
+Cham,Oberpfalz,2020-04-14T10:00:00+02:00,343,10
+Coburg,Oberfranken,2020-04-14T10:00:00+02:00,136,1
+Coburg Stadt,Oberfranken,2020-04-14T10:00:00+02:00,40,0
+Dachau,Oberbayern,2020-04-14T10:00:00+02:00,626,13
+Deggendorf,Niederbayern,2020-04-14T10:00:00+02:00,198,6
+Dillingen an der Donau,Schwaben,2020-04-14T10:00:00+02:00,162,2
+Dingolfing-Landau,Niederbayern,2020-04-14T10:00:00+02:00,158,1
+Donau-Ries,Schwaben,2020-04-14T10:00:00+02:00,259,14
+Ebersberg,Oberbayern,2020-04-14T10:00:00+02:00,359,1
+Eichstätt,Oberbayern,2020-04-14T10:00:00+02:00,194,7
+Erding,Oberbayern,2020-04-14T10:00:00+02:00,504,6
+Erlangen Stadt,Mittelfranken,2020-04-14T10:00:00+02:00,163,1
+Erlangen-Höchstadt,Mittelfranken,2020-04-14T10:00:00+02:00,192,5
+Forchheim,Oberfranken,2020-04-14T10:00:00+02:00,172,2
+Freising,Oberbayern,2020-04-14T10:00:00+02:00,852,24
+Freyung-Grafenau,Niederbayern,2020-04-14T10:00:00+02:00,136,6
+Fürstenfeldbruck,Oberbayern,2020-04-14T10:00:00+02:00,652,15
+Fürth,Mittelfranken,2020-04-14T10:00:00+02:00,355,27
+Fürth Stadt,Mittelfranken,2020-04-14T10:00:00+02:00,231,11
+Garmisch-Partenkirchen,Oberbayern,2020-04-14T10:00:00+02:00,209,5
+Günzburg,Schwaben,2020-04-14T10:00:00+02:00,179,2
+Haßberge,Unterfranken,2020-04-14T10:00:00+02:00,107,1
+Hof,Oberfranken,2020-04-14T10:00:00+02:00,283,13
+Hof Stadt,Oberfranken,2020-04-14T10:00:00+02:00,85,1
+Ingolstadt Stadt,Oberbayern,2020-04-14T10:00:00+02:00,319,9
+Kaufbeuren Stadt,Schwaben,2020-04-14T10:00:00+02:00,79,3
+Kelheim,Niederbayern,2020-04-14T10:00:00+02:00,357,21
+Kempten Stadt,Schwaben,2020-04-14T10:00:00+02:00,90,5
+Kitzingen,Unterfranken,2020-04-14T10:00:00+02:00,84,0
+Kronach,Oberfranken,2020-04-14T10:00:00+02:00,93,1
+Kulmbach,Oberfranken,2020-04-14T10:00:00+02:00,157,6
+Landsberg am Lech,Oberbayern,2020-04-14T10:00:00+02:00,290,8
+Landshut,Niederbayern,2020-04-14T10:00:00+02:00,537,18
+Landshut Stadt,Niederbayern,2020-04-14T10:00:00+02:00,223,5
+Lichtenfels,Oberfranken,2020-04-14T10:00:00+02:00,156,1
+Lindau (Bodensee),Schwaben,2020-04-14T10:00:00+02:00,228,5
+Main-Spessart,Unterfranken,2020-04-14T10:00:00+02:00,140,3
+Memmingen Stadt,Schwaben,2020-04-14T10:00:00+02:00,45,0
+Miesbach,Oberbayern,2020-04-14T10:00:00+02:00,466,6
+Miltenberg,Unterfranken,2020-04-14T10:00:00+02:00,228,2
+Mühldorf am Inn,Oberbayern,2020-04-14T10:00:00+02:00,386,12
+München,Oberbayern,2020-04-14T10:00:00+02:00,1082,20
+München Stadt,Oberbayern,2020-04-14T10:00:00+02:00,4563,43
+Neu-Ulm,Schwaben,2020-04-14T10:00:00+02:00,330,7
+Neuburg-Schrobenhausen,Oberbayern,2020-04-14T10:00:00+02:00,197,3
+Neumarkt in der Oberpfalz,Oberpfalz,2020-04-14T10:00:00+02:00,239,4
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-04-14T10:00:00+02:00,150,3
+Neustadt an der Waldnaab,Oberpfalz,2020-04-14T10:00:00+02:00,578,23
+Nürnberg Stadt,Mittelfranken,2020-04-14T10:00:00+02:00,699,10
+Nürnberger Land,Mittelfranken,2020-04-14T10:00:00+02:00,471,13
+Oberallgäu,Schwaben,2020-04-14T10:00:00+02:00,153,4
+Ostallgäu,Schwaben,2020-04-14T10:00:00+02:00,441,20
+Passau,Niederbayern,2020-04-14T10:00:00+02:00,346,10
+Passau Stadt,Niederbayern,2020-04-14T10:00:00+02:00,110,10
+Pfaffenhofen an der Ilm,Oberbayern,2020-04-14T10:00:00+02:00,287,13
+Regen,Niederbayern,2020-04-14T10:00:00+02:00,124,1
+Regensburg,Oberpfalz,2020-04-14T10:00:00+02:00,355,3
+Regensburg Stadt,Oberpfalz,2020-04-14T10:00:00+02:00,352,3
+Rhön-Grabfeld,Unterfranken,2020-04-14T10:00:00+02:00,120,2
+Rosenheim,Oberbayern,2020-04-14T10:00:00+02:00,1555,42
+Rosenheim Stadt,Oberbayern,2020-04-14T10:00:00+02:00,282,7
+Roth,Mittelfranken,2020-04-14T10:00:00+02:00,251,5
+Rottal-Inn,Niederbayern,2020-04-14T10:00:00+02:00,638,32
+Schwabach Stadt,Mittelfranken,2020-04-14T10:00:00+02:00,66,0
+Schwandorf,Oberpfalz,2020-04-14T10:00:00+02:00,349,10
+Schweinfurt,Unterfranken,2020-04-14T10:00:00+02:00,346,7
+Schweinfurt Stadt,Unterfranken,2020-04-14T10:00:00+02:00,124,12
+Starnberg,Oberbayern,2020-04-14T10:00:00+02:00,453,4
+Straubing Stadt,Niederbayern,2020-04-14T10:00:00+02:00,232,12
+Straubing-Bogen,Niederbayern,2020-04-14T10:00:00+02:00,298,9
+Tirschenreuth,Oberpfalz,2020-04-14T10:00:00+02:00,987,64
+Traunstein,Oberbayern,2020-04-14T10:00:00+02:00,750,18
+Unterallgäu,Schwaben,2020-04-14T10:00:00+02:00,228,5
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-04-14T10:00:00+02:00,203,5
+Weilheim-Schongau,Oberbayern,2020-04-14T10:00:00+02:00,321,1
+Weißenburg-Gunzenhausen,Mittelfranken,2020-04-14T10:00:00+02:00,247,6
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-04-14T10:00:00+02:00,531,22
+Würzburg,Unterfranken,2020-04-14T10:00:00+02:00,355,2
+Würzburg Stadt,Unterfranken,2020-04-14T10:00:00+02:00,430,41
