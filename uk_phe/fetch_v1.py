@@ -11,14 +11,15 @@ fetchhelper.add_arguments(ap)
 args = ap.parse_args()
 
 import subprocess, datetime, re, csv, os, sys
+from bs4 import BeautifulSoup
 import dateutil.tz
 from dataclasses import dataclass
-import lxml.etree, json
 
 datatz = dateutil.tz.gettz('Europe/London')
 
-url_buckets = 'https://publicdashacc.blob.core.windows.net/publicdata?restype=container&comp=list'
-urlfmt_blob = 'https://c19pub.azureedge.net/%s'
+# Public Health England
+update = fetchhelper.Updater('https://fingertips.phe.org.uk/documents/Historic%20COVID-19%20Dashboard%20Data.xlsx', ext='xlsx')
+update.check_fetch(rawfile=args.rawfile, binary=True)
 
 regions = {
     'E06000001': ('Hartlepool', 'North East'),
@@ -112,7 +113,6 @@ regions = {
     'E08000035': ('Leeds', 'Yorkshire and The Humber'),
     'E08000036': ('Wakefield', 'Yorkshire and The Humber'),
     'E08000037': ('Gateshead', 'North East'),
-    'E09000001': ('City of London', 'London'),
     'E09000002': ('Barking and Dagenham', 'London'),
     'E09000003': ('Barnet', 'London'),
     'E09000004': ('Bexley', 'London'),
@@ -189,89 +189,151 @@ class CountryData:
     confirmed: int = None
     deaths: int = None
 
-
-if args.rawfile is not None:
-    args.rawfile = args.rawfile.split(',')
-else:
-    args.rawfile = [None, None]
-
 countrydata = {}
 
-update_buckets = fetchhelper.Updater(url_buckets, ext='buckets.xml')
-update_buckets.check_fetch(rawfile=args.rawfile[0])
+# sheet 4: confirmed per country
+csv_confirmed_country = subprocess.run(['xlsx2csv', '-s', '4', update.rawfile], capture_output=True, check=True, encoding='utf-8').stdout
+cr = csv.reader(csv_confirmed_country.split('\n'))
+skip = True
+header = None
+for row in cr:
+    if skip:
+        if row[0] == 'Area Code':
+            skip = False
+            assert(row[1] == 'Area Name')
+            header = row
+            continue
+        else:
+            continue
+    if row[1] == 'UK':
+        break
 
-xdoc = lxml.etree.fromstring(update_buckets.rawdata)
-newest_name = None
-newest_time = None
-for blob in xdoc.xpath('//Blob'):
-    name = blob.xpath('./Name')[0].text
-    modified = datetime.datetime.strptime(blob.xpath('./Properties/Last-Modified')[0].text, '%a, %d %b %Y %H:%M:%S %Z')
-    if newest_time is None or modified > newest_time:
-        newest_name = name
-        newest_time = modified
+    code = clean_label(row[0])
+    country = clean_label(row[1])
+    for n in range(2, len(header)):
+        # There is no consistent date for these numbers, but we assume there are published at the end of the day
+        timestamp = datetime.datetime.strptime(header[n] + ' 23:59', '%m-%d-%y %H:%M').replace(tzinfo=datatz)
+        confirmed = clean_num(row[n])
+        if timestamp not in countrydata:
+            countrydata[timestamp] = {}
+        tsdata = countrydata[timestamp]
+        assert(country not in tsdata)
+        tsdata[country] = CountryData(code, country, timestamp)
+        tsdata[country].confirmed = confirmed
 
-update_data = fetchhelper.Updater(urlfmt_blob % newest_name, ext='data.json')
-update_data.rawtime = update_buckets.rawtime
-update_data.check_fetch(rawfile=args.rawfile[1])
 
-jdat = json.loads(update_data.rawdata)
+# sheet 3: deaths per country
+# sheets 3 and 4 have completely different structure
+csv_deaths_country = subprocess.run(['xlsx2csv', '-s', '3', update.rawfile], capture_output=True, check=True, encoding='utf-8').stdout
+cr = csv.reader(csv_deaths_country.split('\n'))
+skip = True
+header = None
+for row in cr:
+    if skip:
+        if row[0] == 'Date':
+            skip = False
+            assert(row[1] == 'Deaths')
+            assert(row[2] == 'UK')
+            header = row
+            continue
+        else:
+            continue
+    if not row:
+        continue
+    if not row[0]:
+        continue
 
-datatime = datetime.datetime.fromisoformat(jdat['lastUpdatedAt'].rstrip('Z')).astimezone(datetime.timezone.utc)
+    # There is no consistent date for these numbers, but we assume there are published at the end of the day
+    timestamp = datetime.datetime.strptime(row[0] + ' 23:59', '%m-%d-%y %H:%M').replace(tzinfo=datatz)
+    for n in [3, 4, 5, 6]:
+        country = clean_label(header[n])
+        if row[n] == '':
+            continue
+        deaths = clean_num(row[n])
+        countrydata[timestamp][country].deaths = deaths
+
 parses = []
-parse = fetchhelper.ParseData(update_data, 'countries')
-parse.parsedtime = datatime
-with open(parse.parsedfile, 'w') as f:
-    cw = csv.writer(f)
-    header = ['Code', 'Country', 'Timestamp', 'Confirmed', 'Deaths']
-    cw.writerow(header)
-    for (code, data) in jdat['countries'].items():
-        name = data['name']['value']
-        confirmed = data['totalCases']['value']
-        deaths = data['deaths']['value']
-        cw.writerow([code, name, datatime, confirmed, deaths])
-parse.deploy_timestamp()
-parses.append(parse)
+for timestamp, tsdata in sorted(countrydata.items()):
+    parse = fetchhelper.ParseData(update, 'countries')
+    parse.parsedtime = timestamp
 
-parse = fetchhelper.ParseData(update_data, 'utla')
-parse.parsedtime = datatime
-with open(parse.parsedfile, 'w') as f:
-    cw = csv.writer(f)
-    header = ['Code', 'UTLA', 'Region', 'Timestamp', 'Confirmed']
-    cw.writerow(header)
-    for (code, data) in jdat['utlas'].items():
-        name = data['name']['value']
-        confirmed = data['totalCases']['value']
-        cw.writerow([code, name, regions[code][1], datatime, confirmed])
-parse.deploy_timestamp()
-parses.append(parse)
+    has_deaths = any(cdata.deaths is not None for cdata in tsdata.values())
 
-def make_daily(jd):
-    collect = {}
-    for (code, data) in jd.items():
-        # collection of historic data is less useful
-        # 
-        if 'dailyTotalConfirmedCases' in data:
-            for daydata in data['dailyTotalConfirmedCases']:
-                day = daydata['date']
-                value = daydata['value']
-                if day not in collect:
-                    collect[day] = {}
-                if code not in collect[day]:
-                    collect[day][code] = CountryData(code, name, None)
-                collect[day][code].confirmed = value
+    with open(parse.parsedfile, 'w') as f:
+        cw = csv.writer(f)
+        header = ['Code', 'Country', 'Timestamp', 'Confirmed']
+        if has_deaths:
+            header.append('Deaths')
+        cw.writerow(header)
+        for _, cdata in sorted(tsdata.items()):
+            row = [cdata.code, cdata.name, cdata.timestamp.isoformat(), cdata.confirmed]
+            if cdata.deaths is not None:
+                row.append(cdata.deaths)
+            cw.writerow(row)
 
-        if 'dailyTotalDeaths' in data:
-            for daydata in data['dailyTotalDeaths']:
-                day = daydata['date']
-                value = daydata['value']
-                if day not in collect:
-                    collect[day] = {}
-                if code not in collect[day]:
-                    collect[day][code] = CountryData(code, name, None)
-                collect[day][code].deaths = value
+    parse.deploy_timestamp()
+    parses.append(parse)
 
-    for day in collect:
-        for _, data in sorted(collect[day].items()):
-            print(data.name, data.code, day, data.confirmed, data.deaths)
+
+# sheet 6: cases per UTLA
+@dataclass
+class UTLAData:
+    code: str
+    utla: str
+    region: str
+    timestamp: datetime.datetime
+    confirmed: int = None
+
+csv_cases_utla = subprocess.run(['xlsx2csv', '-s', '6', update.rawfile], capture_output=True, check=True, encoding='utf-8').stdout
+cr = csv.reader(csv_cases_utla.split('\n'))
+regdata = {}
+skip = True
+basecol = 0
+for row in cr:
+    if not row:
+        continue
+    if skip:
+        if row[0] == 'Area Code':
+            skip = False
+            assert(row[1] == 'Area Name')
+            basecol = 2
+            if clean_label(row[2]) == 'NHS region' and clean_label(row[3]) == 'Region (Governement)':
+                basecol = 4
+            header = row
+            continue
+        else:
+            continue
+    if clean_label(row[1]) == 'England':
+        break
+    if clean_label(row[1]) == 'Unconfirmed':
+        continue
+
+    code = clean_label(row[0])
+    utla = clean_label(row[1])
+    region = regions[code][1]
+    for n in range(basecol, len(header)):
+        # There is no consistent date for these numbers, but we assume there are published at the end of the day
+        timestamp = datetime.datetime.strptime(header[n] + ' 23:59', '%m-%d-%y %H:%M').replace(tzinfo=datatz)
+        if header[n] == '04-09-20' and header[n] == header[n-1]:
+            timestamp += datetime.timedelta(days=1)
+        confirmed = clean_num(row[n])
+        if timestamp not in regdata:
+            regdata[timestamp] = {}
+        tsdata = regdata[timestamp]
+        assert(utla not in tsdata)
+        tsdata[utla] = UTLAData(code, utla, region, timestamp, confirmed=confirmed)
+
+for timestamp, tsdata in sorted(regdata.items()):
+    parse = fetchhelper.ParseData(update, 'utla')
+    parse.parsedtime = timestamp
+
+    with open(parse.parsedfile, 'w') as f:
+        cw = csv.writer(f)
+        cw.writerow(['Code', 'UTLA', 'Region', 'Timestamp', 'Confirmed'])
+        for _, rdata in sorted(tsdata.items()):
+            cw.writerow([rdata.code, rdata.utla, rdata.region, rdata.timestamp.isoformat(), rdata.confirmed])
+
+    parse.deploy_timestamp()
+    parses.append(parse)
 
 fetchhelper.git_commit(parses, args)
