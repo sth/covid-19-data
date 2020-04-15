@@ -20,10 +20,6 @@ datatz = dateutil.tz.gettz('Europe/London')
 # Public Health England
 update = fetchhelper.Updater('https://fingertips.phe.org.uk/documents/Historic%20COVID-19%20Dashboard%20Data.xlsx', ext='xlsx')
 update.check_fetch(rawfile=args.rawfile, binary=True)
-if args.only_changed:
-    if not update.raw_changed():
-        print("downloaded raw data unchanged")
-        exit(0)
 
 regions = {
     'E06000001': ('Hartlepool', 'North East'),
@@ -275,13 +271,7 @@ for timestamp, tsdata in sorted(countrydata.items()):
                 row.append(cdata.deaths)
             cw.writerow(row)
 
-    parse.diff()
-    if args.only_changed:
-        if not parse.parseddiff.changed:
-            print("parsed content \"%s\" unchanged" % parse.label)
-            continue
     parse.deploy_timestamp()
-    print("written %s" % parse.deployfile)
     parses.append(parse)
 
 
@@ -343,13 +333,7 @@ for timestamp, tsdata in sorted(regdata.items()):
         for _, rdata in sorted(tsdata.items()):
             cw.writerow([rdata.code, rdata.utla, rdata.region, rdata.timestamp.isoformat(), rdata.confirmed])
 
-    parse.diff()
-    if args.only_changed:
-        if not parse.parseddiff.changed:
-            print("parsed content \"%s\" unchanged" % parse.label)
-            continue
     parse.deploy_timestamp()
-    print("written %s" % parse.deployfile)
     parses.append(parse)
 
 fetchhelper.git_commit(parses, args)

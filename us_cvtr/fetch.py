@@ -22,13 +22,9 @@ datatz = dateutil.tz.gettz('America/New York')
 
 update = fetchhelper.Updater('https://covidtracking.com/api/states.csv', ext='csv')
 update.check_fetch(rawfile=args.rawfile)
-if args.only_changed:
-    if not update.raw_changed():
-        print("downloaded raw data unchanged")
-        exit(0)
 
 parse = fetchhelper.ParseData(update, 'data')
-parse.parsedtime = update.rawtime
+parse.parsedtime = None
 with open(update.rawfile) as inf:
     cr = csv.reader(inf)
     header = next(cr)
@@ -53,13 +49,9 @@ with open(update.rawfile) as inf:
             if not values[0]:
                 continue
             timestamp = datetime.strptime('2020 ' + values[1], '%Y %m/%d %H:%M').replace(tzinfo=datatz)
+            if parse.parsedtime is None or parse.parsedtime < timestamp:
+                parse.parsedtime = timestamp
             cw.writerow([values[0], timestamp, values[2] or '0', values[3] or '0'])
-
-parse.diff()
-if args.only_changed:
-    if not parse.parseddiff.changed:
-        print("parsed content \"%s\" unchanged" % parse.label)
-        exit(0)
 
 parse.deploy_timestamp()
 

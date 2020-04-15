@@ -145,10 +145,6 @@ datatz = dateutil.tz.gettz('Europe/Berlin')
 
 update = fetchhelper.Updater('https://www.lgl.bayern.de/gesundheit/infektionsschutz/infektionskrankheiten_a_z/coronavirus/karte_coronavirus/index.htm')
 update.check_fetch(rawfile=args.rawfile)
-if args.only_changed:
-    if not update.raw_changed():
-        print("downloaded raw data unchanged")
-        exit(0)
 
 # accidentally duplicated <tr> and other hrml errors
 update.rawdata = re.sub(r'<tr>\s*<tr>', r'<tr>', update.rawdata)
@@ -297,12 +293,7 @@ def parse_table(parse, html, kind, *, optional=False):
             cout.writerow(cols)
     parse.diff()
 
-    if args.only_changed:
-        if not parse.parseddiff.changed:
-            print("parsed content \"%s\" unchanged" % parse.label)
-            return
-
-    # It changed. If the current day is later than the contenttime we assume the
+    # If the current day is later than the contenttime we assume the
     # content time is a mistake and we adjust it to the current day.
     # (This problem has happend before)
     #if parse.update.rawtime.date() > parse.parsedtime.date():
@@ -311,7 +302,6 @@ def parse_table(parse, html, kind, *, optional=False):
     #        parse.parsedtime = parse.update.rawtime
 
     parse.deploy_timestamp()
-    print("written %s" % parse.deployfile)
 
 
 rparse = fetchhelper.ParseData(update, 'regierungsbezirk')

@@ -19,10 +19,6 @@ datatz = dateutil.tz.gettz('Europe/Stockholm')
 
 update = fetchhelper.Updater('https://services5.arcgis.com/fsYDFeRKu1hELJJs/arcgis/rest/services/FOHM_Covid_19_FME_1/FeatureServer/1/query?f=json&where=1%3d1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=Statistikdatum%20desc&outSR=102100&resultOffset=0&resultRecordCount=2000&cacheHint=true', ext='json')
 update.check_fetch(rawfile=args.rawfile)
-if args.only_changed:
-    if not update.raw_changed():
-        print("downloaded raw data unchanged")
-        exit(0)
 
 import json
 with open(update.rawfile) as f:
@@ -70,14 +66,7 @@ for feat in sorted(jd['features'], key=(lambda f: f['attributes']['Statistikdatu
         for area, count in sorted(areasum.items()):
             cw.writerow([area.replace('_', ' '), datatime.isoformat(), count])
 
-    parse.diff()
-    if args.only_changed:
-        if not parse.parseddiff.changed:
-            print("parsed content \"%s\" %s unchanged" % (parse.label, datatime.isoformat()))
-            continue
-
     parse.deploy_timestamp()
-    print("written %s" % parse.deployfile)
     parses.append(parse)
 
 fetchhelper.git_commit(parses, args)

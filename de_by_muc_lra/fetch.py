@@ -18,11 +18,6 @@ datatz = dateutil.tz.gettz('Europe/Berlin')
 
 update = fetchhelper.Updater('https://www.landkreis-muenchen.de/themen/verbraucherschutz-gesundheit/gesundheit/coronavirus/fallzahlen/')
 update.check_fetch(rawfile=args.rawfile)
-if args.only_changed:
-    if not update.raw_changed():
-        print("downloaded raw data unchanged")
-        exit(0)
-
 
 # accidentally duplicated <tr> and other hrml errors
 html = BeautifulSoup(update.rawdata, 'html.parser')
@@ -44,14 +39,7 @@ with open(parse.parsedfile, 'w') as outf:
     for row in rows:
         tds = row.find_all('td')
         cout.writerow((tds[0].get_text(), datatime.isoformat(), int(tds[1].get_text())))
-parse.diff()
-
-if args.only_changed:
-    if not parse.parseddiff.changed:
-        print("parsed content \"%s\" unchanged" % parse.label)
-        sys.exit(0)
 
 parse.deploy_timestamp()
-print("written %s" % parse.deployfile)
 
 fetchhelper.git_commit([parse], args)

@@ -19,10 +19,6 @@ datatz = dateutil.tz.gettz('Europe/Berlin')
 
 update = fetchhelper.Updater('https://www.mags.nrw/coronavirus-fallzahlen-nrw')
 update.check_fetch(rawfile=args.rawfile)
-if args.only_changed:
-    if not update.raw_changed():
-        print("downloaded raw data unchanged")
-        exit(0)
 
 html = BeautifulSoup(update.rawdata, 'html.parser')
 
@@ -107,14 +103,8 @@ with open(parse.parsedfile, 'w') as outf:
             cout.writerow([area, parse.parsedtime.isoformat(), confirmed, deceased])
         else:
             cout.writerow([area, parse.parsedtime.isoformat(), confirmed, deceased, recovered])
-parse.diff()
 
-if args.only_changed:
-    if not parse.parseddiff.changed:
-        print("parsed content \"%s\" unchanged" % parse.label)
-        exit(0)
 
 parse.deploy_timestamp()
-print("written %s" % parse.deployfile)
 
 fetchhelper.git_commit([parse], args)

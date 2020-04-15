@@ -18,10 +18,6 @@ datatz = dateutil.tz.gettz('Europe/Berlin')
 
 update = fetchhelper.Updater('https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html')
 update.check_fetch(rawfile=args.rawfile)
-if args.only_changed:
-    if not update.raw_changed():
-        print("downloaded raw data unchanged")
-        exit(0)
 
 html = BeautifulSoup(update.rawdata, 'html.parser')
 
@@ -65,18 +61,12 @@ for tab in header.parent.parent.select('table'):
             edeaths = clean_num(tds[4].get_text())
             cout.writerow([area, parse.parsedtime.isoformat(),
                 econfirmed, edeaths])
-    parse.diff()
     break
 else:
     print("couldn't find table %s" % parse.label, file=sys.stderr)
     exit(1)
 
-if args.only_changed:
-    if not parse.parseddiff.changed:
-        print("parsed content \"%s\" unchanged" % parse.label)
-        exit(0)
-
-# It changed. If the current day is later than the contenttime we assume the
+# If the current day is later than the contenttime we assume the
 # content time is a mistake and we adjust it to the current day.
 # (This problem has happend before)
 # Let's hope it doesn't happen again.
@@ -86,6 +76,5 @@ if args.only_changed:
 #        parse.parsedtime = parse.update.rawtime
 
 parse.deploy_timestamp()
-print("written %s" % parse.deployfile)
 
 fetchhelper.git_commit([parse], args)

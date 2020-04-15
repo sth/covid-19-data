@@ -47,14 +47,7 @@ with open(parse.parsedfile, 'w') as pf:
         area = row[0]
         values = [(int(v) if v else 0) for v in row[1:]]
         cpf.writerow([area] + values)
-parse.diff()
-
-if args.only_changed:
-    if not parse.parseddiff.changed:
-        print("parsed content \"%s\" unchanged" % parse.label)
-        exit(0)
 
 parse.deploy_combined()
-print("written %s" % parse.deployfile)
 
 fetchhelper.git_commit([parse], args)

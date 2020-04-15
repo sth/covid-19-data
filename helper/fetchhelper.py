@@ -103,10 +103,22 @@ def git_commit(parsedlist, args):
         return
     addfiles = []
     for parse in parsedlist:
-        if parse.deployfile is not None and parse.parseddiff.changed:
+        if parse.deployfile is not None:
             addfiles.append(parse.deployfile)
     if addfiles:
         subprocess.run(['git', 'add', *addfiles], check=True)
+        cmd = subprocess.run(['git', 'status', '--porcelain', *addfiles], capture_output=True, check=True)
+        modified = []
+        for line in cmd.stdout.split(b'\n'):
+            if not line:
+                continue
+            if line[0] in b'MARC':
+                modified = True
+                break
+        if not modified:
+            print("data unchanged")
+            return
+        subprocess.run(['git', 'status', *addfiles], check=True)
         subprocess.run(['git', 'commit', '-m', 'Update data', *addfiles], check=True)
         if args.git_push:
             subprocess.run(['git', 'push'], check=True)

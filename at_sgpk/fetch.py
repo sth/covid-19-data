@@ -22,10 +22,6 @@ datatz = dateutil.tz.gettz('Europe/Vienna')
 
 update = fetchhelper.Updater('https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html')
 update.check_fetch(rawfile=args.rawfile)
-if args.only_changed:
-    if not update.raw_changed():
-        print("downloaded raw data unchanged")
-        exit(0)
 
 html = BeautifulSoup(update.rawdata, 'html.parser')
 
@@ -48,12 +44,6 @@ def parse_counts(parse, base, lead):
             key = mop.group(1).strip()
             value = cleannum(mop.group(2))
             cout.writerow([key, parse.parsedtime.isoformat(), value])
-
-    parse.diff()
-    if args.only_changed:
-        if not parse.parseddiff.changed:
-            print("parsed content \"%s\" unchanged" % parse.label)
-            return
 
     parse.deploy_timestamp()
 
