@@ -90,3 +90,11 @@ def git_commit(parsedlist, args):
         if args.git_push:
             subprocess.run(['git', 'push'], check=True)
 
+def text_table(node):
+    rows = node.find_all('tr')
+    table = []
+    for row in rows:
+        tds = row.find_all(['th', 'td'])
+        table.append([td.get_text().strip() for td in tds])
+    return table
+
