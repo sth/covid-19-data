@@ -291,7 +291,6 @@ def parse_table(parse, html, kind, *, optional=False):
                 if deaths:
                     cols.append(deaths.get(lk, 0))
             cout.writerow(cols)
-    parse.diff()
 
     # If the current day is later than the contenttime we assume the
     # content time is a mistake and we adjust it to the current day.
