@@ -57,10 +57,10 @@ if tab is None:
 
 with open(parse.parsedfile, 'w') as outf:
     cout = csv.writer(outf)
-    rows = tab.find_all('tr')
-    ths = rows[0].find_all('th')
-    assert('Landkreis' in ths[0].get_text())
-    assert('Gesamt' in rows[-1].find('td').get_text())
+    rows = fetchhelper.text_table(tab)
+    ths = rows[0]
+    assert('Landkreis' in ths[0])
+    assert('Gesamt' in ''.join(rows[-1]))
     rows = rows[1:-1]
 
     colnum = len(ths)
@@ -70,28 +70,28 @@ with open(parse.parsedfile, 'w') as outf:
     if colnum == 2:
         cout.writerow(['Area', 'Date', 'Confirmed'])
     elif colnum == 3:
-        assert('Todesfälle' in ths[2].get_text())
+        assert('Todesfälle' in ths[2])
         cn_deaths = 2
         cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths'])
     elif colnum == 4:
-        assert('Todesfälle' in ths[2].get_text())
-        assert('Genesene' in ths[3].get_text())
+        assert('Todesfälle' in ths[2])
+        assert('Genesene' in ths[3])
         cn_deaths = 2
         cn_recovered = 3
         cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths', 'Recovered'])
     elif colnum == 5:
-        assert('Bestätigt' in ths[1].get_text())
-        assert('Todesfälle' in ths[3].get_text())
-        assert('Genesene' in ths[4].get_text())
+        assert('Bestätigt' in ths[1])
+        assert('Todesfälle' in ths[3])
+        assert('Genesene' in ths[4])
         cn_deaths = 3
         cn_recovered = 4
         cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths', 'Recovered'])
     elif colnum == 6:
-        assert('Bestätigt' in ths[1].get_text())
-        assert('Bestätigt' in ths[2].get_text() and 'IfSG' in ths[2].get_text())
-        assert('Todesfälle' in ths[3].get_text())
-        assert('Todesfälle' in ths[4].get_text() and 'IfSG' in ths[4].get_text())
-        assert('Genesene' in ths[5].get_text())
+        assert('Bestätigt' in ths[1])
+        assert('Bestätigt' in ths[2] and 'IfSG' in ths[2])
+        assert('Todesfälle' in ths[3])
+        assert('Todesfälle' in ths[4] and 'IfSG' in ths[4])
+        assert('Genesene' in ths[5])
         cn_deaths = 3
         cn_recovered = 5
         ifsg = True
@@ -99,18 +99,17 @@ with open(parse.parsedfile, 'w') as outf:
     else:
         raise Exception("unknown table structure")
 
-    for tr in rows:
-        tds = tr.find_all('td')
+    for tds in rows:
         assert(len(tds) == len(ths))
-        area = tds[0].get_text()
-        confirmed = clean_num(tds[1].get_text())
+        area = tds[0]
+        confirmed = clean_num(tds[1])
         if cn_deaths is not None:
-            deceased = clean_num(tds[cn_deaths].get_text())
+            deceased = clean_num(tds[cn_deaths])
         if cn_recovered is not None:
-            recovered = clean_num(tds[cn_recovered].get_text())
+            recovered = clean_num(tds[cn_recovered])
         if ifsg:
-            econfirmed = clean_num(tds[1+1].get_text())
-            edeceased = clean_num(tds[cn_deaths+1].get_text())
+            econfirmed = clean_num(tds[1+1])
+            edeceased = clean_num(tds[cn_deaths+1])
             cout.writerow([area, parse.parsedtime.isoformat(), confirmed, econfirmed, deceased, edeceased, recovered])
         elif cn_deaths is None:
             cout.writerow([area, parse.parsedtime.isoformat(), confirmed])
