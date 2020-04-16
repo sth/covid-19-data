@@ -66,6 +66,7 @@ with open(parse.parsedfile, 'w') as outf:
     colnum = len(ths)
     cn_deaths = None
     cn_recovered = None
+    ifsg = False
     if colnum == 2:
         cout.writerow(['Area', 'Date', 'Confirmed'])
     elif colnum == 3:
@@ -85,6 +86,16 @@ with open(parse.parsedfile, 'w') as outf:
         cn_deaths = 3
         cn_recovered = 4
         cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths', 'Recovered'])
+    elif colnum == 6:
+        assert('Bestätigt' in ths[1].get_text())
+        assert('Bestätigt' in ths[2].get_text() and 'IfSG' in ths[2].get_text())
+        assert('Todesfälle' in ths[3].get_text())
+        assert('Todesfälle' in ths[4].get_text() and 'IfSG' in ths[4].get_text())
+        assert('Genesene' in ths[5].get_text())
+        cn_deaths = 3
+        cn_recovered = 5
+        ifsg = True
+        cout.writerow(['Area', 'Date', 'Confirmed', 'EConfirmed', 'Deaths', 'EDeaths', 'Recovered'])
     else:
         raise Exception("unknown table structure")
 
@@ -97,7 +108,11 @@ with open(parse.parsedfile, 'w') as outf:
             deceased = clean_num(tds[cn_deaths].get_text())
         if cn_recovered is not None:
             recovered = clean_num(tds[cn_recovered].get_text())
-        if cn_deaths is None:
+        if ifsg:
+            econfirmed = clean_num(tds[1+1].get_text())
+            edeceased = clean_num(tds[cn_deaths+1].get_text())
+            cout.writerow([area, parse.parsedtime.isoformat(), confirmed, econfirmed, deceased, edeceased, recovered])
+        elif cn_deaths is None:
             cout.writerow([area, parse.parsedtime.isoformat(), confirmed])
         elif cn_recovered is None:
             cout.writerow([area, parse.parsedtime.isoformat(), confirmed, deceased])
