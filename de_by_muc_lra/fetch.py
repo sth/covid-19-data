@@ -29,16 +29,16 @@ mo = re.search(r'Stand: (\d\d.\d\d.\d\d\d\d, \d\d:\d\d) Uhr', txt)
 datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M').replace(tzinfo=datatz)
 
 title = html.find(text=re.compile('Fallzahlen Infizierte nach Gemeinden')).find_parent('h2')
-rows = title.find_next_sibling('table').find_all('tr')
+rows = fetchhelper.text_table(title.find_next_sibling('table'))
+
+assert(len(rows[0]) == 2)
 
 with open(parse.parsedfile, 'w') as outf:
     cout = csv.writer(outf)
     header = ('Kommune', 'Timestamp', 'Confirmed')
     cout.writerow(header)
-
-    for row in rows:
-        tds = row.find_all('td')
-        cout.writerow((tds[0].get_text(), datatime.isoformat(), int(tds[1].get_text())))
+    for tds in rows:
+        cout.writerow((tds[0], datatime.isoformat(), int(tds[1])))
 
 parse.deploy_timestamp()
 
