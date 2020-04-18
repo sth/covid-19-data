@@ -107,9 +107,12 @@ def parse_v2(parses, html):
 
     for i, tds in enumerate(trs):
         assert(len(ths) == len(tds))
-        mo = re.search(r'Stand (\d\d.\d\d.\d\d\d\d, \d\d:\d\d) Uhr', tds[0])
+        mo = re.search(r'Stand (\d\d.\d\d.\d\d\d\d), *(\d\d:\d\d) Uhr', tds[0])
+        if mo is None:
+            print("cannot parse date")
+            sys.exit(1)
         parse = fetchhelper.ParseData(update, labels[i])
-        datadate = parse.parsedtime = datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M').replace(tzinfo=datatz)
+        datadate = parse.parsedtime = datetime.strptime(mo.group(1) + ' ' + mo.group(2), '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
         with open(parse.parsedfile, 'w') as f:
             cw = csv.writer(f)
             cw.writerow(['Area', 'Date', 'Value'])
