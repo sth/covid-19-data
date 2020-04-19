@@ -96,6 +96,7 @@ def parse_v2(parses, html):
     areas = {
             'Bgld.': 'Burgenland',
             'Kt.': 'Kärnten',
+            'Ktn.': 'Kärnten',
             'NÖ': 'Niederösterreich',
             'OÖ': 'Oberösterreich',
             'Sbg.': 'Salzburg',
