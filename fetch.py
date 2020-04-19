@@ -8,6 +8,8 @@ for sub in os.listdir('.'):
         continue
     print("processing:", sub, flush=True)
     cp = subprocess.run(['./fetch.py'] + sys.argv[1:], cwd=sub)
+    if cp.returncode != 0:
+        print("failed:", sub, file=sys.stderr)
     failed = failed or (cp.returncode != 0)
 
 if failed:
