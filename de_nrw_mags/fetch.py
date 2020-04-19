@@ -42,13 +42,19 @@ txt = str(html.find(text=re.compile('Aktueller Stand:')))
 txt = clean_date(txt)
 mo = re.search(r'Aktueller Stand: (\d?\d\. \d\d \d\d\d\d, *\d\d[.:]\d\d) Uhr', txt)
 if mo is None:
-    print("Couldn't find date.", file=sys.stderr)
-    sys.exit(1)
+    # Let's see how this develops until tomorrow before using a generic solution
+    if 'Aktueller Stand: 19. 04 2020.' in txt:
+        print("Only date, no time")
+        parse.parsedtime = datetime(2020, 4, 19, 14, 0, 0, tzinfo=datatz)
+    else:
+        print("Couldn't find date.", file=sys.stderr)
+        sys.exit(1)
 
-try:
-    parse.parsedtime = datetime.strptime(mo.group(1), '%d. %m %Y, %H.%M').replace(tzinfo=datatz)
-except ValueError:
-    parse.parsedtime = datetime.strptime(mo.group(1), '%d. %m %Y, %H:%M').replace(tzinfo=datatz)
+if mo is not None:
+    try:
+        parse.parsedtime = datetime.strptime(mo.group(1), '%d. %m %Y, %H.%M').replace(tzinfo=datatz)
+    except ValueError:
+        parse.parsedtime = datetime.strptime(mo.group(1), '%d. %m %Y, %H:%M').replace(tzinfo=datatz)
 
 tab = header.find_parent('table')
 if tab is None:
