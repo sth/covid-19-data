@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-04-20T10:00:00+02:00,264,16
+Altötting,Oberbayern,2020-04-20T10:00:00+02:00,532,22
+Amberg Stadt,Oberpfalz,2020-04-20T10:00:00+02:00,60,3
+Amberg-Sulzbach,Oberpfalz,2020-04-20T10:00:00+02:00,375,20
+Ansbach,Mittelfranken,2020-04-20T10:00:00+02:00,447,6
+Ansbach Stadt,Mittelfranken,2020-04-20T10:00:00+02:00,89,4
+Aschaffenburg,Unterfranken,2020-04-20T10:00:00+02:00,438,20
+Aschaffenburg Stadt,Unterfranken,2020-04-20T10:00:00+02:00,99,1
+Augsburg,Schwaben,2020-04-20T10:00:00+02:00,337,4
+Augsburg Stadt,Schwaben,2020-04-20T10:00:00+02:00,345,9
+Bad Kissingen,Unterfranken,2020-04-20T10:00:00+02:00,211,8
+Bad Tölz-Wolfratshausen,Oberbayern,2020-04-20T10:00:00+02:00,381,6
+Bamberg,Oberfranken,2020-04-20T10:00:00+02:00,366,27
+Bamberg Stadt,Oberfranken,2020-04-20T10:00:00+02:00,171,11
+Bayreuth,Oberfranken,2020-04-20T10:00:00+02:00,355,7
+Bayreuth Stadt,Oberfranken,2020-04-20T10:00:00+02:00,165,4
+Berchtesgadener Land,Oberbayern,2020-04-20T10:00:00+02:00,249,9
+Cham,Oberpfalz,2020-04-20T10:00:00+02:00,370,14
+Coburg,Oberfranken,2020-04-20T10:00:00+02:00,154,4
+Coburg Stadt,Oberfranken,2020-04-20T10:00:00+02:00,48,0
+Dachau,Oberbayern,2020-04-20T10:00:00+02:00,741,14
+Deggendorf,Niederbayern,2020-04-20T10:00:00+02:00,229,8
+Dillingen an der Donau,Schwaben,2020-04-20T10:00:00+02:00,200,4
+Dingolfing-Landau,Niederbayern,2020-04-20T10:00:00+02:00,172,2
+Donau-Ries,Schwaben,2020-04-20T10:00:00+02:00,291,18
+Ebersberg,Oberbayern,2020-04-20T10:00:00+02:00,394,2
+Eichstätt,Oberbayern,2020-04-20T10:00:00+02:00,232,10
+Erding,Oberbayern,2020-04-20T10:00:00+02:00,543,7
+Erlangen Stadt,Mittelfranken,2020-04-20T10:00:00+02:00,210,4
+Erlangen-Höchstadt,Mittelfranken,2020-04-20T10:00:00+02:00,190,6
+Forchheim,Oberfranken,2020-04-20T10:00:00+02:00,193,2
+Freising,Oberbayern,2020-04-20T10:00:00+02:00,903,32
+Freyung-Grafenau,Niederbayern,2020-04-20T10:00:00+02:00,152,8
+Fürstenfeldbruck,Oberbayern,2020-04-20T10:00:00+02:00,702,22
+Fürth,Mittelfranken,2020-04-20T10:00:00+02:00,411,37
+Fürth Stadt,Mittelfranken,2020-04-20T10:00:00+02:00,270,20
+Garmisch-Partenkirchen,Oberbayern,2020-04-20T10:00:00+02:00,240,9
+Günzburg,Schwaben,2020-04-20T10:00:00+02:00,204,2
+Haßberge,Unterfranken,2020-04-20T10:00:00+02:00,133,2
+Hof,Oberfranken,2020-04-20T10:00:00+02:00,331,17
+Hof Stadt,Oberfranken,2020-04-20T10:00:00+02:00,94,2
+Ingolstadt Stadt,Oberbayern,2020-04-20T10:00:00+02:00,357,21
+Kaufbeuren Stadt,Schwaben,2020-04-20T10:00:00+02:00,94,3
+Kelheim,Niederbayern,2020-04-20T10:00:00+02:00,395,27
+Kempten Stadt,Schwaben,2020-04-20T10:00:00+02:00,98,7
+Kitzingen,Unterfranken,2020-04-20T10:00:00+02:00,94,1
+Kronach,Oberfranken,2020-04-20T10:00:00+02:00,113,1
+Kulmbach,Oberfranken,2020-04-20T10:00:00+02:00,173,6
+Landsberg am Lech,Oberbayern,2020-04-20T10:00:00+02:00,303,9
+Landshut,Niederbayern,2020-04-20T10:00:00+02:00,606,22
+Landshut Stadt,Niederbayern,2020-04-20T10:00:00+02:00,249,5
+Lichtenfels,Oberfranken,2020-04-20T10:00:00+02:00,184,1
+Lindau (Bodensee),Schwaben,2020-04-20T10:00:00+02:00,235,5
+Main-Spessart,Unterfranken,2020-04-20T10:00:00+02:00,149,5
+Memmingen Stadt,Schwaben,2020-04-20T10:00:00+02:00,47,0
+Miesbach,Oberbayern,2020-04-20T10:00:00+02:00,484,7
+Miltenberg,Unterfranken,2020-04-20T10:00:00+02:00,244,3
+Mühldorf am Inn,Oberbayern,2020-04-20T10:00:00+02:00,435,14
+München,Oberbayern,2020-04-20T10:00:00+02:00,1166,20
+München Stadt,Oberbayern,2020-04-20T10:00:00+02:00,5106,70
+Neu-Ulm,Schwaben,2020-04-20T10:00:00+02:00,393,14
+Neuburg-Schrobenhausen,Oberbayern,2020-04-20T10:00:00+02:00,221,9
+Neumarkt in der Oberpfalz,Oberpfalz,2020-04-20T10:00:00+02:00,269,5
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-04-20T10:00:00+02:00,211,7
+Neustadt an der Waldnaab,Oberpfalz,2020-04-20T10:00:00+02:00,677,32
+Nürnberg Stadt,Mittelfranken,2020-04-20T10:00:00+02:00,825,16
+Nürnberger Land,Mittelfranken,2020-04-20T10:00:00+02:00,546,24
+Oberallgäu,Schwaben,2020-04-20T10:00:00+02:00,162,6
+Ostallgäu,Schwaben,2020-04-20T10:00:00+02:00,484,22
+Passau,Niederbayern,2020-04-20T10:00:00+02:00,405,16
+Passau Stadt,Niederbayern,2020-04-20T10:00:00+02:00,117,15
+Pfaffenhofen an der Ilm,Oberbayern,2020-04-20T10:00:00+02:00,307,14
+Regen,Niederbayern,2020-04-20T10:00:00+02:00,143,2
+Regensburg,Oberpfalz,2020-04-20T10:00:00+02:00,392,3
+Regensburg Stadt,Oberpfalz,2020-04-20T10:00:00+02:00,385,3
+Rhön-Grabfeld,Unterfranken,2020-04-20T10:00:00+02:00,140,3
+Rosenheim,Oberbayern,2020-04-20T10:00:00+02:00,1798,90
+Rosenheim Stadt,Oberbayern,2020-04-20T10:00:00+02:00,348,13
+Roth,Mittelfranken,2020-04-20T10:00:00+02:00,267,7
+Rottal-Inn,Niederbayern,2020-04-20T10:00:00+02:00,681,37
+Schwabach Stadt,Mittelfranken,2020-04-20T10:00:00+02:00,72,1
+Schwandorf,Oberpfalz,2020-04-20T10:00:00+02:00,414,11
+Schweinfurt,Unterfranken,2020-04-20T10:00:00+02:00,389,16
+Schweinfurt Stadt,Unterfranken,2020-04-20T10:00:00+02:00,137,17
+Starnberg,Oberbayern,2020-04-20T10:00:00+02:00,484,8
+Straubing Stadt,Niederbayern,2020-04-20T10:00:00+02:00,300,22
+Straubing-Bogen,Niederbayern,2020-04-20T10:00:00+02:00,355,12
+Tirschenreuth,Oberpfalz,2020-04-20T10:00:00+02:00,1065,92
+Traunstein,Oberbayern,2020-04-20T10:00:00+02:00,904,30
+Unterallgäu,Schwaben,2020-04-20T10:00:00+02:00,250,7
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-04-20T10:00:00+02:00,252,5
+Weilheim-Schongau,Oberbayern,2020-04-20T10:00:00+02:00,336,1
+Weißenburg-Gunzenhausen,Mittelfranken,2020-04-20T10:00:00+02:00,262,9
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-04-20T10:00:00+02:00,577,30
+Würzburg,Unterfranken,2020-04-20T10:00:00+02:00,388,5
+Würzburg Stadt,Unterfranken,2020-04-20T10:00:00+02:00,453,45
