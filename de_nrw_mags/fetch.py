@@ -29,6 +29,8 @@ def clean_num(numstr):
     return int(numstr.replace('.', '').strip())
 
 header = html.find(text="Bestätigte Fälle")
+if header is None:
+    header = html.find(text="Bestätigte Fälle (IfSG)")
 
 parse = fetchhelper.ParseData(update, 'data')
 
@@ -42,15 +44,13 @@ txt = str(html.find(text=re.compile('Aktueller Stand:')))
 txt = clean_date(txt)
 mo = re.search(r'Aktueller Stand: (\d?\d\. \d\d \d\d\d\d, *\d\d[.:]\d\d) Uhr', txt)
 if mo is None:
-    # Let's see how this develops until tomorrow before using a generic solution
-    if 'Aktueller Stand: 19. 04 2020.' in txt:
-        print("Only date, no time")
-        parse.parsedtime = datetime(2020, 4, 19, 14, 0, 0, tzinfo=datatz)
-    else:
+    mo = re.search(r'Aktueller Stand: (\d?\d\. \d\d \d\d\d\d).', txt)
+    if mo is None:
         print("Couldn't find date.", file=sys.stderr)
         sys.exit(1)
-
-if mo is not None:
+    # We guess it's in the morning, since official numbers have to be reported until 09:00
+    parse.parsedtime = datetime.strptime(mo.group(1), '%d. %m %Y').replace(hour=3, minute=30, tzinfo=datatz)
+else:
     try:
         parse.parsedtime = datetime.strptime(mo.group(1), '%d. %m %Y, %H.%M').replace(tzinfo=datatz)
     except ValueError:
