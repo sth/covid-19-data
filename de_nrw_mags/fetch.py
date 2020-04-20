@@ -84,7 +84,11 @@ with open(parse.parsedfile, 'w') as outf:
         assert('Genesene' in ths[3])
         cn_deaths = 2
         cn_recovered = 3
-        cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths', 'Recovered'])
+        if 'IfSG' in ths[1]:
+            assert('IfSG' in ths[2])
+            cout.writerow(['Area', 'Date', 'EConfirmed', 'EDeaths', 'Recovered'])
+        else:
+            cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths', 'Recovered'])
     elif colnum == 5:
         assert('Bestätigt' in ths[1])
         assert('Todesfälle' in ths[3])
