@@ -1,4 +1,4 @@
-Area,Date,Confirmed,Deaths,Recovered
+Area,Date,EConfirmed,EDeaths,Recovered
 Aachen & Städteregion Aachen,2020-04-20T03:30:00+02:00,1632,63,1201
 Bielefeld,2020-04-20T03:30:00+02:00,338,2,214
 Bochum,2020-04-20T03:30:00+02:00,400,15,290
