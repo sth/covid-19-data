@@ -28,7 +28,10 @@ txt = str(html.find(text=re.compile('Landkreis-Statistik ')))
 mo = re.search(r'Landkreis-Statistik(?: nach Gemeinden)? für den (\d\d.\d\d.\d\d\d\d)', txt)
 datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1) + ' 21:30', '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
 
-table = html.find(text=re.compile('Sars-CoV-2 Infizierte')).find_parent('table')
+for node in html.find_all(text=re.compile('Sars-CoV-2 Infizierte')):
+    table = node.find_parent('table')
+    if table is not None:
+        break
 rows = fetchhelper.text_table(table)
 
 ths = rows[0]
