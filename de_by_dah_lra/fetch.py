@@ -33,7 +33,7 @@ rows = fetchhelper.text_table(table)
 
 ths = rows[0]
 assert('Infizierte' in ths[1])
-assert('Geheilt' in ths[2])
+assert('Geheilt' in ths[2] or 'geheilt' in ths[2])
 
 with open(parse.parsedfile, 'w') as outf:
     cout = csv.writer(outf)
