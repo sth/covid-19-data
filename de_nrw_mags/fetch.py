@@ -116,7 +116,10 @@ with open(parse.parsedfile, 'w') as outf:
         if cn_deaths is not None:
             deceased = clean_num(tds[cn_deaths])
         if cn_recovered is not None:
-            recovered = clean_num(tds[cn_recovered])
+            if tds[cn_recovered] == 'k. A.':
+                recovered = None
+            else:
+                recovered = clean_num(tds[cn_recovered])
         if ifsg:
             econfirmed = clean_num(tds[1+1])
             edeceased = clean_num(tds[cn_deaths+1])
