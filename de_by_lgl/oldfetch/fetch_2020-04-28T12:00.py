@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import sys, os.path
-sys.path.append(os.path.join(os.path.dirname(__file__), '../helper'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../helper'))
 
 import argparse
 import fetchhelper
@@ -9,8 +9,6 @@ import fetchhelper
 ap = argparse.ArgumentParser()
 fetchhelper.add_arguments(ap)
 args = ap.parse_args()
-
-fetchhelper.check_oldfetch(args)
 
 import subprocess, datetime, re, csv, os, sys
 from bs4 import BeautifulSoup
@@ -153,22 +151,16 @@ update.rawdata = re.sub(r'<tr>\s*<tr>', r'<tr>', update.rawdata)
 update.rawdata = re.sub(r'(<th><span>[^<>]*</span>)</(td|div)>', r'\1</th>', update.rawdata)
 html = BeautifulSoup(update.rawdata, 'html.parser')
 
-datenode = html.find('script', text=re.compile(r'var publikationsDatum = '))
-if datenode is None:
-    print("Cannot find publish date", file=sys.stderr)
-    sys.exit(1)
-datemo = re.search(r'"(\d\d.\d\d.\d\d\d\d)"', datenode.get_text())
-if datemo is None:
-    print("Cannot find publish date", file=sys.stderr)
-    sys.exit(2)
-publishdate = datetime.datetime.strptime(datemo.group(1), '%d.%m.%Y').date()
-
 def get_labeltime(text):
-    mo = re.search(r'Stand:.*\);, (\d\d:\d\d) Uhr', text)
+    mo = re.search(r'Stand:? (\S* \S*)', text)
     if mo is None:
         return None
-    stime = datetime.datetime.strptime(mo.group(1), '%H:%M').time()
-    return datetime.datetime.combine(publishdate, stime, tzinfo=datatz)
+    try:
+        return datetime.datetime.strptime(mo.group(1), '%d.%m.%Y %H:%M') \
+            .replace(tzinfo=datatz)
+    except ValueError:
+        return datetime.datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M') \
+            .replace(tzinfo=datatz)
 
 for p in html.select('.bildunterschrift'):
     text = p.get_text()
