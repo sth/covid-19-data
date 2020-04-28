@@ -88,7 +88,14 @@ def git_commit(parsedlist, args):
         subprocess.run(['git', 'status', *addfiles], check=True)
         subprocess.run(['git', 'commit', '-m', 'Update data', *addfiles], check=True)
         if args.git_push:
-            subprocess.run(['git', 'push'], check=True)
+            # All parts of gits command line interface are a mess.
+            # Git insists on writing updated refs to stderr, making them look like errors.
+            cmd = subprocess.run(['git', 'push', ], capture_output=True, check=False)
+            sys.stdout.buffer.write(cmd.stdout)
+            if cmd.returncode != 0:
+                sys.stdout.buffer.write(cmd.stderr)
+            else:
+                sys.stderr.buffer.write(cmd.stderr)
 
 def text_table(node):
     rows = node.find_all('tr')
