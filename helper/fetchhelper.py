@@ -121,4 +121,13 @@ def check_oldfetch(args):
             # Use this script
             fuse = os.path.join('oldfetch', fold)
             print("using old fetch script", fuse, flush=True)
-            os.execv(fuse, sys.argv)
+            # Add helper fir to path
+            helperpath = os.path.dirname(__file__)
+            chenv = dict(os.environ)
+            pp = chenv.get('PYTHONPATH', None)
+            if pp is None:
+                pp = helperpath
+            else:
+                pp += os.pathsep + helperpath
+            chenv['PYTHONPATH'] = pp
+            os.execve(fuse, sys.argv, chenv)
