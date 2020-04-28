@@ -1,4 +1,4 @@
-import os, re, datetime, subprocess, glob, shutil
+import os, re, sys, datetime, subprocess, glob, shutil
 from dataclasses import dataclass
 
 def add_arguments(ap):
@@ -98,3 +98,27 @@ def text_table(node):
         table.append([td.get_text().strip() for td in tds])
     return table
 
+re_ts = re.compile(r'\d\d\d\d-\d\d-\d\dT\d\d:\d\d(?::\d\d\.\d*)?')
+def check_oldfetch(args):
+    if not args.rawfile:
+        return
+    if not os.path.exists('oldfetch'):
+        return
+
+    mo = re_ts.search(args.rawfile)
+    if mo is None:
+        return
+    rawts = mo.group()
+
+    oldfetch = sorted(fn for fn in os.listdir('oldfetch') if fn.startswith('fetch_') and fn.endswith('.py'))
+    for fold in oldfetch:
+        mo = re_ts.search(fold)
+        if mo is None:
+            print("cannot determine date of old fetch script:", fold, file=sys.stderr)
+            continue
+        fts = mo.group()
+        if fts > rawts:
+            # Use this script
+            fuse = os.path.join('oldfetch', fold)
+            print("using old fetch script", fuse, flush=True)
+            os.execv(fuse, sys.argv)
