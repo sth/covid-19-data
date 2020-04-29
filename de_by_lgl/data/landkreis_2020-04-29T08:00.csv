@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-04-29T10:00:00+02:00,280,20
+Altötting,Oberbayern,2020-04-29T10:00:00+02:00,577,32
+Amberg Stadt,Oberpfalz,2020-04-29T10:00:00+02:00,67,3
+Amberg-Sulzbach,Oberpfalz,2020-04-29T10:00:00+02:00,444,41
+Ansbach,Mittelfranken,2020-04-29T10:00:00+02:00,518,13
+Ansbach Stadt,Mittelfranken,2020-04-29T10:00:00+02:00,115,6
+Aschaffenburg,Unterfranken,2020-04-29T10:00:00+02:00,478,27
+Aschaffenburg Stadt,Unterfranken,2020-04-29T10:00:00+02:00,108,1
+Augsburg,Schwaben,2020-04-29T10:00:00+02:00,361,6
+Augsburg Stadt,Schwaben,2020-04-29T10:00:00+02:00,366,9
+Bad Kissingen,Unterfranken,2020-04-29T10:00:00+02:00,228,16
+Bad Tölz-Wolfratshausen,Oberbayern,2020-04-29T10:00:00+02:00,403,9
+Bamberg,Oberfranken,2020-04-29T10:00:00+02:00,384,34
+Bamberg Stadt,Oberfranken,2020-04-29T10:00:00+02:00,182,15
+Bayreuth,Oberfranken,2020-04-29T10:00:00+02:00,384,10
+Bayreuth Stadt,Oberfranken,2020-04-29T10:00:00+02:00,188,7
+Berchtesgadener Land,Oberbayern,2020-04-29T10:00:00+02:00,268,14
+Cham,Oberpfalz,2020-04-29T10:00:00+02:00,394,15
+Coburg,Oberfranken,2020-04-29T10:00:00+02:00,185,7
+Coburg Stadt,Oberfranken,2020-04-29T10:00:00+02:00,52,0
+Dachau,Oberbayern,2020-04-29T10:00:00+02:00,841,20
+Deggendorf,Niederbayern,2020-04-29T10:00:00+02:00,262,10
+Dillingen an der Donau,Schwaben,2020-04-29T10:00:00+02:00,231,18
+Dingolfing-Landau,Niederbayern,2020-04-29T10:00:00+02:00,189,4
+Donau-Ries,Schwaben,2020-04-29T10:00:00+02:00,330,22
+Ebersberg,Oberbayern,2020-04-29T10:00:00+02:00,444,5
+Eichstätt,Oberbayern,2020-04-29T10:00:00+02:00,263,16
+Erding,Oberbayern,2020-04-29T10:00:00+02:00,582,8
+Erlangen Stadt,Mittelfranken,2020-04-29T10:00:00+02:00,234,6
+Erlangen-Höchstadt,Mittelfranken,2020-04-29T10:00:00+02:00,201,6
+Forchheim,Oberfranken,2020-04-29T10:00:00+02:00,196,4
+Freising,Oberbayern,2020-04-29T10:00:00+02:00,939,33
+Freyung-Grafenau,Niederbayern,2020-04-29T10:00:00+02:00,176,11
+Fürstenfeldbruck,Oberbayern,2020-04-29T10:00:00+02:00,793,31
+Fürth,Mittelfranken,2020-04-29T10:00:00+02:00,460,49
+Fürth Stadt,Mittelfranken,2020-04-29T10:00:00+02:00,328,28
+Garmisch-Partenkirchen,Oberbayern,2020-04-29T10:00:00+02:00,260,15
+Günzburg,Schwaben,2020-04-29T10:00:00+02:00,216,2
+Haßberge,Unterfranken,2020-04-29T10:00:00+02:00,149,4
+Hof,Oberfranken,2020-04-29T10:00:00+02:00,382,23
+Hof Stadt,Oberfranken,2020-04-29T10:00:00+02:00,101,4
+Ingolstadt Stadt,Oberbayern,2020-04-29T10:00:00+02:00,406,29
+Kaufbeuren Stadt,Schwaben,2020-04-29T10:00:00+02:00,101,3
+Kelheim,Niederbayern,2020-04-29T10:00:00+02:00,428,32
+Kempten Stadt,Schwaben,2020-04-29T10:00:00+02:00,102,9
+Kitzingen,Unterfranken,2020-04-29T10:00:00+02:00,170,3
+Kronach,Oberfranken,2020-04-29T10:00:00+02:00,133,3
+Kulmbach,Oberfranken,2020-04-29T10:00:00+02:00,200,11
+Landsberg am Lech,Oberbayern,2020-04-29T10:00:00+02:00,330,10
+Landshut,Niederbayern,2020-04-29T10:00:00+02:00,641,26
+Landshut Stadt,Niederbayern,2020-04-29T10:00:00+02:00,262,9
+Lichtenfels,Oberfranken,2020-04-29T10:00:00+02:00,194,2
+Lindau (Bodensee),Schwaben,2020-04-29T10:00:00+02:00,239,6
+Main-Spessart,Unterfranken,2020-04-29T10:00:00+02:00,146,6
+Memmingen Stadt,Schwaben,2020-04-29T10:00:00+02:00,49,0
+Miesbach,Oberbayern,2020-04-29T10:00:00+02:00,509,7
+Miltenberg,Unterfranken,2020-04-29T10:00:00+02:00,268,4
+Mühldorf am Inn,Oberbayern,2020-04-29T10:00:00+02:00,476,20
+München,Oberbayern,2020-04-29T10:00:00+02:00,1264,33
+München Stadt,Oberbayern,2020-04-29T10:00:00+02:00,5716,112
+Neu-Ulm,Schwaben,2020-04-29T10:00:00+02:00,405,18
+Neuburg-Schrobenhausen,Oberbayern,2020-04-29T10:00:00+02:00,263,12
+Neumarkt in der Oberpfalz,Oberpfalz,2020-04-29T10:00:00+02:00,341,12
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-04-29T10:00:00+02:00,218,6
+Neustadt an der Waldnaab,Oberpfalz,2020-04-29T10:00:00+02:00,761,46
+Nürnberg Stadt,Mittelfranken,2020-04-29T10:00:00+02:00,912,26
+Nürnberger Land,Mittelfranken,2020-04-29T10:00:00+02:00,591,34
+Oberallgäu,Schwaben,2020-04-29T10:00:00+02:00,167,7
+Ostallgäu,Schwaben,2020-04-29T10:00:00+02:00,497,32
+Passau,Niederbayern,2020-04-29T10:00:00+02:00,505,18
+Passau Stadt,Niederbayern,2020-04-29T10:00:00+02:00,123,16
+Pfaffenhofen an der Ilm,Oberbayern,2020-04-29T10:00:00+02:00,332,17
+Regen,Niederbayern,2020-04-29T10:00:00+02:00,161,4
+Regensburg,Oberpfalz,2020-04-29T10:00:00+02:00,407,7
+Regensburg Stadt,Oberpfalz,2020-04-29T10:00:00+02:00,425,5
+Rhön-Grabfeld,Unterfranken,2020-04-29T10:00:00+02:00,184,4
+Rosenheim,Oberbayern,2020-04-29T10:00:00+02:00,2003,120
+Rosenheim Stadt,Oberbayern,2020-04-29T10:00:00+02:00,427,18
+Roth,Mittelfranken,2020-04-29T10:00:00+02:00,280,7
+Rottal-Inn,Niederbayern,2020-04-29T10:00:00+02:00,697,39
+Schwabach Stadt,Mittelfranken,2020-04-29T10:00:00+02:00,74,1
+Schwandorf,Oberpfalz,2020-04-29T10:00:00+02:00,432,14
+Schweinfurt,Unterfranken,2020-04-29T10:00:00+02:00,449,21
+Schweinfurt Stadt,Unterfranken,2020-04-29T10:00:00+02:00,160,17
+Starnberg,Oberbayern,2020-04-29T10:00:00+02:00,503,9
+Straubing Stadt,Niederbayern,2020-04-29T10:00:00+02:00,368,33
+Straubing-Bogen,Niederbayern,2020-04-29T10:00:00+02:00,446,15
+Tirschenreuth,Oberpfalz,2020-04-29T10:00:00+02:00,1108,109
+Traunstein,Oberbayern,2020-04-29T10:00:00+02:00,1112,58
+Unterallgäu,Schwaben,2020-04-29T10:00:00+02:00,268,13
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-04-29T10:00:00+02:00,291,10
+Weilheim-Schongau,Oberbayern,2020-04-29T10:00:00+02:00,343,2
+Weißenburg-Gunzenhausen,Mittelfranken,2020-04-29T10:00:00+02:00,289,12
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-04-29T10:00:00+02:00,615,34
+Würzburg,Unterfranken,2020-04-29T10:00:00+02:00,404,6
+Würzburg Stadt,Unterfranken,2020-04-29T10:00:00+02:00,463,49
