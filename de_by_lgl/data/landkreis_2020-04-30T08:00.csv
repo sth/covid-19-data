@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-04-30T10:00:00+02:00,281,20
+Altötting,Oberbayern,2020-04-30T10:00:00+02:00,584,33
+Amberg Stadt,Oberpfalz,2020-04-30T10:00:00+02:00,67,3
+Amberg-Sulzbach,Oberpfalz,2020-04-30T10:00:00+02:00,446,42
+Ansbach,Mittelfranken,2020-04-30T10:00:00+02:00,535,16
+Ansbach Stadt,Mittelfranken,2020-04-30T10:00:00+02:00,119,7
+Aschaffenburg,Unterfranken,2020-04-30T10:00:00+02:00,485,27
+Aschaffenburg Stadt,Unterfranken,2020-04-30T10:00:00+02:00,108,1
+Augsburg,Schwaben,2020-04-30T10:00:00+02:00,361,6
+Augsburg Stadt,Schwaben,2020-04-30T10:00:00+02:00,369,9
+Bad Kissingen,Unterfranken,2020-04-30T10:00:00+02:00,228,16
+Bad Tölz-Wolfratshausen,Oberbayern,2020-04-30T10:00:00+02:00,403,10
+Bamberg,Oberfranken,2020-04-30T10:00:00+02:00,384,34
+Bamberg Stadt,Oberfranken,2020-04-30T10:00:00+02:00,184,15
+Bayreuth,Oberfranken,2020-04-30T10:00:00+02:00,384,10
+Bayreuth Stadt,Oberfranken,2020-04-30T10:00:00+02:00,188,7
+Berchtesgadener Land,Oberbayern,2020-04-30T10:00:00+02:00,269,14
+Cham,Oberpfalz,2020-04-30T10:00:00+02:00,401,17
+Coburg,Oberfranken,2020-04-30T10:00:00+02:00,185,7
+Coburg Stadt,Oberfranken,2020-04-30T10:00:00+02:00,52,0
+Dachau,Oberbayern,2020-04-30T10:00:00+02:00,841,20
+Deggendorf,Niederbayern,2020-04-30T10:00:00+02:00,265,10
+Dillingen an der Donau,Schwaben,2020-04-30T10:00:00+02:00,244,19
+Dingolfing-Landau,Niederbayern,2020-04-30T10:00:00+02:00,189,4
+Donau-Ries,Schwaben,2020-04-30T10:00:00+02:00,331,22
+Ebersberg,Oberbayern,2020-04-30T10:00:00+02:00,457,5
+Eichstätt,Oberbayern,2020-04-30T10:00:00+02:00,267,16
+Erding,Oberbayern,2020-04-30T10:00:00+02:00,585,8
+Erlangen Stadt,Mittelfranken,2020-04-30T10:00:00+02:00,237,6
+Erlangen-Höchstadt,Mittelfranken,2020-04-30T10:00:00+02:00,201,6
+Forchheim,Oberfranken,2020-04-30T10:00:00+02:00,196,4
+Freising,Oberbayern,2020-04-30T10:00:00+02:00,939,35
+Freyung-Grafenau,Niederbayern,2020-04-30T10:00:00+02:00,181,11
+Fürstenfeldbruck,Oberbayern,2020-04-30T10:00:00+02:00,793,31
+Fürth,Mittelfranken,2020-04-30T10:00:00+02:00,467,52
+Fürth Stadt,Mittelfranken,2020-04-30T10:00:00+02:00,332,28
+Garmisch-Partenkirchen,Oberbayern,2020-04-30T10:00:00+02:00,264,15
+Günzburg,Schwaben,2020-04-30T10:00:00+02:00,221,2
+Haßberge,Unterfranken,2020-04-30T10:00:00+02:00,150,4
+Hof,Oberfranken,2020-04-30T10:00:00+02:00,388,24
+Hof Stadt,Oberfranken,2020-04-30T10:00:00+02:00,102,4
+Ingolstadt Stadt,Oberbayern,2020-04-30T10:00:00+02:00,407,29
+Kaufbeuren Stadt,Schwaben,2020-04-30T10:00:00+02:00,102,4
+Kelheim,Niederbayern,2020-04-30T10:00:00+02:00,432,32
+Kempten Stadt,Schwaben,2020-04-30T10:00:00+02:00,102,9
+Kitzingen,Unterfranken,2020-04-30T10:00:00+02:00,172,3
+Kronach,Oberfranken,2020-04-30T10:00:00+02:00,135,3
+Kulmbach,Oberfranken,2020-04-30T10:00:00+02:00,206,11
+Landsberg am Lech,Oberbayern,2020-04-30T10:00:00+02:00,330,10
+Landshut,Niederbayern,2020-04-30T10:00:00+02:00,643,27
+Landshut Stadt,Niederbayern,2020-04-30T10:00:00+02:00,263,9
+Lichtenfels,Oberfranken,2020-04-30T10:00:00+02:00,198,2
+Lindau (Bodensee),Schwaben,2020-04-30T10:00:00+02:00,239,6
+Main-Spessart,Unterfranken,2020-04-30T10:00:00+02:00,146,6
+Memmingen Stadt,Schwaben,2020-04-30T10:00:00+02:00,49,0
+Miesbach,Oberbayern,2020-04-30T10:00:00+02:00,512,7
+Miltenberg,Unterfranken,2020-04-30T10:00:00+02:00,268,4
+Mühldorf am Inn,Oberbayern,2020-04-30T10:00:00+02:00,478,20
+München,Oberbayern,2020-04-30T10:00:00+02:00,1279,33
+München Stadt,Oberbayern,2020-04-30T10:00:00+02:00,5716,112
+Neu-Ulm,Schwaben,2020-04-30T10:00:00+02:00,405,18
+Neuburg-Schrobenhausen,Oberbayern,2020-04-30T10:00:00+02:00,265,12
+Neumarkt in der Oberpfalz,Oberpfalz,2020-04-30T10:00:00+02:00,341,12
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-04-30T10:00:00+02:00,218,6
+Neustadt an der Waldnaab,Oberpfalz,2020-04-30T10:00:00+02:00,771,46
+Nürnberg Stadt,Mittelfranken,2020-04-30T10:00:00+02:00,935,30
+Nürnberger Land,Mittelfranken,2020-04-30T10:00:00+02:00,592,36
+Oberallgäu,Schwaben,2020-04-30T10:00:00+02:00,167,7
+Ostallgäu,Schwaben,2020-04-30T10:00:00+02:00,501,32
+Passau,Niederbayern,2020-04-30T10:00:00+02:00,509,20
+Passau Stadt,Niederbayern,2020-04-30T10:00:00+02:00,124,16
+Pfaffenhofen an der Ilm,Oberbayern,2020-04-30T10:00:00+02:00,332,17
+Regen,Niederbayern,2020-04-30T10:00:00+02:00,161,4
+Regensburg,Oberpfalz,2020-04-30T10:00:00+02:00,409,7
+Regensburg Stadt,Oberpfalz,2020-04-30T10:00:00+02:00,428,5
+Rhön-Grabfeld,Unterfranken,2020-04-30T10:00:00+02:00,184,4
+Rosenheim,Oberbayern,2020-04-30T10:00:00+02:00,2017,120
+Rosenheim Stadt,Oberbayern,2020-04-30T10:00:00+02:00,438,18
+Roth,Mittelfranken,2020-04-30T10:00:00+02:00,280,7
+Rottal-Inn,Niederbayern,2020-04-30T10:00:00+02:00,697,39
+Schwabach Stadt,Mittelfranken,2020-04-30T10:00:00+02:00,74,1
+Schwandorf,Oberpfalz,2020-04-30T10:00:00+02:00,431,14
+Schweinfurt,Unterfranken,2020-04-30T10:00:00+02:00,451,21
+Schweinfurt Stadt,Unterfranken,2020-04-30T10:00:00+02:00,165,17
+Starnberg,Oberbayern,2020-04-30T10:00:00+02:00,503,9
+Straubing Stadt,Niederbayern,2020-04-30T10:00:00+02:00,370,34
+Straubing-Bogen,Niederbayern,2020-04-30T10:00:00+02:00,440,17
+Tirschenreuth,Oberpfalz,2020-04-30T10:00:00+02:00,1110,111
+Traunstein,Oberbayern,2020-04-30T10:00:00+02:00,1146,59
+Unterallgäu,Schwaben,2020-04-30T10:00:00+02:00,269,13
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-04-30T10:00:00+02:00,292,11
+Weilheim-Schongau,Oberbayern,2020-04-30T10:00:00+02:00,333,3
+Weißenburg-Gunzenhausen,Mittelfranken,2020-04-30T10:00:00+02:00,289,12
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-04-30T10:00:00+02:00,620,36
+Würzburg,Unterfranken,2020-04-30T10:00:00+02:00,405,6
+Würzburg Stadt,Unterfranken,2020-04-30T10:00:00+02:00,463,49
