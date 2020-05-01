@@ -20,7 +20,7 @@ def cleannum(s):
 
 datatz = dateutil.tz.gettz('America/New York')
 
-update = fetchhelper.Updater('https://covidtracking.com/api/states.csv', ext='csv')
+update = fetchhelper.Updater('https://covidtracking.com/api/v1/states/current.csv', ext='csv')
 update.check_fetch(rawfile=args.rawfile)
 
 parse = fetchhelper.ParseData(update, 'data')
