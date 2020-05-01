@@ -17,6 +17,8 @@ import lxml.etree, json
 
 datatz = dateutil.tz.gettz('Europe/London')
 
+# From https://coronavirus.data.gov.uk/
+
 url_buckets = 'https://publicdashacc.blob.core.windows.net/publicdata?restype=container&comp=list'
 urlfmt_blob = 'https://c19pub.azureedge.net/%s'
 
@@ -205,6 +207,8 @@ newest_name = None
 newest_time = None
 for blob in xdoc.xpath('//Blob'):
     name = blob.xpath('./Name')[0].text
+    if not re.match(r'data_.*\.json', name):
+        continue
     modified = datetime.datetime.strptime(blob.xpath('./Properties/Last-Modified')[0].text, '%a, %d %b %Y %H:%M:%S %Z')
     if newest_time is None or modified > newest_time:
         newest_name = name
