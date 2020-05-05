@@ -230,8 +230,8 @@ with open(parse.parsedfile, 'w') as f:
     cw.writerow(header)
     for (code, data) in jdat['countries'].items():
         name = data['name']['value']
-        confirmed = data['totalCases']['value']
-        deaths = data['deaths']['value']
+        confirmed = int(data['totalCases']['value'])
+        deaths = int(data['deaths']['value'])
         cw.writerow([code, name, datatime, confirmed, deaths])
 parse.deploy_timestamp()
 parses.append(parse)
@@ -244,7 +244,7 @@ with open(parse.parsedfile, 'w') as f:
     cw.writerow(header)
     for (code, data) in jdat['utlas'].items():
         name = data['name']['value']
-        confirmed = data['totalCases']['value']
+        confirmed = int(data['totalCases']['value'])
         cw.writerow([code, name, regions[code][1], datatime, confirmed])
 parse.deploy_timestamp()
 parses.append(parse)
