@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-05-08T10:00:00+02:00,283,20
+Altötting,Oberbayern,2020-05-08T10:00:00+02:00,590,41
+Amberg Stadt,Oberpfalz,2020-05-08T10:00:00+02:00,73,3
+Amberg-Sulzbach,Oberpfalz,2020-05-08T10:00:00+02:00,460,44
+Ansbach,Mittelfranken,2020-05-08T10:00:00+02:00,560,21
+Ansbach Stadt,Mittelfranken,2020-05-08T10:00:00+02:00,131,7
+Aschaffenburg,Unterfranken,2020-05-08T10:00:00+02:00,499,34
+Aschaffenburg Stadt,Unterfranken,2020-05-08T10:00:00+02:00,110,1
+Augsburg,Schwaben,2020-05-08T10:00:00+02:00,369,8
+Augsburg Stadt,Schwaben,2020-05-08T10:00:00+02:00,388,13
+Bad Kissingen,Unterfranken,2020-05-08T10:00:00+02:00,236,18
+Bad Tölz-Wolfratshausen,Oberbayern,2020-05-08T10:00:00+02:00,411,10
+Bamberg,Oberfranken,2020-05-08T10:00:00+02:00,390,34
+Bamberg Stadt,Oberfranken,2020-05-08T10:00:00+02:00,189,15
+Bayreuth,Oberfranken,2020-05-08T10:00:00+02:00,404,25
+Bayreuth Stadt,Oberfranken,2020-05-08T10:00:00+02:00,201,10
+Berchtesgadener Land,Oberbayern,2020-05-08T10:00:00+02:00,283,14
+Cham,Oberpfalz,2020-05-08T10:00:00+02:00,411,20
+Coburg,Oberfranken,2020-05-08T10:00:00+02:00,200,8
+Coburg Stadt,Oberfranken,2020-05-08T10:00:00+02:00,57,0
+Dachau,Oberbayern,2020-05-08T10:00:00+02:00,888,24
+Deggendorf,Niederbayern,2020-05-08T10:00:00+02:00,279,12
+Dillingen an der Donau,Schwaben,2020-05-08T10:00:00+02:00,253,21
+Dingolfing-Landau,Niederbayern,2020-05-08T10:00:00+02:00,197,5
+Donau-Ries,Schwaben,2020-05-08T10:00:00+02:00,338,23
+Ebersberg,Oberbayern,2020-05-08T10:00:00+02:00,468,5
+Eichstätt,Oberbayern,2020-05-08T10:00:00+02:00,276,16
+Erding,Oberbayern,2020-05-08T10:00:00+02:00,606,10
+Erlangen Stadt,Mittelfranken,2020-05-08T10:00:00+02:00,247,8
+Erlangen-Höchstadt,Mittelfranken,2020-05-08T10:00:00+02:00,205,6
+Forchheim,Oberfranken,2020-05-08T10:00:00+02:00,202,4
+Freising,Oberbayern,2020-05-08T10:00:00+02:00,940,37
+Freyung-Grafenau,Niederbayern,2020-05-08T10:00:00+02:00,185,11
+Fürstenfeldbruck,Oberbayern,2020-05-08T10:00:00+02:00,842,33
+Fürth,Mittelfranken,2020-05-08T10:00:00+02:00,477,56
+Fürth Stadt,Mittelfranken,2020-05-08T10:00:00+02:00,370,33
+Garmisch-Partenkirchen,Oberbayern,2020-05-08T10:00:00+02:00,273,15
+Günzburg,Schwaben,2020-05-08T10:00:00+02:00,229,3
+Haßberge,Unterfranken,2020-05-08T10:00:00+02:00,154,5
+Hof,Oberfranken,2020-05-08T10:00:00+02:00,414,27
+Hof Stadt,Oberfranken,2020-05-08T10:00:00+02:00,103,4
+Ingolstadt Stadt,Oberbayern,2020-05-08T10:00:00+02:00,419,31
+Kaufbeuren Stadt,Schwaben,2020-05-08T10:00:00+02:00,103,4
+Kelheim,Niederbayern,2020-05-08T10:00:00+02:00,434,33
+Kempten Stadt,Schwaben,2020-05-08T10:00:00+02:00,102,9
+Kitzingen,Unterfranken,2020-05-08T10:00:00+02:00,190,3
+Kronach,Oberfranken,2020-05-08T10:00:00+02:00,145,3
+Kulmbach,Oberfranken,2020-05-08T10:00:00+02:00,232,11
+Landsberg am Lech,Oberbayern,2020-05-08T10:00:00+02:00,339,10
+Landshut,Niederbayern,2020-05-08T10:00:00+02:00,661,28
+Landshut Stadt,Niederbayern,2020-05-08T10:00:00+02:00,269,10
+Lichtenfels,Oberfranken,2020-05-08T10:00:00+02:00,212,2
+Lindau (Bodensee),Schwaben,2020-05-08T10:00:00+02:00,240,6
+Main-Spessart,Unterfranken,2020-05-08T10:00:00+02:00,148,6
+Memmingen Stadt,Schwaben,2020-05-08T10:00:00+02:00,51,0
+Miesbach,Oberbayern,2020-05-08T10:00:00+02:00,541,8
+Miltenberg,Unterfranken,2020-05-08T10:00:00+02:00,276,5
+Mühldorf am Inn,Oberbayern,2020-05-08T10:00:00+02:00,492,23
+München,Oberbayern,2020-05-08T10:00:00+02:00,1345,44
+München Stadt,Oberbayern,2020-05-08T10:00:00+02:00,6097,175
+Neu-Ulm,Schwaben,2020-05-08T10:00:00+02:00,413,19
+Neuburg-Schrobenhausen,Oberbayern,2020-05-08T10:00:00+02:00,298,13
+Neumarkt in der Oberpfalz,Oberpfalz,2020-05-08T10:00:00+02:00,358,15
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-05-08T10:00:00+02:00,216,7
+Neustadt an der Waldnaab,Oberpfalz,2020-05-08T10:00:00+02:00,785,61
+Nürnberg Stadt,Mittelfranken,2020-05-08T10:00:00+02:00,996,33
+Nürnberger Land,Mittelfranken,2020-05-08T10:00:00+02:00,608,41
+Oberallgäu,Schwaben,2020-05-08T10:00:00+02:00,172,7
+Ostallgäu,Schwaben,2020-05-08T10:00:00+02:00,504,34
+Passau,Niederbayern,2020-05-08T10:00:00+02:00,540,21
+Passau Stadt,Niederbayern,2020-05-08T10:00:00+02:00,128,18
+Pfaffenhofen an der Ilm,Oberbayern,2020-05-08T10:00:00+02:00,340,18
+Regen,Niederbayern,2020-05-08T10:00:00+02:00,171,5
+Regensburg,Oberpfalz,2020-05-08T10:00:00+02:00,432,13
+Regensburg Stadt,Oberpfalz,2020-05-08T10:00:00+02:00,468,7
+Rhön-Grabfeld,Unterfranken,2020-05-08T10:00:00+02:00,190,6
+Rosenheim,Oberbayern,2020-05-08T10:00:00+02:00,2125,156
+Rosenheim Stadt,Oberbayern,2020-05-08T10:00:00+02:00,467,21
+Roth,Mittelfranken,2020-05-08T10:00:00+02:00,290,7
+Rottal-Inn,Niederbayern,2020-05-08T10:00:00+02:00,714,41
+Schwabach Stadt,Mittelfranken,2020-05-08T10:00:00+02:00,78,2
+Schwandorf,Oberpfalz,2020-05-08T10:00:00+02:00,440,15
+Schweinfurt,Unterfranken,2020-05-08T10:00:00+02:00,469,24
+Schweinfurt Stadt,Unterfranken,2020-05-08T10:00:00+02:00,170,18
+Starnberg,Oberbayern,2020-05-08T10:00:00+02:00,510,12
+Straubing Stadt,Niederbayern,2020-05-08T10:00:00+02:00,388,39
+Straubing-Bogen,Niederbayern,2020-05-08T10:00:00+02:00,468,24
+Tirschenreuth,Oberpfalz,2020-05-08T10:00:00+02:00,1117,126
+Traunstein,Oberbayern,2020-05-08T10:00:00+02:00,1248,76
+Unterallgäu,Schwaben,2020-05-08T10:00:00+02:00,268,13
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-05-08T10:00:00+02:00,303,14
+Weilheim-Schongau,Oberbayern,2020-05-08T10:00:00+02:00,334,3
+Weißenburg-Gunzenhausen,Mittelfranken,2020-05-08T10:00:00+02:00,301,16
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-05-08T10:00:00+02:00,631,35
+Würzburg,Unterfranken,2020-05-08T10:00:00+02:00,407,9
+Würzburg Stadt,Unterfranken,2020-05-08T10:00:00+02:00,461,50
