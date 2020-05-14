@@ -149,7 +149,7 @@ update = fetchhelper.Updater('https://www.lgl.bayern.de/gesundheit/infektionssch
 update.check_fetch(rawfile=args.rawfile)
 
 # accidentally duplicated <tr> and other hrml errors
-#update.rawdata = re.sub(r'<tr>\s*<tr>', r'<tr>', update.rawdata)
+update.rawdata = re.sub(r'<tr>\s*<tr>', r'<tr>', update.rawdata)
 update.rawdata = re.sub(r'(<th><span>[^<>]*</span>)</(td|div)>', r'\1</th>', update.rawdata)
 html = BeautifulSoup(update.rawdata, 'html.parser')
 
@@ -169,6 +169,16 @@ def get_labeltime(text):
         return None
     stime = datetime.datetime.strptime(mo.group(1), '%H:%M').time()
     return datetime.datetime.combine(publishdate, stime, tzinfo=datatz)
+
+for p in html.select('.bildunterschrift'):
+    text = p.get_text()
+    update.contenttime = get_labeltime(text)
+    if update.contenttime is not None:
+        break
+
+if update.contenttime is None:
+    print("Couldn't find content time", file=sys.stderr)
+    exit(1)
 
 def tab_rows(tab):
     trs = tab.select('tr')
@@ -194,30 +204,58 @@ def is_regierungsbezirk(tab):
 def is_landkreis(tab):
     return tab.select_one('th').string in ['Landkreis', 'Land-/Stadtkreis', 'Landkreis/Stadt']
 
+def is_confirmed(tab):
+    cap = tab.select_one('caption')
+    return cap is None or 'Coronavirusinfektionen' in cap.get_text()
+
+def is_combined(tab):
+    return len(tab.find_all('th')) in [6, 7]
+
+def is_deaths(tab):
+    cap = tab.select_one('caption')
+    return cap is not None and 'Todesfälle' in cap.get_text()
+
+
 def parse_table(parse, html, kind, *, optional=False):
     assert(kind in ('regierungsbezirk', 'landkreis'))
     parse_landkreis = (kind == 'landkreis')
 
-    if parse_landkreis:
-        tab = html.select_one('#tableLandkreise')
-        if not is_landkreis(tab):
-            print("unrecognized table")
-            exit(1)
-    else:
-        tab = html.select_one('#tableRegBez')
-        if not is_regierungsbezirk(tab):
+    tab_confirmed = []
+    tab_deaths = []
+    tab_combined = []
+
+    for tab in html.select('table'):
+        if parse_landkreis:
+            if not is_landkreis(tab):
+                continue
+        else:
+            if not is_regierungsbezirk(tab):
+                continue
+        if is_confirmed(tab):
+            tab_confirmed.append(tab)
+        elif is_deaths(tab):
+            tab_deaths.append(tab)
+        elif is_combined(tab):
+            tab_combined.append(tab)
+        else:
             print("unrecognized table")
             exit(1)
 
-    caption = tab.find('caption')
-    datatime = parse.parsedtime = get_labeltime(caption.get_text())
+    if len(tab_confirmed) + len(tab_combined) > 1 or len(tab_deaths) + len(tab_combined) > 1:
+        print("found multiple tables %s" % parse.label, file=sys.stderr)
+        exit(1)
+
+    tab_main = (tab_confirmed + tab_combined)[0]
+
+    caption = tab_main.find('caption')
+    if caption is not None:
+        datatime = parse.parsedtime = get_labeltime(caption.get_text())
+    else:
+        datatime = parse.parsedtime
+        # TODO: Move parsing of other date label here
     if datatime is None:
         print("couldn't determine datatime for %s" % parse.label, file=sys.stderr)
         exit(1)
-
-    ths = tab.find_all('th')
-    assert('Fälle' in ths[1].get_text())
-    assert('Todesfälle' in ths[6].get_text())
 
     with open(parse.parsedfile, 'w') as outf:
         cout = csv.writer(outf)
@@ -225,20 +263,41 @@ def parse_table(parse, html, kind, *, optional=False):
             header = ['Landkreis', 'Regierungsbezirk']
         else:
             header = ['Regierungsbezirk']
-        header += ['Timestamp', 'Confirmed', 'Deaths']
+        header += ['Timestamp', 'Confirmed']
+        if tab_combined or tab_deaths:
+            header.append('Deaths')
+        if tab_combined:
+            ths = tab_combined[0].find_all('th')
+            assert('Fälle' in ths[1].get_text())
+            if 'Todesfälle' in ths[4].get_text():
+                n_deaths = 4
+            else:
+                assert('Todesfälle' in ths[5].get_text())
+                n_deaths = 5
         cout.writerow(header)
 
-        txttab = fetchhelper.text_table(tab)
-        txttab = txttab[1:-1]
-        for tds in txttab:
+        deaths = {}
+        if tab_deaths:
+            for tds in tab_rows(tab_deaths[0]):
+                lk = clean_landkreis(tds[0].get_text())
+                deaths[lk] = clean_num(tds[1].get_text())
+
+        for tds in tab_rows(tab_main):
             lk = None
             if parse_landkreis:
-                lk = clean_landkreis(tds[0])
+                lk = clean_landkreis(tds[0].get_text())
+                if lk == '' and tds[0].find_parent('tr').find_next_sibling('tr').find('td').get_text() == 'Altötting':
+                    lk = 'Aichach-Friedberg'
                 cols = [lk, get_regierungsbezirk(lk)]
             else:
-                cols = [tds[0]]
+                cols = [tds[0].get_text()]
             cols.append(datatime.isoformat())
-            cols += [clean_num(tds[1]), clean_num(tds[6])]
+            if tab_combined:
+                cols += [clean_num(tds[1].get_text()), clean_num(tds[n_deaths].get_text())]
+            else:
+                cols.append(clean_num(tds[1].get_text()))
+                if deaths:
+                    cols.append(deaths.get(lk, 0))
             cout.writerow(cols)
 
     # If the current day is later than the contenttime we assume the
