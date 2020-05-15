@@ -1,11 +1,26 @@
 Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-05-15T10:00:00+02:00,290,20
+Altötting,Oberbayern,2020-05-15T10:00:00+02:00,591,44
 Amberg Stadt,Oberpfalz,2020-05-15T10:00:00+02:00,77,3
+Amberg-Sulzbach,Oberpfalz,2020-05-15T10:00:00+02:00,472,44
+Ansbach,Mittelfranken,2020-05-15T10:00:00+02:00,581,26
 Ansbach Stadt,Mittelfranken,2020-05-15T10:00:00+02:00,135,7
+Aschaffenburg,Unterfranken,2020-05-15T10:00:00+02:00,511,36
 Aschaffenburg Stadt,Unterfranken,2020-05-15T10:00:00+02:00,112,1
+Augsburg,Schwaben,2020-05-15T10:00:00+02:00,375,8
 Augsburg Stadt,Schwaben,2020-05-15T10:00:00+02:00,390,14
+Bad Kissingen,Unterfranken,2020-05-15T10:00:00+02:00,246,18
+Bad Tölz-Wolfratshausen,Oberbayern,2020-05-15T10:00:00+02:00,414,10
+Bamberg,Oberfranken,2020-05-15T10:00:00+02:00,404,34
 Bamberg Stadt,Oberfranken,2020-05-15T10:00:00+02:00,190,16
+Bayreuth,Oberfranken,2020-05-15T10:00:00+02:00,414,27
 Bayreuth Stadt,Oberfranken,2020-05-15T10:00:00+02:00,206,11
+Berchtesgadener Land,Oberbayern,2020-05-15T10:00:00+02:00,287,21
+Cham,Oberpfalz,2020-05-15T10:00:00+02:00,415,20
+Coburg,Oberfranken,2020-05-15T10:00:00+02:00,243,12
 Coburg Stadt,Oberfranken,2020-05-15T10:00:00+02:00,69,0
+Dachau,Oberbayern,2020-05-15T10:00:00+02:00,914,27
+Deggendorf,Niederbayern,2020-05-15T10:00:00+02:00,300,11
 Dillingen an der Donau,Schwaben,2020-05-15T10:00:00+02:00,258,22
 Dingolfing-Landau,Niederbayern,2020-05-15T10:00:00+02:00,202,5
 Donau-Ries,Schwaben,2020-05-15T10:00:00+02:00,342,23
