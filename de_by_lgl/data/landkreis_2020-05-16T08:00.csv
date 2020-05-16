@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-05-16T10:00:00+02:00,290,20
+Altötting,Oberbayern,2020-05-16T10:00:00+02:00,593,44
+Amberg Stadt,Oberpfalz,2020-05-16T10:00:00+02:00,77,3
+Amberg-Sulzbach,Oberpfalz,2020-05-16T10:00:00+02:00,474,44
+Ansbach,Mittelfranken,2020-05-16T10:00:00+02:00,583,26
+Ansbach Stadt,Mittelfranken,2020-05-16T10:00:00+02:00,136,7
+Aschaffenburg,Unterfranken,2020-05-16T10:00:00+02:00,514,36
+Aschaffenburg Stadt,Unterfranken,2020-05-16T10:00:00+02:00,112,1
+Augsburg,Schwaben,2020-05-16T10:00:00+02:00,375,8
+Augsburg Stadt,Schwaben,2020-05-16T10:00:00+02:00,390,14
+Bad Kissingen,Unterfranken,2020-05-16T10:00:00+02:00,246,17
+Bad Tölz-Wolfratshausen,Oberbayern,2020-05-16T10:00:00+02:00,414,10
+Bamberg,Oberfranken,2020-05-16T10:00:00+02:00,405,35
+Bamberg Stadt,Oberfranken,2020-05-16T10:00:00+02:00,190,17
+Bayreuth,Oberfranken,2020-05-16T10:00:00+02:00,415,27
+Bayreuth Stadt,Oberfranken,2020-05-16T10:00:00+02:00,208,11
+Berchtesgadener Land,Oberbayern,2020-05-16T10:00:00+02:00,292,21
+Cham,Oberpfalz,2020-05-16T10:00:00+02:00,415,20
+Coburg,Oberfranken,2020-05-16T10:00:00+02:00,248,13
+Coburg Stadt,Oberfranken,2020-05-16T10:00:00+02:00,68,0
+Dachau,Oberbayern,2020-05-16T10:00:00+02:00,908,28
+Deggendorf,Niederbayern,2020-05-16T10:00:00+02:00,302,11
+Dillingen an der Donau,Schwaben,2020-05-16T10:00:00+02:00,258,22
+Dingolfing-Landau,Niederbayern,2020-05-16T10:00:00+02:00,204,5
+Donau-Ries,Schwaben,2020-05-16T10:00:00+02:00,342,23
+Ebersberg,Oberbayern,2020-05-16T10:00:00+02:00,497,5
+Eichstätt,Oberbayern,2020-05-16T10:00:00+02:00,283,17
+Erding,Oberbayern,2020-05-16T10:00:00+02:00,612,10
+Erlangen Stadt,Mittelfranken,2020-05-16T10:00:00+02:00,252,9
+Erlangen-Höchstadt,Mittelfranken,2020-05-16T10:00:00+02:00,233,6
+Forchheim,Oberfranken,2020-05-16T10:00:00+02:00,204,4
+Freising,Oberbayern,2020-05-16T10:00:00+02:00,970,40
+Freyung-Grafenau,Niederbayern,2020-05-16T10:00:00+02:00,188,11
+Fürstenfeldbruck,Oberbayern,2020-05-16T10:00:00+02:00,865,33
+Fürth,Mittelfranken,2020-05-16T10:00:00+02:00,487,56
+Fürth Stadt,Mittelfranken,2020-05-16T10:00:00+02:00,378,34
+Garmisch-Partenkirchen,Oberbayern,2020-05-16T10:00:00+02:00,278,17
+Günzburg,Schwaben,2020-05-16T10:00:00+02:00,235,4
+Haßberge,Unterfranken,2020-05-16T10:00:00+02:00,155,6
+Hof,Oberfranken,2020-05-16T10:00:00+02:00,425,29
+Hof Stadt,Oberfranken,2020-05-16T10:00:00+02:00,106,4
+Ingolstadt Stadt,Oberbayern,2020-05-16T10:00:00+02:00,434,35
+Kaufbeuren Stadt,Schwaben,2020-05-16T10:00:00+02:00,107,4
+Kelheim,Niederbayern,2020-05-16T10:00:00+02:00,438,34
+Kempten Stadt,Schwaben,2020-05-16T10:00:00+02:00,102,10
+Kitzingen,Unterfranken,2020-05-16T10:00:00+02:00,192,3
+Kronach,Oberfranken,2020-05-16T10:00:00+02:00,153,3
+Kulmbach,Oberfranken,2020-05-16T10:00:00+02:00,241,11
+Landsberg am Lech,Oberbayern,2020-05-16T10:00:00+02:00,357,10
+Landshut,Niederbayern,2020-05-16T10:00:00+02:00,661,28
+Landshut Stadt,Niederbayern,2020-05-16T10:00:00+02:00,275,10
+Lichtenfels,Oberfranken,2020-05-16T10:00:00+02:00,231,5
+Lindau (Bodensee),Schwaben,2020-05-16T10:00:00+02:00,241,8
+Main-Spessart,Unterfranken,2020-05-16T10:00:00+02:00,150,6
+Memmingen Stadt,Schwaben,2020-05-16T10:00:00+02:00,51,0
+Miesbach,Oberbayern,2020-05-16T10:00:00+02:00,556,8
+Miltenberg,Unterfranken,2020-05-16T10:00:00+02:00,287,5
+Mühldorf am Inn,Oberbayern,2020-05-16T10:00:00+02:00,496,27
+München,Oberbayern,2020-05-16T10:00:00+02:00,1364,52
+München Stadt,Oberbayern,2020-05-16T10:00:00+02:00,6384,191
+Neu-Ulm,Schwaben,2020-05-16T10:00:00+02:00,422,25
+Neuburg-Schrobenhausen,Oberbayern,2020-05-16T10:00:00+02:00,313,14
+Neumarkt in der Oberpfalz,Oberpfalz,2020-05-16T10:00:00+02:00,359,15
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-05-16T10:00:00+02:00,240,6
+Neustadt an der Waldnaab,Oberpfalz,2020-05-16T10:00:00+02:00,797,66
+Nürnberg Stadt,Mittelfranken,2020-05-16T10:00:00+02:00,1020,38
+Nürnberger Land,Mittelfranken,2020-05-16T10:00:00+02:00,624,44
+Oberallgäu,Schwaben,2020-05-16T10:00:00+02:00,173,7
+Ostallgäu,Schwaben,2020-05-16T10:00:00+02:00,502,34
+Passau,Niederbayern,2020-05-16T10:00:00+02:00,553,23
+Passau Stadt,Niederbayern,2020-05-16T10:00:00+02:00,130,18
+Pfaffenhofen an der Ilm,Oberbayern,2020-05-16T10:00:00+02:00,354,19
+Regen,Niederbayern,2020-05-16T10:00:00+02:00,193,7
+Regensburg,Oberpfalz,2020-05-16T10:00:00+02:00,447,14
+Regensburg Stadt,Oberpfalz,2020-05-16T10:00:00+02:00,488,9
+Rhön-Grabfeld,Unterfranken,2020-05-16T10:00:00+02:00,189,6
+Rosenheim,Oberbayern,2020-05-16T10:00:00+02:00,2205,170
+Rosenheim Stadt,Oberbayern,2020-05-16T10:00:00+02:00,505,24
+Roth,Mittelfranken,2020-05-16T10:00:00+02:00,290,7
+Rottal-Inn,Niederbayern,2020-05-16T10:00:00+02:00,732,43
+Schwabach Stadt,Mittelfranken,2020-05-16T10:00:00+02:00,78,2
+Schwandorf,Oberpfalz,2020-05-16T10:00:00+02:00,457,15
+Schweinfurt,Unterfranken,2020-05-16T10:00:00+02:00,481,24
+Schweinfurt Stadt,Unterfranken,2020-05-16T10:00:00+02:00,170,18
+Starnberg,Oberbayern,2020-05-16T10:00:00+02:00,512,12
+Straubing Stadt,Niederbayern,2020-05-16T10:00:00+02:00,415,44
+Straubing-Bogen,Niederbayern,2020-05-16T10:00:00+02:00,525,25
+Tirschenreuth,Oberpfalz,2020-05-16T10:00:00+02:00,1123,128
+Traunstein,Oberbayern,2020-05-16T10:00:00+02:00,1266,83
+Unterallgäu,Schwaben,2020-05-16T10:00:00+02:00,271,13
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-05-16T10:00:00+02:00,312,18
+Weilheim-Schongau,Oberbayern,2020-05-16T10:00:00+02:00,335,3
+Weißenburg-Gunzenhausen,Mittelfranken,2020-05-16T10:00:00+02:00,313,19
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-05-16T10:00:00+02:00,648,39
+Würzburg,Unterfranken,2020-05-16T10:00:00+02:00,409,9
+Würzburg Stadt,Unterfranken,2020-05-16T10:00:00+02:00,467,49
