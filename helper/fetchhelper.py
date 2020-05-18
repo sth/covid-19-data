@@ -111,6 +111,9 @@ def check_oldfetch(args):
         return
     if not os.path.exists('oldfetch'):
         return
+    # Don't do this recursively
+    if 'oldfetch' in sys.argv[0]:
+        return
 
     mo = re_ts.search(args.rawfile)
     if mo is None:
