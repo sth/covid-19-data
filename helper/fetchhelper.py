@@ -23,7 +23,7 @@ class Updater(object):
             checkdir('raw')
             self.rawfile = 'raw/%s.%s' % (datetime.datetime.now().isoformat(), self.ext)
             print('fetching raw %s' % self.rawfile)
-            subprocess.run(['curl', '-sS', '-o', self.rawfile, self.fetchurl])
+            subprocess.run(['curl', '-sS', '-L', '-o', self.rawfile, self.fetchurl])
         else:
             self.rawfile = rawfile
 
