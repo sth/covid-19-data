@@ -19,8 +19,8 @@ datatz = dateutil.tz.gettz('Europe/London')
 
 # From https://coronavirus.data.gov.uk/
 
-url_countries = 'https://c19downloads.azureedge.net/downloads/data/countries_latest.json'
-url_utlas = 'https://c19downloads.azureedge.net/downloads/data/utlas_latest.json'
+url_buckets = 'https://publicdashacc.blob.core.windows.net/publicdata?restype=container&comp=list'
+urlfmt_blob = 'https://c19pub.azureedge.net/%s'
 
 regions = {
     'E06000001': ('Hartlepool', 'North East'),
@@ -199,21 +199,36 @@ else:
 
 countrydata = {}
 
-country_data = fetchhelper.Updater(url_countries, ext='country.json')
-country_data.check_fetch(rawfile=args.rawfile[1])
-jdat = json.loads(country_data.rawdata)
+update_buckets = fetchhelper.Updater(url_buckets, ext='buckets.xml')
+update_buckets.check_fetch(rawfile=args.rawfile[0])
 
-datatime = datetime.datetime.fromisoformat(jdat['metadata']['lastUpdatedAt'].rstrip('Z')).astimezone(datetime.timezone.utc)
+xdoc = lxml.etree.fromstring(update_buckets.rawdata)
+newest_name = None
+newest_time = None
+for blob in xdoc.xpath('//Blob'):
+    name = blob.xpath('./Name')[0].text
+    if not re.match(r'data_.*\.json', name):
+        continue
+    modified = datetime.datetime.strptime(blob.xpath('./Properties/Last-Modified')[0].text, '%a, %d %b %Y %H:%M:%S %Z')
+    if newest_time is None or modified > newest_time:
+        newest_name = name
+        newest_time = modified
+
+update_data = fetchhelper.Updater(urlfmt_blob % newest_name, ext='data.json')
+update_data.rawtime = update_buckets.rawtime
+update_data.check_fetch(rawfile=args.rawfile[1])
+
+jdat = json.loads(update_data.rawdata)
+
+datatime = datetime.datetime.fromisoformat(jdat['lastUpdatedAt'].rstrip('Z')).astimezone(datetime.timezone.utc)
 parses = []
-parse = fetchhelper.ParseData(country_data, 'countries')
+parse = fetchhelper.ParseData(update_data, 'countries')
 parse.parsedtime = datatime
 with open(parse.parsedfile, 'w') as f:
     cw = csv.writer(f)
     header = ['Code', 'Country', 'Timestamp', 'Confirmed', 'Deaths']
     cw.writerow(header)
-    for (code, data) in jdat.items():
-        if code == 'metadata':
-            continue
+    for (code, data) in jdat['countries'].items():
         name = data['name']['value']
         confirmed = int(data['totalCases']['value'])
         deaths = int(data['deaths']['value'])
@@ -221,24 +236,46 @@ with open(parse.parsedfile, 'w') as f:
 parse.deploy_timestamp()
 parses.append(parse)
 
-utla_data = fetchhelper.Updater(url_utlas, ext='utla.json')
-utla_data.check_fetch(rawfile=args.rawfile[1])
-jdat = json.loads(utla_data.rawdata)
-datatime = datetime.datetime.fromisoformat(jdat['metadata']['lastUpdatedAt'].rstrip('Z')).astimezone(datetime.timezone.utc)
-
-parse = fetchhelper.ParseData(utla_data, 'utla')
+parse = fetchhelper.ParseData(update_data, 'utla')
 parse.parsedtime = datatime
 with open(parse.parsedfile, 'w') as f:
     cw = csv.writer(f)
     header = ['Code', 'UTLA', 'Region', 'Timestamp', 'Confirmed']
     cw.writerow(header)
-    for (code, data) in jdat.items():
-        if code == 'metadata':
-            continue
+    for (code, data) in jdat['utlas'].items():
         name = data['name']['value']
         confirmed = int(data['totalCases']['value'])
         cw.writerow([code, name, regions[code][1], datatime, confirmed])
 parse.deploy_timestamp()
 parses.append(parse)
+
+def make_daily(jd):
+    collect = {}
+    for (code, data) in jd.items():
+        # collection of historic data is less useful
+        # 
+        if 'dailyTotalConfirmedCases' in data:
+            for daydata in data['dailyTotalConfirmedCases']:
+                day = daydata['date']
+                value = daydata['value']
+                if day not in collect:
+                    collect[day] = {}
+                if code not in collect[day]:
+                    collect[day][code] = CountryData(code, name, None)
+                collect[day][code].confirmed = value
+
+        if 'dailyTotalDeaths' in data:
+            for daydata in data['dailyTotalDeaths']:
+                day = daydata['date']
+                value = daydata['value']
+                if day not in collect:
+                    collect[day] = {}
+                if code not in collect[day]:
+                    collect[day][code] = CountryData(code, name, None)
+                collect[day][code].deaths = value
+
+    for day in collect:
+        for _, data in sorted(collect[day].items()):
+            print(data.name, data.code, day, data.confirmed, data.deaths)
 
 fetchhelper.git_commit(parses, args)
