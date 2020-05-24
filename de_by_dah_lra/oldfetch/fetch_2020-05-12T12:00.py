@@ -10,21 +10,14 @@ ap = argparse.ArgumentParser()
 fetchhelper.add_arguments(ap)
 args = ap.parse_args()
 
-fetchhelper.check_oldfetch(args)
-
-if args.rawfile:
-    args.rawfile = args.rawfile.split(',', 1)
-else:
-    args.rawfile = (None, None)
-
-import subprocess, datetime, re, csv, os, sys, shutil
+import subprocess, datetime, re, csv, os, sys
 from bs4 import BeautifulSoup
 import dateutil.tz
 
 datatz = dateutil.tz.gettz('Europe/Berlin')
 
-update = fetchhelper.Updater('https://www.landratsamt-dachau.de/gesundheit-veterinaerwesen-sicherheitsrecht/gesundheit/coronavirus/statistik/')
-update.check_fetch(rawfile=args.rawfile[0])
+update = fetchhelper.Updater('https://www.landratsamt-dachau.de/gesundheit-veterinaerwesen-sicherheitsrecht/gesundheit/coronavirus/')
+update.check_fetch(rawfile=args.rawfile)
 
 # accidentally duplicated <tr> and other hrml errors
 html = BeautifulSoup(update.rawdata, 'html.parser')
@@ -34,20 +27,6 @@ parse = fetchhelper.ParseData(update, 'data')
 txt = str(html.find(text=re.compile('Landkreis-Statistik ')))
 mo = re.search(r'Landkreis-Statistik(?: nach Gemeinden)? für den (\d\d.\d\d.\d\d\d\d)', txt)
 datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1) + ' 21:30', '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
-
-
-update_pic = fetchhelper.Updater('https://www.landratsamt-dachau.de/media/7765/grafik-uebersicht-nach-gemeinden.png', ext='png')
-update_pic.check_fetch(rawfile=args.rawfile[1], binary=True)
-
-if not os.path.exists('collected'):
-    os.mkdir('collected')
-shutil.copy(update_pic.rawfile, 'collected/gemeinden_%s.png' % datatime.isoformat(timespec='minutes'))
-sys.exit(0)
-
-
-p = subprocess.run(['tesseract', '--psm', '4', '-l', 'deu', update_pic.rawfile, '-'], capture_output=True, check=True)
-print(p.stdout)
-update_pic.rawfile
 
 for node in html.find_all(text=re.compile('Sars-CoV-2 Infizierte')):
     table = node.find_parent('table')
