@@ -18,12 +18,15 @@ else:
     args.rawfile = (None, None)
 
 import subprocess, datetime, re, csv, os, sys, shutil
+import urllib.parse
 from bs4 import BeautifulSoup
 import dateutil.tz
 
+url = 'https://www.landratsamt-dachau.de/gesundheit-veterinaerwesen-sicherheitsrecht/gesundheit/coronavirus/statistik/'
+
 datatz = dateutil.tz.gettz('Europe/Berlin')
 
-update = fetchhelper.Updater('https://www.landratsamt-dachau.de/gesundheit-veterinaerwesen-sicherheitsrecht/gesundheit/coronavirus/statistik/')
+update = fetchhelper.Updater(url)
 update.check_fetch(rawfile=args.rawfile[0])
 
 # accidentally duplicated <tr> and other hrml errors
@@ -35,8 +38,10 @@ txt = str(html.find(text=re.compile('Landkreis-Statistik ')))
 mo = re.search(r'Landkreis-Statistik(?: nach Gemeinden)? für den (\d\d.\d\d.\d\d\d\d)', txt)
 datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1) + ' 21:30', '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
 
+img = html.find('img', src=re.compile(r'/grafik-uebersicht-nach-gemeinden\.png'))
+iurl = urllib.parse.urljoin(url, img['src'])
 
-update_pic = fetchhelper.Updater('https://www.landratsamt-dachau.de/media/7765/grafik-uebersicht-nach-gemeinden.png', ext='png')
+update_pic = fetchhelper.Updater(iurl, ext='png')
 update_pic.check_fetch(rawfile=args.rawfile[1], binary=True)
 
 if not os.path.exists('collected'):
