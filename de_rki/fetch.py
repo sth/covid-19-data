@@ -10,6 +10,8 @@ ap = argparse.ArgumentParser()
 fetchhelper.add_arguments(ap)
 args = ap.parse_args()
 
+fetchhelper.check_oldfetch(args)
+
 import datetime, re, csv, os
 from bs4 import BeautifulSoup
 import dateutil.tz
@@ -46,7 +48,6 @@ def parse_td(content):
 
 parse = fetchhelper.ParseData(update, 'data')
 for tab in header.parent.parent.select('table'):
-    # There was a stray character in the middle of the word
     if clean_label(tab.select('thead th')[0].text) != 'Bundesland':
         continue
     with open(parse.parsedfile, 'w') as outf:
@@ -58,7 +59,7 @@ for tab in header.parent.parent.select('table'):
             area = clean_label(tds[0].get_text())
 
             econfirmed = clean_num(tds[1].get_text())
-            edeaths = clean_num(tds[4].get_text())
+            edeaths = clean_num(tds[5].get_text())
             cout.writerow([area, parse.parsedtime.isoformat(),
                 econfirmed, edeaths])
     break
