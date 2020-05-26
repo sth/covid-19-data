@@ -22,27 +22,28 @@ import urllib.parse
 from bs4 import BeautifulSoup
 import dateutil.tz
 
-url = 'https://www.landratsamt-dachau.de/gesundheit-veterinaerwesen-sicherheitsrecht/gesundheit/coronavirus/statistik/'
+url = 'https://www.landratsamt-dachau.de/gesundheit-veterinaerwesen-sicherheitsrecht/gesundheit/coronavirus/corona-statistiken/'
 
 datatz = dateutil.tz.gettz('Europe/Berlin')
 
 update = fetchhelper.Updater(url)
 update.check_fetch(rawfile=args.rawfile[0])
 
-# accidentally duplicated <tr> and other hrml errors
 html = BeautifulSoup(update.rawdata, 'html.parser')
 
 parse = fetchhelper.ParseData(update, 'data')
 
-txt = str(html.find(text=re.compile('Landkreis-Statistik ')))
-mo = re.search(r'Landkreis-Statistik(?: nach Gemeinden)? für den (\d\d.\d\d.\d\d\d\d)', txt)
-datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1) + ' 21:30', '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
+#txt = str(html.find(text=re.compile('Landkreis-Statistik ')))
+#mo = re.search(r'Landkreis-Statistik(?: nach Gemeinden)? für den (\d\d.\d\d.\d\d\d\d)', txt)
+#datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1) + ' 21:30', '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
 
 img = html.find('img', src=re.compile(r'/grafik-uebersicht-nach-gemeinden\.png'))
-iurl = urllib.parse.urljoin(url, img['src'])
+rurl = re.sub(r'\?.*', '', img['src'])
+iurl = urllib.parse.urljoin(url, rurl)
 
 update_pic = fetchhelper.Updater(iurl, ext='png')
-update_pic.check_fetch(rawfile=args.rawfile[1], binary=True)
+update_pic.check_fetch(rawfile=args.rawfile[1], binary=True, remotetime=True)
+datatime = datetime.datetime.fromtimestamp(os.stat(update_pic.rawfile).st_mtime)
 
 if not os.path.exists('collected'):
     os.mkdir('collected')
