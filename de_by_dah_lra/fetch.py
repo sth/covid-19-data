@@ -42,12 +42,11 @@ furl = urllib.parse.urljoin(url, iframe['src'])
 
 update_f = fetchhelper.Updater(furl, ext='iframe.html')
 update_f.check_fetch(rawfile=args.rawfile[1], remotetime=True)
-datatime = datetime.datetime.fromtimestamp(os.stat(update_f.rawfile).st_mtime)
+datatime = datetime.datetime.fromtimestamp(os.stat(update_f.rawfile).st_mtime, tz=datatz)
 
 html = BeautifulSoup(update_f.rawdata, 'html.parser')
 parse = fetchhelper.ParseData(update, 'data')
 # page claims updates are at 16:30 and shortly before midnight
-print(datatime.time())
 if datatime.time() < datetime.time(hour=16):
     parse.parsedtime = (datatime - datetime.timedelta(day=1)).replace(hour=23, minute=50)
 elif datatime.time() < datetime.time(hour=23):
