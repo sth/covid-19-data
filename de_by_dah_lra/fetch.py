@@ -37,40 +37,56 @@ parse = fetchhelper.ParseData(update, 'data')
 #mo = re.search(r'Landkreis-Statistik(?: nach Gemeinden)? für den (\d\d.\d\d.\d\d\d\d)', txt)
 #datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1) + ' 21:30', '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
 
-img = html.find('img', src=re.compile(r'/grafik-uebersicht-nach-gemeinden\.png'))
-rurl = re.sub(r'\?.*', '', img['src'])
-iurl = urllib.parse.urljoin(url, rurl)
+iframe = html.find('iframe')
+furl = urllib.parse.urljoin(url, iframe['src'])
 
-update_pic = fetchhelper.Updater(iurl, ext='png')
-update_pic.check_fetch(rawfile=args.rawfile[1], binary=True, remotetime=True)
-datatime = datetime.datetime.fromtimestamp(os.stat(update_pic.rawfile).st_mtime)
+update_f = fetchhelper.Updater(furl, ext='iframe.html')
+update_f.check_fetch(rawfile=args.rawfile[1], remotetime=True)
+datatime = datetime.datetime.fromtimestamp(os.stat(update_f.rawfile).st_mtime)
 
-if not os.path.exists('collected'):
-    os.mkdir('collected')
-shutil.copy(update_pic.rawfile, 'collected/gemeinden_%s.png' % datatime.isoformat(timespec='minutes'))
-sys.exit(0)
+html = BeautifulSoup(update_f.rawdata, 'html.parser')
+parse = fetchhelper.ParseData(update, 'data')
+# page claims updates are at 16:30 and shortly before midnight
+print(datatime.time())
+if datatime.time() < datetime.time(hour=16):
+    parse.parsedtime = (datatime - datetime.timedelta(day=1)).replace(hour=23, minute=50)
+elif datatime.time() < datetime.time(hour=23):
+    parse.parsedtime = datatime.replace(hour=16, minute=30)
+else:
+    parse.parsedtime = datatime
 
+txt = html.find(text=re.compile('Statistik nach Gemeinden'))
+if not txt:
+    print("iframe content doesn't look correct", file=sys.stderr)
+    sys.exit(1)
 
-p = subprocess.run(['tesseract', '--psm', '4', '-l', 'deu', update_pic.rawfile, '-'], capture_output=True, check=True)
-print(p.stdout)
-update_pic.rawfile
+rows = fetchhelper.text_table(html)
 
-for node in html.find_all(text=re.compile('Sars-CoV-2 Infizierte')):
-    table = node.find_parent('table')
-    if table is not None:
-        break
-rows = fetchhelper.text_table(table)
+# The structure of the document is currently a mess. Let's wait if it improves in the future.
+for row in rows:
+    if row[0] == '':
+        del row[0]
 
-ths = rows[0]
-assert('Infizierte' in ths[1])
-assert('Geheilt' in ths[2] or 'geheilt' in ths[2])
+headers = []
+while rows[0][0] != 'Altomünster':
+    headers.append(rows[0])
+    del rows[0]
+
+footers = []
+while rows[-1][0] != 'Weichs':
+    footers.insert(0, rows[-1])
+    del rows[-1]
+
+#print(headers)
+#assert(any('Infizierte' in (ths + ['', ''])[1] for ths in headers))
+#assert(any('geheilt' in (ths + ['', ''])[2] for ths in headers))
 
 with open(parse.parsedfile, 'w') as outf:
     cout = csv.writer(outf)
     cout.writerow(['Kommune', 'Timestamp', 'Confirmed', 'Recovered'])
 
-    assert('Gesamt' in rows[-1])
-    for tds in rows[1:-1]:
+    for tds in rows:
+        tds = [td for td in tds if td]
         cout.writerow((tds[0], datatime.isoformat(), int(tds[1]), int(tds[2])))
 
 parse.deploy_timestamp()
