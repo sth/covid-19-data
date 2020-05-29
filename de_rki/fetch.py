@@ -34,7 +34,7 @@ update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M') 
     .replace(tzinfo=datatz)
 
 def clean_label(lstr):
-    return lstr.replace('\n', '').replace('\xad', '')
+    return lstr.replace('\n', '').replace('\xad', '').replace('*', '')
 
 def clean_num(numstr):
     return int(numstr.replace('.', '').strip() or '0')
