@@ -26,7 +26,7 @@ html = BeautifulSoup(update.rawdata, 'html.parser')
 def clean_num(numstr):
     if numstr in ['', '-']:
         return 0
-    return int(numstr.replace('.', '').strip())
+    return int(re.sub(r'[.:]', '', numstr).strip())
 
 header = html.find(text="Bestätigte Fälle")
 if header is None:
