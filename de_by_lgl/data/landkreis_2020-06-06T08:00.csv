@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-06-06T10:00:00+02:00,313,20
+Altötting,Oberbayern,2020-06-06T10:00:00+02:00,604,53
+Amberg Stadt,Oberpfalz,2020-06-06T10:00:00+02:00,85,4
+Amberg-Sulzbach,Oberpfalz,2020-06-06T10:00:00+02:00,496,47
+Ansbach,Mittelfranken,2020-06-06T10:00:00+02:00,606,27
+Ansbach Stadt,Mittelfranken,2020-06-06T10:00:00+02:00,138,8
+Aschaffenburg,Unterfranken,2020-06-06T10:00:00+02:00,537,38
+Aschaffenburg Stadt,Unterfranken,2020-06-06T10:00:00+02:00,115,1
+Augsburg,Schwaben,2020-06-06T10:00:00+02:00,385,9
+Augsburg Stadt,Schwaben,2020-06-06T10:00:00+02:00,413,15
+Bad Kissingen,Unterfranken,2020-06-06T10:00:00+02:00,257,18
+Bad Tölz-Wolfratshausen,Oberbayern,2020-06-06T10:00:00+02:00,423,10
+Bamberg,Oberfranken,2020-06-06T10:00:00+02:00,418,36
+Bamberg Stadt,Oberfranken,2020-06-06T10:00:00+02:00,199,20
+Bayreuth,Oberfranken,2020-06-06T10:00:00+02:00,421,27
+Bayreuth Stadt,Oberfranken,2020-06-06T10:00:00+02:00,210,12
+Berchtesgadener Land,Oberbayern,2020-06-06T10:00:00+02:00,304,22
+Cham,Oberpfalz,2020-06-06T10:00:00+02:00,430,21
+Coburg,Oberfranken,2020-06-06T10:00:00+02:00,342,26
+Coburg Stadt,Oberfranken,2020-06-06T10:00:00+02:00,93,1
+Dachau,Oberbayern,2020-06-06T10:00:00+02:00,914,27
+Deggendorf,Niederbayern,2020-06-06T10:00:00+02:00,326,13
+Dillingen an der Donau,Schwaben,2020-06-06T10:00:00+02:00,267,29
+Dingolfing-Landau,Niederbayern,2020-06-06T10:00:00+02:00,213,9
+Donau-Ries,Schwaben,2020-06-06T10:00:00+02:00,353,23
+Ebersberg,Oberbayern,2020-06-06T10:00:00+02:00,515,5
+Eichstätt,Oberbayern,2020-06-06T10:00:00+02:00,292,18
+Erding,Oberbayern,2020-06-06T10:00:00+02:00,616,12
+Erlangen Stadt,Mittelfranken,2020-06-06T10:00:00+02:00,260,11
+Erlangen-Höchstadt,Mittelfranken,2020-06-06T10:00:00+02:00,247,8
+Forchheim,Oberfranken,2020-06-06T10:00:00+02:00,207,4
+Freising,Oberbayern,2020-06-06T10:00:00+02:00,956,42
+Freyung-Grafenau,Niederbayern,2020-06-06T10:00:00+02:00,194,12
+Fürstenfeldbruck,Oberbayern,2020-06-06T10:00:00+02:00,900,35
+Fürth,Mittelfranken,2020-06-06T10:00:00+02:00,494,57
+Fürth Stadt,Mittelfranken,2020-06-06T10:00:00+02:00,394,35
+Garmisch-Partenkirchen,Oberbayern,2020-06-06T10:00:00+02:00,286,18
+Günzburg,Schwaben,2020-06-06T10:00:00+02:00,237,4
+Haßberge,Unterfranken,2020-06-06T10:00:00+02:00,162,6
+Hof,Oberfranken,2020-06-06T10:00:00+02:00,426,32
+Hof Stadt,Oberfranken,2020-06-06T10:00:00+02:00,142,4
+Ingolstadt Stadt,Oberbayern,2020-06-06T10:00:00+02:00,467,36
+Kaufbeuren Stadt,Schwaben,2020-06-06T10:00:00+02:00,111,5
+Kelheim,Niederbayern,2020-06-06T10:00:00+02:00,443,35
+Kempten Stadt,Schwaben,2020-06-06T10:00:00+02:00,102,10
+Kitzingen,Unterfranken,2020-06-06T10:00:00+02:00,192,3
+Kronach,Oberfranken,2020-06-06T10:00:00+02:00,164,3
+Kulmbach,Oberfranken,2020-06-06T10:00:00+02:00,245,11
+Landsberg am Lech,Oberbayern,2020-06-06T10:00:00+02:00,365,10
+Landshut,Niederbayern,2020-06-06T10:00:00+02:00,673,29
+Landshut Stadt,Niederbayern,2020-06-06T10:00:00+02:00,277,10
+Lichtenfels,Oberfranken,2020-06-06T10:00:00+02:00,289,15
+Lindau (Bodensee),Schwaben,2020-06-06T10:00:00+02:00,241,8
+Main-Spessart,Unterfranken,2020-06-06T10:00:00+02:00,156,6
+Memmingen Stadt,Schwaben,2020-06-06T10:00:00+02:00,51,0
+Miesbach,Oberbayern,2020-06-06T10:00:00+02:00,585,11
+Miltenberg,Unterfranken,2020-06-06T10:00:00+02:00,294,5
+Mühldorf am Inn,Oberbayern,2020-06-06T10:00:00+02:00,498,27
+München,Oberbayern,2020-06-06T10:00:00+02:00,1402,72
+München Stadt,Oberbayern,2020-06-06T10:00:00+02:00,6532,200
+Neu-Ulm,Schwaben,2020-06-06T10:00:00+02:00,428,26
+Neuburg-Schrobenhausen,Oberbayern,2020-06-06T10:00:00+02:00,332,14
+Neumarkt in der Oberpfalz,Oberpfalz,2020-06-06T10:00:00+02:00,380,15
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-06-06T10:00:00+02:00,242,6
+Neustadt an der Waldnaab,Oberpfalz,2020-06-06T10:00:00+02:00,819,71
+Nürnberg Stadt,Mittelfranken,2020-06-06T10:00:00+02:00,1062,41
+Nürnberger Land,Mittelfranken,2020-06-06T10:00:00+02:00,625,45
+Oberallgäu,Schwaben,2020-06-06T10:00:00+02:00,182,7
+Ostallgäu,Schwaben,2020-06-06T10:00:00+02:00,503,39
+Passau,Niederbayern,2020-06-06T10:00:00+02:00,584,26
+Passau Stadt,Niederbayern,2020-06-06T10:00:00+02:00,133,18
+Pfaffenhofen an der Ilm,Oberbayern,2020-06-06T10:00:00+02:00,373,19
+Regen,Niederbayern,2020-06-06T10:00:00+02:00,196,11
+Regensburg,Oberpfalz,2020-06-06T10:00:00+02:00,499,15
+Regensburg Stadt,Oberpfalz,2020-06-06T10:00:00+02:00,654,10
+Rhön-Grabfeld,Unterfranken,2020-06-06T10:00:00+02:00,194,6
+Rosenheim,Oberbayern,2020-06-06T10:00:00+02:00,2277,190
+Rosenheim Stadt,Oberbayern,2020-06-06T10:00:00+02:00,511,24
+Roth,Mittelfranken,2020-06-06T10:00:00+02:00,291,7
+Rottal-Inn,Niederbayern,2020-06-06T10:00:00+02:00,734,45
+Schwabach Stadt,Mittelfranken,2020-06-06T10:00:00+02:00,79,2
+Schwandorf,Oberpfalz,2020-06-06T10:00:00+02:00,506,19
+Schweinfurt,Unterfranken,2020-06-06T10:00:00+02:00,511,25
+Schweinfurt Stadt,Unterfranken,2020-06-06T10:00:00+02:00,177,18
+Starnberg,Oberbayern,2020-06-06T10:00:00+02:00,539,13
+Straubing Stadt,Niederbayern,2020-06-06T10:00:00+02:00,427,46
+Straubing-Bogen,Niederbayern,2020-06-06T10:00:00+02:00,551,28
+Tirschenreuth,Oberpfalz,2020-06-06T10:00:00+02:00,1133,137
+Traunstein,Oberbayern,2020-06-06T10:00:00+02:00,1314,87
+Unterallgäu,Schwaben,2020-06-06T10:00:00+02:00,271,14
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-06-06T10:00:00+02:00,325,20
+Weilheim-Schongau,Oberbayern,2020-06-06T10:00:00+02:00,352,3
+Weißenburg-Gunzenhausen,Mittelfranken,2020-06-06T10:00:00+02:00,331,25
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-06-06T10:00:00+02:00,657,39
+Würzburg,Unterfranken,2020-06-06T10:00:00+02:00,413,9
+Würzburg Stadt,Unterfranken,2020-06-06T10:00:00+02:00,468,51
