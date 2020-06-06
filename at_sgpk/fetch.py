@@ -108,7 +108,7 @@ def parse_v2(parses, html):
 
     for i, tds in enumerate(trs):
         assert(len(ths) == len(tds))
-        mo = re.search(r'Stand (\d\d.\d\d.\d\d\d\d), *(\d\d:\d\d) Uhr', tds[0])
+        mo = re.search(r'Stand (\d\d.\d\d.\d\d\d\d), *(\d\d:\d\d) ?Uhr', tds[0])
         if mo is None:
             print("cannot parse date")
             sys.exit(1)
