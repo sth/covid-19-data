@@ -50,6 +50,7 @@ areasum = {
 }
 
 parses = []
+datatime = None
 for feat in sorted(jd['features'], key=(lambda f: f['attributes']['Statistikdatum'])):
     attrs = feat['attributes']
     datatime = datetime.datetime.utcfromtimestamp(attrs['Statistikdatum']/1000).replace(hour=11, minute=30, tzinfo=datatz)
@@ -57,16 +58,16 @@ for feat in sorted(jd['features'], key=(lambda f: f['attributes']['Statistikdatu
         if attr in areasum:
             areasum[attr] += value
 
-    parse = fetchhelper.ParseData(update, 'data', variant=datatime.isoformat())
-    parse.parsedtime = datatime
-    with open(parse.parsedfile, 'w') as outf:
-        cw = csv.writer(outf)
-        header = ['Area', 'Timestamp', 'Confirmed']
-        cw.writerow(header)
-        for area, count in sorted(areasum.items()):
-            cw.writerow([area.replace('_', ' '), datatime.isoformat(), count])
+parse = fetchhelper.ParseData(update, 'data', variant=datatime.isoformat())
+parse.parsedtime = datatime
+with open(parse.parsedfile, 'w') as outf:
+    cw = csv.writer(outf)
+    header = ['Area', 'Timestamp', 'Confirmed']
+    cw.writerow(header)
+    for area, count in sorted(areasum.items()):
+        cw.writerow([area.replace('_', ' '), datatime.isoformat(), count])
 
-    parse.deploy_timestamp()
-    parses.append(parse)
+parse.deploy_timestamp()
+parses.append(parse)
 
 fetchhelper.git_commit(parses, args)
