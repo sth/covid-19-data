@@ -164,7 +164,7 @@ if datemo is None:
 publishdate = datetime.datetime.strptime(datemo.group(1), '%d.%m.%Y').date()
 
 def get_labeltime(text):
-    mo = re.search(r'Stand:.*\);, (\d\d:\d\d) Uhr', text)
+    mo = re.search(r'Stand:.*\);\s*, (\d\d:\d\d) Uhr', text, re.DOTALL)
     if mo is None:
         return None
     stime = datetime.datetime.strptime(mo.group(1), '%H:%M').time()
