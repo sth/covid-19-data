@@ -111,7 +111,7 @@ with open(parse.parsedfile, 'w') as outf:
 
     for tds in rows:
         assert(len(tds) == len(ths))
-        area = tds[0]
+        area = tds[0].rstrip('*')
         confirmed = clean_num(tds[1])
         if cn_deaths is not None:
             deceased = clean_num(tds[cn_deaths])
