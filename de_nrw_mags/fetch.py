@@ -10,6 +10,8 @@ ap = argparse.ArgumentParser()
 fetchhelper.add_arguments(ap)
 args = ap.parse_args()
 
+fetchhelper.check_oldfetch(args)
+
 import re, csv, os, sys
 from datetime import datetime
 from bs4 import BeautifulSoup
@@ -28,9 +30,7 @@ def clean_num(numstr):
         return 0
     return int(re.sub(r'[.:]', '', numstr).strip())
 
-header = html.find(text="Bestätigte Fälle")
-if header is None:
-    header = html.find(text="Bestätigte Fälle (IfSG)")
+header = html.find(text="Bestätigte Fälle (IfSG)")
 
 parse = fetchhelper.ParseData(update, 'data')
 
@@ -69,67 +69,26 @@ with open(parse.parsedfile, 'w') as outf:
     assert('Gesamt' in ''.join(rows[-1]))
     rows = rows[1:-1]
 
+    assert(len(ths) == 5)
     colnum = len(ths)
-    cn_deaths = None
-    cn_recovered = None
-    ifsg = False
-    if colnum == 2:
-        cout.writerow(['Area', 'Date', 'Confirmed'])
-    elif colnum == 3:
-        assert('Todesfälle' in ths[2])
-        cn_deaths = 2
-        cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths'])
-    elif colnum == 4:
-        assert('Todesfälle' in ths[2])
-        assert('Genesene' in ths[3])
-        cn_deaths = 2
-        cn_recovered = 3
-        if 'IfSG' in ths[1]:
-            assert('IfSG' in ths[2])
-            cout.writerow(['Area', 'Date', 'EConfirmed', 'EDeaths', 'Recovered'])
-        else:
-            cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths', 'Recovered'])
-    elif colnum == 5:
-        assert('Bestätigt' in ths[1])
-        assert('Todesfälle' in ths[3])
-        assert('Genesene' in ths[4])
-        cn_deaths = 3
-        cn_recovered = 4
-        cout.writerow(['Area', 'Date', 'Confirmed', 'Deaths', 'Recovered'])
-    elif colnum == 6:
-        assert('Bestätigt' in ths[1])
-        assert('Bestätigt' in ths[2] and 'IfSG' in ths[2])
-        assert('Todesfälle' in ths[3])
-        assert('Todesfälle' in ths[4] and 'IfSG' in ths[4])
-        assert('Genesene' in ths[5])
-        cn_deaths = 3
-        cn_recovered = 5
-        ifsg = True
-        cout.writerow(['Area', 'Date', 'Confirmed', 'EConfirmed', 'Deaths', 'EDeaths', 'Recovered'])
-    else:
-        raise Exception("unknown table structure")
+    assert('Bestätigte' in ths[1])
+    assert('Todesfälle' in ths[2])
+    assert('Genesene' in ths[3])
+    assert('Inzidenz' in ths[4])
+    cn_deaths = 2
+    cn_recovered = 3
+    cout.writerow(['Area', 'Date', 'EConfirmed', 'EDeaths', 'Recovered'])
 
     for tds in rows:
         assert(len(tds) == len(ths))
         area = tds[0].rstrip('*')
         confirmed = clean_num(tds[1])
-        if cn_deaths is not None:
-            deceased = clean_num(tds[cn_deaths])
-        if cn_recovered is not None:
-            if tds[cn_recovered] in ['k. A.', 'k.A.']:
-                recovered = None
-            else:
-                recovered = clean_num(tds[cn_recovered])
-        if ifsg:
-            econfirmed = clean_num(tds[1+1])
-            edeceased = clean_num(tds[cn_deaths+1])
-            cout.writerow([area, parse.parsedtime.isoformat(), confirmed, econfirmed, deceased, edeceased, recovered])
-        elif cn_deaths is None:
-            cout.writerow([area, parse.parsedtime.isoformat(), confirmed])
-        elif cn_recovered is None:
-            cout.writerow([area, parse.parsedtime.isoformat(), confirmed, deceased])
+        deceased = clean_num(tds[cn_deaths])
+        if tds[cn_recovered] in ['k. A.', 'k.A.']:
+            recovered = None
         else:
-            cout.writerow([area, parse.parsedtime.isoformat(), confirmed, deceased, recovered])
+            recovered = clean_num(tds[cn_recovered])
+        cout.writerow([area, parse.parsedtime.isoformat(), confirmed, deceased, recovered])
 
 
 parse.deploy_timestamp()
