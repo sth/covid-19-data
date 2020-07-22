@@ -66,7 +66,7 @@ with open(parse.parsedfile, 'w') as outf:
     rows = fetchhelper.text_table(tab)
     ths = rows[0]
     assert('Landkreis' in ths[0])
-    assert('Gesamt' in ''.join(rows[-1]))
+    assert('Gesamt' in ''.join(rows[-1]) or 'Nordrhein-Westfalen' in ''.join(rows[-1]))
     rows = rows[1:-1]
 
     assert(len(ths) == 5)
