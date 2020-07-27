@@ -53,6 +53,9 @@ def parse_counts(parse, base, lead):
 
     parse.deploy_timestamp()
 
+def strip_footnote(s):
+    return s.rstrip('*')
+
 def parse_v1(parses, html):
     parse_c = fetchhelper.ParseData(update, 'confirmed')
     parse_counts(parse_c, html, "Best.*tigte F.*lle")
@@ -118,7 +121,7 @@ def parse_v2(parses, html):
             cw = csv.writer(f)
             cw.writerow(['Area', 'Date', 'Value'])
             for col in range(1, len(tds)-1):
-                area = areas[ths[col]]
+                area = areas[strip_footnote(ths[col])]
                 count = cleannum(tds[col])
                 cw.writerow([area, datadate.isoformat(), count])
         parse.deploy_timestamp()
