@@ -13,9 +13,24 @@ args = ap.parse_args()
 fetchhelper.check_oldfetch(args)
 
 import re, csv, os, sys
-from datetime import datetime
+import datetime, glob
 from bs4 import BeautifulSoup
 import dateutil.tz
+
+if args.optional:
+    # Check if we think we need to update
+    now = datetime.datetime.now()
+    if now.time() > datetime.time(12, 0):
+        # We expect data for the current day
+        target = now.date()
+    else:
+        # We expect at least data for the previous day
+        target = (now - datetime.timedelta(days=1)).date()
+    match = target.isoformat()
+    if glob.glob('data/*%s*.csv' % match):
+        # Looks good.
+        print("Data for %s already saved." % match)
+        sys.exit(0)
 
 datatz = dateutil.tz.gettz('Europe/Berlin')
 
@@ -49,12 +64,12 @@ if mo is None:
         print("Couldn't find date.", file=sys.stderr)
         sys.exit(1)
     # We guess it's in the morning, since official numbers have to be reported until 09:00
-    parse.parsedtime = datetime.strptime(mo.group(1), '%d. %m %Y').replace(hour=3, minute=30, tzinfo=datatz)
+    parse.parsedtime = datetime.datetime.strptime(mo.group(1), '%d. %m %Y').replace(hour=3, minute=30, tzinfo=datatz)
 else:
     try:
-        parse.parsedtime = datetime.strptime(mo.group(1), '%d. %m %Y, %H.%M').replace(tzinfo=datatz)
+        parse.parsedtime = datetime.datetime.strptime(mo.group(1), '%d. %m %Y, %H.%M').replace(tzinfo=datatz)
     except ValueError:
-        parse.parsedtime = datetime.strptime(mo.group(1), '%d. %m %Y, %H:%M').replace(tzinfo=datatz)
+        parse.parsedtime = datetime.datetime.strptime(mo.group(1), '%d. %m %Y, %H:%M').replace(tzinfo=datatz)
 
 tab = header.find_parent('table')
 if tab is None:
