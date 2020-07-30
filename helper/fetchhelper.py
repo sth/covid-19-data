@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 def add_arguments(ap):
     ap.add_argument('--rawfile')
+    ap.add_argument('--optional', action='store_true')
     ap.add_argument('--git-commit', action='store_true')
     ap.add_argument('--git-push', action='store_true')
 
