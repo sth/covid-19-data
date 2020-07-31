@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-07-31T09:00:00+02:00,404,20
+Altötting,Oberbayern,2020-07-31T09:00:00+02:00,623,55
+Amberg Stadt,Oberpfalz,2020-07-31T09:00:00+02:00,95,4
+Amberg-Sulzbach,Oberpfalz,2020-07-31T09:00:00+02:00,496,54
+Ansbach,Mittelfranken,2020-07-31T09:00:00+02:00,608,28
+Ansbach Stadt,Mittelfranken,2020-07-31T09:00:00+02:00,155,8
+Aschaffenburg,Unterfranken,2020-07-31T09:00:00+02:00,580,42
+Aschaffenburg Stadt,Unterfranken,2020-07-31T09:00:00+02:00,133,1
+Augsburg,Schwaben,2020-07-31T09:00:00+02:00,434,11
+Augsburg Stadt,Schwaben,2020-07-31T09:00:00+02:00,572,16
+Bad Kissingen,Unterfranken,2020-07-31T09:00:00+02:00,263,18
+Bad Tölz-Wolfratshausen,Oberbayern,2020-07-31T09:00:00+02:00,519,10
+Bamberg,Oberfranken,2020-07-31T09:00:00+02:00,436,36
+Bamberg Stadt,Oberfranken,2020-07-31T09:00:00+02:00,207,22
+Bayreuth,Oberfranken,2020-07-31T09:00:00+02:00,431,28
+Bayreuth Stadt,Oberfranken,2020-07-31T09:00:00+02:00,211,11
+Berchtesgadener Land,Oberbayern,2020-07-31T09:00:00+02:00,355,25
+Cham,Oberpfalz,2020-07-31T09:00:00+02:00,431,21
+Coburg,Oberfranken,2020-07-31T09:00:00+02:00,406,29
+Coburg Stadt,Oberfranken,2020-07-31T09:00:00+02:00,122,3
+Dachau,Oberbayern,2020-07-31T09:00:00+02:00,970,30
+Deggendorf,Niederbayern,2020-07-31T09:00:00+02:00,340,15
+Dillingen an der Donau,Schwaben,2020-07-31T09:00:00+02:00,274,29
+Dingolfing-Landau,Niederbayern,2020-07-31T09:00:00+02:00,468,10
+Donau-Ries,Schwaben,2020-07-31T09:00:00+02:00,372,23
+Ebersberg,Oberbayern,2020-07-31T09:00:00+02:00,535,5
+Eichstätt,Oberbayern,2020-07-31T09:00:00+02:00,314,20
+Erding,Oberbayern,2020-07-31T09:00:00+02:00,703,11
+Erlangen Stadt,Mittelfranken,2020-07-31T09:00:00+02:00,267,11
+Erlangen-Höchstadt,Mittelfranken,2020-07-31T09:00:00+02:00,278,11
+Forchheim,Oberfranken,2020-07-31T09:00:00+02:00,212,4
+Freising,Oberbayern,2020-07-31T09:00:00+02:00,1015,46
+Freyung-Grafenau,Niederbayern,2020-07-31T09:00:00+02:00,196,12
+Fürstenfeldbruck,Oberbayern,2020-07-31T09:00:00+02:00,969,36
+Fürth,Mittelfranken,2020-07-31T09:00:00+02:00,511,58
+Fürth Stadt,Mittelfranken,2020-07-31T09:00:00+02:00,441,38
+Garmisch-Partenkirchen,Oberbayern,2020-07-31T09:00:00+02:00,302,18
+Günzburg,Schwaben,2020-07-31T09:00:00+02:00,254,4
+Haßberge,Unterfranken,2020-07-31T09:00:00+02:00,177,6
+Hof,Oberfranken,2020-07-31T09:00:00+02:00,477,32
+Hof Stadt,Oberfranken,2020-07-31T09:00:00+02:00,143,4
+Ingolstadt Stadt,Oberbayern,2020-07-31T09:00:00+02:00,535,38
+Kaufbeuren Stadt,Schwaben,2020-07-31T09:00:00+02:00,113,5
+Kelheim,Niederbayern,2020-07-31T09:00:00+02:00,493,35
+Kempten Stadt,Schwaben,2020-07-31T09:00:00+02:00,109,10
+Kitzingen,Unterfranken,2020-07-31T09:00:00+02:00,197,3
+Kronach,Oberfranken,2020-07-31T09:00:00+02:00,174,3
+Kulmbach,Oberfranken,2020-07-31T09:00:00+02:00,248,11
+Landsberg am Lech,Oberbayern,2020-07-31T09:00:00+02:00,378,10
+Landshut,Niederbayern,2020-07-31T09:00:00+02:00,709,31
+Landshut Stadt,Niederbayern,2020-07-31T09:00:00+02:00,290,9
+Lichtenfels,Oberfranken,2020-07-31T09:00:00+02:00,316,17
+Lindau (Bodensee),Schwaben,2020-07-31T09:00:00+02:00,253,8
+Main-Spessart,Unterfranken,2020-07-31T09:00:00+02:00,161,6
+Memmingen Stadt,Schwaben,2020-07-31T09:00:00+02:00,58,0
+Miesbach,Oberbayern,2020-07-31T09:00:00+02:00,603,11
+Miltenberg,Unterfranken,2020-07-31T09:00:00+02:00,328,5
+Mühldorf am Inn,Oberbayern,2020-07-31T09:00:00+02:00,513,27
+München,Oberbayern,2020-07-31T09:00:00+02:00,1527,91
+München Stadt,Oberbayern,2020-07-31T09:00:00+02:00,7264,222
+Neu-Ulm,Schwaben,2020-07-31T09:00:00+02:00,471,26
+Neuburg-Schrobenhausen,Oberbayern,2020-07-31T09:00:00+02:00,334,18
+Neumarkt in der Oberpfalz,Oberpfalz,2020-07-31T09:00:00+02:00,401,17
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-07-31T09:00:00+02:00,258,6
+Neustadt an der Waldnaab,Oberpfalz,2020-07-31T09:00:00+02:00,842,73
+Nürnberg Stadt,Mittelfranken,2020-07-31T09:00:00+02:00,1208,51
+Nürnberger Land,Mittelfranken,2020-07-31T09:00:00+02:00,663,44
+Oberallgäu,Schwaben,2020-07-31T09:00:00+02:00,204,7
+Ostallgäu,Schwaben,2020-07-31T09:00:00+02:00,529,39
+Passau,Niederbayern,2020-07-31T09:00:00+02:00,632,29
+Passau Stadt,Niederbayern,2020-07-31T09:00:00+02:00,146,18
+Pfaffenhofen an der Ilm,Oberbayern,2020-07-31T09:00:00+02:00,392,21
+Regen,Niederbayern,2020-07-31T09:00:00+02:00,200,12
+Regensburg,Oberpfalz,2020-07-31T09:00:00+02:00,503,15
+Regensburg Stadt,Oberpfalz,2020-07-31T09:00:00+02:00,731,10
+Rhön-Grabfeld,Unterfranken,2020-07-31T09:00:00+02:00,198,8
+Rosenheim,Oberbayern,2020-07-31T09:00:00+02:00,2327,199
+Rosenheim Stadt,Oberbayern,2020-07-31T09:00:00+02:00,538,23
+Roth,Mittelfranken,2020-07-31T09:00:00+02:00,293,7
+Rottal-Inn,Niederbayern,2020-07-31T09:00:00+02:00,741,48
+Schwabach Stadt,Mittelfranken,2020-07-31T09:00:00+02:00,91,2
+Schwandorf,Oberpfalz,2020-07-31T09:00:00+02:00,513,20
+Schweinfurt,Unterfranken,2020-07-31T09:00:00+02:00,536,25
+Schweinfurt Stadt,Unterfranken,2020-07-31T09:00:00+02:00,192,17
+Starnberg,Oberbayern,2020-07-31T09:00:00+02:00,609,13
+Straubing Stadt,Niederbayern,2020-07-31T09:00:00+02:00,446,48
+Straubing-Bogen,Niederbayern,2020-07-31T09:00:00+02:00,565,29
+Tirschenreuth,Oberpfalz,2020-07-31T09:00:00+02:00,1140,138
+Traunstein,Oberbayern,2020-07-31T09:00:00+02:00,1316,88
+Unterallgäu,Schwaben,2020-07-31T09:00:00+02:00,287,14
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-07-31T09:00:00+02:00,339,20
+Weilheim-Schongau,Oberbayern,2020-07-31T09:00:00+02:00,368,3
+Weißenburg-Gunzenhausen,Mittelfranken,2020-07-31T09:00:00+02:00,340,25
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-07-31T09:00:00+02:00,672,41
+Würzburg,Unterfranken,2020-07-31T09:00:00+02:00,430,7
+Würzburg Stadt,Unterfranken,2020-07-31T09:00:00+02:00,496,52
