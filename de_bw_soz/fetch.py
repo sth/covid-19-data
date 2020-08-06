@@ -41,6 +41,11 @@ with open(parse.parsedfile, 'w') as pf:
                     for d in row[1:]]
             cpf.writerow(['Dates'] + [d.isoformat() for d in dates])
             continue
+
+        # Wrong label 05.08.2020:
+        if row and row[0] == 'Pforzheim (Stadtkreis)' and int(row[1]) == 37579:
+            row[0] = 'Summe'
+
         if row and row[0] == 'Summe':
             break
 
