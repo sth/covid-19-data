@@ -51,7 +51,8 @@ areasum = {
 
 parses = []
 datatime = None
-for feat in sorted(jd['features'], key=(lambda f: f['attributes']['Statistikdatum'])):
+features = [f for f in jd['features'] if f['attributes']['Statistikdatum'] is not None]
+for feat in sorted(features, key=(lambda f: f['attributes']['Statistikdatum'])):
     attrs = feat['attributes']
     datatime = datetime.datetime.utcfromtimestamp(attrs['Statistikdatum']/1000).replace(hour=11, minute=30, tzinfo=datatz)
     for attr, value in attrs.items():
