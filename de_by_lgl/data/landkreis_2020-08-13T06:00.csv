@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-08-13T08:00:00+02:00,407,20
+Altötting,Oberbayern,2020-08-13T08:00:00+02:00,649,55
+Amberg Stadt,Oberpfalz,2020-08-13T08:00:00+02:00,96,4
+Amberg-Sulzbach,Oberpfalz,2020-08-13T08:00:00+02:00,499,54
+Ansbach,Mittelfranken,2020-08-13T08:00:00+02:00,608,28
+Ansbach Stadt,Mittelfranken,2020-08-13T08:00:00+02:00,155,8
+Aschaffenburg,Unterfranken,2020-08-13T08:00:00+02:00,595,42
+Aschaffenburg Stadt,Unterfranken,2020-08-13T08:00:00+02:00,138,1
+Augsburg,Schwaben,2020-08-13T08:00:00+02:00,474,11
+Augsburg Stadt,Schwaben,2020-08-13T08:00:00+02:00,585,16
+Bad Kissingen,Unterfranken,2020-08-13T08:00:00+02:00,269,18
+Bad Tölz-Wolfratshausen,Oberbayern,2020-08-13T08:00:00+02:00,526,10
+Bamberg,Oberfranken,2020-08-13T08:00:00+02:00,443,36
+Bamberg Stadt,Oberfranken,2020-08-13T08:00:00+02:00,211,22
+Bayreuth,Oberfranken,2020-08-13T08:00:00+02:00,433,28
+Bayreuth Stadt,Oberfranken,2020-08-13T08:00:00+02:00,213,11
+Berchtesgadener Land,Oberbayern,2020-08-13T08:00:00+02:00,367,25
+Cham,Oberpfalz,2020-08-13T08:00:00+02:00,437,21
+Coburg,Oberfranken,2020-08-13T08:00:00+02:00,411,29
+Coburg Stadt,Oberfranken,2020-08-13T08:00:00+02:00,124,3
+Dachau,Oberbayern,2020-08-13T08:00:00+02:00,995,31
+Deggendorf,Niederbayern,2020-08-13T08:00:00+02:00,346,15
+Dillingen an der Donau,Schwaben,2020-08-13T08:00:00+02:00,290,29
+Dingolfing-Landau,Niederbayern,2020-08-13T08:00:00+02:00,804,10
+Donau-Ries,Schwaben,2020-08-13T08:00:00+02:00,382,23
+Ebersberg,Oberbayern,2020-08-13T08:00:00+02:00,544,5
+Eichstätt,Oberbayern,2020-08-13T08:00:00+02:00,324,20
+Erding,Oberbayern,2020-08-13T08:00:00+02:00,725,11
+Erlangen Stadt,Mittelfranken,2020-08-13T08:00:00+02:00,283,11
+Erlangen-Höchstadt,Mittelfranken,2020-08-13T08:00:00+02:00,297,11
+Forchheim,Oberfranken,2020-08-13T08:00:00+02:00,232,4
+Freising,Oberbayern,2020-08-13T08:00:00+02:00,1053,46
+Freyung-Grafenau,Niederbayern,2020-08-13T08:00:00+02:00,196,12
+Fürstenfeldbruck,Oberbayern,2020-08-13T08:00:00+02:00,991,36
+Fürth,Mittelfranken,2020-08-13T08:00:00+02:00,513,58
+Fürth Stadt,Mittelfranken,2020-08-13T08:00:00+02:00,450,38
+Garmisch-Partenkirchen,Oberbayern,2020-08-13T08:00:00+02:00,305,18
+Günzburg,Schwaben,2020-08-13T08:00:00+02:00,267,4
+Haßberge,Unterfranken,2020-08-13T08:00:00+02:00,179,6
+Hof,Oberfranken,2020-08-13T08:00:00+02:00,481,32
+Hof Stadt,Oberfranken,2020-08-13T08:00:00+02:00,146,4
+Ingolstadt Stadt,Oberbayern,2020-08-13T08:00:00+02:00,576,38
+Kaufbeuren Stadt,Schwaben,2020-08-13T08:00:00+02:00,115,5
+Kelheim,Niederbayern,2020-08-13T08:00:00+02:00,510,35
+Kempten Stadt,Schwaben,2020-08-13T08:00:00+02:00,121,10
+Kitzingen,Unterfranken,2020-08-13T08:00:00+02:00,199,3
+Kronach,Oberfranken,2020-08-13T08:00:00+02:00,175,3
+Kulmbach,Oberfranken,2020-08-13T08:00:00+02:00,250,11
+Landsberg am Lech,Oberbayern,2020-08-13T08:00:00+02:00,381,10
+Landshut,Niederbayern,2020-08-13T08:00:00+02:00,726,31
+Landshut Stadt,Niederbayern,2020-08-13T08:00:00+02:00,296,9
+Lichtenfels,Oberfranken,2020-08-13T08:00:00+02:00,323,17
+Lindau (Bodensee),Schwaben,2020-08-13T08:00:00+02:00,257,8
+Main-Spessart,Unterfranken,2020-08-13T08:00:00+02:00,166,6
+Memmingen Stadt,Schwaben,2020-08-13T08:00:00+02:00,66,0
+Miesbach,Oberbayern,2020-08-13T08:00:00+02:00,623,11
+Miltenberg,Unterfranken,2020-08-13T08:00:00+02:00,341,5
+Mühldorf am Inn,Oberbayern,2020-08-13T08:00:00+02:00,531,27
+München,Oberbayern,2020-08-13T08:00:00+02:00,1555,91
+München Stadt,Oberbayern,2020-08-13T08:00:00+02:00,7527,223
+Neu-Ulm,Schwaben,2020-08-13T08:00:00+02:00,485,26
+Neuburg-Schrobenhausen,Oberbayern,2020-08-13T08:00:00+02:00,345,18
+Neumarkt in der Oberpfalz,Oberpfalz,2020-08-13T08:00:00+02:00,407,17
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-08-13T08:00:00+02:00,261,6
+Neustadt an der Waldnaab,Oberpfalz,2020-08-13T08:00:00+02:00,846,73
+Nürnberg Stadt,Mittelfranken,2020-08-13T08:00:00+02:00,1252,52
+Nürnberger Land,Mittelfranken,2020-08-13T08:00:00+02:00,672,44
+Oberallgäu,Schwaben,2020-08-13T08:00:00+02:00,211,7
+Ostallgäu,Schwaben,2020-08-13T08:00:00+02:00,541,39
+Passau,Niederbayern,2020-08-13T08:00:00+02:00,640,31
+Passau Stadt,Niederbayern,2020-08-13T08:00:00+02:00,150,18
+Pfaffenhofen an der Ilm,Oberbayern,2020-08-13T08:00:00+02:00,393,21
+Regen,Niederbayern,2020-08-13T08:00:00+02:00,201,12
+Regensburg,Oberpfalz,2020-08-13T08:00:00+02:00,515,15
+Regensburg Stadt,Oberpfalz,2020-08-13T08:00:00+02:00,738,10
+Rhön-Grabfeld,Unterfranken,2020-08-13T08:00:00+02:00,205,8
+Rosenheim,Oberbayern,2020-08-13T08:00:00+02:00,2349,199
+Rosenheim Stadt,Oberbayern,2020-08-13T08:00:00+02:00,555,23
+Roth,Mittelfranken,2020-08-13T08:00:00+02:00,301,7
+Rottal-Inn,Niederbayern,2020-08-13T08:00:00+02:00,747,48
+Schwabach Stadt,Mittelfranken,2020-08-13T08:00:00+02:00,92,2
+Schwandorf,Oberpfalz,2020-08-13T08:00:00+02:00,519,20
+Schweinfurt,Unterfranken,2020-08-13T08:00:00+02:00,549,25
+Schweinfurt Stadt,Unterfranken,2020-08-13T08:00:00+02:00,195,17
+Starnberg,Oberbayern,2020-08-13T08:00:00+02:00,613,13
+Straubing Stadt,Niederbayern,2020-08-13T08:00:00+02:00,448,48
+Straubing-Bogen,Niederbayern,2020-08-13T08:00:00+02:00,570,29
+Tirschenreuth,Oberpfalz,2020-08-13T08:00:00+02:00,1140,138
+Traunstein,Oberbayern,2020-08-13T08:00:00+02:00,1326,88
+Unterallgäu,Schwaben,2020-08-13T08:00:00+02:00,295,14
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-08-13T08:00:00+02:00,339,20
+Weilheim-Schongau,Oberbayern,2020-08-13T08:00:00+02:00,373,3
+Weißenburg-Gunzenhausen,Mittelfranken,2020-08-13T08:00:00+02:00,346,25
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-08-13T08:00:00+02:00,677,41
+Würzburg,Unterfranken,2020-08-13T08:00:00+02:00,452,7
+Würzburg Stadt,Unterfranken,2020-08-13T08:00:00+02:00,503,52
