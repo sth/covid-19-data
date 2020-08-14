@@ -24,6 +24,9 @@ update.check_fetch(rawfile=args.rawfile)
 html = BeautifulSoup(update.rawdata, 'html.parser')
 
 header = html.find(text="Fallzahlen in Deutschland")
+if header is None:
+    # Workaround typo 14.08.2020
+    header = html.find(text="tenFallzahlen in Deutschland")
 par = header.parent.next_sibling.next_sibling
 
 mo = re.search('Stand: (\S*, \S*) Uhr', par.get_text())
