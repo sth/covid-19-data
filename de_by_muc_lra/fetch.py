@@ -31,7 +31,7 @@ datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo
 title = html.find(text=re.compile('Fallzahlen Infizierte nach Gemeinden')).find_parent('h2')
 rows = fetchhelper.text_table(title.find_next_sibling('table'))
 
-assert(len(rows[0]) == 2)
+assert(len(rows[0]) == 2 or len(rows[0]) == 3)
 
 with open(parse.parsedfile, 'w') as outf:
     cout = csv.writer(outf)
