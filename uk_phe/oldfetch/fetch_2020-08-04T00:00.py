@@ -3,17 +3,14 @@
 import sys, os.path
 sys.path.append(os.path.join(os.path.dirname(__file__), '../helper'))
 
-import argparse, datetime
+import argparse
 import fetchhelper
 
-yesterday = datetime.date.today() - datetime.timedelta(days=1)
-
 ap = argparse.ArgumentParser()
-ap.add_argument('--date', default=yesterday.isoformat())
 fetchhelper.add_arguments(ap)
 args = ap.parse_args()
 
-import subprocess, datetime, re, csv, os, sys, urllib.parse
+import subprocess, datetime, re, csv, os, sys
 import dateutil.tz
 from dataclasses import dataclass
 import lxml.etree, json
@@ -22,21 +19,8 @@ datatz = dateutil.tz.gettz('Europe/London')
 
 # From https://coronavirus.data.gov.uk/
 
-def build_api_url(area, date):
-    def filter_seq(kv):
-        return ';'.join('%s=%s' % it for it in kv.items())
-    def structure_seq(ks):
-        return json.dumps({k: k for k in ks})
-
-    query = {
-        'filters': filter_seq({'areaType': area, 'date': date}),
-        'structure': structure_seq(['date', 'areaName', 'areaCode', 'cumCasesByPublishDate', 'cumDeaths28DaysByPublishDate']),
-    }
-
-    return 'https://api.coronavirus.data.gov.uk/v1/data?' + urllib.parse.urlencode(query)
-
-url_countries = build_api_url('nation', args.date)
-url_utlas = build_api_url('utla', args.date)
+url_countries = 'https://c19downloads.azureedge.net/downloads/data/countries_latest.json'
+url_utlas = 'https://c19downloads.azureedge.net/downloads/data/utlas_latest.json'
 
 regions = {
     'E06000001': ('Hartlepool', 'North East'),
@@ -213,14 +197,13 @@ if args.rawfile is not None:
 else:
     args.rawfile = [None, None]
 
-datatime = datetime.datetime.combine(datetime.date.fromisoformat(args.date), datetime.time(23, 59)).replace(tzinfo=datatz)
-
 countrydata = {}
 
 country_data = fetchhelper.Updater(url_countries, ext='country.json')
-country_data.check_fetch(rawfile=args.rawfile[0], compressed=True)
+country_data.check_fetch(rawfile=args.rawfile[1])
 jdat = json.loads(country_data.rawdata)
 
+datatime = datetime.datetime.fromisoformat(jdat['metadata']['lastUpdatedAt'].rstrip('Z')).astimezone(datetime.timezone.utc)
 parses = []
 parse = fetchhelper.ParseData(country_data, 'countries')
 parse.parsedtime = datatime
@@ -228,31 +211,33 @@ with open(parse.parsedfile, 'w') as f:
     cw = csv.writer(f)
     header = ['Code', 'Country', 'Timestamp', 'Confirmed', 'Deaths']
     cw.writerow(header)
-    for data in jdat['data']:
-        code = data['areaCode']
-        name = data['areaName']
-        confirmed = data['cumCasesByPublishDate']
-        deaths = data['cumDeaths28DaysByPublishDate']
+    for (code, data) in jdat.items():
+        if code == 'metadata':
+            continue
+        name = data['name']['value']
+        confirmed = int(data['totalCases']['value'])
+        deaths = int(data['deaths']['value'])
         cw.writerow([code, name, datatime, confirmed, deaths])
 parse.deploy_timestamp()
 parses.append(parse)
 
 utla_data = fetchhelper.Updater(url_utlas, ext='utla.json')
-utla_data.check_fetch(rawfile=args.rawfile[1], compressed=True)
+utla_data.check_fetch(rawfile=args.rawfile[1])
 jdat = json.loads(utla_data.rawdata)
+datatime = datetime.datetime.fromisoformat(jdat['metadata']['lastUpdatedAt'].rstrip('Z')).astimezone(datetime.timezone.utc)
 
 parse = fetchhelper.ParseData(utla_data, 'utla')
 parse.parsedtime = datatime
 with open(parse.parsedfile, 'w') as f:
     cw = csv.writer(f)
-    header = ['Code', 'UTLA', 'Region', 'Timestamp', 'Confirmed', 'Deaths']
+    header = ['Code', 'UTLA', 'Region', 'Timestamp', 'Confirmed']
     cw.writerow(header)
-    for data in jdat['data']:
-        code = data['areaCode']
-        name = data['areaName']
-        confirmed = data['cumCasesByPublishDate']
-        deaths = data['cumDeaths28DaysByPublishDate']
-        cw.writerow([code, name, (regions[code][1] if code[0] == 'E' else None), datatime, confirmed, deaths])
+    for (code, data) in jdat.items():
+        if code == 'metadata':
+            continue
+        name = data['name']['value']
+        confirmed = int(data['totalCases']['value'])
+        cw.writerow([code, name, regions[code][1], datatime, confirmed])
 parse.deploy_timestamp()
 parses.append(parse)
 
