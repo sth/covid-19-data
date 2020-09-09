@@ -30,7 +30,7 @@ def build_api_url(area, date):
 
     query = {
         'filters': filter_seq({'areaType': area, 'date': date}),
-        'structure': structure_seq(['date', 'areaName', 'areaCode', 'cumCasesByPublishDate', 'cumDeaths28DaysByPublishDate']),
+        'structure': structure_seq(['date', 'areaName', 'areaCode', 'cumCasesBySpecimenDate', 'cumCasesByPublishDate', 'cumDeaths28DaysByPublishDate', 'cumDeaths28DaysByDeathDate']),
     }
 
     return 'https://api.coronavirus.data.gov.uk/v1/data?' + urllib.parse.urlencode(query)
@@ -228,7 +228,7 @@ with open(parse.parsedfile, 'w') as f:
     cw = csv.writer(f)
     header = ['Code', 'Country', 'Timestamp', 'Confirmed', 'Deaths']
     cw.writerow(header)
-    for data in jdat['data']:
+    for data in sorted(jdat['data'], key=(lambda d: d['areaCode'])):
         code = data['areaCode']
         name = data['areaName']
         confirmed = data['cumCasesByPublishDate']
@@ -245,14 +245,23 @@ parse = fetchhelper.ParseData(utla_data, 'utla')
 parse.parsedtime = datatime
 with open(parse.parsedfile, 'w') as f:
     cw = csv.writer(f)
-    header = ['Code', 'UTLA', 'Region', 'Timestamp', 'Confirmed', 'Deaths']
+    header = ['Code', 'UTLA', 'Region', 'Timestamp', 'Confirmed', 'Deaths', 'Backdated']
     cw.writerow(header)
-    for data in jdat['data']:
+    for data in sorted(jdat['data'], key=(lambda d: d['areaCode'])):
         code = data['areaCode']
         name = data['areaName']
         confirmed = data['cumCasesByPublishDate']
+        fallback = ''
+        if confirmed is None:
+            confirmed = data['cumCasesBySpecimenDate']
+            if confirmed is not None:
+                fallback += 'C'
         deaths = data['cumDeaths28DaysByPublishDate']
-        cw.writerow([code, name, (regions[code][1] if code[0] == 'E' else None), datatime, confirmed, deaths])
+        if deaths is None:
+            deaths = data['cumDeaths28DaysByDeathDate']
+            if deaths is not None:
+                fallback += 'D'
+        cw.writerow([code, name, (regions[code][1] if code[0] == 'E' else None), datatime, confirmed, deaths, fallback])
 parse.deploy_timestamp()
 parses.append(parse)
 
