@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-09-11T08:00:00+02:00,465,20
+Altötting,Oberbayern,2020-09-11T08:00:00+02:00,741,55
+Amberg Stadt,Oberpfalz,2020-09-11T08:00:00+02:00,107,4
+Amberg-Sulzbach,Oberpfalz,2020-09-11T08:00:00+02:00,520,54
+Ansbach,Mittelfranken,2020-09-11T08:00:00+02:00,656,28
+Ansbach Stadt,Mittelfranken,2020-09-11T08:00:00+02:00,177,8
+Aschaffenburg,Unterfranken,2020-09-11T08:00:00+02:00,652,42
+Aschaffenburg Stadt,Unterfranken,2020-09-11T08:00:00+02:00,158,1
+Augsburg,Schwaben,2020-09-11T08:00:00+02:00,622,11
+Augsburg Stadt,Schwaben,2020-09-11T08:00:00+02:00,882,16
+Bad Kissingen,Unterfranken,2020-09-11T08:00:00+02:00,283,18
+Bad Tölz-Wolfratshausen,Oberbayern,2020-09-11T08:00:00+02:00,617,10
+Bamberg,Oberfranken,2020-09-11T08:00:00+02:00,466,36
+Bamberg Stadt,Oberfranken,2020-09-11T08:00:00+02:00,235,22
+Bayreuth,Oberfranken,2020-09-11T08:00:00+02:00,445,28
+Bayreuth Stadt,Oberfranken,2020-09-11T08:00:00+02:00,234,11
+Berchtesgadener Land,Oberbayern,2020-09-11T08:00:00+02:00,406,25
+Cham,Oberpfalz,2020-09-11T08:00:00+02:00,482,21
+Coburg,Oberfranken,2020-09-11T08:00:00+02:00,432,30
+Coburg Stadt,Oberfranken,2020-09-11T08:00:00+02:00,136,4
+Dachau,Oberbayern,2020-09-11T08:00:00+02:00,1165,34
+Deggendorf,Niederbayern,2020-09-11T08:00:00+02:00,421,15
+Dillingen an der Donau,Schwaben,2020-09-11T08:00:00+02:00,359,29
+Dingolfing-Landau,Niederbayern,2020-09-11T08:00:00+02:00,869,10
+Donau-Ries,Schwaben,2020-09-11T08:00:00+02:00,442,23
+Ebersberg,Oberbayern,2020-09-11T08:00:00+02:00,682,5
+Eichstätt,Oberbayern,2020-09-11T08:00:00+02:00,400,20
+Erding,Oberbayern,2020-09-11T08:00:00+02:00,807,11
+Erlangen Stadt,Mittelfranken,2020-09-11T08:00:00+02:00,344,11
+Erlangen-Höchstadt,Mittelfranken,2020-09-11T08:00:00+02:00,347,11
+Forchheim,Oberfranken,2020-09-11T08:00:00+02:00,279,4
+Freising,Oberbayern,2020-09-11T08:00:00+02:00,1214,46
+Freyung-Grafenau,Niederbayern,2020-09-11T08:00:00+02:00,211,12
+Fürstenfeldbruck,Oberbayern,2020-09-11T08:00:00+02:00,1147,36
+Fürth,Mittelfranken,2020-09-11T08:00:00+02:00,557,58
+Fürth Stadt,Mittelfranken,2020-09-11T08:00:00+02:00,522,38
+Garmisch-Partenkirchen,Oberbayern,2020-09-11T08:00:00+02:00,354,18
+Günzburg,Schwaben,2020-09-11T08:00:00+02:00,357,4
+Haßberge,Unterfranken,2020-09-11T08:00:00+02:00,194,6
+Hof,Oberfranken,2020-09-11T08:00:00+02:00,513,32
+Hof Stadt,Oberfranken,2020-09-11T08:00:00+02:00,166,4
+Ingolstadt Stadt,Oberbayern,2020-09-11T08:00:00+02:00,734,38
+Kaufbeuren Stadt,Schwaben,2020-09-11T08:00:00+02:00,154,5
+Kelheim,Niederbayern,2020-09-11T08:00:00+02:00,632,35
+Kempten Stadt,Schwaben,2020-09-11T08:00:00+02:00,162,10
+Kitzingen,Unterfranken,2020-09-11T08:00:00+02:00,243,4
+Kronach,Oberfranken,2020-09-11T08:00:00+02:00,182,3
+Kulmbach,Oberfranken,2020-09-11T08:00:00+02:00,265,11
+Landsberg am Lech,Oberbayern,2020-09-11T08:00:00+02:00,458,10
+Landshut,Niederbayern,2020-09-11T08:00:00+02:00,829,31
+Landshut Stadt,Niederbayern,2020-09-11T08:00:00+02:00,396,9
+Lichtenfels,Oberfranken,2020-09-11T08:00:00+02:00,345,17
+Lindau (Bodensee),Schwaben,2020-09-11T08:00:00+02:00,283,8
+Main-Spessart,Unterfranken,2020-09-11T08:00:00+02:00,198,6
+Memmingen Stadt,Schwaben,2020-09-11T08:00:00+02:00,122,0
+Miesbach,Oberbayern,2020-09-11T08:00:00+02:00,698,11
+Miltenberg,Unterfranken,2020-09-11T08:00:00+02:00,387,5
+Mühldorf am Inn,Oberbayern,2020-09-11T08:00:00+02:00,620,27
+München,Oberbayern,2020-09-11T08:00:00+02:00,1834,96
+München Stadt,Oberbayern,2020-09-11T08:00:00+02:00,9719,223
+Neu-Ulm,Schwaben,2020-09-11T08:00:00+02:00,647,26
+Neuburg-Schrobenhausen,Oberbayern,2020-09-11T08:00:00+02:00,406,18
+Neumarkt in der Oberpfalz,Oberpfalz,2020-09-11T08:00:00+02:00,504,17
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-09-11T08:00:00+02:00,277,6
+Neustadt an der Waldnaab,Oberpfalz,2020-09-11T08:00:00+02:00,867,73
+Nürnberg Stadt,Mittelfranken,2020-09-11T08:00:00+02:00,1758,53
+Nürnberger Land,Mittelfranken,2020-09-11T08:00:00+02:00,739,44
+Oberallgäu,Schwaben,2020-09-11T08:00:00+02:00,244,7
+Ostallgäu,Schwaben,2020-09-11T08:00:00+02:00,628,39
+Passau,Niederbayern,2020-09-11T08:00:00+02:00,715,31
+Passau Stadt,Niederbayern,2020-09-11T08:00:00+02:00,197,18
+Pfaffenhofen an der Ilm,Oberbayern,2020-09-11T08:00:00+02:00,462,21
+Regen,Niederbayern,2020-09-11T08:00:00+02:00,225,12
+Regensburg,Oberpfalz,2020-09-11T08:00:00+02:00,643,16
+Regensburg Stadt,Oberpfalz,2020-09-11T08:00:00+02:00,813,10
+Rhön-Grabfeld,Unterfranken,2020-09-11T08:00:00+02:00,219,8
+Rosenheim,Oberbayern,2020-09-11T08:00:00+02:00,2493,199
+Rosenheim Stadt,Oberbayern,2020-09-11T08:00:00+02:00,676,23
+Roth,Mittelfranken,2020-09-11T08:00:00+02:00,343,7
+Rottal-Inn,Niederbayern,2020-09-11T08:00:00+02:00,823,50
+Schwabach Stadt,Mittelfranken,2020-09-11T08:00:00+02:00,111,2
+Schwandorf,Oberpfalz,2020-09-11T08:00:00+02:00,574,20
+Schweinfurt,Unterfranken,2020-09-11T08:00:00+02:00,598,25
+Schweinfurt Stadt,Unterfranken,2020-09-11T08:00:00+02:00,217,17
+Starnberg,Oberbayern,2020-09-11T08:00:00+02:00,702,13
+Straubing Stadt,Niederbayern,2020-09-11T08:00:00+02:00,484,48
+Straubing-Bogen,Niederbayern,2020-09-11T08:00:00+02:00,594,29
+Tirschenreuth,Oberpfalz,2020-09-11T08:00:00+02:00,1164,139
+Traunstein,Oberbayern,2020-09-11T08:00:00+02:00,1415,88
+Unterallgäu,Schwaben,2020-09-11T08:00:00+02:00,373,15
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-09-11T08:00:00+02:00,379,20
+Weilheim-Schongau,Oberbayern,2020-09-11T08:00:00+02:00,425,3
+Weißenburg-Gunzenhausen,Mittelfranken,2020-09-11T08:00:00+02:00,437,25
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-09-11T08:00:00+02:00,696,41
+Würzburg,Unterfranken,2020-09-11T08:00:00+02:00,538,7
+Würzburg Stadt,Unterfranken,2020-09-11T08:00:00+02:00,631,52
