@@ -31,6 +31,10 @@ def strip_footnote(s):
     return s.rstrip('*')
 
 table = fetchhelper.text_table(html.find('table'))
+# on 10.09.2020 there were additional empty cells
+for tr in table:
+    if tr[-1] == '':
+        tr.pop()
 ths = table[0]
 assert('Bundesland' in ths[0])
 assert('gesamt' in ths[-1])
