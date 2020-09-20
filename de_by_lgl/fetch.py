@@ -234,6 +234,8 @@ def parse_table(parse, html, kind, *, optional=False):
             lk = None
             if parse_landkreis:
                 lk = clean_landkreis(tds[0])
+                if 'heute nicht möglich' in lk:
+                    continue
                 cols = [lk, get_regierungsbezirk(lk)]
             else:
                 cols = [tds[0]]
