@@ -194,6 +194,8 @@ def is_regierungsbezirk(tab):
 def is_landkreis(tab):
     return tab.select_one('th').string in ['Landkreis', 'Land-/Stadtkreis', 'Landkreis/Stadt']
 
+regbez_tainted = set()
+
 def parse_table(parse, html, kind, *, optional=False):
     assert(kind in ('regierungsbezirk', 'landkreis'))
     parse_landkreis = (kind == 'landkreis')
@@ -231,14 +233,20 @@ def parse_table(parse, html, kind, *, optional=False):
         txttab = fetchhelper.text_table(tab)
         txttab = txttab[1:-1]
         for tds in txttab:
-            lk = None
             if parse_landkreis:
                 lk = clean_landkreis(tds[0])
                 if 'heute nicht möglich' in lk:
+                    # The sum for the Regierungsbezirk also seems to be wrong
+                    rb = get_regierungsbezirk(re.sub(r' aus technischen.*', '', lk))
+                    regbez_tainted.add(rb)
                     continue
                 cols = [lk, get_regierungsbezirk(lk)]
             else:
-                cols = [tds[0]]
+                rb = tds[0]
+                if rb in regbez_tainted:
+                    # Skip because there is missing data
+                    continue
+                cols = [rb]
             cols.append(datatime.isoformat())
             cols += [clean_num(tds[1]), clean_num(tds[6])]
             cout.writerow(cols)
@@ -254,10 +262,10 @@ def parse_table(parse, html, kind, *, optional=False):
     parse.deploy_timestamp()
 
 
-rparse = fetchhelper.ParseData(update, 'regierungsbezirk')
-parse_table(rparse, html, 'regierungsbezirk')
-
 lparse = fetchhelper.ParseData(update, 'landkreis')
 parse_table(lparse, html, 'landkreis')
+
+rparse = fetchhelper.ParseData(update, 'regierungsbezirk')
+parse_table(rparse, html, 'regierungsbezirk')
 
 fetchhelper.git_commit([rparse, lparse], args)
