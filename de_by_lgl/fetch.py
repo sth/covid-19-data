@@ -194,6 +194,7 @@ def is_regierungsbezirk(tab):
 def is_landkreis(tab):
     return tab.select_one('th').string in ['Landkreis', 'Land-/Stadtkreis', 'Landkreis/Stadt']
 
+re_missing = re.compile(r' aus technischen Gründen heute nicht möglich| \*technische Probleme')
 regbez_tainted = set()
 
 def parse_table(parse, html, kind, *, optional=False):
@@ -235,9 +236,9 @@ def parse_table(parse, html, kind, *, optional=False):
         for tds in txttab:
             if parse_landkreis:
                 lk = clean_landkreis(tds[0])
-                if 'heute nicht möglich' in lk:
+                if re_missing.search(lk):
                     # The sum for the Regierungsbezirk also seems to be wrong
-                    rb = get_regierungsbezirk(re.sub(r' aus technischen.*', '', lk))
+                    rb = get_regierungsbezirk(re_missing.sub('', lk))
                     regbez_tainted.add(rb)
                     continue
                 cols = [lk, get_regierungsbezirk(lk)]
