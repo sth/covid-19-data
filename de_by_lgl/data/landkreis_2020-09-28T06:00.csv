@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-09-28T08:00:00+02:00,498,20
+Altötting,Oberbayern,2020-09-28T08:00:00+02:00,750,55
+Amberg Stadt,Oberpfalz,2020-09-28T08:00:00+02:00,122,4
+Amberg-Sulzbach,Oberpfalz,2020-09-28T08:00:00+02:00,543,54
+Ansbach,Mittelfranken,2020-09-28T08:00:00+02:00,695,28
+Ansbach Stadt,Mittelfranken,2020-09-28T08:00:00+02:00,190,8
+Aschaffenburg,Unterfranken,2020-09-28T08:00:00+02:00,696,42
+Aschaffenburg Stadt,Unterfranken,2020-09-28T08:00:00+02:00,180,1
+Augsburg,Schwaben,2020-09-28T08:00:00+02:00,737,11
+Augsburg Stadt,Schwaben,2020-09-28T08:00:00+02:00,1021,16
+Bad Kissingen,Unterfranken,2020-09-28T08:00:00+02:00,288,18
+Bad Tölz-Wolfratshausen,Oberbayern,2020-09-28T08:00:00+02:00,639,10
+Bamberg,Oberfranken,2020-09-28T08:00:00+02:00,502,37
+Bamberg Stadt,Oberfranken,2020-09-28T08:00:00+02:00,247,22
+Bayreuth,Oberfranken,2020-09-28T08:00:00+02:00,451,28
+Bayreuth Stadt,Oberfranken,2020-09-28T08:00:00+02:00,260,11
+Berchtesgadener Land,Oberbayern,2020-09-28T08:00:00+02:00,445,25
+Cham,Oberpfalz,2020-09-28T08:00:00+02:00,508,21
+Coburg,Oberfranken,2020-09-28T08:00:00+02:00,443,30
+Coburg Stadt,Oberfranken,2020-09-28T08:00:00+02:00,146,4
+Dachau,Oberbayern,2020-09-28T08:00:00+02:00,1237,34
+Deggendorf,Niederbayern,2020-09-28T08:00:00+02:00,456,16
+Dillingen an der Donau,Schwaben,2020-09-28T08:00:00+02:00,374,29
+Dingolfing-Landau,Niederbayern,2020-09-28T08:00:00+02:00,967,10
+Donau-Ries,Schwaben,2020-09-28T08:00:00+02:00,479,23
+Ebersberg,Oberbayern,2020-09-28T08:00:00+02:00,752,5
+Eichstätt,Oberbayern,2020-09-28T08:00:00+02:00,426,20
+Erding,Oberbayern,2020-09-28T08:00:00+02:00,856,11
+Erlangen Stadt,Mittelfranken,2020-09-28T08:00:00+02:00,385,12
+Erlangen-Höchstadt,Mittelfranken,2020-09-28T08:00:00+02:00,373,11
+Forchheim,Oberfranken,2020-09-28T08:00:00+02:00,295,4
+Freising,Oberbayern,2020-09-28T08:00:00+02:00,1304,46
+Freyung-Grafenau,Niederbayern,2020-09-28T08:00:00+02:00,239,12
+Fürstenfeldbruck,Oberbayern,2020-09-28T08:00:00+02:00,1275,36
+Fürth,Mittelfranken,2020-09-28T08:00:00+02:00,588,58
+Fürth Stadt,Mittelfranken,2020-09-28T08:00:00+02:00,592,38
+Garmisch-Partenkirchen,Oberbayern,2020-09-28T08:00:00+02:00,425,20
+Günzburg,Schwaben,2020-09-28T08:00:00+02:00,398,4
+Haßberge,Unterfranken,2020-09-28T08:00:00+02:00,223,6
+Hof,Oberfranken,2020-09-28T08:00:00+02:00,542,32
+Hof Stadt,Oberfranken,2020-09-28T08:00:00+02:00,188,5
+Ingolstadt Stadt,Oberbayern,2020-09-28T08:00:00+02:00,790,39
+Kaufbeuren Stadt,Schwaben,2020-09-28T08:00:00+02:00,192,8
+Kelheim,Niederbayern,2020-09-28T08:00:00+02:00,668,35
+Kempten Stadt,Schwaben,2020-09-28T08:00:00+02:00,184,10
+Kitzingen,Unterfranken,2020-09-28T08:00:00+02:00,287,4
+Kronach,Oberfranken,2020-09-28T08:00:00+02:00,185,3
+Kulmbach,Oberfranken,2020-09-28T08:00:00+02:00,316,11
+Landsberg am Lech,Oberbayern,2020-09-28T08:00:00+02:00,478,10
+Landshut,Niederbayern,2020-09-28T08:00:00+02:00,853,32
+Landshut Stadt,Niederbayern,2020-09-28T08:00:00+02:00,445,9
+Lichtenfels,Oberfranken,2020-09-28T08:00:00+02:00,371,17
+Lindau (Bodensee),Schwaben,2020-09-28T08:00:00+02:00,313,8
+Main-Spessart,Unterfranken,2020-09-28T08:00:00+02:00,232,6
+Memmingen Stadt,Schwaben,2020-09-28T08:00:00+02:00,132,0
+Miesbach,Oberbayern,2020-09-28T08:00:00+02:00,742,11
+Miltenberg,Unterfranken,2020-09-28T08:00:00+02:00,434,6
+Mühldorf am Inn,Oberbayern,2020-09-28T08:00:00+02:00,652,27
+München,Oberbayern,2020-09-28T08:00:00+02:00,2056,96
+München Stadt,Oberbayern,2020-09-28T08:00:00+02:00,11281,223
+Neu-Ulm,Schwaben,2020-09-28T08:00:00+02:00,787,26
+Neuburg-Schrobenhausen,Oberbayern,2020-09-28T08:00:00+02:00,423,18
+Neumarkt in der Oberpfalz,Oberpfalz,2020-09-28T08:00:00+02:00,554,17
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-09-28T08:00:00+02:00,296,6
+Neustadt an der Waldnaab,Oberpfalz,2020-09-28T08:00:00+02:00,879,73
+Nürnberg Stadt,Mittelfranken,2020-09-28T08:00:00+02:00,2028,53
+Nürnberger Land,Mittelfranken,2020-09-28T08:00:00+02:00,785,44
+Oberallgäu,Schwaben,2020-09-28T08:00:00+02:00,280,7
+Ostallgäu,Schwaben,2020-09-28T08:00:00+02:00,693,39
+Passau,Niederbayern,2020-09-28T08:00:00+02:00,815,31
+Passau Stadt,Niederbayern,2020-09-28T08:00:00+02:00,223,18
+Pfaffenhofen an der Ilm,Oberbayern,2020-09-28T08:00:00+02:00,497,21
+Regen,Niederbayern,2020-09-28T08:00:00+02:00,241,12
+Regensburg,Oberpfalz,2020-09-28T08:00:00+02:00,716,16
+Regensburg Stadt,Oberpfalz,2020-09-28T08:00:00+02:00,907,10
+Rhön-Grabfeld,Unterfranken,2020-09-28T08:00:00+02:00,274,8
+Rosenheim,Oberbayern,2020-09-28T08:00:00+02:00,2589,199
+Rosenheim Stadt,Oberbayern,2020-09-28T08:00:00+02:00,716,23
+Roth,Mittelfranken,2020-09-28T08:00:00+02:00,363,7
+Rottal-Inn,Niederbayern,2020-09-28T08:00:00+02:00,866,50
+Schwabach Stadt,Mittelfranken,2020-09-28T08:00:00+02:00,122,2
+Schwandorf,Oberpfalz,2020-09-28T08:00:00+02:00,590,20
+Schweinfurt,Unterfranken,2020-09-28T08:00:00+02:00,653,25
+Schweinfurt Stadt,Unterfranken,2020-09-28T08:00:00+02:00,233,17
+Starnberg,Oberbayern,2020-09-28T08:00:00+02:00,781,13
+Straubing Stadt,Niederbayern,2020-09-28T08:00:00+02:00,499,48
+Straubing-Bogen,Niederbayern,2020-09-28T08:00:00+02:00,622,29
+Tirschenreuth,Oberpfalz,2020-09-28T08:00:00+02:00,1203,139
+Traunstein,Oberbayern,2020-09-28T08:00:00+02:00,1439,88
+Unterallgäu,Schwaben,2020-09-28T08:00:00+02:00,446,17
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-09-28T08:00:00+02:00,390,20
+Weilheim-Schongau,Oberbayern,2020-09-28T08:00:00+02:00,477,3
+Weißenburg-Gunzenhausen,Mittelfranken,2020-09-28T08:00:00+02:00,451,25
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-09-28T08:00:00+02:00,757,42
+Würzburg,Unterfranken,2020-09-28T08:00:00+02:00,645,7
+Würzburg Stadt,Unterfranken,2020-09-28T08:00:00+02:00,789,52
