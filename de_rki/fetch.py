@@ -54,7 +54,7 @@ def clean_label(lstr):
     return aliases.get(lstr, lstr)
 
 def clean_num(numstr):
-    return int(numstr.replace('.', '').strip() or '0')
+    return int(numstr.replace('.', '').replace('*', '').strip() or '0')
 
 def parse_td(content):
     mo = re.search(r'(.*)\((.*)\)\s*', content)
