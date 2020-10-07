@@ -123,7 +123,6 @@ for kreisid, name in sorted(kreise.items()):
         header = next(cf)
         cols = coldefs.build(header)
         # newest line is last, so iterate through whole file
-        lastdate = None
         # The data contains several "kummuliert" columns, but those sometimes seem to be rounded
         # Lets hope thats not the case with the raw numbers
         cases = Cases(kreisid)
@@ -133,13 +132,12 @@ for kreisid, name in sorted(kreise.items()):
             cases.deaths += fields.deaths
             cases.recovered += fields.recovered
             cases.date = fields.date
-            continue
         if args.optional and fields.kreis == '5111':
             # Check if this is old already known data
-            if datedata_exists(lastdate):
+            if datedata_exists(cases.date):
                 # Already exists.
                 # We abort immediately instead of downloading all other data files
-                print("Found old data for %s." % lastdate.isoformat())
+                print("Found old data for %s." % cases.date.isoformat())
                 sys.exit(0)
         newest.append(cases)
 
