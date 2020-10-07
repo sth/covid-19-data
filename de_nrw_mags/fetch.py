@@ -13,7 +13,7 @@ args = ap.parse_args()
 fetchhelper.check_oldfetch(args)
 
 import csvtools
-import re, csv, os, sys
+import re, csv, os, sys, dataclasses
 import datetime, glob
 from bs4 import BeautifulSoup
 import dateutil.tz
@@ -40,6 +40,7 @@ kreise = {
     '5334': "Aachen & Aachen (Städteregion)",
     '5711': "Bielefeld",
     '5911': "Bochum",
+    '5314': "Bonn",
     '5554': "Borken (Kreis)",
     '5512': "Bottrop",
     '5558': "Coesfeld (Kreis)",
@@ -94,7 +95,7 @@ kreise = {
 coldefs = csvtools.CSVColumns(
         kreis=['kreis'],
         date=['datumstd'],
-        confirmed=['anzahlEM'],
+        confirmed=['anzahlM'],
         deaths=['verstorben'],
         recovered=['genesen'],
     )
@@ -105,6 +106,14 @@ coldefs.set_type('recovered', int)
 
 targetdate = None
 
+@dataclasses.dataclass
+class Cases:
+    kreis: str
+    confirmed: int = 0
+    deaths: int = 0
+    recovered: int = 0
+    date: None = None
+
 newest = []
 for kreisid, name in sorted(kreise.items()):
     update = fetchhelper.Updater(f'https://www.lzg.nrw.de/covid19/daten/covid19_{kreisid}.csv', ext=f'{kreisid}.csv')
@@ -114,33 +123,41 @@ for kreisid, name in sorted(kreise.items()):
         header = next(cf)
         cols = coldefs.build(header)
         # newest line is last, so iterate through whole file
+        lastdate = None
+        # The data contains several "kummuliert" columns, but those sometimes seem to be rounded
+        # Lets hope thats not the case with the raw numbers
+        cases = Cases(kreisid)
         for line in cf:
+            fields = cols.get(line)
+            cases.confirmed += fields.confirmed
+            cases.deaths += fields.deaths
+            cases.recovered += fields.recovered
+            cases.date = fields.date
             continue
-        fields = cols.get(line) # using `line` here is basically a hack
         if args.optional and fields.kreis == '5111':
             # Check if this is old already known data
-            if datedata_exists(fields.date):
+            if datedata_exists(lastdate):
                 # Already exists.
                 # We abort immediately instead of downloading all other data files
-                print("Found old data for %s." % fields.date.isoformat())
+                print("Found old data for %s." % lastdate.isoformat())
                 sys.exit(0)
-        newest.append(fields)
+        newest.append(cases)
 
 # All data should be for the same date
 targetdate = newest[0].date
 assert(all(n.date == targetdate for n in newest))
+datats = datetime.datetime.combine(targetdate, datetime.time(23, 59), tzinfo=datatz)
 
 # TODO: Having to pass an `update` here is not convenient. Improve that interface.
 # We use the `update` leaked from the above loop for now :(
 parse = fetchhelper.ParseData(update, 'data')
-parse.parsedtime = datetime.datetime.combine(targetdate, datetime.time(23, 59), tzinfo=datatz)
+parse.parsedtime = datats
 
 with open(parse.parsedfile, 'w') as outf:
     cout = csv.writer(outf)
     cout.writerow(['Area', 'AreaID', 'Date', 'EConfirmed', 'EDeaths', 'Recovered'])
     for fields in sorted(newest, key=(lambda n: int(n.kreis))):
-        ts = datetime.datetime.combine(fields.date, datetime.time(23, 59), tzinfo=datatz)
-        cout.writerow([kreise[fields.kreis], fields.kreis, ts.isoformat(), fields.confirmed, fields.deaths, fields.recovered])
+        cout.writerow([kreise[fields.kreis], fields.kreis, datats.isoformat(), fields.confirmed, fields.deaths, fields.recovered])
 
 parse.deploy_timestamp()
 
