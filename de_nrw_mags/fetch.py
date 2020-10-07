@@ -37,7 +37,7 @@ if args.optional:
 datatz = dateutil.tz.gettz('Europe/Berlin')
 
 kreise = {
-    '5334': "Aachen & Aachen (Städteregion)",
+    '5334': "Aachen & Städteregion Aachen",
     '5711': "Bielefeld",
     '5911': "Bochum",
     '5314': "Bonn",
@@ -66,7 +66,7 @@ kreise = {
     '5316': "Leverkusen",
     '5766': "Lippe (Kreis)",
     '5962': "Märkischer Kreis",
-    '5158': "Mettmann (Kreis (Kreis))",
+    '5158': "Mettmann (Kreis)",
     '5770': "Minden-Lübbecke (Kreis)",
     '5116': "Mönchengladbach",
     '5117': "Mülheim / Ruhr",
