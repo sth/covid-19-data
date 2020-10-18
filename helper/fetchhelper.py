@@ -54,22 +54,55 @@ class ParseData(object):
         self.parsedfile = 'parsed/%s_%s%s.csv' % (update.rawname, self.label, self.variant)
         self.parsedtime = update.contenttime
         self.deployfile = None
+        self.deployglob = None
 
     def deploy_day(self):
         checkdir('days')
         self.deployfile = 'days/%s_%s.csv' % (self.label, self.parsedtime.date().isoformat())
+        self.deployglob = 'days/%s_*.csv' % self.label
         shutil.copy(self.parsedfile, self.deployfile)
 
     def deploy_timestamp(self):
         checkdir('data')
         parsedutc = self.parsedtime.astimezone(datetime.timezone.utc).replace(tzinfo=None)
         self.deployfile = 'data/%s_%s.csv' % (self.label, parsedutc.isoformat(timespec='minutes'))
+        self.deployglob = 'data/%s_*.csv' % self.label
         shutil.copy(self.parsedfile, self.deployfile)
 
     def deploy_combined(self):
         checkdir('data')
         self.deployfile = 'data/%s.csv' % (self.label,)
+        self.deployglob = 'data/%s.csv' % self.label # Hm. TODO
         shutil.copy(self.parsedfile, self.deployfile)
+
+    def deployfile_previous(self):
+        import glob
+        prevfn = None
+        for fn in sorted(glob.glob(self.deployglob)):
+            if fn < self.deployfile:
+                prevfn = fn
+        return prevfn
+
+def csv_table(fn1):
+    import csv
+    rows = []
+    with open(fn1, 'r') as f:
+        cr = csv.reader(f)
+        for row in cr:
+            rows.append(row)
+    return rows
+
+def csv_equal(fn1, fn2, skip=None):
+    dat1 = csv_table(fn1)
+    dat2 = csv_table(fn2)
+    if skip:
+        for dat in [dat1, dat2]:
+            for col in skip:
+                if col in dat[0]:
+                    idx = dat[0].index(col)
+                    for row in dat:
+                        del row[idx]
+    return dat1 == dat2 
 
 def git_commit(parsedlist, args):
     if not args.git_commit:

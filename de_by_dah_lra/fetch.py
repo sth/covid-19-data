@@ -12,23 +12,36 @@ args = ap.parse_args()
 
 fetchhelper.check_oldfetch(args)
 
-import subprocess, datetime, re, csv, os, sys, shutil
-import urllib.parse
-from bs4 import BeautifulSoup
+import datetime, re, csv, json, os, sys, shutil
 import dateutil.tz
 
 url = 'https://www.landratsamt-dachau.de/bilder/zahlen.jpg'
+url = 'https://atlas.jifo.co/api/connectors/c3a4b965-0e10-46db-aec6-cceffdb74857'
 
 datatz = dateutil.tz.gettz('Europe/Berlin')
 
-#txt = str(html.find(text=re.compile('Landkreis-Statistik ')))
-#mo = re.search(r'Landkreis-Statistik(?: nach Gemeinden)? für den (\d\d.\d\d.\d\d\d\d)', txt)
-#datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1) + ' 21:30', '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
+update = fetchhelper.Updater(url, ext='json')
+update.check_fetch(rawfile=args.rawfile)
+jdat = json.loads(update.rawdata)
 
-update = fetchhelper.Updater(url, ext='png')
-update.check_fetch(rawfile=args.rawfile, binary=True, remotetime=True)
-datatime = datetime.datetime.fromtimestamp(os.stat(update.rawfile).st_mtime)
+header = jdat['data'][0][0]
+i_kom = header.index("Gemeinde")
+i_con = header.index("Fälle insgesamt")
+i_rec = header.index("Genesen")
 
-if not os.path.exists('collected'):
-    os.mkdir('collected')
-shutil.copy(update.rawfile, 'collected/gemeinden_%s.png' % datatime.isoformat(timespec='minutes'))
+parse = fetchhelper.ParseData(update, 'data')
+parse.parsedtime = datetime.datetime.fromtimestamp(jdat['refreshed']/1000, tz=datatz)
+with open(parse.parsedfile, 'w') as f:
+    cw = csv.writer(f)
+    cw.writerow(['Kommune', 'Timestamp', 'Confirmed', 'Recovered'])
+    for jrow in jdat['data'][0][1:]:
+        if jrow[i_kom] == 'Pfaffenhofen a.d.Glonn':
+            jrow[i_kom] = 'Pfaffenhofen a.d. Glonn'
+        cw.writerow([jrow[i_kom], parse.parsedtime.isoformat(), jrow[i_con], jrow[i_rec]])
+
+parse.deploy_timestamp()
+if fetchhelper.csv_equal(parse.deployfile, parse.deployfile_previous(), skip=['Timestamp']):
+    os.unlink(parse.deployfile)
+else:
+    fetchhelper.git_commit([parse], args)
+
