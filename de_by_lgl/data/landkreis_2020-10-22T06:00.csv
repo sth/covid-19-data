@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-10-22T08:00:00+02:00,653,20
+Altötting,Oberbayern,2020-10-22T08:00:00+02:00,792,57
+Amberg Stadt,Oberpfalz,2020-10-22T08:00:00+02:00,165,4
+Amberg-Sulzbach,Oberpfalz,2020-10-22T08:00:00+02:00,590,54
+Ansbach,Mittelfranken,2020-10-22T08:00:00+02:00,823,28
+Ansbach Stadt,Mittelfranken,2020-10-22T08:00:00+02:00,216,8
+Aschaffenburg,Unterfranken,2020-10-22T08:00:00+02:00,848,42
+Aschaffenburg Stadt,Unterfranken,2020-10-22T08:00:00+02:00,238,1
+Augsburg,Schwaben,2020-10-22T08:00:00+02:00,1104,13
+Augsburg Stadt,Schwaben,2020-10-22T08:00:00+02:00,1730,17
+Bad Kissingen,Unterfranken,2020-10-22T08:00:00+02:00,327,18
+Bad Tölz-Wolfratshausen,Oberbayern,2020-10-22T08:00:00+02:00,737,10
+Bamberg,Oberfranken,2020-10-22T08:00:00+02:00,620,38
+Bamberg Stadt,Oberfranken,2020-10-22T08:00:00+02:00,305,22
+Bayreuth,Oberfranken,2020-10-22T08:00:00+02:00,504,28
+Bayreuth Stadt,Oberfranken,2020-10-22T08:00:00+02:00,334,11
+Berchtesgadener Land,Oberbayern,2020-10-22T08:00:00+02:00,877,25
+Cham,Oberpfalz,2020-10-22T08:00:00+02:00,678,21
+Coburg,Oberfranken,2020-10-22T08:00:00+02:00,490,30
+Coburg Stadt,Oberfranken,2020-10-22T08:00:00+02:00,171,4
+Dachau,Oberbayern,2020-10-22T08:00:00+02:00,1468,35
+Deggendorf,Niederbayern,2020-10-22T08:00:00+02:00,590,20
+Dillingen an der Donau,Schwaben,2020-10-22T08:00:00+02:00,441,29
+Dingolfing-Landau,Niederbayern,2020-10-22T08:00:00+02:00,1072,11
+Donau-Ries,Schwaben,2020-10-22T08:00:00+02:00,639,26
+Ebersberg,Oberbayern,2020-10-22T08:00:00+02:00,971,7
+Eichstätt,Oberbayern,2020-10-22T08:00:00+02:00,531,20
+Erding,Oberbayern,2020-10-22T08:00:00+02:00,972,11
+Erlangen Stadt,Mittelfranken,2020-10-22T08:00:00+02:00,500,12
+Erlangen-Höchstadt,Mittelfranken,2020-10-22T08:00:00+02:00,482,11
+Forchheim,Oberfranken,2020-10-22T08:00:00+02:00,364,4
+Freising,Oberbayern,2020-10-22T08:00:00+02:00,1511,48
+Freyung-Grafenau,Niederbayern,2020-10-22T08:00:00+02:00,307,14
+Fürstenfeldbruck,Oberbayern,2020-10-22T08:00:00+02:00,1809,38
+Fürth,Mittelfranken,2020-10-22T08:00:00+02:00,730,60
+Fürth Stadt,Mittelfranken,2020-10-22T08:00:00+02:00,717,38
+Garmisch-Partenkirchen,Oberbayern,2020-10-22T08:00:00+02:00,467,20
+Günzburg,Schwaben,2020-10-22T08:00:00+02:00,548,4
+Haßberge,Unterfranken,2020-10-22T08:00:00+02:00,304,6
+Hof,Oberfranken,2020-10-22T08:00:00+02:00,600,32
+Hof Stadt,Oberfranken,2020-10-22T08:00:00+02:00,212,5
+Ingolstadt Stadt,Oberbayern,2020-10-22T08:00:00+02:00,996,39
+Kaufbeuren Stadt,Schwaben,2020-10-22T08:00:00+02:00,249,10
+Kelheim,Niederbayern,2020-10-22T08:00:00+02:00,736,36
+Kempten Stadt,Schwaben,2020-10-22T08:00:00+02:00,244,10
+Kitzingen,Unterfranken,2020-10-22T08:00:00+02:00,363,4
+Kronach,Oberfranken,2020-10-22T08:00:00+02:00,219,3
+Kulmbach,Oberfranken,2020-10-22T08:00:00+02:00,354,11
+Landsberg am Lech,Oberbayern,2020-10-22T08:00:00+02:00,606,10
+Landshut,Niederbayern,2020-10-22T08:00:00+02:00,1036,34
+Landshut Stadt,Niederbayern,2020-10-22T08:00:00+02:00,501,9
+Lichtenfels,Oberfranken,2020-10-22T08:00:00+02:00,437,17
+Lindau (Bodensee),Schwaben,2020-10-22T08:00:00+02:00,400,8
+Main-Spessart,Unterfranken,2020-10-22T08:00:00+02:00,303,6
+Memmingen Stadt,Schwaben,2020-10-22T08:00:00+02:00,225,2
+Miesbach,Oberbayern,2020-10-22T08:00:00+02:00,869,11
+Miltenberg,Unterfranken,2020-10-22T08:00:00+02:00,589,8
+Mühldorf am Inn,Oberbayern,2020-10-22T08:00:00+02:00,867,27
+München,Oberbayern,2020-10-22T08:00:00+02:00,2558,96
+München Stadt,Oberbayern,2020-10-22T08:00:00+02:00,14255,237
+Neu-Ulm,Schwaben,2020-10-22T08:00:00+02:00,1013,26
+Neuburg-Schrobenhausen,Oberbayern,2020-10-22T08:00:00+02:00,564,18
+Neumarkt in der Oberpfalz,Oberpfalz,2020-10-22T08:00:00+02:00,676,17
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-10-22T08:00:00+02:00,333,6
+Neustadt an der Waldnaab,Oberpfalz,2020-10-22T08:00:00+02:00,1074,75
+Nürnberg Stadt,Mittelfranken,2020-10-22T08:00:00+02:00,2793,55
+Nürnberger Land,Mittelfranken,2020-10-22T08:00:00+02:00,926,44
+Oberallgäu,Schwaben,2020-10-22T08:00:00+02:00,399,8
+Ostallgäu,Schwaben,2020-10-22T08:00:00+02:00,899,40
+Passau,Niederbayern,2020-10-22T08:00:00+02:00,1115,31
+Passau Stadt,Niederbayern,2020-10-22T08:00:00+02:00,285,18
+Pfaffenhofen an der Ilm,Oberbayern,2020-10-22T08:00:00+02:00,660,22
+Regen,Niederbayern,2020-10-22T08:00:00+02:00,395,12
+Regensburg,Oberpfalz,2020-10-22T08:00:00+02:00,868,17
+Regensburg Stadt,Oberpfalz,2020-10-22T08:00:00+02:00,1102,10
+Rhön-Grabfeld,Unterfranken,2020-10-22T08:00:00+02:00,341,9
+Rosenheim,Oberbayern,2020-10-22T08:00:00+02:00,3021,202
+Rosenheim Stadt,Oberbayern,2020-10-22T08:00:00+02:00,859,23
+Roth,Mittelfranken,2020-10-22T08:00:00+02:00,468,7
+Rottal-Inn,Niederbayern,2020-10-22T08:00:00+02:00,1124,51
+Schwabach Stadt,Mittelfranken,2020-10-22T08:00:00+02:00,166,2
+Schwandorf,Oberpfalz,2020-10-22T08:00:00+02:00,677,21
+Schweinfurt,Unterfranken,2020-10-22T08:00:00+02:00,911,25
+Schweinfurt Stadt,Unterfranken,2020-10-22T08:00:00+02:00,364,18
+Starnberg,Oberbayern,2020-10-22T08:00:00+02:00,951,13
+Straubing Stadt,Niederbayern,2020-10-22T08:00:00+02:00,549,48
+Straubing-Bogen,Niederbayern,2020-10-22T08:00:00+02:00,691,29
+Tirschenreuth,Oberpfalz,2020-10-22T08:00:00+02:00,1332,141
+Traunstein,Oberbayern,2020-10-22T08:00:00+02:00,1633,88
+Unterallgäu,Schwaben,2020-10-22T08:00:00+02:00,668,18
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-10-22T08:00:00+02:00,493,20
+Weilheim-Schongau,Oberbayern,2020-10-22T08:00:00+02:00,654,3
+Weißenburg-Gunzenhausen,Mittelfranken,2020-10-22T08:00:00+02:00,516,25
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-10-22T08:00:00+02:00,850,46
+Würzburg,Unterfranken,2020-10-22T08:00:00+02:00,802,7
+Würzburg Stadt,Unterfranken,2020-10-22T08:00:00+02:00,982,52
