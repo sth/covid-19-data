@@ -12,89 +12,69 @@ args = ap.parse_args()
 
 fetchhelper.check_oldfetch(args)
 
+if args.rawfile is not None:
+    args.rawfile = args.rawfile.split(',')
+else:
+    args.rawfile = (None, None)
+
 import datetime, re, csv, os
-from bs4 import BeautifulSoup
+import json
 import dateutil.tz
 
 datatz = dateutil.tz.gettz('Europe/Berlin')
 
-update = fetchhelper.Updater('https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html')
-update.check_fetch(rawfile=args.rawfile)
+# Bundesländer
+url_bl = 'https://services7.arcgis.com/mOBPykOjAyBO2ZKk/ArcGIS/rest/services/Coronaf%c3%a4lle_in_den_Bundesl%c3%a4ndern/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=LAN_ew_GEN%2CAktualisierung%2CFallzahl%2CDeath&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token='
 
-html = BeautifulSoup(update.rawdata, 'html.parser')
+updatebl = fetchhelper.Updater(url_bl, ext='bl.json')
+updatebl.check_fetch(rawfile=args.rawfile[0])
 
-header = html.find(text="Fallzahlen in Deutschland")
-if header is None:
-    # Workaround typo 14.08.2020
-    header = html.find(text="tenFallzahlen in Deutschland")
-par = header.parent.next_sibling.next_sibling
+jdat = json.loads(updatebl.rawdata)
 
-mo = re.search('Stand: (\S*, \S*) Uhr', par.get_text())
-if mo is None:
-    print("Couldn't find content time", file=sys.stderr)
-    exit(1)
-update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M') \
-    .replace(tzinfo=datatz)
+parsebl = fetchhelper.ParseData(updatebl, 'data')
+parsebl.parsedtime = None
+with open(parsebl.parsedfile, 'w') as outf:
+    cout = csv.writer(outf)
+    cout.writerow(['Bundesland', 'Timestamp', 'EConfirmed', 'EDeaths'])
+    for jfeat in sorted(jdat['features'], key=(lambda f: f['attributes']['LAN_ew_GEN'])):
+        ts = datetime.datetime.fromtimestamp(jfeat['attributes']['Aktualisierung']/1000, tz=datatz)
+        if parsebl.parsedtime is None or ts > parsebl.parsedtime:
+            parsebl.parsedtime = ts
+        cout.writerow([
+            jfeat['attributes']['LAN_ew_GEN'],
+            ts.isoformat(),
+            jfeat['attributes']['Fallzahl'],
+            jfeat['attributes']['Death'],
+        ])
 
-aliases = {
-    'Branden-burg': 'Brandenburg',
-    'Meck-lenburg-Vorpommern': 'Mecklenburg-Vorpommern',
-    'Nord-rhein-Westfalen': 'Nordrhein-Westfalen',
-    'Nieder-sachsen': 'Niedersachsen',
-}
+parsebl.deploy_timestamp()
 
-good = set([
-    'Baden-Württemberg', 'Bayern', 'Berlin', 'Brandenburg', 'Bremen', 'Hamburg', 'Hessen',
-    'Mecklenburg-Vorpommern', 'Niedersachsen', 'Nordrhein-Westfalen', 'Rheinland-Pfalz',
-    'Saarland', 'Sachsen', 'Sachsen-Anhalt', 'Schleswig-Holstein', 'Thüringen',
-])
+# Landkreise
+url_lk = 'https://services7.arcgis.com/mOBPykOjAyBO2ZKk/ArcGIS/rest/services/RKI_Landkreisdaten/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=Bl%2Ccounty%2CGEN%2Clast_update%2Ccases%2Cdeaths%2Crecovered&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token='
 
-def clean_label(lstr):
-    lstr = lstr.replace('\n', '').replace('\xad', '').replace('*', '')
-    return aliases.get(lstr, lstr)
 
-def clean_num(numstr):
-    return int(numstr.replace('.', '').replace('*', '').strip() or '0')
+updatelk = fetchhelper.Updater(url_lk, ext='lk.json')
+updatelk.check_fetch(rawfile=args.rawfile[1])
 
-def parse_td(content):
-    mo = re.search(r'(.*)\((.*)\)\s*', content)
-    if mo is None:
-        return (clean_num(content), 0)
-    else:
-        return (clean_num(mo.group(1)), clean_num(mo.group(2)))
+jdat = json.loads(updatelk.rawdata)
 
-parse = fetchhelper.ParseData(update, 'data')
-for tab in header.parent.parent.select('table'):
-    if clean_label(tab.select('thead th')[0].text) != 'Bundesland':
-        continue
-    with open(parse.parsedfile, 'w') as outf:
-        cout = csv.writer(outf)
-        cout.writerow(['Bundesland', 'Timestamp', 'EConfirmed', 'EDeaths'])
-        for tr in tab.select('table tbody tr')[:-1]:
-            tds = tr.select('td')
-            assert(len(tds) in [5, 6])
-            area = clean_label(tds[0].get_text())
-            if area not in good:
-                print("unknown area:", area, file=sys.stderr)
-                sys.exit(1)
-            econfirmed = clean_num(tds[1].get_text())
-            edeaths = clean_num(tds[5].get_text())
-            cout.writerow([area, parse.parsedtime.isoformat(),
-                econfirmed, edeaths])
-    break
-else:
-    print("couldn't find table %s" % parse.label, file=sys.stderr)
-    exit(1)
+parselk = fetchhelper.ParseData(updatelk, 'lk')
+parselk.parsedtime = None
+with open(parselk.parsedfile, 'w') as outf:
+    cout = csv.writer(outf)
+    cout.writerow(['Area', 'Bundesland', 'Timestamp', 'Confirmed', 'Deaths'])
+    for jfeat in sorted(jdat['features'], key=(lambda f: (f['attributes']['BL'], f['attributes']['GEN']))):
+        ts = datetime.datetime.strptime(jfeat['attributes']['last_update'], "%d.%m.%Y, %H:%M Uhr").astimezone(datatz)
+        if parselk.parsedtime is None or ts > parselk.parsedtime:
+            parselk.parsedtime = ts
+        cout.writerow([
+            jfeat['attributes']['GEN'],
+            jfeat['attributes']['BL'],
+            ts.isoformat(),
+            jfeat['attributes']['cases'],
+            jfeat['attributes']['deaths'],
+        ])
 
-# If the current day is later than the contenttime we assume the
-# content time is a mistake and we adjust it to the current day.
-# (This problem has happend before)
-# Let's hope it doesn't happen again.
-#if parse.update.rawtime.date() > parse.parsedtime.date():
-#    if parse.parseddiff.changed and not parse.parseddiff.first:
-#        print("Adjust date", parse.parsedtime, "->", parse.update.rawtime)
-#        parse.parsedtime = parse.update.rawtime
+parselk.deploy_timestamp()
 
-parse.deploy_timestamp()
-
-fetchhelper.git_commit([parse], args)
+fetchhelper.git_commit([parsebl], args)
