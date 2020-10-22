@@ -5,8 +5,13 @@ import datetime
 
 ap = argparse.ArgumentParser()
 ap.add_argument('--dry-run', '-n', action='store_true', help="Don't add to git")
-ap.add_argument('timestamp', type=(lambda s: datetime.datetime.fromisoformat(s)))
+ap.add_argument('timestamp')
 args = ap.parse_args()
+
+if args.timestamp.startswith('gemeinden'):
+    args.timestamp = args.timestamp[10:-4]
+
+args.timestamp = datetime.datetime.fromisoformat(args.timestamp)
 
 import os
 
