@@ -50,9 +50,32 @@ with open(parsebl.parsedfile, 'w') as outf:
 
 parsebl.deploy_timestamp()
 
-
 # Landkreise
-url_lk = 'https://services7.arcgis.com/mOBPykOjAyBO2ZKk/ArcGIS/rest/services/RKI_Landkreisdaten/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=Bl%2Ccounty%2CGEN%2Clast_update%2Ccases%2Cdeaths%2Crecovered%2CAGS_0&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token='
+
+label_areas = set([
+    'Ansbach', 'Aschaffenburg', 'Augsburg', 'Bamberg', 'Bayreuth', 'Coburg',
+    'Fürth', 'Heilbronn', 'Hof', 'Kaiserslautern', 'Karlsruhe', 'Kassel',
+    'Landshut', 'Leipzig', 'München', 'Osnabrück', 'Passau', 'Regensburg',
+    'Rosenheim', 'Rostock', 'Schweinfurt', 'Würzburg',
+
+    'Baden-Baden', 'Freiburg im Breisgau', 'Heidelberg', 'Mannheim',
+    'Pforzheim', 'Ulm',
+
+    'Borken', 'Kleve', 'Viersen', 'Wesel', 'Düren', 'Euskirchen', 'Heinsberg',
+    'Coesfeld', 'Recklinghausen', 'Steinfurt', 'Warendorf',
+    'Gütersloh', 'Herford', 'Höxter', 'Lippe', 'Minden-Lübbecke', 'Paderborn',
+    'Olpe', 'Siegen-Wittgenstein', 'Soest', 'Unna',
+])
+
+bez_label = {
+    'Stadtkreis': 'Stadtkreis',
+    'Landkreis': 'Landkreis',
+    'Kreis': 'Kreis',
+    'Kreisfreie Stadt': 'Stadt',
+}
+
+
+url_lk = 'https://services7.arcgis.com/mOBPykOjAyBO2ZKk/ArcGIS/rest/services/RKI_Landkreisdaten/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=Bl%2Ccounty%2CGEN%2Clast_update%2Ccases%2Cdeaths%2Crecovered%2CAGS_0%2CBEZ&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token='
 
 updatelk = fetchhelper.Updater(url_lk, ext='lk.json')
 updatelk.check_fetch(rawfile=args.rawfile[1])
@@ -68,8 +91,11 @@ with open(parselk.parsedfile, 'w') as outf:
         ts = datetime.datetime.strptime(jfeat['attributes']['last_update'], "%d.%m.%Y, %H:%M Uhr").astimezone(datatz)
         if parselk.parsedtime is None or ts > parselk.parsedtime:
             parselk.parsedtime = ts
+        area = jfeat['attributes']['GEN']
+        if area in label_areas:
+            area += ' (%s)' % bez_label[jfeat['attributes']['BEZ']]
         cout.writerow([
-            jfeat['attributes']['GEN'],
+            area,
             jfeat['attributes']['BL'],
             jfeat['attributes']['AGS_0'],
             ts.isoformat(),

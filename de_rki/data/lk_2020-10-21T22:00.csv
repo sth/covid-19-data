@@ -1,6 +1,6 @@
 Area,Bundesland,AGS,Timestamp,Confirmed,Deaths
 Alb-Donau-Kreis,Baden-Württemberg,08425000,2020-10-22T00:00:00+02:00,1203,26
-Baden-Baden,Baden-Württemberg,08211000,2020-10-22T00:00:00+02:00,302,19
+Baden-Baden (Stadtkreis),Baden-Württemberg,08211000,2020-10-22T00:00:00+02:00,302,19
 Biberach,Baden-Württemberg,08426000,2020-10-22T00:00:00+02:00,983,38
 Bodenseekreis,Baden-Württemberg,08435000,2020-10-22T00:00:00+02:00,656,8
 Breisgau-Hochschwarzwald,Baden-Württemberg,08315000,2020-10-22T00:00:00+02:00,1803,73
@@ -9,25 +9,25 @@ Calw,Baden-Württemberg,08235000,2020-10-22T00:00:00+02:00,1100,29
 Emmendingen,Baden-Württemberg,08316000,2020-10-22T00:00:00+02:00,882,44
 Enzkreis,Baden-Württemberg,08236000,2020-10-22T00:00:00+02:00,1106,29
 Esslingen,Baden-Württemberg,08116000,2020-10-22T00:00:00+02:00,3922,125
-Freiburg im Breisgau,Baden-Württemberg,08311000,2020-10-22T00:00:00+02:00,1554,80
+Freiburg im Breisgau (Stadtkreis),Baden-Württemberg,08311000,2020-10-22T00:00:00+02:00,1554,80
 Freudenstadt,Baden-Württemberg,08237000,2020-10-22T00:00:00+02:00,758,39
 Göppingen,Baden-Württemberg,08117000,2020-10-22T00:00:00+02:00,1543,41
-Heidelberg,Baden-Württemberg,08221000,2020-10-22T00:00:00+02:00,680,7
+Heidelberg (Stadtkreis),Baden-Württemberg,08221000,2020-10-22T00:00:00+02:00,680,7
 Heidenheim,Baden-Württemberg,08135000,2020-10-22T00:00:00+02:00,726,41
-Heilbronn,Baden-Württemberg,08121000,2020-10-22T00:00:00+02:00,1000,17
-Heilbronn,Baden-Württemberg,08125000,2020-10-22T00:00:00+02:00,1683,45
+Heilbronn (Stadtkreis),Baden-Württemberg,08121000,2020-10-22T00:00:00+02:00,1000,17
+Heilbronn (Landkreis),Baden-Württemberg,08125000,2020-10-22T00:00:00+02:00,1683,45
 Hohenlohekreis,Baden-Württemberg,08126000,2020-10-22T00:00:00+02:00,959,47
-Karlsruhe,Baden-Württemberg,08212000,2020-10-22T00:00:00+02:00,957,14
-Karlsruhe,Baden-Württemberg,08215000,2020-10-22T00:00:00+02:00,1848,96
+Karlsruhe (Stadtkreis),Baden-Württemberg,08212000,2020-10-22T00:00:00+02:00,957,14
+Karlsruhe (Landkreis),Baden-Württemberg,08215000,2020-10-22T00:00:00+02:00,1848,96
 Konstanz,Baden-Württemberg,08335000,2020-10-22T00:00:00+02:00,965,17
 Ludwigsburg,Baden-Württemberg,08118000,2020-10-22T00:00:00+02:00,3681,83
 Lörrach,Baden-Württemberg,08336000,2020-10-22T00:00:00+02:00,1055,65
 Main-Tauber-Kreis,Baden-Württemberg,08128000,2020-10-22T00:00:00+02:00,744,11
-Mannheim,Baden-Württemberg,08222000,2020-10-22T00:00:00+02:00,1633,14
+Mannheim (Stadtkreis),Baden-Württemberg,08222000,2020-10-22T00:00:00+02:00,1633,14
 Neckar-Odenwald-Kreis,Baden-Württemberg,08225000,2020-10-22T00:00:00+02:00,695,24
 Ortenaukreis,Baden-Württemberg,08317000,2020-10-22T00:00:00+02:00,2124,127
 Ostalbkreis,Baden-Württemberg,08136000,2020-10-22T00:00:00+02:00,2152,45
-Pforzheim,Baden-Württemberg,08231000,2020-10-22T00:00:00+02:00,755,10
+Pforzheim (Stadtkreis),Baden-Württemberg,08231000,2020-10-22T00:00:00+02:00,755,10
 Rastatt,Baden-Württemberg,08216000,2020-10-22T00:00:00+02:00,918,19
 Ravensburg,Baden-Württemberg,08436000,2020-10-22T00:00:00+02:00,1051,7
 Rems-Murr-Kreis,Baden-Württemberg,08119000,2020-10-22T00:00:00+02:00,2814,100
@@ -40,29 +40,29 @@ Sigmaringen,Baden-Württemberg,08437000,2020-10-22T00:00:00+02:00,967,36
 Stuttgart,Baden-Württemberg,08111000,2020-10-22T00:00:00+02:00,4208,70
 Tuttlingen,Baden-Württemberg,08327000,2020-10-22T00:00:00+02:00,761,25
 Tübingen,Baden-Württemberg,08416000,2020-10-22T00:00:00+02:00,1846,60
-Ulm,Baden-Württemberg,08421000,2020-10-22T00:00:00+02:00,781,11
+Ulm (Stadtkreis),Baden-Württemberg,08421000,2020-10-22T00:00:00+02:00,781,11
 Waldshut,Baden-Württemberg,08337000,2020-10-22T00:00:00+02:00,538,35
 Zollernalbkreis,Baden-Württemberg,08417000,2020-10-22T00:00:00+02:00,1517,78
 Aichach-Friedberg,Bayern,09771000,2020-10-22T00:00:00+02:00,624,20
 Altötting,Bayern,09171000,2020-10-22T00:00:00+02:00,792,57
 Amberg,Bayern,09361000,2020-10-22T00:00:00+02:00,165,4
 Amberg-Sulzbach,Bayern,09371000,2020-10-22T00:00:00+02:00,590,54
-Ansbach,Bayern,09561000,2020-10-22T00:00:00+02:00,216,8
-Ansbach,Bayern,09571000,2020-10-22T00:00:00+02:00,819,28
-Aschaffenburg,Bayern,09661000,2020-10-22T00:00:00+02:00,238,1
-Aschaffenburg,Bayern,09671000,2020-10-22T00:00:00+02:00,848,42
-Augsburg,Bayern,09761000,2020-10-22T00:00:00+02:00,1686,17
-Augsburg,Bayern,09772000,2020-10-22T00:00:00+02:00,1081,13
+Ansbach (Stadt),Bayern,09561000,2020-10-22T00:00:00+02:00,216,8
+Ansbach (Landkreis),Bayern,09571000,2020-10-22T00:00:00+02:00,819,28
+Aschaffenburg (Stadt),Bayern,09661000,2020-10-22T00:00:00+02:00,238,1
+Aschaffenburg (Landkreis),Bayern,09671000,2020-10-22T00:00:00+02:00,848,42
+Augsburg (Stadt),Bayern,09761000,2020-10-22T00:00:00+02:00,1686,17
+Augsburg (Landkreis),Bayern,09772000,2020-10-22T00:00:00+02:00,1081,13
 Bad Kissingen,Bayern,09672000,2020-10-22T00:00:00+02:00,327,18
 Bad Tölz-Wolfratshausen,Bayern,09173000,2020-10-22T00:00:00+02:00,737,10
-Bamberg,Bayern,09461000,2020-10-22T00:00:00+02:00,306,22
-Bamberg,Bayern,09471000,2020-10-22T00:00:00+02:00,621,38
-Bayreuth,Bayern,09462000,2020-10-22T00:00:00+02:00,334,11
-Bayreuth,Bayern,09472000,2020-10-22T00:00:00+02:00,504,28
+Bamberg (Stadt),Bayern,09461000,2020-10-22T00:00:00+02:00,306,22
+Bamberg (Landkreis),Bayern,09471000,2020-10-22T00:00:00+02:00,621,38
+Bayreuth (Stadt),Bayern,09462000,2020-10-22T00:00:00+02:00,334,11
+Bayreuth (Landkreis),Bayern,09472000,2020-10-22T00:00:00+02:00,504,28
 Berchtesgadener Land,Bayern,09172000,2020-10-22T00:00:00+02:00,877,25
 Cham,Bayern,09372000,2020-10-22T00:00:00+02:00,669,21
-Coburg,Bayern,09463000,2020-10-22T00:00:00+02:00,171,4
-Coburg,Bayern,09473000,2020-10-22T00:00:00+02:00,488,30
+Coburg (Stadt),Bayern,09463000,2020-10-22T00:00:00+02:00,171,4
+Coburg (Landkreis),Bayern,09473000,2020-10-22T00:00:00+02:00,488,30
 Dachau,Bayern,09174000,2020-10-22T00:00:00+02:00,1469,35
 Deggendorf,Bayern,09271000,2020-10-22T00:00:00+02:00,590,20
 Dillingen a.d. Donau,Bayern,09773000,2020-10-22T00:00:00+02:00,442,29
@@ -77,13 +77,13 @@ Forchheim,Bayern,09474000,2020-10-22T00:00:00+02:00,363,4
 Freising,Bayern,09178000,2020-10-22T00:00:00+02:00,1509,48
 Freyung-Grafenau,Bayern,09272000,2020-10-22T00:00:00+02:00,303,14
 Fürstenfeldbruck,Bayern,09179000,2020-10-22T00:00:00+02:00,1808,38
-Fürth,Bayern,09563000,2020-10-22T00:00:00+02:00,718,38
-Fürth,Bayern,09573000,2020-10-22T00:00:00+02:00,732,60
+Fürth (Stadt),Bayern,09563000,2020-10-22T00:00:00+02:00,718,38
+Fürth (Landkreis),Bayern,09573000,2020-10-22T00:00:00+02:00,732,60
 Garmisch-Partenkirchen,Bayern,09180000,2020-10-22T00:00:00+02:00,467,20
 Günzburg,Bayern,09774000,2020-10-22T00:00:00+02:00,549,4
 Haßberge,Bayern,09674000,2020-10-22T00:00:00+02:00,296,6
-Hof,Bayern,09464000,2020-10-22T00:00:00+02:00,210,5
-Hof,Bayern,09475000,2020-10-22T00:00:00+02:00,595,32
+Hof (Stadt),Bayern,09464000,2020-10-22T00:00:00+02:00,210,5
+Hof (Landkreis),Bayern,09475000,2020-10-22T00:00:00+02:00,595,32
 Ingolstadt,Bayern,09161000,2020-10-22T00:00:00+02:00,974,39
 Kaufbeuren,Bayern,09762000,2020-10-22T00:00:00+02:00,238,10
 Kelheim,Bayern,09273000,2020-10-22T00:00:00+02:00,736,36
@@ -92,8 +92,8 @@ Kitzingen,Bayern,09675000,2020-10-22T00:00:00+02:00,363,4
 Kronach,Bayern,09476000,2020-10-22T00:00:00+02:00,219,3
 Kulmbach,Bayern,09477000,2020-10-22T00:00:00+02:00,354,11
 Landsberg am Lech,Bayern,09181000,2020-10-22T00:00:00+02:00,606,10
-Landshut,Bayern,09261000,2020-10-22T00:00:00+02:00,501,9
-Landshut,Bayern,09274000,2020-10-22T00:00:00+02:00,1034,34
+Landshut (Stadt),Bayern,09261000,2020-10-22T00:00:00+02:00,501,9
+Landshut (Landkreis),Bayern,09274000,2020-10-22T00:00:00+02:00,1034,34
 Lichtenfels,Bayern,09478000,2020-10-22T00:00:00+02:00,435,17
 Lindau (Bodensee),Bayern,09776000,2020-10-22T00:00:00+02:00,399,8
 Main-Spessart,Bayern,09677000,2020-10-22T00:00:00+02:00,300,6
@@ -101,8 +101,8 @@ Memmingen,Bayern,09764000,2020-10-22T00:00:00+02:00,226,2
 Miesbach,Bayern,09182000,2020-10-22T00:00:00+02:00,869,11
 Miltenberg,Bayern,09676000,2020-10-22T00:00:00+02:00,565,8
 Mühldorf a. Inn,Bayern,09183000,2020-10-22T00:00:00+02:00,867,27
-München,Bayern,09162000,2020-10-22T00:00:00+02:00,14256,237
-München,Bayern,09184000,2020-10-22T00:00:00+02:00,2558,96
+München (Stadt),Bayern,09162000,2020-10-22T00:00:00+02:00,14256,237
+München (Landkreis),Bayern,09184000,2020-10-22T00:00:00+02:00,2558,96
 Neu-Ulm,Bayern,09775000,2020-10-22T00:00:00+02:00,1014,26
 Neuburg-Schrobenhausen,Bayern,09185000,2020-10-22T00:00:00+02:00,552,18
 Neumarkt i.d. OPf.,Bayern,09373000,2020-10-22T00:00:00+02:00,665,17
@@ -112,21 +112,21 @@ Nürnberg,Bayern,09564000,2020-10-22T00:00:00+02:00,2793,55
 Nürnberger Land,Bayern,09574000,2020-10-22T00:00:00+02:00,926,44
 Oberallgäu,Bayern,09780000,2020-10-22T00:00:00+02:00,396,8
 Ostallgäu,Bayern,09777000,2020-10-22T00:00:00+02:00,873,40
-Passau,Bayern,09262000,2020-10-22T00:00:00+02:00,285,18
-Passau,Bayern,09275000,2020-10-22T00:00:00+02:00,1115,31
+Passau (Stadt),Bayern,09262000,2020-10-22T00:00:00+02:00,285,18
+Passau (Landkreis),Bayern,09275000,2020-10-22T00:00:00+02:00,1115,31
 Pfaffenhofen a.d. Ilm,Bayern,09186000,2020-10-22T00:00:00+02:00,645,22
 Regen,Bayern,09276000,2020-10-22T00:00:00+02:00,395,12
-Regensburg,Bayern,09362000,2020-10-22T00:00:00+02:00,1102,10
-Regensburg,Bayern,09375000,2020-10-22T00:00:00+02:00,868,17
+Regensburg (Stadt),Bayern,09362000,2020-10-22T00:00:00+02:00,1102,10
+Regensburg (Landkreis),Bayern,09375000,2020-10-22T00:00:00+02:00,868,17
 Rhön-Grabfeld,Bayern,09673000,2020-10-22T00:00:00+02:00,341,9
-Rosenheim,Bayern,09163000,2020-10-22T00:00:00+02:00,859,23
-Rosenheim,Bayern,09187000,2020-10-22T00:00:00+02:00,3021,202
+Rosenheim (Stadt),Bayern,09163000,2020-10-22T00:00:00+02:00,859,23
+Rosenheim (Landkreis),Bayern,09187000,2020-10-22T00:00:00+02:00,3021,202
 Roth,Bayern,09576000,2020-10-22T00:00:00+02:00,468,7
 Rottal-Inn,Bayern,09277000,2020-10-22T00:00:00+02:00,1124,51
 Schwabach,Bayern,09565000,2020-10-22T00:00:00+02:00,166,2
 Schwandorf,Bayern,09376000,2020-10-22T00:00:00+02:00,675,21
-Schweinfurt,Bayern,09662000,2020-10-22T00:00:00+02:00,362,19
-Schweinfurt,Bayern,09678000,2020-10-22T00:00:00+02:00,907,25
+Schweinfurt (Stadt),Bayern,09662000,2020-10-22T00:00:00+02:00,362,19
+Schweinfurt (Landkreis),Bayern,09678000,2020-10-22T00:00:00+02:00,907,25
 Starnberg,Bayern,09188000,2020-10-22T00:00:00+02:00,951,13
 Straubing,Bayern,09263000,2020-10-22T00:00:00+02:00,549,48
 Straubing-Bogen,Bayern,09278000,2020-10-22T00:00:00+02:00,691,29
@@ -137,8 +137,8 @@ Weiden i.d. OPf.,Bayern,09363000,2020-10-22T00:00:00+02:00,493,20
 Weilheim-Schongau,Bayern,09190000,2020-10-22T00:00:00+02:00,653,3
 Weißenburg-Gunzenhausen,Bayern,09577000,2020-10-22T00:00:00+02:00,516,25
 Wunsiedel i. Fichtelgebirge,Bayern,09479000,2020-10-22T00:00:00+02:00,850,46
-Würzburg,Bayern,09663000,2020-10-22T00:00:00+02:00,982,52
-Würzburg,Bayern,09679000,2020-10-22T00:00:00+02:00,802,7
+Würzburg (Stadt),Bayern,09663000,2020-10-22T00:00:00+02:00,982,52
+Würzburg (Landkreis),Bayern,09679000,2020-10-22T00:00:00+02:00,802,7
 Berlin Charlottenburg-Wilmersdorf,Berlin,,2020-10-22T00:00:00+02:00,2193,23
 Berlin Friedrichshain-Kreuzberg,Berlin,,2020-10-22T00:00:00+02:00,2346,10
 Berlin Lichtenberg,Berlin,,2020-10-22T00:00:00+02:00,1130,15
@@ -181,8 +181,8 @@ Gießen,Hessen,06531000,2020-10-22T00:00:00+02:00,800,6
 Groß-Gerau,Hessen,06433000,2020-10-22T00:00:00+02:00,1755,22
 Hersfeld-Rotenburg,Hessen,06632000,2020-10-22T00:00:00+02:00,427,23
 Hochtaunuskreis,Hessen,06434000,2020-10-22T00:00:00+02:00,878,8
-Kassel,Hessen,06611000,2020-10-22T00:00:00+02:00,957,9
-Kassel,Hessen,06633000,2020-10-22T00:00:00+02:00,778,32
+Kassel (Stadt),Hessen,06611000,2020-10-22T00:00:00+02:00,957,9
+Kassel (Landkreis),Hessen,06633000,2020-10-22T00:00:00+02:00,778,32
 Lahn-Dill-Kreis,Hessen,06532000,2020-10-22T00:00:00+02:00,838,24
 Limburg-Weilburg,Hessen,06533000,2020-10-22T00:00:00+02:00,647,7
 Main-Kinzig-Kreis,Hessen,06435000,2020-10-22T00:00:00+02:00,1947,55
@@ -201,8 +201,8 @@ Wiesbaden,Hessen,06414000,2020-10-22T00:00:00+02:00,1540,28
 Ludwigslust-Parchim,Mecklenburg-Vorpommern,13076000,2020-10-22T00:00:00+02:00,278,2
 Mecklenburgische Seenplatte,Mecklenburg-Vorpommern,13071000,2020-10-22T00:00:00+02:00,366,3
 Nordwestmecklenburg,Mecklenburg-Vorpommern,13074000,2020-10-22T00:00:00+02:00,180,1
-Rostock,Mecklenburg-Vorpommern,13003000,2020-10-22T00:00:00+02:00,277,2
-Rostock,Mecklenburg-Vorpommern,13072000,2020-10-22T00:00:00+02:00,155,3
+Rostock (Stadt),Mecklenburg-Vorpommern,13003000,2020-10-22T00:00:00+02:00,277,2
+Rostock (Landkreis),Mecklenburg-Vorpommern,13072000,2020-10-22T00:00:00+02:00,155,3
 Schwerin,Mecklenburg-Vorpommern,13004000,2020-10-22T00:00:00+02:00,146,0
 Vorpommern-Greifswald,Mecklenburg-Vorpommern,13075000,2020-10-22T00:00:00+02:00,283,8
 Vorpommern-Rügen,Mecklenburg-Vorpommern,13073000,2020-10-22T00:00:00+02:00,192,2
@@ -234,8 +234,8 @@ Nienburg (Weser),Niedersachsen,03256000,2020-10-22T00:00:00+02:00,220,4
 Northeim,Niedersachsen,03155000,2020-10-22T00:00:00+02:00,341,6
 Oldenburg,Niedersachsen,03458000,2020-10-22T00:00:00+02:00,707,14
 Oldenburg (Oldb),Niedersachsen,03403000,2020-10-22T00:00:00+02:00,378,3
-Osnabrück,Niedersachsen,03404000,2020-10-22T00:00:00+02:00,911,18
-Osnabrück,Niedersachsen,03459000,2020-10-22T00:00:00+02:00,1879,72
+Osnabrück (Stadt),Niedersachsen,03404000,2020-10-22T00:00:00+02:00,911,18
+Osnabrück (Landkreis),Niedersachsen,03459000,2020-10-22T00:00:00+02:00,1879,72
 Osterholz,Niedersachsen,03356000,2020-10-22T00:00:00+02:00,271,0
 Peine,Niedersachsen,03157000,2020-10-22T00:00:00+02:00,363,13
 Region Hannover,Niedersachsen,03241000,2020-10-22T00:00:00+02:00,5468,138
@@ -254,55 +254,55 @@ Wolfsburg,Niedersachsen,03103000,2020-10-22T00:00:00+02:00,503,52
 Bielefeld,Nordrhein-Westfalen,05711000,2020-10-22T00:00:00+02:00,1378,9
 Bochum,Nordrhein-Westfalen,05911000,2020-10-22T00:00:00+02:00,1934,28
 Bonn,Nordrhein-Westfalen,05314000,2020-10-22T00:00:00+02:00,1766,11
-Borken,Nordrhein-Westfalen,05554000,2020-10-22T00:00:00+02:00,1775,41
+Borken (Kreis),Nordrhein-Westfalen,05554000,2020-10-22T00:00:00+02:00,1775,41
 Bottrop,Nordrhein-Westfalen,05512000,2020-10-22T00:00:00+02:00,490,7
-Coesfeld,Nordrhein-Westfalen,05558000,2020-10-22T00:00:00+02:00,1181,25
+Coesfeld (Kreis),Nordrhein-Westfalen,05558000,2020-10-22T00:00:00+02:00,1181,25
 Dortmund,Nordrhein-Westfalen,05913000,2020-10-22T00:00:00+02:00,2994,21
 Duisburg,Nordrhein-Westfalen,05112000,2020-10-22T00:00:00+02:00,3939,80
-Düren,Nordrhein-Westfalen,05358000,2020-10-22T00:00:00+02:00,1483,44
+Düren (Kreis),Nordrhein-Westfalen,05358000,2020-10-22T00:00:00+02:00,1483,44
 Düsseldorf,Nordrhein-Westfalen,05111000,2020-10-22T00:00:00+02:00,4348,55
 Ennepe-Ruhr-Kreis,Nordrhein-Westfalen,05954000,2020-10-22T00:00:00+02:00,1252,16
 Essen,Nordrhein-Westfalen,05113000,2020-10-22T00:00:00+02:00,3112,51
-Euskirchen,Nordrhein-Westfalen,05366000,2020-10-22T00:00:00+02:00,903,29
+Euskirchen (Kreis),Nordrhein-Westfalen,05366000,2020-10-22T00:00:00+02:00,903,29
 Gelsenkirchen,Nordrhein-Westfalen,05513000,2020-10-22T00:00:00+02:00,1808,19
-Gütersloh,Nordrhein-Westfalen,05754000,2020-10-22T00:00:00+02:00,3433,21
+Gütersloh (Kreis),Nordrhein-Westfalen,05754000,2020-10-22T00:00:00+02:00,3433,21
 Hagen,Nordrhein-Westfalen,05914000,2020-10-22T00:00:00+02:00,1165,15
 Hamm,Nordrhein-Westfalen,05915000,2020-10-22T00:00:00+02:00,1524,40
-Heinsberg,Nordrhein-Westfalen,05370000,2020-10-22T00:00:00+02:00,2416,97
-Herford,Nordrhein-Westfalen,05758000,2020-10-22T00:00:00+02:00,855,8
+Heinsberg (Kreis),Nordrhein-Westfalen,05370000,2020-10-22T00:00:00+02:00,2416,97
+Herford (Kreis),Nordrhein-Westfalen,05758000,2020-10-22T00:00:00+02:00,855,8
 Herne,Nordrhein-Westfalen,05916000,2020-10-22T00:00:00+02:00,1003,10
 Hochsauerlandkreis,Nordrhein-Westfalen,05958000,2020-10-22T00:00:00+02:00,1039,19
-Höxter,Nordrhein-Westfalen,05762000,2020-10-22T00:00:00+02:00,513,19
-Kleve,Nordrhein-Westfalen,05154000,2020-10-22T00:00:00+02:00,1465,38
+Höxter (Kreis),Nordrhein-Westfalen,05762000,2020-10-22T00:00:00+02:00,513,19
+Kleve (Kreis),Nordrhein-Westfalen,05154000,2020-10-22T00:00:00+02:00,1465,38
 Krefeld,Nordrhein-Westfalen,05114000,2020-10-22T00:00:00+02:00,1329,28
 Köln,Nordrhein-Westfalen,05315000,2020-10-22T00:00:00+02:00,7675,135
 Leverkusen,Nordrhein-Westfalen,05316000,2020-10-22T00:00:00+02:00,894,10
-Lippe,Nordrhein-Westfalen,05766000,2020-10-22T00:00:00+02:00,1345,31
+Lippe (Kreis),Nordrhein-Westfalen,05766000,2020-10-22T00:00:00+02:00,1345,31
 Mettmann,Nordrhein-Westfalen,05158000,2020-10-22T00:00:00+02:00,2906,94
-Minden-Lübbecke,Nordrhein-Westfalen,05770000,2020-10-22T00:00:00+02:00,1120,16
+Minden-Lübbecke (Kreis),Nordrhein-Westfalen,05770000,2020-10-22T00:00:00+02:00,1120,16
 Märkischer Kreis,Nordrhein-Westfalen,05962000,2020-10-22T00:00:00+02:00,1556,33
 Mönchengladbach,Nordrhein-Westfalen,05116000,2020-10-22T00:00:00+02:00,1387,52
 Mülheim an der Ruhr,Nordrhein-Westfalen,05117000,2020-10-22T00:00:00+02:00,868,16
 Münster,Nordrhein-Westfalen,05515000,2020-10-22T00:00:00+02:00,1367,13
 Oberbergischer Kreis,Nordrhein-Westfalen,05374000,2020-10-22T00:00:00+02:00,1181,19
 Oberhausen,Nordrhein-Westfalen,05119000,2020-10-22T00:00:00+02:00,856,16
-Olpe,Nordrhein-Westfalen,05966000,2020-10-22T00:00:00+02:00,999,57
-Paderborn,Nordrhein-Westfalen,05774000,2020-10-22T00:00:00+02:00,1026,35
-Recklinghausen,Nordrhein-Westfalen,05562000,2020-10-22T00:00:00+02:00,3500,48
+Olpe (Kreis),Nordrhein-Westfalen,05966000,2020-10-22T00:00:00+02:00,999,57
+Paderborn (Kreis),Nordrhein-Westfalen,05774000,2020-10-22T00:00:00+02:00,1026,35
+Recklinghausen (Kreis),Nordrhein-Westfalen,05562000,2020-10-22T00:00:00+02:00,3500,48
 Remscheid,Nordrhein-Westfalen,05120000,2020-10-22T00:00:00+02:00,766,20
 Rhein-Erft-Kreis,Nordrhein-Westfalen,05362000,2020-10-22T00:00:00+02:00,2418,82
 Rhein-Kreis Neuss,Nordrhein-Westfalen,05162000,2020-10-22T00:00:00+02:00,1972,28
 Rhein-Sieg-Kreis,Nordrhein-Westfalen,05382000,2020-10-22T00:00:00+02:00,2980,57
 Rheinisch-Bergischer Kreis,Nordrhein-Westfalen,05378000,2020-10-22T00:00:00+02:00,1138,24
-Siegen-Wittgenstein,Nordrhein-Westfalen,05970000,2020-10-22T00:00:00+02:00,1012,8
-Soest,Nordrhein-Westfalen,05974000,2020-10-22T00:00:00+02:00,796,11
+Siegen-Wittgenstein (Kreis),Nordrhein-Westfalen,05970000,2020-10-22T00:00:00+02:00,1012,8
+Soest (Kreis),Nordrhein-Westfalen,05974000,2020-10-22T00:00:00+02:00,796,11
 Solingen,Nordrhein-Westfalen,05122000,2020-10-22T00:00:00+02:00,1108,13
-Steinfurt,Nordrhein-Westfalen,05566000,2020-10-22T00:00:00+02:00,2201,95
+Steinfurt (Kreis),Nordrhein-Westfalen,05566000,2020-10-22T00:00:00+02:00,2201,95
 Städteregion Aachen,Nordrhein-Westfalen,05334000,2020-10-22T00:00:00+02:00,3950,110
-Unna,Nordrhein-Westfalen,05978000,2020-10-22T00:00:00+02:00,2114,46
-Viersen,Nordrhein-Westfalen,05166000,2020-10-22T00:00:00+02:00,1261,37
-Warendorf,Nordrhein-Westfalen,05570000,2020-10-22T00:00:00+02:00,1455,21
-Wesel,Nordrhein-Westfalen,05170000,2020-10-22T00:00:00+02:00,1934,33
+Unna (Kreis),Nordrhein-Westfalen,05978000,2020-10-22T00:00:00+02:00,2114,46
+Viersen (Kreis),Nordrhein-Westfalen,05166000,2020-10-22T00:00:00+02:00,1261,37
+Warendorf (Kreis),Nordrhein-Westfalen,05570000,2020-10-22T00:00:00+02:00,1455,21
+Wesel (Kreis),Nordrhein-Westfalen,05170000,2020-10-22T00:00:00+02:00,1934,33
 Wuppertal,Nordrhein-Westfalen,05124000,2020-10-22T00:00:00+02:00,2617,89
 Ahrweiler,Rheinland-Pfalz,07131000,2020-10-22T00:00:00+02:00,434,3
 Altenkirchen (Westerwald),Rheinland-Pfalz,07132000,2020-10-22T00:00:00+02:00,420,12
@@ -316,8 +316,8 @@ Donnersbergkreis,Rheinland-Pfalz,07333000,2020-10-22T00:00:00+02:00,216,9
 Eifelkreis Bitburg-Prüm,Rheinland-Pfalz,07232000,2020-10-22T00:00:00+02:00,589,6
 Frankenthal (Pfalz),Rheinland-Pfalz,07311000,2020-10-22T00:00:00+02:00,118,2
 Germersheim,Rheinland-Pfalz,07334000,2020-10-22T00:00:00+02:00,494,9
-Kaiserslautern,Rheinland-Pfalz,07312000,2020-10-22T00:00:00+02:00,370,6
-Kaiserslautern,Rheinland-Pfalz,07335000,2020-10-22T00:00:00+02:00,330,1
+Kaiserslautern (Stadt),Rheinland-Pfalz,07312000,2020-10-22T00:00:00+02:00,370,6
+Kaiserslautern (Landkreis),Rheinland-Pfalz,07335000,2020-10-22T00:00:00+02:00,330,1
 Koblenz,Rheinland-Pfalz,07111000,2020-10-22T00:00:00+02:00,442,20
 Kusel,Rheinland-Pfalz,07336000,2020-10-22T00:00:00+02:00,166,1
 Landau in der Pfalz,Rheinland-Pfalz,07313000,2020-10-22T00:00:00+02:00,120,2
@@ -351,8 +351,8 @@ Chemnitz,Sachsen,14511000,2020-10-22T00:00:00+02:00,547,7
 Dresden,Sachsen,14612000,2020-10-22T00:00:00+02:00,1348,13
 Erzgebirgskreis,Sachsen,14521000,2020-10-22T00:00:00+02:00,1815,62
 Görlitz,Sachsen,14626000,2020-10-22T00:00:00+02:00,638,26
-Leipzig,Sachsen,14713000,2020-10-22T00:00:00+02:00,1178,13
-Leipzig,Sachsen,14729000,2020-10-22T00:00:00+02:00,373,4
+Leipzig (Stadt),Sachsen,14713000,2020-10-22T00:00:00+02:00,1178,13
+Leipzig (Landkreis),Sachsen,14729000,2020-10-22T00:00:00+02:00,373,4
 Meißen,Sachsen,14627000,2020-10-22T00:00:00+02:00,494,23
 Mittelsachsen,Sachsen,14522000,2020-10-22T00:00:00+02:00,650,10
 Nordsachsen,Sachsen,14730000,2020-10-22T00:00:00+02:00,466,0
