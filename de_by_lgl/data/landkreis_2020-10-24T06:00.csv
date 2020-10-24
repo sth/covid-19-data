@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-10-24T08:00:00+02:00,669,20
+Altötting,Oberbayern,2020-10-24T08:00:00+02:00,816,57
+Amberg Stadt,Oberpfalz,2020-10-24T08:00:00+02:00,168,4
+Amberg-Sulzbach,Oberpfalz,2020-10-24T08:00:00+02:00,607,54
+Ansbach,Mittelfranken,2020-10-24T08:00:00+02:00,833,28
+Ansbach Stadt,Mittelfranken,2020-10-24T08:00:00+02:00,216,8
+Aschaffenburg,Unterfranken,2020-10-24T08:00:00+02:00,897,42
+Aschaffenburg Stadt,Unterfranken,2020-10-24T08:00:00+02:00,255,2
+Augsburg,Schwaben,2020-10-24T08:00:00+02:00,1207,13
+Augsburg Stadt,Schwaben,2020-10-24T08:00:00+02:00,1950,18
+Bad Kissingen,Unterfranken,2020-10-24T08:00:00+02:00,350,18
+Bad Tölz-Wolfratshausen,Oberbayern,2020-10-24T08:00:00+02:00,761,10
+Bamberg,Oberfranken,2020-10-24T08:00:00+02:00,639,38
+Bamberg Stadt,Oberfranken,2020-10-24T08:00:00+02:00,318,22
+Bayreuth,Oberfranken,2020-10-24T08:00:00+02:00,543,28
+Bayreuth Stadt,Oberfranken,2020-10-24T08:00:00+02:00,380,12
+Berchtesgadener Land,Oberbayern,2020-10-24T08:00:00+02:00,919,26
+Cham,Oberpfalz,2020-10-24T08:00:00+02:00,705,21
+Coburg,Oberfranken,2020-10-24T08:00:00+02:00,511,31
+Coburg Stadt,Oberfranken,2020-10-24T08:00:00+02:00,175,4
+Dachau,Oberbayern,2020-10-24T08:00:00+02:00,1526,36
+Deggendorf,Niederbayern,2020-10-24T08:00:00+02:00,635,20
+Dillingen an der Donau,Schwaben,2020-10-24T08:00:00+02:00,457,29
+Dingolfing-Landau,Niederbayern,2020-10-24T08:00:00+02:00,1103,11
+Donau-Ries,Schwaben,2020-10-24T08:00:00+02:00,692,26
+Ebersberg,Oberbayern,2020-10-24T08:00:00+02:00,1023,8
+Eichstätt,Oberbayern,2020-10-24T08:00:00+02:00,558,20
+Erding,Oberbayern,2020-10-24T08:00:00+02:00,1021,11
+Erlangen Stadt,Mittelfranken,2020-10-24T08:00:00+02:00,527,12
+Erlangen-Höchstadt,Mittelfranken,2020-10-24T08:00:00+02:00,509,11
+Forchheim,Oberfranken,2020-10-24T08:00:00+02:00,381,4
+Freising,Oberbayern,2020-10-24T08:00:00+02:00,1555,48
+Freyung-Grafenau,Niederbayern,2020-10-24T08:00:00+02:00,319,14
+Fürstenfeldbruck,Oberbayern,2020-10-24T08:00:00+02:00,1898,38
+Fürth,Mittelfranken,2020-10-24T08:00:00+02:00,745,60
+Fürth Stadt,Mittelfranken,2020-10-24T08:00:00+02:00,741,38
+Garmisch-Partenkirchen,Oberbayern,2020-10-24T08:00:00+02:00,491,20
+Günzburg,Schwaben,2020-10-24T08:00:00+02:00,590,4
+Haßberge,Unterfranken,2020-10-24T08:00:00+02:00,333,6
+Hof,Oberfranken,2020-10-24T08:00:00+02:00,624,32
+Hof Stadt,Oberfranken,2020-10-24T08:00:00+02:00,217,5
+Ingolstadt Stadt,Oberbayern,2020-10-24T08:00:00+02:00,1053,39
+Kaufbeuren Stadt,Schwaben,2020-10-24T08:00:00+02:00,268,10
+Kelheim,Niederbayern,2020-10-24T08:00:00+02:00,750,36
+Kempten Stadt,Schwaben,2020-10-24T08:00:00+02:00,274,10
+Kitzingen,Unterfranken,2020-10-24T08:00:00+02:00,391,4
+Kronach,Oberfranken,2020-10-24T08:00:00+02:00,231,3
+Kulmbach,Oberfranken,2020-10-24T08:00:00+02:00,379,11
+Landsberg am Lech,Oberbayern,2020-10-24T08:00:00+02:00,641,10
+Landshut,Niederbayern,2020-10-24T08:00:00+02:00,1085,34
+Landshut Stadt,Niederbayern,2020-10-24T08:00:00+02:00,524,9
+Lichtenfels,Oberfranken,2020-10-24T08:00:00+02:00,466,17
+Lindau (Bodensee),Schwaben,2020-10-24T08:00:00+02:00,415,8
+Main-Spessart,Unterfranken,2020-10-24T08:00:00+02:00,322,6
+Memmingen Stadt,Schwaben,2020-10-24T08:00:00+02:00,255,2
+Miesbach,Oberbayern,2020-10-24T08:00:00+02:00,905,11
+Miltenberg,Unterfranken,2020-10-24T08:00:00+02:00,645,9
+Mühldorf am Inn,Oberbayern,2020-10-24T08:00:00+02:00,913,27
+München,Oberbayern,2020-10-24T08:00:00+02:00,2681,96
+München Stadt,Oberbayern,2020-10-24T08:00:00+02:00,14881,237
+Neu-Ulm,Schwaben,2020-10-24T08:00:00+02:00,1066,26
+Neuburg-Schrobenhausen,Oberbayern,2020-10-24T08:00:00+02:00,597,18
+Neumarkt in der Oberpfalz,Oberpfalz,2020-10-24T08:00:00+02:00,702,17
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-10-24T08:00:00+02:00,345,6
+Neustadt an der Waldnaab,Oberpfalz,2020-10-24T08:00:00+02:00,1138,75
+Nürnberg Stadt,Mittelfranken,2020-10-24T08:00:00+02:00,2928,56
+Nürnberger Land,Mittelfranken,2020-10-24T08:00:00+02:00,979,44
+Oberallgäu,Schwaben,2020-10-24T08:00:00+02:00,434,8
+Ostallgäu,Schwaben,2020-10-24T08:00:00+02:00,938,40
+Passau,Niederbayern,2020-10-24T08:00:00+02:00,1179,31
+Passau Stadt,Niederbayern,2020-10-24T08:00:00+02:00,301,18
+Pfaffenhofen an der Ilm,Oberbayern,2020-10-24T08:00:00+02:00,707,23
+Regen,Niederbayern,2020-10-24T08:00:00+02:00,408,12
+Regensburg,Oberpfalz,2020-10-24T08:00:00+02:00,913,17
+Regensburg Stadt,Oberpfalz,2020-10-24T08:00:00+02:00,1131,10
+Rhön-Grabfeld,Unterfranken,2020-10-24T08:00:00+02:00,360,9
+Rosenheim,Oberbayern,2020-10-24T08:00:00+02:00,3151,202
+Rosenheim Stadt,Oberbayern,2020-10-24T08:00:00+02:00,908,23
+Roth,Mittelfranken,2020-10-24T08:00:00+02:00,484,7
+Rottal-Inn,Niederbayern,2020-10-24T08:00:00+02:00,1278,51
+Schwabach Stadt,Mittelfranken,2020-10-24T08:00:00+02:00,168,2
+Schwandorf,Oberpfalz,2020-10-24T08:00:00+02:00,714,21
+Schweinfurt,Unterfranken,2020-10-24T08:00:00+02:00,966,25
+Schweinfurt Stadt,Unterfranken,2020-10-24T08:00:00+02:00,387,18
+Starnberg,Oberbayern,2020-10-24T08:00:00+02:00,986,13
+Straubing Stadt,Niederbayern,2020-10-24T08:00:00+02:00,562,48
+Straubing-Bogen,Niederbayern,2020-10-24T08:00:00+02:00,721,29
+Tirschenreuth,Oberpfalz,2020-10-24T08:00:00+02:00,1341,142
+Traunstein,Oberbayern,2020-10-24T08:00:00+02:00,1681,88
+Unterallgäu,Schwaben,2020-10-24T08:00:00+02:00,723,18
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-10-24T08:00:00+02:00,530,20
+Weilheim-Schongau,Oberbayern,2020-10-24T08:00:00+02:00,690,4
+Weißenburg-Gunzenhausen,Mittelfranken,2020-10-24T08:00:00+02:00,536,25
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-10-24T08:00:00+02:00,866,46
+Würzburg,Unterfranken,2020-10-24T08:00:00+02:00,834,7
+Würzburg Stadt,Unterfranken,2020-10-24T08:00:00+02:00,1018,52
