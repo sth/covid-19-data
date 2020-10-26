@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-10-26T08:00:00+01:00,717,20
+Altötting,Oberbayern,2020-10-26T08:00:00+01:00,827,57
+Amberg Stadt,Oberpfalz,2020-10-26T08:00:00+01:00,173,4
+Amberg-Sulzbach,Oberpfalz,2020-10-26T08:00:00+01:00,609,54
+Ansbach,Mittelfranken,2020-10-26T08:00:00+01:00,900,28
+Ansbach Stadt,Mittelfranken,2020-10-26T08:00:00+01:00,235,8
+Aschaffenburg,Unterfranken,2020-10-26T08:00:00+01:00,925,42
+Aschaffenburg Stadt,Unterfranken,2020-10-26T08:00:00+01:00,263,2
+Augsburg,Schwaben,2020-10-26T08:00:00+01:00,1207,13
+Augsburg Stadt,Schwaben,2020-10-26T08:00:00+01:00,2074,18
+Bad Kissingen,Unterfranken,2020-10-26T08:00:00+01:00,361,18
+Bad Tölz-Wolfratshausen,Oberbayern,2020-10-26T08:00:00+01:00,775,10
+Bamberg,Oberfranken,2020-10-26T08:00:00+01:00,663,38
+Bamberg Stadt,Oberfranken,2020-10-26T08:00:00+01:00,333,22
+Bayreuth,Oberfranken,2020-10-26T08:00:00+01:00,556,28
+Bayreuth Stadt,Oberfranken,2020-10-26T08:00:00+01:00,396,12
+Berchtesgadener Land,Oberbayern,2020-10-26T08:00:00+01:00,1001,26
+Cham,Oberpfalz,2020-10-26T08:00:00+01:00,731,21
+Coburg,Oberfranken,2020-10-26T08:00:00+01:00,522,31
+Coburg Stadt,Oberfranken,2020-10-26T08:00:00+01:00,184,4
+Dachau,Oberbayern,2020-10-26T08:00:00+01:00,1547,36
+Deggendorf,Niederbayern,2020-10-26T08:00:00+01:00,649,20
+Dillingen an der Donau,Schwaben,2020-10-26T08:00:00+01:00,490,29
+Dingolfing-Landau,Niederbayern,2020-10-26T08:00:00+01:00,1119,11
+Donau-Ries,Schwaben,2020-10-26T08:00:00+01:00,713,26
+Ebersberg,Oberbayern,2020-10-26T08:00:00+01:00,1052,8
+Eichstätt,Oberbayern,2020-10-26T08:00:00+01:00,582,20
+Erding,Oberbayern,2020-10-26T08:00:00+01:00,1021,11
+Erlangen Stadt,Mittelfranken,2020-10-26T08:00:00+01:00,535,12
+Erlangen-Höchstadt,Mittelfranken,2020-10-26T08:00:00+01:00,523,11
+Forchheim,Oberfranken,2020-10-26T08:00:00+01:00,410,4
+Freising,Oberbayern,2020-10-26T08:00:00+01:00,1555,48
+Freyung-Grafenau,Niederbayern,2020-10-26T08:00:00+01:00,330,14
+Fürstenfeldbruck,Oberbayern,2020-10-26T08:00:00+01:00,1898,38
+Fürth,Mittelfranken,2020-10-26T08:00:00+01:00,767,60
+Fürth Stadt,Mittelfranken,2020-10-26T08:00:00+01:00,774,38
+Garmisch-Partenkirchen,Oberbayern,2020-10-26T08:00:00+01:00,510,20
+Günzburg,Schwaben,2020-10-26T08:00:00+01:00,590,4
+Haßberge,Unterfranken,2020-10-26T08:00:00+01:00,343,6
+Hof,Oberfranken,2020-10-26T08:00:00+01:00,628,32
+Hof Stadt,Oberfranken,2020-10-26T08:00:00+01:00,221,5
+Ingolstadt Stadt,Oberbayern,2020-10-26T08:00:00+01:00,1087,40
+Kaufbeuren Stadt,Schwaben,2020-10-26T08:00:00+01:00,286,10
+Kelheim,Niederbayern,2020-10-26T08:00:00+01:00,760,36
+Kempten Stadt,Schwaben,2020-10-26T08:00:00+01:00,298,10
+Kitzingen,Unterfranken,2020-10-26T08:00:00+01:00,441,4
+Kronach,Oberfranken,2020-10-26T08:00:00+01:00,241,3
+Kulmbach,Oberfranken,2020-10-26T08:00:00+01:00,412,11
+Landsberg am Lech,Oberbayern,2020-10-26T08:00:00+01:00,641,10
+Landshut,Niederbayern,2020-10-26T08:00:00+01:00,1127,34
+Landshut Stadt,Niederbayern,2020-10-26T08:00:00+01:00,539,9
+Lichtenfels,Oberfranken,2020-10-26T08:00:00+01:00,480,17
+Lindau (Bodensee),Schwaben,2020-10-26T08:00:00+01:00,426,8
+Main-Spessart,Unterfranken,2020-10-26T08:00:00+01:00,334,6
+Memmingen Stadt,Schwaben,2020-10-26T08:00:00+01:00,275,2
+Miesbach,Oberbayern,2020-10-26T08:00:00+01:00,936,11
+Miltenberg,Unterfranken,2020-10-26T08:00:00+01:00,686,9
+Mühldorf am Inn,Oberbayern,2020-10-26T08:00:00+01:00,972,27
+München,Oberbayern,2020-10-26T08:00:00+01:00,2811,96
+München Stadt,Oberbayern,2020-10-26T08:00:00+01:00,15396,240
+Neu-Ulm,Schwaben,2020-10-26T08:00:00+01:00,1123,26
+Neuburg-Schrobenhausen,Oberbayern,2020-10-26T08:00:00+01:00,645,18
+Neumarkt in der Oberpfalz,Oberpfalz,2020-10-26T08:00:00+01:00,702,17
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-10-26T08:00:00+01:00,357,6
+Neustadt an der Waldnaab,Oberpfalz,2020-10-26T08:00:00+01:00,1177,75
+Nürnberg Stadt,Mittelfranken,2020-10-26T08:00:00+01:00,2928,56
+Nürnberger Land,Mittelfranken,2020-10-26T08:00:00+01:00,998,44
+Oberallgäu,Schwaben,2020-10-26T08:00:00+01:00,492,8
+Ostallgäu,Schwaben,2020-10-26T08:00:00+01:00,994,40
+Passau,Niederbayern,2020-10-26T08:00:00+01:00,1272,31
+Passau Stadt,Niederbayern,2020-10-26T08:00:00+01:00,326,18
+Pfaffenhofen an der Ilm,Oberbayern,2020-10-26T08:00:00+01:00,724,23
+Regen,Niederbayern,2020-10-26T08:00:00+01:00,418,12
+Regensburg,Oberpfalz,2020-10-26T08:00:00+01:00,943,17
+Regensburg Stadt,Oberpfalz,2020-10-26T08:00:00+01:00,1156,10
+Rhön-Grabfeld,Unterfranken,2020-10-26T08:00:00+01:00,360,9
+Rosenheim,Oberbayern,2020-10-26T08:00:00+01:00,3243,202
+Rosenheim Stadt,Oberbayern,2020-10-26T08:00:00+01:00,951,23
+Roth,Mittelfranken,2020-10-26T08:00:00+01:00,484,7
+Rottal-Inn,Niederbayern,2020-10-26T08:00:00+01:00,1392,52
+Schwabach Stadt,Mittelfranken,2020-10-26T08:00:00+01:00,168,2
+Schwandorf,Oberpfalz,2020-10-26T08:00:00+01:00,728,21
+Schweinfurt,Unterfranken,2020-10-26T08:00:00+01:00,1049,25
+Schweinfurt Stadt,Unterfranken,2020-10-26T08:00:00+01:00,434,18
+Starnberg,Oberbayern,2020-10-26T08:00:00+01:00,1012,13
+Straubing Stadt,Niederbayern,2020-10-26T08:00:00+01:00,578,48
+Straubing-Bogen,Niederbayern,2020-10-26T08:00:00+01:00,753,29
+Tirschenreuth,Oberpfalz,2020-10-26T08:00:00+01:00,1349,142
+Traunstein,Oberbayern,2020-10-26T08:00:00+01:00,1759,88
+Unterallgäu,Schwaben,2020-10-26T08:00:00+01:00,723,18
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-10-26T08:00:00+01:00,549,20
+Weilheim-Schongau,Oberbayern,2020-10-26T08:00:00+01:00,690,4
+Weißenburg-Gunzenhausen,Mittelfranken,2020-10-26T08:00:00+01:00,547,25
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-10-26T08:00:00+01:00,882,46
+Würzburg,Unterfranken,2020-10-26T08:00:00+01:00,873,7
+Würzburg Stadt,Unterfranken,2020-10-26T08:00:00+01:00,1061,52
