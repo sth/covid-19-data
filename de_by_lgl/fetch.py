@@ -194,7 +194,7 @@ def is_regierungsbezirk(tab):
 def is_landkreis(tab):
     return tab.select_one('th').string in ['Landkreis', 'Land-/Stadtkreis', 'Landkreis/Stadt']
 
-re_missing = re.compile(r' aus technischen Gründen heute nicht möglich| \*technische Probleme')
+re_missing = re.compile(r' aus technischen Gründen heute nicht möglich| \*technische Probleme|: technische Probleme \*')
 regbez_tainted = set()
 
 def parse_table(parse, html, kind, *, optional=False):
