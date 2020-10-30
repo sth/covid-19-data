@@ -1,0 +1,413 @@
+Area,Bundesland,AGS,Timestamp,Confirmed,Deaths
+Alb-Donau-Kreis,Baden-Württemberg,08425000,2020-10-30T00:00:00+01:00,1559,36
+Baden-Baden (Stadtkreis),Baden-Württemberg,08211000,2020-10-30T00:00:00+01:00,356,20
+Biberach,Baden-Württemberg,08426000,2020-10-30T00:00:00+01:00,1112,38
+Bodenseekreis,Baden-Württemberg,08435000,2020-10-30T00:00:00+01:00,777,8
+Breisgau-Hochschwarzwald,Baden-Württemberg,08315000,2020-10-30T00:00:00+01:00,2148,74
+Böblingen,Baden-Württemberg,08115000,2020-10-30T00:00:00+01:00,3298,52
+Calw,Baden-Württemberg,08235000,2020-10-30T00:00:00+01:00,1301,30
+Emmendingen,Baden-Württemberg,08316000,2020-10-30T00:00:00+01:00,1125,44
+Enzkreis,Baden-Württemberg,08236000,2020-10-30T00:00:00+01:00,1420,29
+Esslingen,Baden-Württemberg,08116000,2020-10-30T00:00:00+01:00,4715,130
+Freiburg im Breisgau (Stadtkreis),Baden-Württemberg,08311000,2020-10-30T00:00:00+01:00,1879,80
+Freudenstadt,Baden-Württemberg,08237000,2020-10-30T00:00:00+01:00,871,39
+Göppingen,Baden-Württemberg,08117000,2020-10-30T00:00:00+01:00,1797,41
+Heidelberg (Stadtkreis),Baden-Württemberg,08221000,2020-10-30T00:00:00+01:00,882,7
+Heidenheim,Baden-Württemberg,08135000,2020-10-30T00:00:00+01:00,909,41
+Heilbronn (Stadtkreis),Baden-Württemberg,08121000,2020-10-30T00:00:00+01:00,1255,17
+Heilbronn (Landkreis),Baden-Württemberg,08125000,2020-10-30T00:00:00+01:00,2156,46
+Hohenlohekreis,Baden-Württemberg,08126000,2020-10-30T00:00:00+01:00,1033,48
+Karlsruhe (Stadtkreis),Baden-Württemberg,08212000,2020-10-30T00:00:00+01:00,1416,15
+Karlsruhe (Landkreis),Baden-Württemberg,08215000,2020-10-30T00:00:00+01:00,2419,98
+Konstanz,Baden-Württemberg,08335000,2020-10-30T00:00:00+01:00,1247,17
+Ludwigsburg,Baden-Württemberg,08118000,2020-10-30T00:00:00+01:00,4721,91
+Lörrach,Baden-Württemberg,08336000,2020-10-30T00:00:00+01:00,1318,65
+Main-Tauber-Kreis,Baden-Württemberg,08128000,2020-10-30T00:00:00+01:00,848,11
+Mannheim (Stadtkreis),Baden-Württemberg,08222000,2020-10-30T00:00:00+01:00,2188,15
+Neckar-Odenwald-Kreis,Baden-Württemberg,08225000,2020-10-30T00:00:00+01:00,815,27
+Ortenaukreis,Baden-Württemberg,08317000,2020-10-30T00:00:00+01:00,2663,128
+Ostalbkreis,Baden-Württemberg,08136000,2020-10-30T00:00:00+01:00,2499,46
+Pforzheim (Stadtkreis),Baden-Württemberg,08231000,2020-10-30T00:00:00+01:00,983,10
+Rastatt,Baden-Württemberg,08216000,2020-10-30T00:00:00+01:00,1261,19
+Ravensburg,Baden-Württemberg,08436000,2020-10-30T00:00:00+01:00,1226,7
+Rems-Murr-Kreis,Baden-Württemberg,08119000,2020-10-30T00:00:00+01:00,3448,101
+Reutlingen,Baden-Württemberg,08415000,2020-10-30T00:00:00+01:00,2581,83
+Rhein-Neckar-Kreis,Baden-Württemberg,08226000,2020-10-30T00:00:00+01:00,2752,48
+Rottweil,Baden-Württemberg,08325000,2020-10-30T00:00:00+01:00,1033,26
+Schwarzwald-Baar-Kreis,Baden-Württemberg,08326000,2020-10-30T00:00:00+01:00,1131,36
+Schwäbisch Hall,Baden-Württemberg,08127000,2020-10-30T00:00:00+01:00,1597,63
+Sigmaringen,Baden-Württemberg,08437000,2020-10-30T00:00:00+01:00,1052,36
+Stuttgart,Baden-Württemberg,08111000,2020-10-30T00:00:00+01:00,5261,78
+Tuttlingen,Baden-Württemberg,08327000,2020-10-30T00:00:00+01:00,874,25
+Tübingen,Baden-Württemberg,08416000,2020-10-30T00:00:00+01:00,2184,61
+Ulm (Stadtkreis),Baden-Württemberg,08421000,2020-10-30T00:00:00+01:00,952,11
+Waldshut,Baden-Württemberg,08337000,2020-10-30T00:00:00+01:00,766,35
+Zollernalbkreis,Baden-Württemberg,08417000,2020-10-30T00:00:00+01:00,1649,78
+Aichach-Friedberg,Bayern,09771000,2020-10-30T00:00:00+01:00,817,20
+Altötting,Bayern,09171000,2020-10-30T00:00:00+01:00,905,57
+Amberg,Bayern,09361000,2020-10-30T00:00:00+01:00,191,4
+Amberg-Sulzbach,Bayern,09371000,2020-10-30T00:00:00+01:00,638,55
+Ansbach (Stadt),Bayern,09561000,2020-10-30T00:00:00+01:00,262,8
+Ansbach (Landkreis),Bayern,09571000,2020-10-30T00:00:00+01:00,1010,28
+Aschaffenburg (Stadt),Bayern,09661000,2020-10-30T00:00:00+01:00,321,2
+Aschaffenburg (Landkreis),Bayern,09671000,2020-10-30T00:00:00+01:00,1055,42
+Augsburg (Stadt),Bayern,09761000,2020-10-30T00:00:00+01:00,2394,18
+Augsburg (Landkreis),Bayern,09772000,2020-10-30T00:00:00+01:00,1357,13
+Bad Kissingen,Bayern,09672000,2020-10-30T00:00:00+01:00,397,18
+Bad Tölz-Wolfratshausen,Bayern,09173000,2020-10-30T00:00:00+01:00,857,10
+Bamberg (Stadt),Bayern,09461000,2020-10-30T00:00:00+01:00,416,22
+Bamberg (Landkreis),Bayern,09471000,2020-10-30T00:00:00+01:00,766,38
+Bayreuth (Stadt),Bayern,09462000,2020-10-30T00:00:00+01:00,462,12
+Bayreuth (Landkreis),Bayern,09472000,2020-10-30T00:00:00+01:00,619,28
+Berchtesgadener Land,Bayern,09172000,2020-10-30T00:00:00+01:00,1188,28
+Cham,Bayern,09372000,2020-10-30T00:00:00+01:00,839,21
+Coburg (Stadt),Bayern,09463000,2020-10-30T00:00:00+01:00,203,4
+Coburg (Landkreis),Bayern,09473000,2020-10-30T00:00:00+01:00,560,31
+Dachau,Bayern,09174000,2020-10-30T00:00:00+01:00,1651,37
+Deggendorf,Bayern,09271000,2020-10-30T00:00:00+01:00,747,20
+Dillingen a.d. Donau,Bayern,09773000,2020-10-30T00:00:00+01:00,556,29
+Dingolfing-Landau,Bayern,09279000,2020-10-30T00:00:00+01:00,1175,11
+Donau-Ries,Bayern,09779000,2020-10-30T00:00:00+01:00,830,27
+Ebersberg,Bayern,09175000,2020-10-30T00:00:00+01:00,1184,8
+Eichstätt,Bayern,09176000,2020-10-30T00:00:00+01:00,652,21
+Erding,Bayern,09177000,2020-10-30T00:00:00+01:00,1146,11
+Erlangen,Bayern,09562000,2020-10-30T00:00:00+01:00,594,12
+Erlangen-Höchstadt,Bayern,09572000,2020-10-30T00:00:00+01:00,579,11
+Forchheim,Bayern,09474000,2020-10-30T00:00:00+01:00,461,4
+Freising,Bayern,09178000,2020-10-30T00:00:00+01:00,1765,48
+Freyung-Grafenau,Bayern,09272000,2020-10-30T00:00:00+01:00,387,14
+Fürstenfeldbruck,Bayern,09179000,2020-10-30T00:00:00+01:00,2169,38
+Fürth (Stadt),Bayern,09563000,2020-10-30T00:00:00+01:00,870,38
+Fürth (Landkreis),Bayern,09573000,2020-10-30T00:00:00+01:00,846,61
+Garmisch-Partenkirchen,Bayern,09180000,2020-10-30T00:00:00+01:00,562,20
+Günzburg,Bayern,09774000,2020-10-30T00:00:00+01:00,768,6
+Haßberge,Bayern,09674000,2020-10-30T00:00:00+01:00,387,6
+Hof (Stadt),Bayern,09464000,2020-10-30T00:00:00+01:00,247,5
+Hof (Landkreis),Bayern,09475000,2020-10-30T00:00:00+01:00,667,33
+Ingolstadt,Bayern,09161000,2020-10-30T00:00:00+01:00,1174,41
+Kaufbeuren,Bayern,09762000,2020-10-30T00:00:00+01:00,344,12
+Kelheim,Bayern,09273000,2020-10-30T00:00:00+01:00,817,36
+Kempten (Allgäu),Bayern,09763000,2020-10-30T00:00:00+01:00,340,10
+Kitzingen,Bayern,09675000,2020-10-30T00:00:00+01:00,503,4
+Kronach,Bayern,09476000,2020-10-30T00:00:00+01:00,287,3
+Kulmbach,Bayern,09477000,2020-10-30T00:00:00+01:00,507,11
+Landsberg am Lech,Bayern,09181000,2020-10-30T00:00:00+01:00,728,10
+Landshut (Stadt),Bayern,09261000,2020-10-30T00:00:00+01:00,598,9
+Landshut (Landkreis),Bayern,09274000,2020-10-30T00:00:00+01:00,1257,34
+Lichtenfels,Bayern,09478000,2020-10-30T00:00:00+01:00,572,19
+Lindau (Bodensee),Bayern,09776000,2020-10-30T00:00:00+01:00,498,8
+Main-Spessart,Bayern,09677000,2020-10-30T00:00:00+01:00,392,6
+Memmingen,Bayern,09764000,2020-10-30T00:00:00+01:00,306,2
+Miesbach,Bayern,09182000,2020-10-30T00:00:00+01:00,1043,11
+Miltenberg,Bayern,09676000,2020-10-30T00:00:00+01:00,801,12
+Mühldorf a. Inn,Bayern,09183000,2020-10-30T00:00:00+01:00,1102,27
+München (Stadt),Bayern,09162000,2020-10-30T00:00:00+01:00,16585,247
+München (Landkreis),Bayern,09184000,2020-10-30T00:00:00+01:00,3097,96
+Neu-Ulm,Bayern,09775000,2020-10-30T00:00:00+01:00,1258,26
+Neuburg-Schrobenhausen,Bayern,09185000,2020-10-30T00:00:00+01:00,702,18
+Neumarkt i.d. OPf.,Bayern,09373000,2020-10-30T00:00:00+01:00,792,18
+Neustadt a.d. Aisch-Bad Windsheim,Bayern,09575000,2020-10-30T00:00:00+01:00,396,6
+Neustadt a.d. Waldnaab,Bayern,09374000,2020-10-30T00:00:00+01:00,1269,75
+Nürnberg,Bayern,09564000,2020-10-30T00:00:00+01:00,3514,59
+Nürnberger Land,Bayern,09574000,2020-10-30T00:00:00+01:00,1083,46
+Oberallgäu,Bayern,09780000,2020-10-30T00:00:00+01:00,615,8
+Ostallgäu,Bayern,09777000,2020-10-30T00:00:00+01:00,1088,40
+Passau (Stadt),Bayern,09262000,2020-10-30T00:00:00+01:00,374,18
+Passau (Landkreis),Bayern,09275000,2020-10-30T00:00:00+01:00,1434,31
+Pfaffenhofen a.d. Ilm,Bayern,09186000,2020-10-30T00:00:00+01:00,800,23
+Regen,Bayern,09276000,2020-10-30T00:00:00+01:00,442,12
+Regensburg (Stadt),Bayern,09362000,2020-10-30T00:00:00+01:00,1245,10
+Regensburg (Landkreis),Bayern,09375000,2020-10-30T00:00:00+01:00,1051,17
+Rhön-Grabfeld,Bayern,09673000,2020-10-30T00:00:00+01:00,405,9
+Rosenheim (Stadt),Bayern,09163000,2020-10-30T00:00:00+01:00,1045,23
+Rosenheim (Landkreis),Bayern,09187000,2020-10-30T00:00:00+01:00,3589,206
+Roth,Bayern,09576000,2020-10-30T00:00:00+01:00,564,8
+Rottal-Inn,Bayern,09277000,2020-10-30T00:00:00+01:00,1601,57
+Schwabach,Bayern,09565000,2020-10-30T00:00:00+01:00,193,2
+Schwandorf,Bayern,09376000,2020-10-30T00:00:00+01:00,785,21
+Schweinfurt (Stadt),Bayern,09662000,2020-10-30T00:00:00+01:00,502,20
+Schweinfurt (Landkreis),Bayern,09678000,2020-10-30T00:00:00+01:00,1164,28
+Starnberg,Bayern,09188000,2020-10-30T00:00:00+01:00,1090,13
+Straubing,Bayern,09263000,2020-10-30T00:00:00+01:00,607,48
+Straubing-Bogen,Bayern,09278000,2020-10-30T00:00:00+01:00,786,29
+Tirschenreuth,Bayern,09377000,2020-10-30T00:00:00+01:00,1391,143
+Traunstein,Bayern,09189000,2020-10-30T00:00:00+01:00,1904,88
+Unterallgäu,Bayern,09778000,2020-10-30T00:00:00+01:00,883,24
+Weiden i.d. OPf.,Bayern,09363000,2020-10-30T00:00:00+01:00,583,20
+Weilheim-Schongau,Bayern,09190000,2020-10-30T00:00:00+01:00,846,4
+Weißenburg-Gunzenhausen,Bayern,09577000,2020-10-30T00:00:00+01:00,604,25
+Wunsiedel i. Fichtelgebirge,Bayern,09479000,2020-10-30T00:00:00+01:00,909,46
+Würzburg (Stadt),Bayern,09663000,2020-10-30T00:00:00+01:00,1155,52
+Würzburg (Landkreis),Bayern,09679000,2020-10-30T00:00:00+01:00,954,7
+Berlin Charlottenburg-Wilmersdorf,Berlin,,2020-10-30T00:00:00+01:00,2779,24
+Berlin Friedrichshain-Kreuzberg,Berlin,,2020-10-30T00:00:00+01:00,3192,11
+Berlin Lichtenberg,Berlin,,2020-10-30T00:00:00+01:00,1479,15
+Berlin Marzahn-Hellersdorf,Berlin,,2020-10-30T00:00:00+01:00,1185,9
+Berlin Mitte,Berlin,,2020-10-30T00:00:00+01:00,4784,21
+Berlin Neukölln,Berlin,,2020-10-30T00:00:00+01:00,4545,46
+Berlin Pankow,Berlin,,2020-10-30T00:00:00+01:00,2370,38
+Berlin Reinickendorf,Berlin,,2020-10-30T00:00:00+01:00,2241,24
+Berlin Spandau,Berlin,,2020-10-30T00:00:00+01:00,1629,9
+Berlin Steglitz-Zehlendorf,Berlin,,2020-10-30T00:00:00+01:00,1908,15
+Berlin Tempelhof-Schöneberg,Berlin,,2020-10-30T00:00:00+01:00,3083,29
+Berlin Treptow-Köpenick,Berlin,,2020-10-30T00:00:00+01:00,1161,12
+Barnim,Brandenburg,12060000,2020-10-30T00:00:00+01:00,669,29
+Brandenburg an der Havel,Brandenburg,12051000,2020-10-30T00:00:00+01:00,155,1
+Cottbus,Brandenburg,12052000,2020-10-30T00:00:00+01:00,283,4
+Dahme-Spreewald,Brandenburg,12061000,2020-10-30T00:00:00+01:00,508,8
+Elbe-Elster,Brandenburg,12062000,2020-10-30T00:00:00+01:00,283,4
+Frankfurt (Oder),Brandenburg,12053000,2020-10-30T00:00:00+01:00,149,2
+Havelland,Brandenburg,12063000,2020-10-30T00:00:00+01:00,475,7
+Märkisch-Oderland,Brandenburg,12064000,2020-10-30T00:00:00+01:00,467,6
+Oberhavel,Brandenburg,12065000,2020-10-30T00:00:00+01:00,638,10
+Oberspreewald-Lausitz,Brandenburg,12066000,2020-10-30T00:00:00+01:00,248,3
+Oder-Spree,Brandenburg,12067000,2020-10-30T00:00:00+01:00,445,8
+Ostprignitz-Ruppin,Brandenburg,12068000,2020-10-30T00:00:00+01:00,215,0
+Potsdam,Brandenburg,12054000,2020-10-30T00:00:00+01:00,933,51
+Potsdam-Mittelmark,Brandenburg,12069000,2020-10-30T00:00:00+01:00,940,38
+Prignitz,Brandenburg,12070000,2020-10-30T00:00:00+01:00,160,0
+Spree-Neiße,Brandenburg,12071000,2020-10-30T00:00:00+01:00,293,1
+Teltow-Fläming,Brandenburg,12072000,2020-10-30T00:00:00+01:00,470,13
+Uckermark,Brandenburg,12073000,2020-10-30T00:00:00+01:00,137,5
+Bremen,Bremen,04011000,2020-10-30T00:00:00+01:00,4708,61
+Bremerhaven,Bremen,04012000,2020-10-30T00:00:00+01:00,392,9
+Hamburg,Hamburg,02000000,2020-10-30T00:00:00+01:00,12947,283
+Bergstraße,Hessen,06431000,2020-10-30T00:00:00+01:00,1429,8
+Darmstadt,Hessen,06411000,2020-10-30T00:00:00+01:00,955,19
+Darmstadt-Dieburg,Hessen,06432000,2020-10-30T00:00:00+01:00,1519,23
+Frankfurt am Main,Hessen,06412000,2020-10-30T00:00:00+01:00,7555,99
+Fulda,Hessen,06631000,2020-10-30T00:00:00+01:00,1088,17
+Gießen,Hessen,06531000,2020-10-30T00:00:00+01:00,1226,6
+Groß-Gerau,Hessen,06433000,2020-10-30T00:00:00+01:00,2335,27
+Hersfeld-Rotenburg,Hessen,06632000,2020-10-30T00:00:00+01:00,517,23
+Hochtaunuskreis,Hessen,06434000,2020-10-30T00:00:00+01:00,1201,9
+Kassel (Stadt),Hessen,06611000,2020-10-30T00:00:00+01:00,1256,13
+Kassel (Landkreis),Hessen,06633000,2020-10-30T00:00:00+01:00,985,32
+Lahn-Dill-Kreis,Hessen,06532000,2020-10-30T00:00:00+01:00,1248,24
+Limburg-Weilburg,Hessen,06533000,2020-10-30T00:00:00+01:00,855,7
+Main-Kinzig-Kreis,Hessen,06435000,2020-10-30T00:00:00+01:00,2611,55
+Main-Taunus-Kreis,Hessen,06436000,2020-10-30T00:00:00+01:00,1577,22
+Marburg-Biedenkopf,Hessen,06534000,2020-10-30T00:00:00+01:00,1503,7
+Odenwaldkreis,Hessen,06437000,2020-10-30T00:00:00+01:00,765,65
+Offenbach,Hessen,06438000,2020-10-30T00:00:00+01:00,2578,52
+Offenbach am Main,Hessen,06413000,2020-10-30T00:00:00+01:00,1334,15
+Rheingau-Taunus-Kreis,Hessen,06439000,2020-10-30T00:00:00+01:00,1065,9
+Schwalm-Eder-Kreis,Hessen,06634000,2020-10-30T00:00:00+01:00,956,39
+Vogelsbergkreis,Hessen,06535000,2020-10-30T00:00:00+01:00,326,6
+Waldeck-Frankenberg,Hessen,06635000,2020-10-30T00:00:00+01:00,536,5
+Werra-Meißner-Kreis,Hessen,06636000,2020-10-30T00:00:00+01:00,383,16
+Wetteraukreis,Hessen,06440000,2020-10-30T00:00:00+01:00,1242,15
+Wiesbaden,Hessen,06414000,2020-10-30T00:00:00+01:00,2048,28
+Ludwigslust-Parchim,Mecklenburg-Vorpommern,13076000,2020-10-30T00:00:00+01:00,399,2
+Mecklenburgische Seenplatte,Mecklenburg-Vorpommern,13071000,2020-10-30T00:00:00+01:00,461,5
+Nordwestmecklenburg,Mecklenburg-Vorpommern,13074000,2020-10-30T00:00:00+01:00,231,1
+Rostock (Stadt),Mecklenburg-Vorpommern,13003000,2020-10-30T00:00:00+01:00,353,2
+Rostock (Landkreis),Mecklenburg-Vorpommern,13072000,2020-10-30T00:00:00+01:00,281,3
+Schwerin,Mecklenburg-Vorpommern,13004000,2020-10-30T00:00:00+01:00,183,0
+Vorpommern-Greifswald,Mecklenburg-Vorpommern,13075000,2020-10-30T00:00:00+01:00,448,8
+Vorpommern-Rügen,Mecklenburg-Vorpommern,13073000,2020-10-30T00:00:00+01:00,260,2
+Ammerland,Niedersachsen,03451000,2020-10-30T00:00:00+01:00,333,5
+Aurich,Niedersachsen,03452000,2020-10-30T00:00:00+01:00,466,9
+Braunschweig,Niedersachsen,03101000,2020-10-30T00:00:00+01:00,792,18
+Celle,Niedersachsen,03351000,2020-10-30T00:00:00+01:00,548,18
+Cloppenburg,Niedersachsen,03453000,2020-10-30T00:00:00+01:00,1818,6
+Cuxhaven,Niedersachsen,03352000,2020-10-30T00:00:00+01:00,648,24
+Delmenhorst,Niedersachsen,03401000,2020-10-30T00:00:00+01:00,678,6
+Diepholz,Niedersachsen,03251000,2020-10-30T00:00:00+01:00,1050,28
+Emden,Niedersachsen,03402000,2020-10-30T00:00:00+01:00,103,0
+Emsland,Niedersachsen,03454000,2020-10-30T00:00:00+01:00,1633,26
+Friesland,Niedersachsen,03455000,2020-10-30T00:00:00+01:00,163,2
+Gifhorn,Niedersachsen,03151000,2020-10-30T00:00:00+01:00,430,7
+Goslar,Niedersachsen,03153000,2020-10-30T00:00:00+01:00,415,27
+Grafschaft Bentheim,Niedersachsen,03456000,2020-10-30T00:00:00+01:00,867,20
+Göttingen,Niedersachsen,03159000,2020-10-30T00:00:00+01:00,1790,82
+Hameln-Pyrmont,Niedersachsen,03252000,2020-10-30T00:00:00+01:00,379,7
+Harburg,Niedersachsen,03353000,2020-10-30T00:00:00+01:00,1172,24
+Heidekreis,Niedersachsen,03358000,2020-10-30T00:00:00+01:00,231,2
+Helmstedt,Niedersachsen,03154000,2020-10-30T00:00:00+01:00,229,2
+Hildesheim,Niedersachsen,03254000,2020-10-30T00:00:00+01:00,1144,9
+Holzminden,Niedersachsen,03255000,2020-10-30T00:00:00+01:00,152,7
+Leer,Niedersachsen,03457000,2020-10-30T00:00:00+01:00,447,8
+Lüchow-Dannenberg,Niedersachsen,03354000,2020-10-30T00:00:00+01:00,88,3
+Lüneburg,Niedersachsen,03355000,2020-10-30T00:00:00+01:00,352,0
+Nienburg (Weser),Niedersachsen,03256000,2020-10-30T00:00:00+01:00,293,5
+Northeim,Niedersachsen,03155000,2020-10-30T00:00:00+01:00,378,6
+Oldenburg,Niedersachsen,03458000,2020-10-30T00:00:00+01:00,896,11
+Oldenburg (Oldb),Niedersachsen,03403000,2020-10-30T00:00:00+01:00,461,3
+Osnabrück (Stadt),Niedersachsen,03404000,2020-10-30T00:00:00+01:00,1102,18
+Osnabrück (Landkreis),Niedersachsen,03459000,2020-10-30T00:00:00+01:00,2273,76
+Osterholz,Niedersachsen,03356000,2020-10-30T00:00:00+01:00,377,1
+Peine,Niedersachsen,03157000,2020-10-30T00:00:00+01:00,466,13
+Region Hannover,Niedersachsen,03241000,2020-10-30T00:00:00+01:00,6448,143
+Rotenburg (Wümme),Niedersachsen,03357000,2020-10-30T00:00:00+01:00,498,3
+Salzgitter,Niedersachsen,03102000,2020-10-30T00:00:00+01:00,423,11
+Schaumburg,Niedersachsen,03257000,2020-10-30T00:00:00+01:00,535,7
+Stade,Niedersachsen,03359000,2020-10-30T00:00:00+01:00,499,9
+Uelzen,Niedersachsen,03360000,2020-10-30T00:00:00+01:00,123,0
+Vechta,Niedersachsen,03460000,2020-10-30T00:00:00+01:00,1384,14
+Verden,Niedersachsen,03361000,2020-10-30T00:00:00+01:00,720,8
+Wesermarsch,Niedersachsen,03461000,2020-10-30T00:00:00+01:00,307,8
+Wilhelmshaven,Niedersachsen,03405000,2020-10-30T00:00:00+01:00,95,1
+Wittmund,Niedersachsen,03462000,2020-10-30T00:00:00+01:00,108,0
+Wolfenbüttel,Niedersachsen,03158000,2020-10-30T00:00:00+01:00,344,14
+Wolfsburg,Niedersachsen,03103000,2020-10-30T00:00:00+01:00,570,52
+Bielefeld,Nordrhein-Westfalen,05711000,2020-10-30T00:00:00+01:00,1881,9
+Bochum,Nordrhein-Westfalen,05911000,2020-10-30T00:00:00+01:00,2598,32
+Bonn,Nordrhein-Westfalen,05314000,2020-10-30T00:00:00+01:00,2208,16
+Borken (Kreis),Nordrhein-Westfalen,05554000,2020-10-30T00:00:00+01:00,2281,46
+Bottrop,Nordrhein-Westfalen,05512000,2020-10-30T00:00:00+01:00,711,9
+Coesfeld (Kreis),Nordrhein-Westfalen,05558000,2020-10-30T00:00:00+01:00,1364,26
+Dortmund,Nordrhein-Westfalen,05913000,2020-10-30T00:00:00+01:00,4220,24
+Duisburg,Nordrhein-Westfalen,05112000,2020-10-30T00:00:00+01:00,5332,82
+Düren (Kreis),Nordrhein-Westfalen,05358000,2020-10-30T00:00:00+01:00,2120,44
+Düsseldorf,Nordrhein-Westfalen,05111000,2020-10-30T00:00:00+01:00,5629,55
+Ennepe-Ruhr-Kreis,Nordrhein-Westfalen,05954000,2020-10-30T00:00:00+01:00,1827,24
+Essen,Nordrhein-Westfalen,05113000,2020-10-30T00:00:00+01:00,4125,53
+Euskirchen (Kreis),Nordrhein-Westfalen,05366000,2020-10-30T00:00:00+01:00,1164,32
+Gelsenkirchen,Nordrhein-Westfalen,05513000,2020-10-30T00:00:00+01:00,2387,21
+Gütersloh (Kreis),Nordrhein-Westfalen,05754000,2020-10-30T00:00:00+01:00,4086,21
+Hagen,Nordrhein-Westfalen,05914000,2020-10-30T00:00:00+01:00,1520,18
+Hamm,Nordrhein-Westfalen,05915000,2020-10-30T00:00:00+01:00,1703,41
+Heinsberg (Kreis),Nordrhein-Westfalen,05370000,2020-10-30T00:00:00+01:00,2742,101
+Herford (Kreis),Nordrhein-Westfalen,05758000,2020-10-30T00:00:00+01:00,1411,8
+Herne,Nordrhein-Westfalen,05916000,2020-10-30T00:00:00+01:00,1418,12
+Hochsauerlandkreis,Nordrhein-Westfalen,05958000,2020-10-30T00:00:00+01:00,1422,21
+Höxter (Kreis),Nordrhein-Westfalen,05762000,2020-10-30T00:00:00+01:00,687,19
+Kleve (Kreis),Nordrhein-Westfalen,05154000,2020-10-30T00:00:00+01:00,1827,46
+Krefeld,Nordrhein-Westfalen,05114000,2020-10-30T00:00:00+01:00,1774,28
+Köln,Nordrhein-Westfalen,05315000,2020-10-30T00:00:00+01:00,10418,151
+Leverkusen,Nordrhein-Westfalen,05316000,2020-10-30T00:00:00+01:00,1165,12
+Lippe (Kreis),Nordrhein-Westfalen,05766000,2020-10-30T00:00:00+01:00,1706,31
+Mettmann,Nordrhein-Westfalen,05158000,2020-10-30T00:00:00+01:00,3718,102
+Minden-Lübbecke (Kreis),Nordrhein-Westfalen,05770000,2020-10-30T00:00:00+01:00,1474,16
+Märkischer Kreis,Nordrhein-Westfalen,05962000,2020-10-30T00:00:00+01:00,2183,34
+Mönchengladbach,Nordrhein-Westfalen,05116000,2020-10-30T00:00:00+01:00,1749,53
+Mülheim an der Ruhr,Nordrhein-Westfalen,05117000,2020-10-30T00:00:00+01:00,1083,16
+Münster,Nordrhein-Westfalen,05515000,2020-10-30T00:00:00+01:00,1737,15
+Oberbergischer Kreis,Nordrhein-Westfalen,05374000,2020-10-30T00:00:00+01:00,1548,20
+Oberhausen,Nordrhein-Westfalen,05119000,2020-10-30T00:00:00+01:00,1150,17
+Olpe (Kreis),Nordrhein-Westfalen,05966000,2020-10-30T00:00:00+01:00,1193,57
+Paderborn (Kreis),Nordrhein-Westfalen,05774000,2020-10-30T00:00:00+01:00,1309,36
+Recklinghausen (Kreis),Nordrhein-Westfalen,05562000,2020-10-30T00:00:00+01:00,4550,52
+Remscheid,Nordrhein-Westfalen,05120000,2020-10-30T00:00:00+01:00,1070,20
+Rhein-Erft-Kreis,Nordrhein-Westfalen,05362000,2020-10-30T00:00:00+01:00,3080,82
+Rhein-Kreis Neuss,Nordrhein-Westfalen,05162000,2020-10-30T00:00:00+01:00,2708,29
+Rhein-Sieg-Kreis,Nordrhein-Westfalen,05382000,2020-10-30T00:00:00+01:00,3855,58
+Rheinisch-Bergischer Kreis,Nordrhein-Westfalen,05378000,2020-10-30T00:00:00+01:00,1642,26
+Siegen-Wittgenstein (Kreis),Nordrhein-Westfalen,05970000,2020-10-30T00:00:00+01:00,1336,9
+Soest (Kreis),Nordrhein-Westfalen,05974000,2020-10-30T00:00:00+01:00,958,11
+Solingen,Nordrhein-Westfalen,05122000,2020-10-30T00:00:00+01:00,1589,14
+Steinfurt (Kreis),Nordrhein-Westfalen,05566000,2020-10-30T00:00:00+01:00,2685,97
+Städteregion Aachen,Nordrhein-Westfalen,05334000,2020-10-30T00:00:00+01:00,5317,123
+Unna (Kreis),Nordrhein-Westfalen,05978000,2020-10-30T00:00:00+01:00,2587,49
+Viersen (Kreis),Nordrhein-Westfalen,05166000,2020-10-30T00:00:00+01:00,1670,37
+Warendorf (Kreis),Nordrhein-Westfalen,05570000,2020-10-30T00:00:00+01:00,1833,22
+Wesel (Kreis),Nordrhein-Westfalen,05170000,2020-10-30T00:00:00+01:00,2344,34
+Wuppertal,Nordrhein-Westfalen,05124000,2020-10-30T00:00:00+01:00,3353,91
+Ahrweiler,Rheinland-Pfalz,07131000,2020-10-30T00:00:00+01:00,590,4
+Altenkirchen (Westerwald),Rheinland-Pfalz,07132000,2020-10-30T00:00:00+01:00,630,12
+Alzey-Worms,Rheinland-Pfalz,07331000,2020-10-30T00:00:00+01:00,583,12
+Bad Dürkheim,Rheinland-Pfalz,07332000,2020-10-30T00:00:00+01:00,616,13
+Bad Kreuznach,Rheinland-Pfalz,07133000,2020-10-30T00:00:00+01:00,610,7
+Bernkastel-Wittlich,Rheinland-Pfalz,07231000,2020-10-30T00:00:00+01:00,577,7
+Birkenfeld,Rheinland-Pfalz,07134000,2020-10-30T00:00:00+01:00,384,3
+Cochem-Zell,Rheinland-Pfalz,07135000,2020-10-30T00:00:00+01:00,295,1
+Donnersbergkreis,Rheinland-Pfalz,07333000,2020-10-30T00:00:00+01:00,258,9
+Eifelkreis Bitburg-Prüm,Rheinland-Pfalz,07232000,2020-10-30T00:00:00+01:00,759,6
+Frankenthal (Pfalz),Rheinland-Pfalz,07311000,2020-10-30T00:00:00+01:00,162,2
+Germersheim,Rheinland-Pfalz,07334000,2020-10-30T00:00:00+01:00,635,9
+Kaiserslautern (Stadt),Rheinland-Pfalz,07312000,2020-10-30T00:00:00+01:00,504,7
+Kaiserslautern (Landkreis),Rheinland-Pfalz,07335000,2020-10-30T00:00:00+01:00,434,1
+Koblenz,Rheinland-Pfalz,07111000,2020-10-30T00:00:00+01:00,576,20
+Kusel,Rheinland-Pfalz,07336000,2020-10-30T00:00:00+01:00,224,2
+Landau in der Pfalz,Rheinland-Pfalz,07313000,2020-10-30T00:00:00+01:00,155,2
+Ludwigshafen am Rhein,Rheinland-Pfalz,07314000,2020-10-30T00:00:00+01:00,1105,3
+Mainz,Rheinland-Pfalz,07315000,2020-10-30T00:00:00+01:00,1745,29
+Mainz-Bingen,Rheinland-Pfalz,07339000,2020-10-30T00:00:00+01:00,1087,30
+Mayen-Koblenz,Rheinland-Pfalz,07137000,2020-10-30T00:00:00+01:00,792,17
+Neustadt an der Weinstraße,Rheinland-Pfalz,07316000,2020-10-30T00:00:00+01:00,193,2
+Neuwied,Rheinland-Pfalz,07138000,2020-10-30T00:00:00+01:00,907,5
+Pirmasens,Rheinland-Pfalz,07317000,2020-10-30T00:00:00+01:00,82,0
+Rhein-Hunsrück-Kreis,Rheinland-Pfalz,07140000,2020-10-30T00:00:00+01:00,379,6
+Rhein-Lahn-Kreis,Rheinland-Pfalz,07141000,2020-10-30T00:00:00+01:00,373,7
+Rhein-Pfalz-Kreis,Rheinland-Pfalz,07338000,2020-10-30T00:00:00+01:00,641,5
+Speyer,Rheinland-Pfalz,07318000,2020-10-30T00:00:00+01:00,241,1
+Südliche Weinstraße,Rheinland-Pfalz,07337000,2020-10-30T00:00:00+01:00,344,4
+Südwestpfalz,Rheinland-Pfalz,07340000,2020-10-30T00:00:00+01:00,274,3
+Trier,Rheinland-Pfalz,07211000,2020-10-30T00:00:00+01:00,461,1
+Trier-Saarburg,Rheinland-Pfalz,07235000,2020-10-30T00:00:00+01:00,664,12
+Vulkaneifel,Rheinland-Pfalz,07233000,2020-10-30T00:00:00+01:00,293,7
+Westerwaldkreis,Rheinland-Pfalz,07143000,2020-10-30T00:00:00+01:00,951,23
+Worms,Rheinland-Pfalz,07319000,2020-10-30T00:00:00+01:00,461,8
+Zweibrücken,Rheinland-Pfalz,07320000,2020-10-30T00:00:00+01:00,123,1
+Merzig-Wadern,Saarland,10042000,2020-10-30T00:00:00+01:00,615,6
+Neunkirchen,Saarland,10043000,2020-10-30T00:00:00+01:00,712,12
+Regionalverband Saarbrücken,Saarland,10041000,2020-10-30T00:00:00+01:00,2248,115
+Saarlouis,Saarland,10044000,2020-10-30T00:00:00+01:00,1242,24
+Saarpfalz-Kreis,Saarland,10045000,2020-10-30T00:00:00+01:00,692,18
+St. Wendel,Saarland,10046000,2020-10-30T00:00:00+01:00,633,11
+Bautzen,Sachsen,14625000,2020-10-30T00:00:00+01:00,1561,26
+Chemnitz,Sachsen,14511000,2020-10-30T00:00:00+01:00,872,9
+Dresden,Sachsen,14612000,2020-10-30T00:00:00+01:00,1933,17
+Erzgebirgskreis,Sachsen,14521000,2020-10-30T00:00:00+01:00,2837,85
+Görlitz,Sachsen,14626000,2020-10-30T00:00:00+01:00,985,26
+Leipzig (Stadt),Sachsen,14713000,2020-10-30T00:00:00+01:00,1403,14
+Leipzig (Landkreis),Sachsen,14729000,2020-10-30T00:00:00+01:00,607,4
+Meißen,Sachsen,14627000,2020-10-30T00:00:00+01:00,739,25
+Mittelsachsen,Sachsen,14522000,2020-10-30T00:00:00+01:00,964,10
+Nordsachsen,Sachsen,14730000,2020-10-30T00:00:00+01:00,742,1
+Sächsische Schweiz-Osterzgebirge,Sachsen,14628000,2020-10-30T00:00:00+01:00,1024,4
+Vogtlandkreis,Sachsen,14523000,2020-10-30T00:00:00+01:00,1119,36
+Zwickau,Sachsen,14524000,2020-10-30T00:00:00+01:00,1707,58
+Altmarkkreis Salzwedel,Sachsen-Anhalt,15081000,2020-10-30T00:00:00+01:00,93,1
+Anhalt-Bitterfeld,Sachsen-Anhalt,15082000,2020-10-30T00:00:00+01:00,189,2
+Burgenlandkreis,Sachsen-Anhalt,15084000,2020-10-30T00:00:00+01:00,442,9
+Börde,Sachsen-Anhalt,15083000,2020-10-30T00:00:00+01:00,337,13
+Dessau-Roßlau,Sachsen-Anhalt,15001000,2020-10-30T00:00:00+01:00,156,3
+Halle (Saale),Sachsen-Anhalt,15002000,2020-10-30T00:00:00+01:00,827,14
+Harz,Sachsen-Anhalt,15085000,2020-10-30T00:00:00+01:00,436,6
+Jerichower Land,Sachsen-Anhalt,15086000,2020-10-30T00:00:00+01:00,216,2
+Magdeburg,Sachsen-Anhalt,15003000,2020-10-30T00:00:00+01:00,793,6
+Mansfeld-Südharz,Sachsen-Anhalt,15087000,2020-10-30T00:00:00+01:00,176,2
+Saalekreis,Sachsen-Anhalt,15088000,2020-10-30T00:00:00+01:00,330,7
+Salzlandkreis,Sachsen-Anhalt,15089000,2020-10-30T00:00:00+01:00,285,1
+Stendal,Sachsen-Anhalt,15090000,2020-10-30T00:00:00+01:00,188,7
+Wittenberg,Sachsen-Anhalt,15091000,2020-10-30T00:00:00+01:00,336,4
+Dithmarschen,Schleswig-Holstein,01051000,2020-10-30T00:00:00+01:00,387,10
+Flensburg,Schleswig-Holstein,01001000,2020-10-30T00:00:00+01:00,204,3
+Herzogtum Lauenburg,Schleswig-Holstein,01053000,2020-10-30T00:00:00+01:00,568,19
+Kiel,Schleswig-Holstein,01002000,2020-10-30T00:00:00+01:00,633,12
+Lübeck,Schleswig-Holstein,01003000,2020-10-30T00:00:00+01:00,531,2
+Neumünster,Schleswig-Holstein,01004000,2020-10-30T00:00:00+01:00,260,3
+Nordfriesland,Schleswig-Holstein,01054000,2020-10-30T00:00:00+01:00,302,2
+Ostholstein,Schleswig-Holstein,01055000,2020-10-30T00:00:00+01:00,300,0
+Pinneberg,Schleswig-Holstein,01056000,2020-10-30T00:00:00+01:00,1304,48
+Plön,Schleswig-Holstein,01057000,2020-10-30T00:00:00+01:00,217,8
+Rendsburg-Eckernförde,Schleswig-Holstein,01058000,2020-10-30T00:00:00+01:00,524,15
+Schleswig-Flensburg,Schleswig-Holstein,01059000,2020-10-30T00:00:00+01:00,338,5
+Segeberg,Schleswig-Holstein,01060000,2020-10-30T00:00:00+01:00,862,8
+Steinburg,Schleswig-Holstein,01061000,2020-10-30T00:00:00+01:00,290,3
+Stormarn,Schleswig-Holstein,01062000,2020-10-30T00:00:00+01:00,996,36
+Altenburger Land,Thüringen,16077000,2020-10-30T00:00:00+01:00,295,4
+Eichsfeld,Thüringen,16061000,2020-10-30T00:00:00+01:00,370,13
+Eisenach,Thüringen,16056000,2020-10-30T00:00:00+01:00,63,4
+Erfurt,Thüringen,16051000,2020-10-30T00:00:00+01:00,496,3
+Gera,Thüringen,16052000,2020-10-30T00:00:00+01:00,426,22
+Gotha,Thüringen,16067000,2020-10-30T00:00:00+01:00,488,31
+Greiz,Thüringen,16076000,2020-10-30T00:00:00+01:00,794,48
+Hildburghausen,Thüringen,16069000,2020-10-30T00:00:00+01:00,185,1
+Ilm-Kreis,Thüringen,16070000,2020-10-30T00:00:00+01:00,287,7
+Jena,Thüringen,16053000,2020-10-30T00:00:00+01:00,350,4
+Kyffhäuserkreis,Thüringen,16065000,2020-10-30T00:00:00+01:00,100,0
+Nordhausen,Thüringen,16062000,2020-10-30T00:00:00+01:00,129,2
+Saale-Holzland-Kreis,Thüringen,16074000,2020-10-30T00:00:00+01:00,266,3
+Saale-Orla-Kreis,Thüringen,16075000,2020-10-30T00:00:00+01:00,271,12
+Saalfeld-Rudolstadt,Thüringen,16073000,2020-10-30T00:00:00+01:00,164,0
+Schmalkalden-Meiningen,Thüringen,16066000,2020-10-30T00:00:00+01:00,412,9
+Sonneberg,Thüringen,16072000,2020-10-30T00:00:00+01:00,361,25
+Suhl,Thüringen,16054000,2020-10-30T00:00:00+01:00,65,2
+Sömmerda,Thüringen,16068000,2020-10-30T00:00:00+01:00,200,2
+Unstrut-Hainich-Kreis,Thüringen,16064000,2020-10-30T00:00:00+01:00,235,4
+Wartburgkreis,Thüringen,16063000,2020-10-30T00:00:00+01:00,224,2
+Weimar,Thüringen,16055000,2020-10-30T00:00:00+01:00,214,0
+Weimarer Land,Thüringen,16071000,2020-10-30T00:00:00+01:00,230,6
