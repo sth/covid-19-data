@@ -105,4 +105,4 @@ with open(parselk.parsedfile, 'w') as outf:
 
 parselk.deploy_timestamp()
 
-fetchhelper.git_commit([parsebl], args)
+fetchhelper.git_commit([parsebl, parselk], args)
