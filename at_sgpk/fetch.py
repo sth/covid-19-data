@@ -72,12 +72,14 @@ parses = []
 
 for i, tds in enumerate(trs):
     assert(len(ths) == len(tds))
-    mo = re.search(r'Stand (\d\d\.\d\d\.\d\d\d\d),[ \xa0]*(\d\d:\d\d) ?Uhr', tds[0])
+    mo = re.search(r'Stand (\d\d\.\d\d\.\d\d\d\d),[ \xa0]*(\d\d[:.]\d\d) ?Uhr', tds[0])
     if mo is None:
-        print("cannot parse date", file=sys.stderr)
+        print("cannot parse date:", tds[0], file=sys.stderr)
         sys.exit(1)
+    sdate = mo.group(1)
+    stime = mo.group(2).replace('.', ':')
     parse = fetchhelper.ParseData(update, labels[i])
-    datadate = parse.parsedtime = datetime.strptime(mo.group(1) + ' ' + mo.group(2), '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
+    datadate = parse.parsedtime = datetime.strptime(sdate + ' ' + stime, '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
     with open(parse.parsedfile, 'w') as f:
         cw = csv.writer(f)
         cw.writerow(['Area', 'Date', 'Value'])
