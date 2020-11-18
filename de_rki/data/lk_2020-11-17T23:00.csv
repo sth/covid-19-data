@@ -1,0 +1,413 @@
+Area,Bundesland,AGS,Timestamp,Confirmed,Deaths
+Alb-Donau-Kreis,Baden-Württemberg,08425000,2020-11-18T00:00:00+01:00,2240,60
+Baden-Baden (Stadtkreis),Baden-Württemberg,08211000,2020-11-18T00:00:00+01:00,526,20
+Biberach,Baden-Württemberg,08426000,2020-11-18T00:00:00+01:00,1529,43
+Bodenseekreis,Baden-Württemberg,08435000,2020-11-18T00:00:00+01:00,1316,9
+Breisgau-Hochschwarzwald,Baden-Württemberg,08315000,2020-11-18T00:00:00+01:00,2863,78
+Böblingen,Baden-Württemberg,08115000,2020-11-18T00:00:00+01:00,5224,70
+Calw,Baden-Württemberg,08235000,2020-11-18T00:00:00+01:00,1887,31
+Emmendingen,Baden-Württemberg,08316000,2020-11-18T00:00:00+01:00,1772,48
+Enzkreis,Baden-Württemberg,08236000,2020-11-18T00:00:00+01:00,2189,36
+Esslingen,Baden-Württemberg,08116000,2020-11-18T00:00:00+01:00,6983,144
+Freiburg im Breisgau (Stadtkreis),Baden-Württemberg,08311000,2020-11-18T00:00:00+01:00,2474,82
+Freudenstadt,Baden-Württemberg,08237000,2020-11-18T00:00:00+01:00,1273,40
+Göppingen,Baden-Württemberg,08117000,2020-11-18T00:00:00+01:00,3063,51
+Heidelberg (Stadtkreis),Baden-Württemberg,08221000,2020-11-18T00:00:00+01:00,1524,13
+Heidenheim,Baden-Württemberg,08135000,2020-11-18T00:00:00+01:00,1424,45
+Heilbronn (Stadtkreis),Baden-Württemberg,08121000,2020-11-18T00:00:00+01:00,1994,23
+Heilbronn (Landkreis),Baden-Württemberg,08125000,2020-11-18T00:00:00+01:00,3438,48
+Hohenlohekreis,Baden-Württemberg,08126000,2020-11-18T00:00:00+01:00,1386,48
+Karlsruhe (Stadtkreis),Baden-Württemberg,08212000,2020-11-18T00:00:00+01:00,2531,23
+Karlsruhe (Landkreis),Baden-Württemberg,08215000,2020-11-18T00:00:00+01:00,4147,122
+Konstanz,Baden-Württemberg,08335000,2020-11-18T00:00:00+01:00,2453,26
+Ludwigsburg,Baden-Württemberg,08118000,2020-11-18T00:00:00+01:00,7499,109
+Lörrach,Baden-Württemberg,08336000,2020-11-18T00:00:00+01:00,2499,65
+Main-Tauber-Kreis,Baden-Württemberg,08128000,2020-11-18T00:00:00+01:00,1110,13
+Mannheim (Stadtkreis),Baden-Württemberg,08222000,2020-11-18T00:00:00+01:00,3711,23
+Neckar-Odenwald-Kreis,Baden-Württemberg,08225000,2020-11-18T00:00:00+01:00,1107,28
+Ortenaukreis,Baden-Württemberg,08317000,2020-11-18T00:00:00+01:00,4550,147
+Ostalbkreis,Baden-Württemberg,08136000,2020-11-18T00:00:00+01:00,3713,53
+Pforzheim (Stadtkreis),Baden-Württemberg,08231000,2020-11-18T00:00:00+01:00,1746,15
+Rastatt,Baden-Württemberg,08216000,2020-11-18T00:00:00+01:00,2151,27
+Ravensburg,Baden-Württemberg,08436000,2020-11-18T00:00:00+01:00,1880,10
+Rems-Murr-Kreis,Baden-Württemberg,08119000,2020-11-18T00:00:00+01:00,5433,113
+Reutlingen,Baden-Württemberg,08415000,2020-11-18T00:00:00+01:00,3612,89
+Rhein-Neckar-Kreis,Baden-Württemberg,08226000,2020-11-18T00:00:00+01:00,4890,71
+Rottweil,Baden-Württemberg,08325000,2020-11-18T00:00:00+01:00,1594,29
+Schwarzwald-Baar-Kreis,Baden-Württemberg,08326000,2020-11-18T00:00:00+01:00,1884,40
+Schwäbisch Hall,Baden-Württemberg,08127000,2020-11-18T00:00:00+01:00,2063,70
+Sigmaringen,Baden-Württemberg,08437000,2020-11-18T00:00:00+01:00,1318,38
+Stuttgart,Baden-Württemberg,08111000,2020-11-18T00:00:00+01:00,8298,93
+Tuttlingen,Baden-Württemberg,08327000,2020-11-18T00:00:00+01:00,1391,28
+Tübingen,Baden-Württemberg,08416000,2020-11-18T00:00:00+01:00,2937,75
+Ulm (Stadtkreis),Baden-Württemberg,08421000,2020-11-18T00:00:00+01:00,1511,15
+Waldshut,Baden-Württemberg,08337000,2020-11-18T00:00:00+01:00,1539,40
+Zollernalbkreis,Baden-Württemberg,08417000,2020-11-18T00:00:00+01:00,2198,82
+Aichach-Friedberg,Bayern,09771000,2020-11-18T00:00:00+01:00,1445,24
+Altötting,Bayern,09171000,2020-11-18T00:00:00+01:00,1525,58
+Amberg,Bayern,09361000,2020-11-18T00:00:00+01:00,342,4
+Amberg-Sulzbach,Bayern,09371000,2020-11-18T00:00:00+01:00,1073,55
+Ansbach (Stadt),Bayern,09561000,2020-11-18T00:00:00+01:00,438,9
+Ansbach (Landkreis),Bayern,09571000,2020-11-18T00:00:00+01:00,1786,37
+Aschaffenburg (Stadt),Bayern,09661000,2020-11-18T00:00:00+01:00,600,4
+Aschaffenburg (Landkreis),Bayern,09671000,2020-11-18T00:00:00+01:00,1877,44
+Augsburg (Stadt),Bayern,09761000,2020-11-18T00:00:00+01:00,5054,45
+Augsburg (Landkreis),Bayern,09772000,2020-11-18T00:00:00+01:00,3038,24
+Bad Kissingen,Bayern,09672000,2020-11-18T00:00:00+01:00,596,18
+Bad Tölz-Wolfratshausen,Bayern,09173000,2020-11-18T00:00:00+01:00,1414,13
+Bamberg (Stadt),Bayern,09461000,2020-11-18T00:00:00+01:00,677,26
+Bamberg (Landkreis),Bayern,09471000,2020-11-18T00:00:00+01:00,1318,43
+Bayreuth (Stadt),Bayern,09462000,2020-11-18T00:00:00+01:00,632,14
+Bayreuth (Landkreis),Bayern,09472000,2020-11-18T00:00:00+01:00,843,29
+Berchtesgadener Land,Bayern,09172000,2020-11-18T00:00:00+01:00,1655,32
+Cham,Bayern,09372000,2020-11-18T00:00:00+01:00,1402,25
+Coburg (Stadt),Bayern,09463000,2020-11-18T00:00:00+01:00,300,5
+Coburg (Landkreis),Bayern,09473000,2020-11-18T00:00:00+01:00,853,32
+Dachau,Bayern,09174000,2020-11-18T00:00:00+01:00,2555,50
+Deggendorf,Bayern,09271000,2020-11-18T00:00:00+01:00,1160,22
+Dillingen a.d. Donau,Bayern,09773000,2020-11-18T00:00:00+01:00,1006,40
+Dingolfing-Landau,Bayern,09279000,2020-11-18T00:00:00+01:00,1552,14
+Donau-Ries,Bayern,09779000,2020-11-18T00:00:00+01:00,1521,34
+Ebersberg,Bayern,09175000,2020-11-18T00:00:00+01:00,1824,14
+Eichstätt,Bayern,09176000,2020-11-18T00:00:00+01:00,1130,25
+Erding,Bayern,09177000,2020-11-18T00:00:00+01:00,1919,14
+Erlangen,Bayern,09562000,2020-11-18T00:00:00+01:00,986,13
+Erlangen-Höchstadt,Bayern,09572000,2020-11-18T00:00:00+01:00,1103,12
+Forchheim,Bayern,09474000,2020-11-18T00:00:00+01:00,890,4
+Freising,Bayern,09178000,2020-11-18T00:00:00+01:00,2542,50
+Freyung-Grafenau,Bayern,09272000,2020-11-18T00:00:00+01:00,986,19
+Fürstenfeldbruck,Bayern,09179000,2020-11-18T00:00:00+01:00,3289,52
+Fürth (Stadt),Bayern,09563000,2020-11-18T00:00:00+01:00,1670,40
+Fürth (Landkreis),Bayern,09573000,2020-11-18T00:00:00+01:00,1489,72
+Garmisch-Partenkirchen,Bayern,09180000,2020-11-18T00:00:00+01:00,896,21
+Günzburg,Bayern,09774000,2020-11-18T00:00:00+01:00,1527,19
+Haßberge,Bayern,09674000,2020-11-18T00:00:00+01:00,661,7
+Hof (Stadt),Bayern,09464000,2020-11-18T00:00:00+01:00,412,5
+Hof (Landkreis),Bayern,09475000,2020-11-18T00:00:00+01:00,1003,35
+Ingolstadt,Bayern,09161000,2020-11-18T00:00:00+01:00,1855,43
+Kaufbeuren,Bayern,09762000,2020-11-18T00:00:00+01:00,600,13
+Kelheim,Bayern,09273000,2020-11-18T00:00:00+01:00,1280,37
+Kempten (Allgäu),Bayern,09763000,2020-11-18T00:00:00+01:00,648,12
+Kitzingen,Bayern,09675000,2020-11-18T00:00:00+01:00,747,6
+Kronach,Bayern,09476000,2020-11-18T00:00:00+01:00,626,6
+Kulmbach,Bayern,09477000,2020-11-18T00:00:00+01:00,647,12
+Landsberg am Lech,Bayern,09181000,2020-11-18T00:00:00+01:00,1264,13
+Landshut (Stadt),Bayern,09261000,2020-11-18T00:00:00+01:00,878,10
+Landshut (Landkreis),Bayern,09274000,2020-11-18T00:00:00+01:00,1853,42
+Lichtenfels,Bayern,09478000,2020-11-18T00:00:00+01:00,897,24
+Lindau (Bodensee),Bayern,09776000,2020-11-18T00:00:00+01:00,939,10
+Main-Spessart,Bayern,09677000,2020-11-18T00:00:00+01:00,706,11
+Memmingen,Bayern,09764000,2020-11-18T00:00:00+01:00,468,3
+Miesbach,Bayern,09182000,2020-11-18T00:00:00+01:00,1437,11
+Miltenberg,Bayern,09676000,2020-11-18T00:00:00+01:00,1392,22
+Mühldorf a. Inn,Bayern,09183000,2020-11-18T00:00:00+01:00,1773,30
+München (Stadt),Bayern,09162000,2020-11-18T00:00:00+01:00,24300,290
+München (Landkreis),Bayern,09184000,2020-11-18T00:00:00+01:00,4885,100
+Neu-Ulm,Bayern,09775000,2020-11-18T00:00:00+01:00,1934,29
+Neuburg-Schrobenhausen,Bayern,09185000,2020-11-18T00:00:00+01:00,1113,33
+Neumarkt i.d. OPf.,Bayern,09373000,2020-11-18T00:00:00+01:00,1290,41
+Neustadt a.d. Aisch-Bad Windsheim,Bayern,09575000,2020-11-18T00:00:00+01:00,816,7
+Neustadt a.d. Waldnaab,Bayern,09374000,2020-11-18T00:00:00+01:00,1568,76
+Nürnberg,Bayern,09564000,2020-11-18T00:00:00+01:00,6472,64
+Nürnberger Land,Bayern,09574000,2020-11-18T00:00:00+01:00,1624,47
+Oberallgäu,Bayern,09780000,2020-11-18T00:00:00+01:00,1324,13
+Ostallgäu,Bayern,09777000,2020-11-18T00:00:00+01:00,1742,42
+Passau (Stadt),Bayern,09262000,2020-11-18T00:00:00+01:00,705,21
+Passau (Landkreis),Bayern,09275000,2020-11-18T00:00:00+01:00,2677,45
+Pfaffenhofen a.d. Ilm,Bayern,09186000,2020-11-18T00:00:00+01:00,1444,27
+Regen,Bayern,09276000,2020-11-18T00:00:00+01:00,780,14
+Regensburg (Stadt),Bayern,09362000,2020-11-18T00:00:00+01:00,2038,10
+Regensburg (Landkreis),Bayern,09375000,2020-11-18T00:00:00+01:00,1998,21
+Rhön-Grabfeld,Bayern,09673000,2020-11-18T00:00:00+01:00,651,12
+Rosenheim (Stadt),Bayern,09163000,2020-11-18T00:00:00+01:00,1453,23
+Rosenheim (Landkreis),Bayern,09187000,2020-11-18T00:00:00+01:00,5342,221
+Roth,Bayern,09576000,2020-11-18T00:00:00+01:00,1058,10
+Rottal-Inn,Bayern,09277000,2020-11-18T00:00:00+01:00,2225,63
+Schwabach,Bayern,09565000,2020-11-18T00:00:00+01:00,391,2
+Schwandorf,Bayern,09376000,2020-11-18T00:00:00+01:00,1617,25
+Schweinfurt (Stadt),Bayern,09662000,2020-11-18T00:00:00+01:00,757,23
+Schweinfurt (Landkreis),Bayern,09678000,2020-11-18T00:00:00+01:00,1687,37
+Starnberg,Bayern,09188000,2020-11-18T00:00:00+01:00,1578,15
+Straubing,Bayern,09263000,2020-11-18T00:00:00+01:00,760,50
+Straubing-Bogen,Bayern,09278000,2020-11-18T00:00:00+01:00,1222,32
+Tirschenreuth,Bayern,09377000,2020-11-18T00:00:00+01:00,1661,143
+Traunstein,Bayern,09189000,2020-11-18T00:00:00+01:00,3397,100
+Unterallgäu,Bayern,09778000,2020-11-18T00:00:00+01:00,1478,34
+Weiden i.d. OPf.,Bayern,09363000,2020-11-18T00:00:00+01:00,811,21
+Weilheim-Schongau,Bayern,09190000,2020-11-18T00:00:00+01:00,1423,14
+Weißenburg-Gunzenhausen,Bayern,09577000,2020-11-18T00:00:00+01:00,911,28
+Wunsiedel i. Fichtelgebirge,Bayern,09479000,2020-11-18T00:00:00+01:00,1093,47
+Würzburg (Stadt),Bayern,09663000,2020-11-18T00:00:00+01:00,1563,53
+Würzburg (Landkreis),Bayern,09679000,2020-11-18T00:00:00+01:00,1501,21
+Berlin Charlottenburg-Wilmersdorf,Berlin,,2020-11-18T00:00:00+01:00,4611,36
+Berlin Friedrichshain-Kreuzberg,Berlin,,2020-11-18T00:00:00+01:00,4808,28
+Berlin Lichtenberg,Berlin,,2020-11-18T00:00:00+01:00,2617,35
+Berlin Marzahn-Hellersdorf,Berlin,,2020-11-18T00:00:00+01:00,2068,15
+Berlin Mitte,Berlin,,2020-11-18T00:00:00+01:00,7613,37
+Berlin Neukölln,Berlin,,2020-11-18T00:00:00+01:00,7374,64
+Berlin Pankow,Berlin,,2020-11-18T00:00:00+01:00,3943,50
+Berlin Reinickendorf,Berlin,,2020-11-18T00:00:00+01:00,3853,34
+Berlin Spandau,Berlin,,2020-11-18T00:00:00+01:00,3096,19
+Berlin Steglitz-Zehlendorf,Berlin,,2020-11-18T00:00:00+01:00,3186,20
+Berlin Tempelhof-Schöneberg,Berlin,,2020-11-18T00:00:00+01:00,5486,41
+Berlin Treptow-Köpenick,Berlin,,2020-11-18T00:00:00+01:00,1956,15
+Barnim,Brandenburg,12060000,2020-11-18T00:00:00+01:00,1157,41
+Brandenburg an der Havel,Brandenburg,12051000,2020-11-18T00:00:00+01:00,266,2
+Cottbus,Brandenburg,12052000,2020-11-18T00:00:00+01:00,512,9
+Dahme-Spreewald,Brandenburg,12061000,2020-11-18T00:00:00+01:00,873,10
+Elbe-Elster,Brandenburg,12062000,2020-11-18T00:00:00+01:00,671,7
+Frankfurt (Oder),Brandenburg,12053000,2020-11-18T00:00:00+01:00,243,3
+Havelland,Brandenburg,12063000,2020-11-18T00:00:00+01:00,769,8
+Märkisch-Oderland,Brandenburg,12064000,2020-11-18T00:00:00+01:00,896,16
+Oberhavel,Brandenburg,12065000,2020-11-18T00:00:00+01:00,1100,10
+Oberspreewald-Lausitz,Brandenburg,12066000,2020-11-18T00:00:00+01:00,675,6
+Oder-Spree,Brandenburg,12067000,2020-11-18T00:00:00+01:00,887,11
+Ostprignitz-Ruppin,Brandenburg,12068000,2020-11-18T00:00:00+01:00,424,0
+Potsdam,Brandenburg,12054000,2020-11-18T00:00:00+01:00,1340,51
+Potsdam-Mittelmark,Brandenburg,12069000,2020-11-18T00:00:00+01:00,1409,42
+Prignitz,Brandenburg,12070000,2020-11-18T00:00:00+01:00,252,3
+Spree-Neiße,Brandenburg,12071000,2020-11-18T00:00:00+01:00,863,12
+Teltow-Fläming,Brandenburg,12072000,2020-11-18T00:00:00+01:00,839,14
+Uckermark,Brandenburg,12073000,2020-11-18T00:00:00+01:00,341,8
+Bremen,Bremen,04011000,2020-11-18T00:00:00+01:00,7782,88
+Bremerhaven,Bremen,04012000,2020-11-18T00:00:00+01:00,665,14
+Hamburg,Hamburg,02000000,2020-11-18T00:00:00+01:00,20830,315
+Bergstraße,Hessen,06431000,2020-11-18T00:00:00+01:00,2309,26
+Darmstadt,Hessen,06411000,2020-11-18T00:00:00+01:00,1727,27
+Darmstadt-Dieburg,Hessen,06432000,2020-11-18T00:00:00+01:00,2711,37
+Frankfurt am Main,Hessen,06412000,2020-11-18T00:00:00+01:00,12956,156
+Fulda,Hessen,06631000,2020-11-18T00:00:00+01:00,1714,18
+Gießen,Hessen,06531000,2020-11-18T00:00:00+01:00,2547,10
+Groß-Gerau,Hessen,06433000,2020-11-18T00:00:00+01:00,3757,42
+Hersfeld-Rotenburg,Hessen,06632000,2020-11-18T00:00:00+01:00,784,27
+Hochtaunuskreis,Hessen,06434000,2020-11-18T00:00:00+01:00,2164,29
+Kassel (Stadt),Hessen,06611000,2020-11-18T00:00:00+01:00,1961,19
+Kassel (Landkreis),Hessen,06633000,2020-11-18T00:00:00+01:00,1608,36
+Lahn-Dill-Kreis,Hessen,06532000,2020-11-18T00:00:00+01:00,2167,26
+Limburg-Weilburg,Hessen,06533000,2020-11-18T00:00:00+01:00,1571,15
+Main-Kinzig-Kreis,Hessen,06435000,2020-11-18T00:00:00+01:00,4826,67
+Main-Taunus-Kreis,Hessen,06436000,2020-11-18T00:00:00+01:00,2596,33
+Marburg-Biedenkopf,Hessen,06534000,2020-11-18T00:00:00+01:00,2875,26
+Odenwaldkreis,Hessen,06437000,2020-11-18T00:00:00+01:00,1105,72
+Offenbach,Hessen,06438000,2020-11-18T00:00:00+01:00,4796,88
+Offenbach am Main,Hessen,06413000,2020-11-18T00:00:00+01:00,2389,21
+Rheingau-Taunus-Kreis,Hessen,06439000,2020-11-18T00:00:00+01:00,1827,12
+Schwalm-Eder-Kreis,Hessen,06634000,2020-11-18T00:00:00+01:00,1421,44
+Vogelsbergkreis,Hessen,06535000,2020-11-18T00:00:00+01:00,513,7
+Waldeck-Frankenberg,Hessen,06635000,2020-11-18T00:00:00+01:00,988,11
+Werra-Meißner-Kreis,Hessen,06636000,2020-11-18T00:00:00+01:00,563,16
+Wetteraukreis,Hessen,06440000,2020-11-18T00:00:00+01:00,2356,27
+Wiesbaden,Hessen,06414000,2020-11-18T00:00:00+01:00,3839,43
+Ludwigslust-Parchim,Mecklenburg-Vorpommern,13076000,2020-11-18T00:00:00+01:00,630,4
+Mecklenburgische Seenplatte,Mecklenburg-Vorpommern,13071000,2020-11-18T00:00:00+01:00,657,8
+Nordwestmecklenburg,Mecklenburg-Vorpommern,13074000,2020-11-18T00:00:00+01:00,479,3
+Rostock (Stadt),Mecklenburg-Vorpommern,13003000,2020-11-18T00:00:00+01:00,533,4
+Rostock (Landkreis),Mecklenburg-Vorpommern,13072000,2020-11-18T00:00:00+01:00,452,5
+Schwerin,Mecklenburg-Vorpommern,13004000,2020-11-18T00:00:00+01:00,318,3
+Vorpommern-Greifswald,Mecklenburg-Vorpommern,13075000,2020-11-18T00:00:00+01:00,925,10
+Vorpommern-Rügen,Mecklenburg-Vorpommern,13073000,2020-11-18T00:00:00+01:00,626,7
+Ammerland,Niedersachsen,03451000,2020-11-18T00:00:00+01:00,596,7
+Aurich,Niedersachsen,03452000,2020-11-18T00:00:00+01:00,776,11
+Braunschweig,Niedersachsen,03101000,2020-11-18T00:00:00+01:00,1281,20
+Celle,Niedersachsen,03351000,2020-11-18T00:00:00+01:00,909,18
+Cloppenburg,Niedersachsen,03453000,2020-11-18T00:00:00+01:00,3112,15
+Cuxhaven,Niedersachsen,03352000,2020-11-18T00:00:00+01:00,1022,25
+Delmenhorst,Niedersachsen,03401000,2020-11-18T00:00:00+01:00,1060,11
+Diepholz,Niedersachsen,03251000,2020-11-18T00:00:00+01:00,1881,34
+Emden,Niedersachsen,03402000,2020-11-18T00:00:00+01:00,240,1
+Emsland,Niedersachsen,03454000,2020-11-18T00:00:00+01:00,2867,34
+Friesland,Niedersachsen,03455000,2020-11-18T00:00:00+01:00,265,3
+Gifhorn,Niedersachsen,03151000,2020-11-18T00:00:00+01:00,770,7
+Goslar,Niedersachsen,03153000,2020-11-18T00:00:00+01:00,582,27
+Grafschaft Bentheim,Niedersachsen,03456000,2020-11-18T00:00:00+01:00,1281,26
+Göttingen,Niedersachsen,03159000,2020-11-18T00:00:00+01:00,2260,88
+Hameln-Pyrmont,Niedersachsen,03252000,2020-11-18T00:00:00+01:00,801,9
+Harburg,Niedersachsen,03353000,2020-11-18T00:00:00+01:00,1725,28
+Heidekreis,Niedersachsen,03358000,2020-11-18T00:00:00+01:00,555,8
+Helmstedt,Niedersachsen,03154000,2020-11-18T00:00:00+01:00,372,2
+Hildesheim,Niedersachsen,03254000,2020-11-18T00:00:00+01:00,1899,37
+Holzminden,Niedersachsen,03255000,2020-11-18T00:00:00+01:00,212,7
+Leer,Niedersachsen,03457000,2020-11-18T00:00:00+01:00,727,12
+Lüchow-Dannenberg,Niedersachsen,03354000,2020-11-18T00:00:00+01:00,154,5
+Lüneburg,Niedersachsen,03355000,2020-11-18T00:00:00+01:00,657,3
+Nienburg (Weser),Niedersachsen,03256000,2020-11-18T00:00:00+01:00,494,5
+Northeim,Niedersachsen,03155000,2020-11-18T00:00:00+01:00,542,7
+Oldenburg,Niedersachsen,03458000,2020-11-18T00:00:00+01:00,1411,19
+Oldenburg (Oldb),Niedersachsen,03403000,2020-11-18T00:00:00+01:00,880,3
+Osnabrück (Stadt),Niedersachsen,03404000,2020-11-18T00:00:00+01:00,1642,19
+Osnabrück (Landkreis),Niedersachsen,03459000,2020-11-18T00:00:00+01:00,4162,87
+Osterholz,Niedersachsen,03356000,2020-11-18T00:00:00+01:00,725,3
+Peine,Niedersachsen,03157000,2020-11-18T00:00:00+01:00,940,16
+Region Hannover,Niedersachsen,03241000,2020-11-18T00:00:00+01:00,10224,173
+Rotenburg (Wümme),Niedersachsen,03357000,2020-11-18T00:00:00+01:00,840,6
+Salzgitter,Niedersachsen,03102000,2020-11-18T00:00:00+01:00,971,16
+Schaumburg,Niedersachsen,03257000,2020-11-18T00:00:00+01:00,999,11
+Stade,Niedersachsen,03359000,2020-11-18T00:00:00+01:00,811,10
+Uelzen,Niedersachsen,03360000,2020-11-18T00:00:00+01:00,236,0
+Vechta,Niedersachsen,03460000,2020-11-18T00:00:00+01:00,2393,20
+Verden,Niedersachsen,03361000,2020-11-18T00:00:00+01:00,1439,14
+Wesermarsch,Niedersachsen,03461000,2020-11-18T00:00:00+01:00,451,8
+Wilhelmshaven,Niedersachsen,03405000,2020-11-18T00:00:00+01:00,171,2
+Wittmund,Niedersachsen,03462000,2020-11-18T00:00:00+01:00,227,3
+Wolfenbüttel,Niedersachsen,03158000,2020-11-18T00:00:00+01:00,605,22
+Wolfsburg,Niedersachsen,03103000,2020-11-18T00:00:00+01:00,757,53
+Bielefeld,Nordrhein-Westfalen,05711000,2020-11-18T00:00:00+01:00,3362,17
+Bochum,Nordrhein-Westfalen,05911000,2020-11-18T00:00:00+01:00,4220,41
+Bonn,Nordrhein-Westfalen,05314000,2020-11-18T00:00:00+01:00,3437,21
+Borken (Kreis),Nordrhein-Westfalen,05554000,2020-11-18T00:00:00+01:00,3814,63
+Bottrop,Nordrhein-Westfalen,05512000,2020-11-18T00:00:00+01:00,1362,11
+Coesfeld (Kreis),Nordrhein-Westfalen,05558000,2020-11-18T00:00:00+01:00,1802,26
+Dortmund,Nordrhein-Westfalen,05913000,2020-11-18T00:00:00+01:00,7328,48
+Duisburg,Nordrhein-Westfalen,05112000,2020-11-18T00:00:00+01:00,8931,130
+Düren (Kreis),Nordrhein-Westfalen,05358000,2020-11-18T00:00:00+01:00,3818,59
+Düsseldorf,Nordrhein-Westfalen,05111000,2020-11-18T00:00:00+01:00,8686,84
+Ennepe-Ruhr-Kreis,Nordrhein-Westfalen,05954000,2020-11-18T00:00:00+01:00,3126,48
+Essen,Nordrhein-Westfalen,05113000,2020-11-18T00:00:00+01:00,6767,75
+Euskirchen (Kreis),Nordrhein-Westfalen,05366000,2020-11-18T00:00:00+01:00,1894,36
+Gelsenkirchen,Nordrhein-Westfalen,05513000,2020-11-18T00:00:00+01:00,4017,26
+Gütersloh (Kreis),Nordrhein-Westfalen,05754000,2020-11-18T00:00:00+01:00,5821,32
+Hagen,Nordrhein-Westfalen,05914000,2020-11-18T00:00:00+01:00,2855,38
+Hamm,Nordrhein-Westfalen,05915000,2020-11-18T00:00:00+01:00,2800,46
+Heinsberg (Kreis),Nordrhein-Westfalen,05370000,2020-11-18T00:00:00+01:00,3800,106
+Herford (Kreis),Nordrhein-Westfalen,05758000,2020-11-18T00:00:00+01:00,2662,29
+Herne,Nordrhein-Westfalen,05916000,2020-11-18T00:00:00+01:00,2682,21
+Hochsauerlandkreis,Nordrhein-Westfalen,05958000,2020-11-18T00:00:00+01:00,2589,33
+Höxter (Kreis),Nordrhein-Westfalen,05762000,2020-11-18T00:00:00+01:00,1026,20
+Kleve (Kreis),Nordrhein-Westfalen,05154000,2020-11-18T00:00:00+01:00,2820,67
+Krefeld,Nordrhein-Westfalen,05114000,2020-11-18T00:00:00+01:00,2935,34
+Köln,Nordrhein-Westfalen,05315000,2020-11-18T00:00:00+01:00,16175,196
+Leverkusen,Nordrhein-Westfalen,05316000,2020-11-18T00:00:00+01:00,1879,16
+Lippe (Kreis),Nordrhein-Westfalen,05766000,2020-11-18T00:00:00+01:00,3453,38
+Mettmann,Nordrhein-Westfalen,05158000,2020-11-18T00:00:00+01:00,6047,122
+Minden-Lübbecke (Kreis),Nordrhein-Westfalen,05770000,2020-11-18T00:00:00+01:00,3043,22
+Märkischer Kreis,Nordrhein-Westfalen,05962000,2020-11-18T00:00:00+01:00,3972,40
+Mönchengladbach,Nordrhein-Westfalen,05116000,2020-11-18T00:00:00+01:00,2992,64
+Mülheim an der Ruhr,Nordrhein-Westfalen,05117000,2020-11-18T00:00:00+01:00,2157,27
+Münster,Nordrhein-Westfalen,05515000,2020-11-18T00:00:00+01:00,2561,21
+Oberbergischer Kreis,Nordrhein-Westfalen,05374000,2020-11-18T00:00:00+01:00,2678,30
+Oberhausen,Nordrhein-Westfalen,05119000,2020-11-18T00:00:00+01:00,2371,22
+Olpe (Kreis),Nordrhein-Westfalen,05966000,2020-11-18T00:00:00+01:00,1672,64
+Paderborn (Kreis),Nordrhein-Westfalen,05774000,2020-11-18T00:00:00+01:00,2290,56
+Recklinghausen (Kreis),Nordrhein-Westfalen,05562000,2020-11-18T00:00:00+01:00,7955,74
+Remscheid,Nordrhein-Westfalen,05120000,2020-11-18T00:00:00+01:00,1693,30
+Rhein-Erft-Kreis,Nordrhein-Westfalen,05362000,2020-11-18T00:00:00+01:00,5187,96
+Rhein-Kreis Neuss,Nordrhein-Westfalen,05162000,2020-11-18T00:00:00+01:00,4455,45
+Rhein-Sieg-Kreis,Nordrhein-Westfalen,05382000,2020-11-18T00:00:00+01:00,6220,73
+Rheinisch-Bergischer Kreis,Nordrhein-Westfalen,05378000,2020-11-18T00:00:00+01:00,2827,28
+Siegen-Wittgenstein (Kreis),Nordrhein-Westfalen,05970000,2020-11-18T00:00:00+01:00,2204,9
+Soest (Kreis),Nordrhein-Westfalen,05974000,2020-11-18T00:00:00+01:00,1619,17
+Solingen,Nordrhein-Westfalen,05122000,2020-11-18T00:00:00+01:00,2496,24
+Steinfurt (Kreis),Nordrhein-Westfalen,05566000,2020-11-18T00:00:00+01:00,4223,106
+Städteregion Aachen,Nordrhein-Westfalen,05334000,2020-11-18T00:00:00+01:00,8815,152
+Unna (Kreis),Nordrhein-Westfalen,05978000,2020-11-18T00:00:00+01:00,4921,69
+Viersen (Kreis),Nordrhein-Westfalen,05166000,2020-11-18T00:00:00+01:00,2803,44
+Warendorf (Kreis),Nordrhein-Westfalen,05570000,2020-11-18T00:00:00+01:00,3103,28
+Wesel (Kreis),Nordrhein-Westfalen,05170000,2020-11-18T00:00:00+01:00,3840,39
+Wuppertal,Nordrhein-Westfalen,05124000,2020-11-18T00:00:00+01:00,5175,103
+Ahrweiler,Rheinland-Pfalz,07131000,2020-11-18T00:00:00+01:00,1096,13
+Altenkirchen (Westerwald),Rheinland-Pfalz,07132000,2020-11-18T00:00:00+01:00,896,15
+Alzey-Worms,Rheinland-Pfalz,07331000,2020-11-18T00:00:00+01:00,1082,14
+Bad Dürkheim,Rheinland-Pfalz,07332000,2020-11-18T00:00:00+01:00,1008,21
+Bad Kreuznach,Rheinland-Pfalz,07133000,2020-11-18T00:00:00+01:00,1063,9
+Bernkastel-Wittlich,Rheinland-Pfalz,07231000,2020-11-18T00:00:00+01:00,943,14
+Birkenfeld,Rheinland-Pfalz,07134000,2020-11-18T00:00:00+01:00,739,6
+Cochem-Zell,Rheinland-Pfalz,07135000,2020-11-18T00:00:00+01:00,536,2
+Donnersbergkreis,Rheinland-Pfalz,07333000,2020-11-18T00:00:00+01:00,513,10
+Eifelkreis Bitburg-Prüm,Rheinland-Pfalz,07232000,2020-11-18T00:00:00+01:00,1056,6
+Frankenthal (Pfalz),Rheinland-Pfalz,07311000,2020-11-18T00:00:00+01:00,349,2
+Germersheim,Rheinland-Pfalz,07334000,2020-11-18T00:00:00+01:00,1215,19
+Kaiserslautern (Stadt),Rheinland-Pfalz,07312000,2020-11-18T00:00:00+01:00,935,9
+Kaiserslautern (Landkreis),Rheinland-Pfalz,07335000,2020-11-18T00:00:00+01:00,1054,3
+Koblenz,Rheinland-Pfalz,07111000,2020-11-18T00:00:00+01:00,1050,25
+Kusel,Rheinland-Pfalz,07336000,2020-11-18T00:00:00+01:00,670,9
+Landau in der Pfalz,Rheinland-Pfalz,07313000,2020-11-18T00:00:00+01:00,269,2
+Ludwigshafen am Rhein,Rheinland-Pfalz,07314000,2020-11-18T00:00:00+01:00,2070,11
+Mainz,Rheinland-Pfalz,07315000,2020-11-18T00:00:00+01:00,3090,33
+Mainz-Bingen,Rheinland-Pfalz,07339000,2020-11-18T00:00:00+01:00,1933,40
+Mayen-Koblenz,Rheinland-Pfalz,07137000,2020-11-18T00:00:00+01:00,1517,21
+Neustadt an der Weinstraße,Rheinland-Pfalz,07316000,2020-11-18T00:00:00+01:00,361,2
+Neuwied,Rheinland-Pfalz,07138000,2020-11-18T00:00:00+01:00,1559,8
+Pirmasens,Rheinland-Pfalz,07317000,2020-11-18T00:00:00+01:00,153,1
+Rhein-Hunsrück-Kreis,Rheinland-Pfalz,07140000,2020-11-18T00:00:00+01:00,688,7
+Rhein-Lahn-Kreis,Rheinland-Pfalz,07141000,2020-11-18T00:00:00+01:00,639,7
+Rhein-Pfalz-Kreis,Rheinland-Pfalz,07338000,2020-11-18T00:00:00+01:00,1158,6
+Speyer,Rheinland-Pfalz,07318000,2020-11-18T00:00:00+01:00,533,1
+Südliche Weinstraße,Rheinland-Pfalz,07337000,2020-11-18T00:00:00+01:00,712,5
+Südwestpfalz,Rheinland-Pfalz,07340000,2020-11-18T00:00:00+01:00,526,3
+Trier,Rheinland-Pfalz,07211000,2020-11-18T00:00:00+01:00,763,1
+Trier-Saarburg,Rheinland-Pfalz,07235000,2020-11-18T00:00:00+01:00,1087,12
+Vulkaneifel,Rheinland-Pfalz,07233000,2020-11-18T00:00:00+01:00,503,8
+Westerwaldkreis,Rheinland-Pfalz,07143000,2020-11-18T00:00:00+01:00,1512,26
+Worms,Rheinland-Pfalz,07319000,2020-11-18T00:00:00+01:00,686,8
+Zweibrücken,Rheinland-Pfalz,07320000,2020-11-18T00:00:00+01:00,180,2
+Merzig-Wadern,Saarland,10042000,2020-11-18T00:00:00+01:00,1103,18
+Neunkirchen,Saarland,10043000,2020-11-18T00:00:00+01:00,1292,13
+Regionalverband Saarbrücken,Saarland,10041000,2020-11-18T00:00:00+01:00,3879,130
+Saarlouis,Saarland,10044000,2020-11-18T00:00:00+01:00,2108,25
+Saarpfalz-Kreis,Saarland,10045000,2020-11-18T00:00:00+01:00,1208,20
+St. Wendel,Saarland,10046000,2020-11-18T00:00:00+01:00,934,22
+Bautzen,Sachsen,14625000,2020-11-18T00:00:00+01:00,4223,52
+Chemnitz,Sachsen,14511000,2020-11-18T00:00:00+01:00,1986,16
+Dresden,Sachsen,14612000,2020-11-18T00:00:00+01:00,4248,32
+Erzgebirgskreis,Sachsen,14521000,2020-11-18T00:00:00+01:00,5927,137
+Görlitz,Sachsen,14626000,2020-11-18T00:00:00+01:00,2956,65
+Leipzig (Stadt),Sachsen,14713000,2020-11-18T00:00:00+01:00,2645,18
+Leipzig (Landkreis),Sachsen,14729000,2020-11-18T00:00:00+01:00,1421,11
+Meißen,Sachsen,14627000,2020-11-18T00:00:00+01:00,1888,49
+Mittelsachsen,Sachsen,14522000,2020-11-18T00:00:00+01:00,2646,11
+Nordsachsen,Sachsen,14730000,2020-11-18T00:00:00+01:00,1374,15
+Sächsische Schweiz-Osterzgebirge,Sachsen,14628000,2020-11-18T00:00:00+01:00,2537,30
+Vogtlandkreis,Sachsen,14523000,2020-11-18T00:00:00+01:00,1905,52
+Zwickau,Sachsen,14524000,2020-11-18T00:00:00+01:00,3135,79
+Altmarkkreis Salzwedel,Sachsen-Anhalt,15081000,2020-11-18T00:00:00+01:00,233,3
+Anhalt-Bitterfeld,Sachsen-Anhalt,15082000,2020-11-18T00:00:00+01:00,418,4
+Burgenlandkreis,Sachsen-Anhalt,15084000,2020-11-18T00:00:00+01:00,912,14
+Börde,Sachsen-Anhalt,15083000,2020-11-18T00:00:00+01:00,649,15
+Dessau-Roßlau,Sachsen-Anhalt,15001000,2020-11-18T00:00:00+01:00,209,4
+Halle (Saale),Sachsen-Anhalt,15002000,2020-11-18T00:00:00+01:00,1233,15
+Harz,Sachsen-Anhalt,15085000,2020-11-18T00:00:00+01:00,746,6
+Jerichower Land,Sachsen-Anhalt,15086000,2020-11-18T00:00:00+01:00,489,5
+Magdeburg,Sachsen-Anhalt,15003000,2020-11-18T00:00:00+01:00,1282,11
+Mansfeld-Südharz,Sachsen-Anhalt,15087000,2020-11-18T00:00:00+01:00,372,2
+Saalekreis,Sachsen-Anhalt,15088000,2020-11-18T00:00:00+01:00,647,10
+Salzlandkreis,Sachsen-Anhalt,15089000,2020-11-18T00:00:00+01:00,637,3
+Stendal,Sachsen-Anhalt,15090000,2020-11-18T00:00:00+01:00,311,9
+Wittenberg,Sachsen-Anhalt,15091000,2020-11-18T00:00:00+01:00,531,7
+Dithmarschen,Schleswig-Holstein,01051000,2020-11-18T00:00:00+01:00,519,13
+Flensburg,Schleswig-Holstein,01001000,2020-11-18T00:00:00+01:00,280,3
+Herzogtum Lauenburg,Schleswig-Holstein,01053000,2020-11-18T00:00:00+01:00,859,22
+Kiel,Schleswig-Holstein,01002000,2020-11-18T00:00:00+01:00,965,16
+Lübeck,Schleswig-Holstein,01003000,2020-11-18T00:00:00+01:00,1001,5
+Neumünster,Schleswig-Holstein,01004000,2020-11-18T00:00:00+01:00,398,4
+Nordfriesland,Schleswig-Holstein,01054000,2020-11-18T00:00:00+01:00,615,3
+Ostholstein,Schleswig-Holstein,01055000,2020-11-18T00:00:00+01:00,493,1
+Pinneberg,Schleswig-Holstein,01056000,2020-11-18T00:00:00+01:00,1956,49
+Plön,Schleswig-Holstein,01057000,2020-11-18T00:00:00+01:00,286,8
+Rendsburg-Eckernförde,Schleswig-Holstein,01058000,2020-11-18T00:00:00+01:00,837,16
+Schleswig-Flensburg,Schleswig-Holstein,01059000,2020-11-18T00:00:00+01:00,491,6
+Segeberg,Schleswig-Holstein,01060000,2020-11-18T00:00:00+01:00,1354,31
+Steinburg,Schleswig-Holstein,01061000,2020-11-18T00:00:00+01:00,379,3
+Stormarn,Schleswig-Holstein,01062000,2020-11-18T00:00:00+01:00,1484,47
+Altenburger Land,Thüringen,16077000,2020-11-18T00:00:00+01:00,613,5
+Eichsfeld,Thüringen,16061000,2020-11-18T00:00:00+01:00,679,16
+Eisenach,Thüringen,16056000,2020-11-18T00:00:00+01:00,107,5
+Erfurt,Thüringen,16051000,2020-11-18T00:00:00+01:00,1041,15
+Gera,Thüringen,16052000,2020-11-18T00:00:00+01:00,623,27
+Gotha,Thüringen,16067000,2020-11-18T00:00:00+01:00,665,33
+Greiz,Thüringen,16076000,2020-11-18T00:00:00+01:00,979,49
+Hildburghausen,Thüringen,16069000,2020-11-18T00:00:00+01:00,578,5
+Ilm-Kreis,Thüringen,16070000,2020-11-18T00:00:00+01:00,528,7
+Jena,Thüringen,16053000,2020-11-18T00:00:00+01:00,544,4
+Kyffhäuserkreis,Thüringen,16065000,2020-11-18T00:00:00+01:00,281,3
+Nordhausen,Thüringen,16062000,2020-11-18T00:00:00+01:00,260,2
+Saale-Holzland-Kreis,Thüringen,16074000,2020-11-18T00:00:00+01:00,484,11
+Saale-Orla-Kreis,Thüringen,16075000,2020-11-18T00:00:00+01:00,387,12
+Saalfeld-Rudolstadt,Thüringen,16073000,2020-11-18T00:00:00+01:00,373,5
+Schmalkalden-Meiningen,Thüringen,16066000,2020-11-18T00:00:00+01:00,715,12
+Sonneberg,Thüringen,16072000,2020-11-18T00:00:00+01:00,587,31
+Suhl,Thüringen,16054000,2020-11-18T00:00:00+01:00,114,2
+Sömmerda,Thüringen,16068000,2020-11-18T00:00:00+01:00,338,2
+Unstrut-Hainich-Kreis,Thüringen,16064000,2020-11-18T00:00:00+01:00,566,12
+Wartburgkreis,Thüringen,16063000,2020-11-18T00:00:00+01:00,340,3
+Weimar,Thüringen,16055000,2020-11-18T00:00:00+01:00,379,1
+Weimarer Land,Thüringen,16071000,2020-11-18T00:00:00+01:00,424,7
