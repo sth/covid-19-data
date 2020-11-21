@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-11-21T08:00:00+01:00,1606,25
+Altötting,Oberbayern,2020-11-21T08:00:00+01:00,1726,59
+Amberg Stadt,Oberpfalz,2020-11-21T08:00:00+01:00,393,4
+Amberg-Sulzbach,Oberpfalz,2020-11-21T08:00:00+01:00,1185,56
+Ansbach,Mittelfranken,2020-11-21T08:00:00+01:00,1888,37
+Ansbach Stadt,Mittelfranken,2020-11-21T08:00:00+01:00,450,9
+Aschaffenburg,Unterfranken,2020-11-21T08:00:00+01:00,2024,44
+Aschaffenburg Stadt,Unterfranken,2020-11-21T08:00:00+01:00,647,4
+Augsburg,Schwaben,2020-11-21T08:00:00+01:00,3355,25
+Augsburg Stadt,Schwaben,2020-11-21T08:00:00+01:00,5660,52
+Bad Kissingen,Unterfranken,2020-11-21T08:00:00+01:00,660,18
+Bad Tölz-Wolfratshausen,Oberbayern,2020-11-21T08:00:00+01:00,1577,13
+Bamberg,Oberfranken,2020-11-21T08:00:00+01:00,1386,45
+Bamberg Stadt,Oberfranken,2020-11-21T08:00:00+01:00,715,28
+Bayreuth,Oberfranken,2020-11-21T08:00:00+01:00,892,29
+Bayreuth Stadt,Oberfranken,2020-11-21T08:00:00+01:00,655,14
+Berchtesgadener Land,Oberbayern,2020-11-21T08:00:00+01:00,1775,34
+Cham,Oberpfalz,2020-11-21T08:00:00+01:00,1507,25
+Coburg,Oberfranken,2020-11-21T08:00:00+01:00,936,32
+Coburg Stadt,Oberfranken,2020-11-21T08:00:00+01:00,339,6
+Dachau,Oberbayern,2020-11-21T08:00:00+01:00,2799,59
+Deggendorf,Niederbayern,2020-11-21T08:00:00+01:00,1228,22
+Dillingen an der Donau,Schwaben,2020-11-21T08:00:00+01:00,1095,41
+Dingolfing-Landau,Niederbayern,2020-11-21T08:00:00+01:00,1609,14
+Donau-Ries,Schwaben,2020-11-21T08:00:00+01:00,1638,35
+Ebersberg,Oberbayern,2020-11-21T08:00:00+01:00,1960,16
+Eichstätt,Oberbayern,2020-11-21T08:00:00+01:00,1268,26
+Erding,Oberbayern,2020-11-21T08:00:00+01:00,2043,16
+Erlangen Stadt,Mittelfranken,2020-11-21T08:00:00+01:00,1098,15
+Erlangen-Höchstadt,Mittelfranken,2020-11-21T08:00:00+01:00,1254,15
+Forchheim,Oberfranken,2020-11-21T08:00:00+01:00,975,6
+Freising,Oberbayern,2020-11-21T08:00:00+01:00,2683,50
+Freyung-Grafenau,Niederbayern,2020-11-21T08:00:00+01:00,1117,22
+Fürstenfeldbruck,Oberbayern,2020-11-21T08:00:00+01:00,3490,56
+Fürth,Mittelfranken,2020-11-21T08:00:00+01:00,1597,74
+Fürth Stadt,Mittelfranken,2020-11-21T08:00:00+01:00,1844,41
+Garmisch-Partenkirchen,Oberbayern,2020-11-21T08:00:00+01:00,972,22
+Günzburg,Schwaben,2020-11-21T08:00:00+01:00,1769,24
+Haßberge,Unterfranken,2020-11-21T08:00:00+01:00,829,9
+Hof,Oberfranken,2020-11-21T08:00:00+01:00,1123,35
+Hof Stadt,Oberfranken,2020-11-21T08:00:00+01:00,488,5
+Ingolstadt Stadt,Oberbayern,2020-11-21T08:00:00+01:00,1961,45
+Kaufbeuren Stadt,Schwaben,2020-11-21T08:00:00+01:00,669,14
+Kelheim,Niederbayern,2020-11-21T08:00:00+01:00,1400,37
+Kempten Stadt,Schwaben,2020-11-21T08:00:00+01:00,696,14
+Kitzingen,Unterfranken,2020-11-21T08:00:00+01:00,839,6
+Kronach,Oberfranken,2020-11-21T08:00:00+01:00,701,8
+Kulmbach,Oberfranken,2020-11-21T08:00:00+01:00,669,12
+Landsberg am Lech,Oberbayern,2020-11-21T08:00:00+01:00,1338,16
+Landshut,Niederbayern,2020-11-21T08:00:00+01:00,2018,43
+Landshut Stadt,Niederbayern,2020-11-21T08:00:00+01:00,955,12
+Lichtenfels,Oberfranken,2020-11-21T08:00:00+01:00,941,25
+Lindau (Bodensee),Schwaben,2020-11-21T08:00:00+01:00,996,10
+Main-Spessart,Unterfranken,2020-11-21T08:00:00+01:00,837,14
+Memmingen Stadt,Schwaben,2020-11-21T08:00:00+01:00,513,5
+Miesbach,Oberbayern,2020-11-21T08:00:00+01:00,1548,11
+Miltenberg,Unterfranken,2020-11-21T08:00:00+01:00,1556,23
+Mühldorf am Inn,Oberbayern,2020-11-21T08:00:00+01:00,1877,31
+München,Oberbayern,2020-11-21T08:00:00+01:00,5156,100
+München Stadt,Oberbayern,2020-11-21T08:00:00+01:00,25898,305
+Neu-Ulm,Schwaben,2020-11-21T08:00:00+01:00,2124,29
+Neuburg-Schrobenhausen,Oberbayern,2020-11-21T08:00:00+01:00,1193,34
+Neumarkt in der Oberpfalz,Oberpfalz,2020-11-21T08:00:00+01:00,1366,44
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-11-21T08:00:00+01:00,905,7
+Neustadt an der Waldnaab,Oberpfalz,2020-11-21T08:00:00+01:00,1656,77
+Nürnberg Stadt,Mittelfranken,2020-11-21T08:00:00+01:00,7272,72
+Nürnberger Land,Mittelfranken,2020-11-21T08:00:00+01:00,1747,50
+Oberallgäu,Schwaben,2020-11-21T08:00:00+01:00,1459,14
+Ostallgäu,Schwaben,2020-11-21T08:00:00+01:00,1848,45
+Passau,Niederbayern,2020-11-21T08:00:00+01:00,3042,45
+Passau Stadt,Niederbayern,2020-11-21T08:00:00+01:00,829,21
+Pfaffenhofen an der Ilm,Oberbayern,2020-11-21T08:00:00+01:00,1549,31
+Regen,Niederbayern,2020-11-21T08:00:00+01:00,897,14
+Regensburg,Oberpfalz,2020-11-21T08:00:00+01:00,2097,22
+Regensburg Stadt,Oberpfalz,2020-11-21T08:00:00+01:00,2127,10
+Rhön-Grabfeld,Unterfranken,2020-11-21T08:00:00+01:00,712,13
+Rosenheim,Oberbayern,2020-11-21T08:00:00+01:00,5743,221
+Rosenheim Stadt,Oberbayern,2020-11-21T08:00:00+01:00,1541,23
+Roth,Mittelfranken,2020-11-21T08:00:00+01:00,1180,10
+Rottal-Inn,Niederbayern,2020-11-21T08:00:00+01:00,2347,64
+Schwabach Stadt,Mittelfranken,2020-11-21T08:00:00+01:00,423,4
+Schwandorf,Oberpfalz,2020-11-21T08:00:00+01:00,1840,25
+Schweinfurt,Unterfranken,2020-11-21T08:00:00+01:00,1814,38
+Schweinfurt Stadt,Unterfranken,2020-11-21T08:00:00+01:00,819,24
+Starnberg,Oberbayern,2020-11-21T08:00:00+01:00,1656,15
+Straubing Stadt,Niederbayern,2020-11-21T08:00:00+01:00,795,50
+Straubing-Bogen,Niederbayern,2020-11-21T08:00:00+01:00,1377,32
+Tirschenreuth,Oberpfalz,2020-11-21T08:00:00+01:00,1717,144
+Traunstein,Oberbayern,2020-11-21T08:00:00+01:00,3656,104
+Unterallgäu,Schwaben,2020-11-21T08:00:00+01:00,1629,34
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-11-21T08:00:00+01:00,856,21
+Weilheim-Schongau,Oberbayern,2020-11-21T08:00:00+01:00,1503,16
+Weißenburg-Gunzenhausen,Mittelfranken,2020-11-21T08:00:00+01:00,983,29
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-11-21T08:00:00+01:00,1185,49
+Würzburg,Unterfranken,2020-11-21T08:00:00+01:00,1587,22
+Würzburg Stadt,Unterfranken,2020-11-21T08:00:00+01:00,1625,53
