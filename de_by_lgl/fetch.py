@@ -237,8 +237,11 @@ def parse_table(parse, html, kind, *, optional=False):
         txttab = txttab[1:-1]
         for tds in txttab:
             if parse_landkreis:
-                if datatime.date == datetime.date(2020, 11, 20) and tds[0] == 'Berchtesgadener Land*':
-                    tds[0] = tds[0].rstrip('*')
+                if tds[0].endswith('*'):
+                    if datatime.date() == datetime.date(2020, 11, 20):
+                        tds[0] = tds[0].rstrip('*')
+                    if datatime.date() == datetime.date(2020, 11, 22) or datatime.date() == datetime.date(2020, 11, 23):
+                        tds[0] = tds[0].rstrip(' *')
                 lk = clean_landkreis(tds[0])
                 if re_missing.search(lk):
                     # The sum for the Regierungsbezirk also seems to be wrong
