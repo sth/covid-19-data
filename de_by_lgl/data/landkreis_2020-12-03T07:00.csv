@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-12-03T08:00:00+01:00,2069,36
+Altötting,Oberbayern,2020-12-03T08:00:00+01:00,2157,70
+Amberg Stadt,Oberpfalz,2020-12-03T08:00:00+01:00,492,6
+Amberg-Sulzbach,Oberpfalz,2020-12-03T08:00:00+01:00,1519,70
+Ansbach,Mittelfranken,2020-12-03T08:00:00+01:00,2385,57
+Ansbach Stadt,Mittelfranken,2020-12-03T08:00:00+01:00,539,11
+Aschaffenburg,Unterfranken,2020-12-03T08:00:00+01:00,2526,48
+Aschaffenburg Stadt,Unterfranken,2020-12-03T08:00:00+01:00,830,5
+Augsburg,Schwaben,2020-12-03T08:00:00+01:00,4243,31
+Augsburg Stadt,Schwaben,2020-12-03T08:00:00+01:00,6947,83
+Bad Kissingen,Unterfranken,2020-12-03T08:00:00+01:00,846,19
+Bad Tölz-Wolfratshausen,Oberbayern,2020-12-03T08:00:00+01:00,1876,15
+Bamberg,Oberfranken,2020-12-03T08:00:00+01:00,1642,53
+Bamberg Stadt,Oberfranken,2020-12-03T08:00:00+01:00,872,34
+Bayreuth,Oberfranken,2020-12-03T08:00:00+01:00,1043,31
+Bayreuth Stadt,Oberfranken,2020-12-03T08:00:00+01:00,753,14
+Berchtesgadener Land,Oberbayern,2020-12-03T08:00:00+01:00,2052,36
+Cham,Oberpfalz,2020-12-03T08:00:00+01:00,1789,33
+Coburg,Oberfranken,2020-12-03T08:00:00+01:00,1330,43
+Coburg Stadt,Oberfranken,2020-12-03T08:00:00+01:00,455,6
+Dachau,Oberbayern,2020-12-03T08:00:00+01:00,3316,65
+Deggendorf,Niederbayern,2020-12-03T08:00:00+01:00,1532,27
+Dillingen an der Donau,Schwaben,2020-12-03T08:00:00+01:00,1378,45
+Dingolfing-Landau,Niederbayern,2020-12-03T08:00:00+01:00,1838,28
+Donau-Ries,Schwaben,2020-12-03T08:00:00+01:00,1922,38
+Ebersberg,Oberbayern,2020-12-03T08:00:00+01:00,2447,26
+Eichstätt,Oberbayern,2020-12-03T08:00:00+01:00,1674,31
+Erding,Oberbayern,2020-12-03T08:00:00+01:00,2681,22
+Erlangen Stadt,Mittelfranken,2020-12-03T08:00:00+01:00,1419,19
+Erlangen-Höchstadt,Mittelfranken,2020-12-03T08:00:00+01:00,1658,25
+Forchheim,Oberfranken,2020-12-03T08:00:00+01:00,1268,12
+Freising,Oberbayern,2020-12-03T08:00:00+01:00,3145,52
+Freyung-Grafenau,Niederbayern,2020-12-03T08:00:00+01:00,1534,29
+Fürstenfeldbruck,Oberbayern,2020-12-03T08:00:00+01:00,4124,65
+Fürth,Mittelfranken,2020-12-03T08:00:00+01:00,1938,83
+Fürth Stadt,Mittelfranken,2020-12-03T08:00:00+01:00,2329,52
+Garmisch-Partenkirchen,Oberbayern,2020-12-03T08:00:00+01:00,1158,23
+Günzburg,Schwaben,2020-12-03T08:00:00+01:00,2385,34
+Haßberge,Unterfranken,2020-12-03T08:00:00+01:00,1147,22
+Hof,Oberfranken,2020-12-03T08:00:00+01:00,1420,41
+Hof Stadt,Oberfranken,2020-12-03T08:00:00+01:00,703,9
+Ingolstadt Stadt,Oberbayern,2020-12-03T08:00:00+01:00,2254,49
+Kaufbeuren Stadt,Schwaben,2020-12-03T08:00:00+01:00,851,26
+Kelheim,Niederbayern,2020-12-03T08:00:00+01:00,1654,39
+Kempten Stadt,Schwaben,2020-12-03T08:00:00+01:00,852,15
+Kitzingen,Unterfranken,2020-12-03T08:00:00+01:00,961,8
+Kronach,Oberfranken,2020-12-03T08:00:00+01:00,939,17
+Kulmbach,Oberfranken,2020-12-03T08:00:00+01:00,790,12
+Landsberg am Lech,Oberbayern,2020-12-03T08:00:00+01:00,1664,16
+Landshut,Niederbayern,2020-12-03T08:00:00+01:00,2573,61
+Landshut Stadt,Niederbayern,2020-12-03T08:00:00+01:00,1152,16
+Lichtenfels,Oberfranken,2020-12-03T08:00:00+01:00,1077,30
+Lindau (Bodensee),Schwaben,2020-12-03T08:00:00+01:00,1148,12
+Main-Spessart,Unterfranken,2020-12-03T08:00:00+01:00,1382,36
+Memmingen Stadt,Schwaben,2020-12-03T08:00:00+01:00,602,9
+Miesbach,Oberbayern,2020-12-03T08:00:00+01:00,1790,11
+Miltenberg,Unterfranken,2020-12-03T08:00:00+01:00,1878,27
+Mühldorf am Inn,Oberbayern,2020-12-03T08:00:00+01:00,2348,38
+München,Oberbayern,2020-12-03T08:00:00+01:00,6065,114
+München Stadt,Oberbayern,2020-12-03T08:00:00+01:00,30968,371
+Neu-Ulm,Schwaben,2020-12-03T08:00:00+01:00,2670,29
+Neuburg-Schrobenhausen,Oberbayern,2020-12-03T08:00:00+01:00,1436,40
+Neumarkt in der Oberpfalz,Oberpfalz,2020-12-03T08:00:00+01:00,1718,53
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-12-03T08:00:00+01:00,1208,16
+Neustadt an der Waldnaab,Oberpfalz,2020-12-03T08:00:00+01:00,1918,79
+Nürnberg Stadt,Mittelfranken,2020-12-03T08:00:00+01:00,10140,102
+Nürnberger Land,Mittelfranken,2020-12-03T08:00:00+01:00,2217,54
+Oberallgäu,Schwaben,2020-12-03T08:00:00+01:00,1814,18
+Ostallgäu,Schwaben,2020-12-03T08:00:00+01:00,2132,48
+Passau,Niederbayern,2020-12-03T08:00:00+01:00,4124,51
+Passau Stadt,Niederbayern,2020-12-03T08:00:00+01:00,1251,22
+Pfaffenhofen an der Ilm,Oberbayern,2020-12-03T08:00:00+01:00,1899,43
+Regen,Niederbayern,2020-12-03T08:00:00+01:00,1391,16
+Regensburg,Oberpfalz,2020-12-03T08:00:00+01:00,2710,26
+Regensburg Stadt,Oberpfalz,2020-12-03T08:00:00+01:00,2748,15
+Rhön-Grabfeld,Unterfranken,2020-12-03T08:00:00+01:00,929,14
+Rosenheim,Oberbayern,2020-12-03T08:00:00+01:00,6551,242
+Rosenheim Stadt,Oberbayern,2020-12-03T08:00:00+01:00,1809,25
+Roth,Mittelfranken,2020-12-03T08:00:00+01:00,1536,16
+Rottal-Inn,Niederbayern,2020-12-03T08:00:00+01:00,2682,69
+Schwabach Stadt,Mittelfranken,2020-12-03T08:00:00+01:00,630,11
+Schwandorf,Oberpfalz,2020-12-03T08:00:00+01:00,2376,29
+Schweinfurt,Unterfranken,2020-12-03T08:00:00+01:00,2083,44
+Schweinfurt Stadt,Unterfranken,2020-12-03T08:00:00+01:00,967,30
+Starnberg,Oberbayern,2020-12-03T08:00:00+01:00,1915,16
+Straubing Stadt,Niederbayern,2020-12-03T08:00:00+01:00,905,50
+Straubing-Bogen,Niederbayern,2020-12-03T08:00:00+01:00,1767,47
+Tirschenreuth,Oberpfalz,2020-12-03T08:00:00+01:00,1874,148
+Traunstein,Oberbayern,2020-12-03T08:00:00+01:00,4246,120
+Unterallgäu,Schwaben,2020-12-03T08:00:00+01:00,1871,43
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-12-03T08:00:00+01:00,980,23
+Weilheim-Schongau,Oberbayern,2020-12-03T08:00:00+01:00,1732,17
+Weißenburg-Gunzenhausen,Mittelfranken,2020-12-03T08:00:00+01:00,1151,32
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-12-03T08:00:00+01:00,1409,55
+Würzburg,Unterfranken,2020-12-03T08:00:00+01:00,1772,29
+Würzburg Stadt,Unterfranken,2020-12-03T08:00:00+01:00,1775,54
