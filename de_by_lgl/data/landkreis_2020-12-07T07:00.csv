@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2020-12-07T08:00:00+01:00,2152,38
+Altötting,Oberbayern,2020-12-07T08:00:00+01:00,2310,70
+Amberg Stadt,Oberpfalz,2020-12-07T08:00:00+01:00,513,6
+Amberg-Sulzbach,Oberpfalz,2020-12-07T08:00:00+01:00,1638,70
+Ansbach,Mittelfranken,2020-12-07T08:00:00+01:00,2456,59
+Ansbach Stadt,Mittelfranken,2020-12-07T08:00:00+01:00,548,11
+Aschaffenburg,Unterfranken,2020-12-07T08:00:00+01:00,2682,49
+Aschaffenburg Stadt,Unterfranken,2020-12-07T08:00:00+01:00,899,5
+Augsburg,Schwaben,2020-12-07T08:00:00+01:00,4433,35
+Augsburg Stadt,Schwaben,2020-12-07T08:00:00+01:00,7293,89
+Bad Kissingen,Unterfranken,2020-12-07T08:00:00+01:00,922,19
+Bad Tölz-Wolfratshausen,Oberbayern,2020-12-07T08:00:00+01:00,1957,15
+Bamberg,Oberfranken,2020-12-07T08:00:00+01:00,1722,55
+Bamberg Stadt,Oberfranken,2020-12-07T08:00:00+01:00,953,36
+Bayreuth,Oberfranken,2020-12-07T08:00:00+01:00,1108,32
+Bayreuth Stadt,Oberfranken,2020-12-07T08:00:00+01:00,798,15
+Berchtesgadener Land,Oberbayern,2020-12-07T08:00:00+01:00,2134,37
+Cham,Oberpfalz,2020-12-07T08:00:00+01:00,1856,37
+Coburg,Oberfranken,2020-12-07T08:00:00+01:00,1426,45
+Coburg Stadt,Oberfranken,2020-12-07T08:00:00+01:00,490,8
+Dachau,Oberbayern,2020-12-07T08:00:00+01:00,3586,66
+Deggendorf,Niederbayern,2020-12-07T08:00:00+01:00,1690,29
+Dillingen an der Donau,Schwaben,2020-12-07T08:00:00+01:00,1455,53
+Dingolfing-Landau,Niederbayern,2020-12-07T08:00:00+01:00,1931,29
+Donau-Ries,Schwaben,2020-12-07T08:00:00+01:00,2019,40
+Ebersberg,Oberbayern,2020-12-07T08:00:00+01:00,2566,28
+Eichstätt,Oberbayern,2020-12-07T08:00:00+01:00,1774,33
+Erding,Oberbayern,2020-12-07T08:00:00+01:00,2827,24
+Erlangen Stadt,Mittelfranken,2020-12-07T08:00:00+01:00,1516,20
+Erlangen-Höchstadt,Mittelfranken,2020-12-07T08:00:00+01:00,1783,34
+Forchheim,Oberfranken,2020-12-07T08:00:00+01:00,1370,15
+Freising,Oberbayern,2020-12-07T08:00:00+01:00,3303,52
+Freyung-Grafenau,Niederbayern,2020-12-07T08:00:00+01:00,1730,30
+Fürstenfeldbruck,Oberbayern,2020-12-07T08:00:00+01:00,4307,70
+Fürth,Mittelfranken,2020-12-07T08:00:00+01:00,2077,92
+Fürth Stadt,Mittelfranken,2020-12-07T08:00:00+01:00,2562,55
+Garmisch-Partenkirchen,Oberbayern,2020-12-07T08:00:00+01:00,1230,23
+Günzburg,Schwaben,2020-12-07T08:00:00+01:00,2609,36
+Haßberge,Unterfranken,2020-12-07T08:00:00+01:00,1239,24
+Hof,Oberfranken,2020-12-07T08:00:00+01:00,1566,42
+Hof Stadt,Oberfranken,2020-12-07T08:00:00+01:00,832,11
+Ingolstadt Stadt,Oberbayern,2020-12-07T08:00:00+01:00,2332,50
+Kaufbeuren Stadt,Schwaben,2020-12-07T08:00:00+01:00,907,29
+Kelheim,Niederbayern,2020-12-07T08:00:00+01:00,1752,39
+Kempten Stadt,Schwaben,2020-12-07T08:00:00+01:00,895,15
+Kitzingen,Unterfranken,2020-12-07T08:00:00+01:00,1000,12
+Kronach,Oberfranken,2020-12-07T08:00:00+01:00,1021,19
+Kulmbach,Oberfranken,2020-12-07T08:00:00+01:00,844,12
+Landsberg am Lech,Oberbayern,2020-12-07T08:00:00+01:00,1764,19
+Landshut,Niederbayern,2020-12-07T08:00:00+01:00,2828,76
+Landshut Stadt,Niederbayern,2020-12-07T08:00:00+01:00,1252,18
+Lichtenfels,Oberfranken,2020-12-07T08:00:00+01:00,1139,31
+Lindau (Bodensee),Schwaben,2020-12-07T08:00:00+01:00,1227,13
+Main-Spessart,Unterfranken,2020-12-07T08:00:00+01:00,1595,42
+Memmingen Stadt,Schwaben,2020-12-07T08:00:00+01:00,633,9
+Miesbach,Oberbayern,2020-12-07T08:00:00+01:00,1871,11
+Miltenberg,Unterfranken,2020-12-07T08:00:00+01:00,1977,28
+Mühldorf am Inn,Oberbayern,2020-12-07T08:00:00+01:00,2462,41
+München,Oberbayern,2020-12-07T08:00:00+01:00,6361,120
+München Stadt,Oberbayern,2020-12-07T08:00:00+01:00,32470,392
+Neu-Ulm,Schwaben,2020-12-07T08:00:00+01:00,2917,36
+Neuburg-Schrobenhausen,Oberbayern,2020-12-07T08:00:00+01:00,1543,41
+Neumarkt in der Oberpfalz,Oberpfalz,2020-12-07T08:00:00+01:00,1957,56
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2020-12-07T08:00:00+01:00,1303,18
+Neustadt an der Waldnaab,Oberpfalz,2020-12-07T08:00:00+01:00,2005,81
+Nürnberg Stadt,Mittelfranken,2020-12-07T08:00:00+01:00,10815,104
+Nürnberger Land,Mittelfranken,2020-12-07T08:00:00+01:00,2466,60
+Oberallgäu,Schwaben,2020-12-07T08:00:00+01:00,1928,20
+Ostallgäu,Schwaben,2020-12-07T08:00:00+01:00,2272,50
+Passau,Niederbayern,2020-12-07T08:00:00+01:00,4540,52
+Passau Stadt,Niederbayern,2020-12-07T08:00:00+01:00,1385,26
+Pfaffenhofen an der Ilm,Oberbayern,2020-12-07T08:00:00+01:00,2035,46
+Regen,Niederbayern,2020-12-07T08:00:00+01:00,1690,22
+Regensburg,Oberpfalz,2020-12-07T08:00:00+01:00,2889,27
+Regensburg Stadt,Oberpfalz,2020-12-07T08:00:00+01:00,2889,18
+Rhön-Grabfeld,Unterfranken,2020-12-07T08:00:00+01:00,987,15
+Rosenheim,Oberbayern,2020-12-07T08:00:00+01:00,6762,245
+Rosenheim Stadt,Oberbayern,2020-12-07T08:00:00+01:00,1878,25
+Roth,Mittelfranken,2020-12-07T08:00:00+01:00,1686,18
+Rottal-Inn,Niederbayern,2020-12-07T08:00:00+01:00,2772,70
+Schwabach Stadt,Mittelfranken,2020-12-07T08:00:00+01:00,688,12
+Schwandorf,Oberpfalz,2020-12-07T08:00:00+01:00,2509,33
+Schweinfurt,Unterfranken,2020-12-07T08:00:00+01:00,2180,51
+Schweinfurt Stadt,Unterfranken,2020-12-07T08:00:00+01:00,1009,31
+Starnberg,Oberbayern,2020-12-07T08:00:00+01:00,2002,16
+Straubing Stadt,Niederbayern,2020-12-07T08:00:00+01:00,952,50
+Straubing-Bogen,Niederbayern,2020-12-07T08:00:00+01:00,1860,55
+Tirschenreuth,Oberpfalz,2020-12-07T08:00:00+01:00,1941,148
+Traunstein,Oberbayern,2020-12-07T08:00:00+01:00,4543,125
+Unterallgäu,Schwaben,2020-12-07T08:00:00+01:00,1936,43
+Weiden in der Oberpfalz Stadt,Oberpfalz,2020-12-07T08:00:00+01:00,1010,24
+Weilheim-Schongau,Oberbayern,2020-12-07T08:00:00+01:00,1801,20
+Weißenburg-Gunzenhausen,Mittelfranken,2020-12-07T08:00:00+01:00,1236,34
+Wunsiedel im Fichtelgebirge,Oberfranken,2020-12-07T08:00:00+01:00,1504,57
+Würzburg,Unterfranken,2020-12-07T08:00:00+01:00,1846,31
+Würzburg Stadt,Unterfranken,2020-12-07T08:00:00+01:00,1836,54
