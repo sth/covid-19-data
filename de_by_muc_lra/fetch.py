@@ -25,7 +25,7 @@ html = BeautifulSoup(update.rawdata, 'html.parser')
 parse = fetchhelper.ParseData(update, 'data')
 
 txt = str(html.find(text=re.compile('Stand: ')))
-mo = re.search(r'Stand: (\d\d.\d\d.\d\d\d\d, \d\d:\d\d) Uhr', txt)
+mo = re.search(r'Stand: (\d\d.\d\d.\d\d\d\d, \d\d:\d\d) ?Uhr', txt)
 datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M').replace(tzinfo=datatz)
 
 title = html.find(text=re.compile('Fallzahlen Infizierte nach Gemeinden')).find_parent('h2')
