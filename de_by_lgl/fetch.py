@@ -159,18 +159,22 @@ datenode = html.find('script', text=re.compile(r'var publikationsDatum = '))
 if datenode is None:
     print("Cannot find publish date", file=sys.stderr)
     sys.exit(1)
-datemo = re.search(r'"(\d\d.\d\d.\d\d\d\d)"', datenode.get_text())
+datemo = re.search(r'["\'](\d\d.\d\d.\d\d\d\d)["\']', datenode.get_text())
 if datemo is None:
     print("Cannot find publish date", file=sys.stderr)
     sys.exit(2)
 publishdate = datetime.datetime.strptime(datemo.group(1), '%d.%m.%Y').date()
 
 def get_labeltime(text):
+    # try js template for date
     mo = re.search(r'Stand:.*\);\s*, (\d\d:\d\d) Uhr', text, re.DOTALL)
-    if mo is None:
-        return None
-    stime = datetime.datetime.strptime(mo.group(1), '%H:%M').time()
-    return datetime.datetime.combine(publishdate, stime, tzinfo=datatz)
+    if mo is not None:
+        stime = datetime.datetime.strptime(mo.group(1), '%H:%M').time()
+        return datetime.datetime.combine(publishdate, stime, tzinfo=datatz)
+    # try literal text
+    mo = re.search(r'Stand:\s+(\d\d.\d\d.\d\d\d\d), (\d\d:\d\d) Uhr', text, re.DOTALL)
+    if mo is not None:
+        return datetime.datetime.strptime(mo.group(1) + ' ' + mo.group(2), '%d.%m.%Y %H:%M').astimezone(datatz)
 
 def tab_rows(tab):
     trs = tab.select('tr')
@@ -218,6 +222,7 @@ def parse_table(parse, html, kind, *, optional=False):
     datatime = parse.parsedtime = get_labeltime(caption.get_text())
     if datatime is None:
         print("couldn't determine datatime for %s" % parse.label, file=sys.stderr)
+        print(caption.get_text())
         exit(1)
 
     ths = tab.find_all('th')
