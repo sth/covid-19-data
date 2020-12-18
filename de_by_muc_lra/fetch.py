@@ -32,6 +32,8 @@ title = html.find(text=re.compile('Fallzahlen Infizierte nach Gemeinden')).find_
 rows = fetchhelper.text_table(title.find_next_sibling('table'))
 
 assert(len(rows[0]) == 2 or len(rows[0]) == 3)
+if rows[0][0] == 'Gemeinde/Stadt':
+    rows = rows[1:]
 
 with open(parse.parsedfile, 'w') as outf:
     cout = csv.writer(outf)
