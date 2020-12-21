@@ -48,6 +48,8 @@ with open(update.rawfile) as inf:
             values = [line[i] for i in selector]
             if not values[0]:
                 continue
+            if not values[1]:
+                continue
             if values[1] == '12/7/2021 09:54':
                 continue
             if '2020' in values[1]:
