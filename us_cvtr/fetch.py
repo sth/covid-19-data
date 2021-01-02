@@ -52,7 +52,7 @@ with open(update.rawfile) as inf:
                 continue
             if values[1] == '12/7/2021 09:54':
                 continue
-            if '2020' in values[1]:
+            if '2020' in values[1] or '2021' in values[1]:
                 timestamp = datetime.strptime(values[1], '%m/%d/%Y %H:%M').replace(tzinfo=datatz)
             else:
                 timestamp = datetime.strptime('2020 ' + values[1], '%Y %m/%d %H:%M').replace(tzinfo=datatz)
