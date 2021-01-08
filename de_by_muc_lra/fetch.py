@@ -28,7 +28,24 @@ txt = str(html.find(text=re.compile('Stand: ')))
 mo = re.search(r'Stand: (\d\d.\d\d.\d\d\d\d, \d\d:\d\d) ?Uhr', txt)
 datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M').replace(tzinfo=datatz)
 
-title = html.find(text=re.compile('Fallzahlen Infizierte nach Gemeinden')).find_parent('h2')
+try:
+    title = html.find(text=re.compile('Fallzahlen Infizierte nach Gemeinden')).find_parent('h2')
+except AttributeError:
+    if datatime.date() >= datetime.date(2020, 1, 8) and datetime.date() <= datetime.date(2020, 1, 8):
+        # Known problems:
+        # > Wie bereits gestern wurden auch heute zahlreiche Datensätze gelöscht,
+        # > da aufgrund einer fehlerhaften Systemumstellung versehentlich zu
+        # > viele Fälle (teils Doppelmeldungen) auf dieser Seite vermeldet
+        # > wurden. Dies betrifft nur die Fallzahlen auf dieser Seite, Meldungen
+        # > an übergeordnete Behörden waren davon nicht betroffen. Leider können
+        # > wir aufgrund der fehlerhaften Systemumstellung derzeit keine
+        # > Aufschlüsselung nach Kommunen und Alterskohorten vornehmen. Bitte
+        # > haben Sie Verständnis, dass eventuell auch in den kommenden Tagen
+        # > weitere Korrekturen folgen. Auf das Infektionsgeschehen oder die
+        # > Maßnahmen hat dieser technische Fehler keinerlei Auswirkung
+        sys.exit()
+    raise
+
 rows = fetchhelper.text_table(title.find_next_sibling('table'))
 
 assert(len(rows[0]) == 2 or len(rows[0]) == 3)
