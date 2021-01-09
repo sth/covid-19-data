@@ -75,12 +75,14 @@ for i, tds in enumerate(trs):
     rowlabel = tds[0]
     if 'Davon PCR' in rowlabel or 'Davon Antigen' in rowlabel:
         continue
-    mo = re.search(r'Stand (\d\d\.\d\d\.\d\d\d\d),[ \xa0]*(\d\d[:.]\d\d) ?Uhr', tds[0])
+    mo = re.search(r'Stand (\d\d\.\d\d\.\d\d\d\d),[ \xa0]*(\d?\d[:.]\d\d) ?Uhr', tds[0])
     if mo is None:
         print("cannot parse date:", tds[0], file=sys.stderr)
         sys.exit(1)
     sdate = mo.group(1)
     stime = mo.group(2).replace('.', ':')
+    if len(stime) == 4:
+        stime = '0'+stime
     parse = fetchhelper.ParseData(update, labels[i])
     datadate = parse.parsedtime = datetime.strptime(sdate + ' ' + stime, '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
     with open(parse.parsedfile, 'w') as f:
