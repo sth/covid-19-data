@@ -31,7 +31,7 @@ datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo
 try:
     title = html.find(text=re.compile('Fallzahlen Infizierte nach Gemeinden')).find_parent('h2')
 except AttributeError:
-    if datatime.date() >= datetime.date(2021, 1, 8) and datatime.date() <= datetime.date(2021, 1, 10):
+    if datatime.date() >= datetime.date(2021, 1, 8) and datatime.date() <= datetime.date(2021, 1, 11):
         # Known problems:
         # > Wie bereits gestern wurden auch heute zahlreiche Datensätze gelöscht,
         # > da aufgrund einer fehlerhaften Systemumstellung versehentlich zu
