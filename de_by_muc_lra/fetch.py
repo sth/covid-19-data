@@ -31,18 +31,12 @@ datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo
 try:
     title = html.find(text=re.compile('Fallzahlen Infizierte nach Gemeinden')).find_parent('h2')
 except AttributeError:
-    if datatime.date() >= datetime.date(2021, 1, 8) and datatime.date() <= datetime.date(2021, 1, 15):
+    if datatime.date() >= datetime.date(2021, 1, 8) and datatime.date() <= datetime.date(2021, 1, 20):
         # Known problems:
-        # > Wie bereits gestern wurden auch heute zahlreiche Datensätze gelöscht,
-        # > da aufgrund einer fehlerhaften Systemumstellung versehentlich zu
-        # > viele Fälle (teils Doppelmeldungen) auf dieser Seite vermeldet
-        # > wurden. Dies betrifft nur die Fallzahlen auf dieser Seite, Meldungen
-        # > an übergeordnete Behörden waren davon nicht betroffen. Leider können
-        # > wir aufgrund der fehlerhaften Systemumstellung derzeit keine
-        # > Aufschlüsselung nach Kommunen und Alterskohorten vornehmen. Bitte
-        # > haben Sie Verständnis, dass eventuell auch in den kommenden Tagen
-        # > weitere Korrekturen folgen. Auf das Infektionsgeschehen oder die
-        # > Maßnahmen hat dieser technische Fehler keinerlei Auswirkung
+        # > Aufgrund einer fehlerhaften Systemumstellung können wir derzeit auf
+        # > dieser Seite leider keine Aufschlüsselung nach Kommunen und
+        # > Alterskohorten vornehmen. Wir hoffen, dass dieser technische Fehler
+        # > schnellstmöglich behoben werden kann.
         sys.exit()
     raise
 
