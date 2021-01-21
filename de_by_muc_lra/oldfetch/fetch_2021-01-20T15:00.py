@@ -10,9 +10,6 @@ ap = argparse.ArgumentParser()
 fetchhelper.add_arguments(ap)
 args = ap.parse_args()
 
-fetchhelper.check_oldfetch(args)
-
-
 import subprocess, datetime, re, csv, os, sys
 from bs4 import BeautifulSoup
 import dateutil.tz
@@ -28,25 +25,25 @@ html = BeautifulSoup(update.rawdata, 'html.parser')
 parse = fetchhelper.ParseData(update, 'data')
 
 txt = str(html.find(text=re.compile('Stand: ')))
-for timere, timefmt in [
-        (r'Stand: (\d\d.\d\d.\d\d\d\d, \d\d:\d\d?) ?Uhr', '%d.%m.%Y, %H:%M'),
-        (r'Stand: (\d\d.\d\d.\d\d\d\d, \d\d?) ?Uhr', '%d.%m.%Y, %H'),
-        ]:
-    mo = re.search(timere, txt)
-    if mo is None:
-        continue
-    datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1), timefmt).replace(tzinfo=datatz)
+mo = re.search(r'Stand: (\d\d.\d\d.\d\d\d\d, \d\d:\d\d) ?Uhr', txt)
+datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1), '%d.%m.%Y, %H:%M').replace(tzinfo=datatz)
 
-if datatime is None:
-    print("cannot find datatime in %r" % txt, file=sys.stderr)
-    sys.exit(1)
-
-title = html.find(text=re.compile('Fallzahlen nach Gemeinden')).find_parent('h2')
+try:
+    title = html.find(text=re.compile('Fallzahlen Infizierte nach Gemeinden')).find_parent('h2')
+except AttributeError:
+    if datatime.date() >= datetime.date(2021, 1, 8) and datatime.date() <= datetime.date(2021, 1, 20):
+        # Known problems:
+        # > Aufgrund einer fehlerhaften Systemumstellung können wir derzeit auf
+        # > dieser Seite leider keine Aufschlüsselung nach Kommunen und
+        # > Alterskohorten vornehmen. Wir hoffen, dass dieser technische Fehler
+        # > schnellstmöglich behoben werden kann.
+        sys.exit()
+    raise
 
 rows = fetchhelper.text_table(title.find_next_sibling('table'))
 
 assert(len(rows[0]) == 2 or len(rows[0]) == 3)
-if rows[0][0] == 'Kommune':
+if rows[0][0] == 'Gemeinde/Stadt':
     rows = rows[1:]
 
 with open(parse.parsedfile, 'w') as outf:
