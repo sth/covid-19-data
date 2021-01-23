@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2021-01-23T08:00:00+01:00,3233,70
+Altötting,Oberbayern,2021-01-23T08:00:00+01:00,3406,136
+Amberg Stadt,Oberpfalz,2021-01-23T08:00:00+01:00,751,8
+Amberg-Sulzbach,Oberpfalz,2021-01-23T08:00:00+01:00,2590,104
+Ansbach,Mittelfranken,2021-01-23T08:00:00+01:00,4117,95
+Ansbach Stadt,Mittelfranken,2021-01-23T08:00:00+01:00,1028,20
+Aschaffenburg,Unterfranken,2021-01-23T08:00:00+01:00,5075,150
+Aschaffenburg Stadt,Unterfranken,2021-01-23T08:00:00+01:00,1845,60
+Augsburg,Schwaben,2021-01-23T08:00:00+01:00,7143,129
+Augsburg Stadt,Schwaben,2021-01-23T08:00:00+01:00,10957,255
+Bad Kissingen,Unterfranken,2021-01-23T08:00:00+01:00,1959,71
+Bad Tölz-Wolfratshausen,Oberbayern,2021-01-23T08:00:00+01:00,3101,37
+Bamberg,Oberfranken,2021-01-23T08:00:00+01:00,3210,101
+Bamberg Stadt,Oberfranken,2021-01-23T08:00:00+01:00,1575,63
+Bayreuth,Oberfranken,2021-01-23T08:00:00+01:00,2685,87
+Bayreuth Stadt,Oberfranken,2021-01-23T08:00:00+01:00,1813,52
+Berchtesgadener Land,Oberbayern,2021-01-23T08:00:00+01:00,3687,81
+Cham,Oberpfalz,2021-01-23T08:00:00+01:00,3185,97
+Coburg,Oberfranken,2021-01-23T08:00:00+01:00,2996,125
+Coburg Stadt,Oberfranken,2021-01-23T08:00:00+01:00,1424,63
+Dachau,Oberbayern,2021-01-23T08:00:00+01:00,5311,88
+Deggendorf,Niederbayern,2021-01-23T08:00:00+01:00,3761,100
+Dillingen an der Donau,Schwaben,2021-01-23T08:00:00+01:00,2297,90
+Dingolfing-Landau,Niederbayern,2021-01-23T08:00:00+01:00,2988,70
+Donau-Ries,Schwaben,2021-01-23T08:00:00+01:00,3402,112
+Ebersberg,Oberbayern,2021-01-23T08:00:00+01:00,4364,110
+Eichstätt,Oberbayern,2021-01-23T08:00:00+01:00,3082,59
+Erding,Oberbayern,2021-01-23T08:00:00+01:00,4678,62
+Erlangen Stadt,Mittelfranken,2021-01-23T08:00:00+01:00,2563,68
+Erlangen-Höchstadt,Mittelfranken,2021-01-23T08:00:00+01:00,3253,96
+Forchheim,Oberfranken,2021-01-23T08:00:00+01:00,2857,79
+Freising,Oberbayern,2021-01-23T08:00:00+01:00,5094,86
+Freyung-Grafenau,Niederbayern,2021-01-23T08:00:00+01:00,3087,84
+Fürstenfeldbruck,Oberbayern,2021-01-23T08:00:00+01:00,6429,102
+Fürth,Mittelfranken,2021-01-23T08:00:00+01:00,3373,147
+Fürth Stadt,Mittelfranken,2021-01-23T08:00:00+01:00,4429,140
+Garmisch-Partenkirchen,Oberbayern,2021-01-23T08:00:00+01:00,2230,58
+Günzburg,Schwaben,2021-01-23T08:00:00+01:00,4079,85
+Haßberge,Unterfranken,2021-01-23T08:00:00+01:00,2231,60
+Hof,Oberfranken,2021-01-23T08:00:00+01:00,2928,93
+Hof Stadt,Oberfranken,2021-01-23T08:00:00+01:00,1722,62
+Ingolstadt Stadt,Oberbayern,2021-01-23T08:00:00+01:00,3866,82
+Kaufbeuren Stadt,Schwaben,2021-01-23T08:00:00+01:00,1360,43
+Kelheim,Niederbayern,2021-01-23T08:00:00+01:00,2925,67
+Kempten Stadt,Schwaben,2021-01-23T08:00:00+01:00,1455,29
+Kitzingen,Unterfranken,2021-01-23T08:00:00+01:00,1788,52
+Kronach,Oberfranken,2021-01-23T08:00:00+01:00,1955,47
+Kulmbach,Oberfranken,2021-01-23T08:00:00+01:00,1896,73
+Landsberg am Lech,Oberbayern,2021-01-23T08:00:00+01:00,2663,35
+Landshut,Niederbayern,2021-01-23T08:00:00+01:00,4628,133
+Landshut Stadt,Niederbayern,2021-01-23T08:00:00+01:00,2423,53
+Lichtenfels,Oberfranken,2021-01-23T08:00:00+01:00,1897,46
+Lindau (Bodensee),Schwaben,2021-01-23T08:00:00+01:00,2065,41
+Main-Spessart,Unterfranken,2021-01-23T08:00:00+01:00,2932,181
+Memmingen Stadt,Schwaben,2021-01-23T08:00:00+01:00,1072,16
+Miesbach,Oberbayern,2021-01-23T08:00:00+01:00,2901,41
+Miltenberg,Unterfranken,2021-01-23T08:00:00+01:00,3517,77
+Mühldorf am Inn,Oberbayern,2021-01-23T08:00:00+01:00,3964,98
+München,Oberbayern,2021-01-23T08:00:00+01:00,10453,158
+München Stadt,Oberbayern,2021-01-23T08:00:00+01:00,50500,760
+Neu-Ulm,Schwaben,2021-01-23T08:00:00+01:00,4383,84
+Neuburg-Schrobenhausen,Oberbayern,2021-01-23T08:00:00+01:00,2538,58
+Neumarkt in der Oberpfalz,Oberpfalz,2021-01-23T08:00:00+01:00,3634,97
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2021-01-23T08:00:00+01:00,2231,51
+Neustadt an der Waldnaab,Oberpfalz,2021-01-23T08:00:00+01:00,3286,120
+Nürnberg Stadt,Mittelfranken,2021-01-23T08:00:00+01:00,21072,413
+Nürnberger Land,Mittelfranken,2021-01-23T08:00:00+01:00,4276,136
+Oberallgäu,Schwaben,2021-01-23T08:00:00+01:00,3350,47
+Ostallgäu,Schwaben,2021-01-23T08:00:00+01:00,3611,92
+Passau,Niederbayern,2021-01-23T08:00:00+01:00,8597,213
+Passau Stadt,Niederbayern,2021-01-23T08:00:00+01:00,2372,86
+Pfaffenhofen an der Ilm,Oberbayern,2021-01-23T08:00:00+01:00,3544,139
+Regen,Niederbayern,2021-01-23T08:00:00+01:00,3669,122
+Regensburg,Oberpfalz,2021-01-23T08:00:00+01:00,4403,81
+Regensburg Stadt,Oberpfalz,2021-01-23T08:00:00+01:00,4036,50
+Rhön-Grabfeld,Unterfranken,2021-01-23T08:00:00+01:00,1861,55
+Rosenheim,Oberbayern,2021-01-23T08:00:00+01:00,9779,384
+Rosenheim Stadt,Oberbayern,2021-01-23T08:00:00+01:00,2660,49
+Roth,Mittelfranken,2021-01-23T08:00:00+01:00,3684,111
+Rottal-Inn,Niederbayern,2021-01-23T08:00:00+01:00,4555,116
+Schwabach Stadt,Mittelfranken,2021-01-23T08:00:00+01:00,1434,87
+Schwandorf,Oberpfalz,2021-01-23T08:00:00+01:00,4030,96
+Schweinfurt,Unterfranken,2021-01-23T08:00:00+01:00,3062,97
+Schweinfurt Stadt,Unterfranken,2021-01-23T08:00:00+01:00,1421,44
+Starnberg,Oberbayern,2021-01-23T08:00:00+01:00,3387,59
+Straubing Stadt,Niederbayern,2021-01-23T08:00:00+01:00,1412,67
+Straubing-Bogen,Niederbayern,2021-01-23T08:00:00+01:00,3080,101
+Tirschenreuth,Oberpfalz,2021-01-23T08:00:00+01:00,3140,189
+Traunstein,Oberbayern,2021-01-23T08:00:00+01:00,6672,173
+Unterallgäu,Schwaben,2021-01-23T08:00:00+01:00,3586,83
+Weiden in der Oberpfalz Stadt,Oberpfalz,2021-01-23T08:00:00+01:00,1673,49
+Weilheim-Schongau,Oberbayern,2021-01-23T08:00:00+01:00,2922,40
+Weißenburg-Gunzenhausen,Mittelfranken,2021-01-23T08:00:00+01:00,2402,75
+Wunsiedel im Fichtelgebirge,Oberfranken,2021-01-23T08:00:00+01:00,2685,110
+Würzburg,Unterfranken,2021-01-23T08:00:00+01:00,2628,42
+Würzburg Stadt,Unterfranken,2021-01-23T08:00:00+01:00,2670,81
