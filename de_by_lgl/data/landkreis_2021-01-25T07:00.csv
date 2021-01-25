@@ -1,0 +1,97 @@
+Landkreis,Regierungsbezirk,Timestamp,Confirmed,Deaths
+Aichach-Friedberg,Schwaben,2021-01-25T08:00:00+01:00,3258,70
+Altötting,Oberbayern,2021-01-25T08:00:00+01:00,3437,136
+Amberg Stadt,Oberpfalz,2021-01-25T08:00:00+01:00,772,8
+Amberg-Sulzbach,Oberpfalz,2021-01-25T08:00:00+01:00,2620,104
+Ansbach,Mittelfranken,2021-01-25T08:00:00+01:00,4193,97
+Ansbach Stadt,Mittelfranken,2021-01-25T08:00:00+01:00,1059,20
+Aschaffenburg,Unterfranken,2021-01-25T08:00:00+01:00,5149,148
+Aschaffenburg Stadt,Unterfranken,2021-01-25T08:00:00+01:00,1885,67
+Augsburg,Schwaben,2021-01-25T08:00:00+01:00,7181,129
+Augsburg Stadt,Schwaben,2021-01-25T08:00:00+01:00,11062,257
+Bad Kissingen,Unterfranken,2021-01-25T08:00:00+01:00,1980,72
+Bad Tölz-Wolfratshausen,Oberbayern,2021-01-25T08:00:00+01:00,3142,37
+Bamberg,Oberfranken,2021-01-25T08:00:00+01:00,3248,101
+Bamberg Stadt,Oberfranken,2021-01-25T08:00:00+01:00,1580,63
+Bayreuth,Oberfranken,2021-01-25T08:00:00+01:00,2753,91
+Bayreuth Stadt,Oberfranken,2021-01-25T08:00:00+01:00,1859,56
+Berchtesgadener Land,Oberbayern,2021-01-25T08:00:00+01:00,3727,82
+Cham,Oberpfalz,2021-01-25T08:00:00+01:00,3210,100
+Coburg,Oberfranken,2021-01-25T08:00:00+01:00,3015,126
+Coburg Stadt,Oberfranken,2021-01-25T08:00:00+01:00,1446,66
+Dachau,Oberbayern,2021-01-25T08:00:00+01:00,5351,88
+Deggendorf,Niederbayern,2021-01-25T08:00:00+01:00,3819,104
+Dillingen an der Donau,Schwaben,2021-01-25T08:00:00+01:00,2312,90
+Dingolfing-Landau,Niederbayern,2021-01-25T08:00:00+01:00,2988,70
+Donau-Ries,Schwaben,2021-01-25T08:00:00+01:00,3427,114
+Ebersberg,Oberbayern,2021-01-25T08:00:00+01:00,4390,110
+Eichstätt,Oberbayern,2021-01-25T08:00:00+01:00,3124,61
+Erding,Oberbayern,2021-01-25T08:00:00+01:00,4696,62
+Erlangen Stadt,Mittelfranken,2021-01-25T08:00:00+01:00,2578,70
+Erlangen-Höchstadt,Mittelfranken,2021-01-25T08:00:00+01:00,3276,97
+Forchheim,Oberfranken,2021-01-25T08:00:00+01:00,2857,79
+Freising,Oberbayern,2021-01-25T08:00:00+01:00,5157,86
+Freyung-Grafenau,Niederbayern,2021-01-25T08:00:00+01:00,3123,84
+Fürstenfeldbruck,Oberbayern,2021-01-25T08:00:00+01:00,6479,102
+Fürth,Mittelfranken,2021-01-25T08:00:00+01:00,3396,148
+Fürth Stadt,Mittelfranken,2021-01-25T08:00:00+01:00,4507,140
+Garmisch-Partenkirchen,Oberbayern,2021-01-25T08:00:00+01:00,2253,63
+Günzburg,Schwaben,2021-01-25T08:00:00+01:00,4095,87
+Haßberge,Unterfranken,2021-01-25T08:00:00+01:00,2237,60
+Hof,Oberfranken,2021-01-25T08:00:00+01:00,2987,93
+Hof Stadt,Oberfranken,2021-01-25T08:00:00+01:00,1753,62
+Ingolstadt Stadt,Oberbayern,2021-01-25T08:00:00+01:00,3866,82
+Kaufbeuren Stadt,Schwaben,2021-01-25T08:00:00+01:00,1367,43
+Kelheim,Niederbayern,2021-01-25T08:00:00+01:00,2950,70
+Kempten Stadt,Schwaben,2021-01-25T08:00:00+01:00,1462,29
+Kitzingen,Unterfranken,2021-01-25T08:00:00+01:00,1813,52
+Kronach,Oberfranken,2021-01-25T08:00:00+01:00,1975,48
+Kulmbach,Oberfranken,2021-01-25T08:00:00+01:00,1908,73
+Landsberg am Lech,Oberbayern,2021-01-25T08:00:00+01:00,2676,35
+Landshut,Niederbayern,2021-01-25T08:00:00+01:00,4688,133
+Landshut Stadt,Niederbayern,2021-01-25T08:00:00+01:00,2438,53
+Lichtenfels,Oberfranken,2021-01-25T08:00:00+01:00,1915,47
+Lindau (Bodensee),Schwaben,2021-01-25T08:00:00+01:00,2083,41
+Main-Spessart,Unterfranken,2021-01-25T08:00:00+01:00,2962,181
+Memmingen Stadt,Schwaben,2021-01-25T08:00:00+01:00,1079,16
+Miesbach,Oberbayern,2021-01-25T08:00:00+01:00,2912,41
+Miltenberg,Unterfranken,2021-01-25T08:00:00+01:00,3574,78
+Mühldorf am Inn,Oberbayern,2021-01-25T08:00:00+01:00,3999,99
+München,Oberbayern,2021-01-25T08:00:00+01:00,10505,158
+München Stadt,Oberbayern,2021-01-25T08:00:00+01:00,50725,772
+Neu-Ulm,Schwaben,2021-01-25T08:00:00+01:00,4414,84
+Neuburg-Schrobenhausen,Oberbayern,2021-01-25T08:00:00+01:00,2557,58
+Neumarkt in der Oberpfalz,Oberpfalz,2021-01-25T08:00:00+01:00,3645,98
+Neustadt an der Aisch-Bad Windsheim,Mittelfranken,2021-01-25T08:00:00+01:00,2249,51
+Neustadt an der Waldnaab,Oberpfalz,2021-01-25T08:00:00+01:00,3323,120
+Nürnberg Stadt,Mittelfranken,2021-01-25T08:00:00+01:00,21209,413
+Nürnberger Land,Mittelfranken,2021-01-25T08:00:00+01:00,4301,136
+Oberallgäu,Schwaben,2021-01-25T08:00:00+01:00,3373,48
+Ostallgäu,Schwaben,2021-01-25T08:00:00+01:00,3624,94
+Passau,Niederbayern,2021-01-25T08:00:00+01:00,8688,218
+Passau Stadt,Niederbayern,2021-01-25T08:00:00+01:00,2394,89
+Pfaffenhofen an der Ilm,Oberbayern,2021-01-25T08:00:00+01:00,3556,139
+Regen,Niederbayern,2021-01-25T08:00:00+01:00,3713,122
+Regensburg,Oberpfalz,2021-01-25T08:00:00+01:00,4432,81
+Regensburg Stadt,Oberpfalz,2021-01-25T08:00:00+01:00,4052,50
+Rhön-Grabfeld,Unterfranken,2021-01-25T08:00:00+01:00,1862,55
+Rosenheim,Oberbayern,2021-01-25T08:00:00+01:00,9834,385
+Rosenheim Stadt,Oberbayern,2021-01-25T08:00:00+01:00,2688,49
+Roth,Mittelfranken,2021-01-25T08:00:00+01:00,3722,111
+Rottal-Inn,Niederbayern,2021-01-25T08:00:00+01:00,4597,116
+Schwabach Stadt,Mittelfranken,2021-01-25T08:00:00+01:00,1444,86
+Schwandorf,Oberpfalz,2021-01-25T08:00:00+01:00,4071,98
+Schweinfurt,Unterfranken,2021-01-25T08:00:00+01:00,3087,98
+Schweinfurt Stadt,Unterfranken,2021-01-25T08:00:00+01:00,1435,49
+Starnberg,Oberbayern,2021-01-25T08:00:00+01:00,3412,60
+Straubing Stadt,Niederbayern,2021-01-25T08:00:00+01:00,1427,68
+Straubing-Bogen,Niederbayern,2021-01-25T08:00:00+01:00,3128,103
+Tirschenreuth,Oberpfalz,2021-01-25T08:00:00+01:00,3182,189
+Traunstein,Oberbayern,2021-01-25T08:00:00+01:00,6727,174
+Unterallgäu,Schwaben,2021-01-25T08:00:00+01:00,3632,83
+Weiden in der Oberpfalz Stadt,Oberpfalz,2021-01-25T08:00:00+01:00,1688,50
+Weilheim-Schongau,Oberbayern,2021-01-25T08:00:00+01:00,2927,40
+Weißenburg-Gunzenhausen,Mittelfranken,2021-01-25T08:00:00+01:00,2420,75
+Wunsiedel im Fichtelgebirge,Oberfranken,2021-01-25T08:00:00+01:00,2732,110
+Würzburg,Unterfranken,2021-01-25T08:00:00+01:00,2661,42
+Würzburg Stadt,Unterfranken,2021-01-25T08:00:00+01:00,2689,81
