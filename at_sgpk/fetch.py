@@ -18,7 +18,7 @@ from bs4 import BeautifulSoup
 import dateutil.tz
 
 def cleannum(s):
-    return int(s.replace('.', '').rstrip('+*^'))
+    return int(s.replace('.', '').replace(',', '').rstrip('+*^'))
 
 datatz = dateutil.tz.gettz('Europe/Vienna')
 
