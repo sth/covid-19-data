@@ -75,7 +75,7 @@ for i, tds in enumerate(trs):
     rowlabel = tds[0]
     if 'Davon PCR' in rowlabel or 'Davon Antigen' in rowlabel:
         continue
-    mo = re.search(r'Stand (\d\d\.\d\d\.\d\d\d\d),[ \xa0]*(\d?\d[:.]\d\d) ?Uhr', tds[0])
+    mo = re.search(r'Stand (\d\d\.\d\d\.\d\d\d\d)[,\.][ \xa0]*(\d?\d[:.]\d\d) ?Uhr', tds[0])
     if mo is None:
         print("cannot parse date:", tds[0], file=sys.stderr)
         sys.exit(1)
