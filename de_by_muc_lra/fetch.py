@@ -30,6 +30,7 @@ parse = fetchhelper.ParseData(update, 'data')
 txt = str(html.find(text=re.compile('Stand: ')))
 for timere, timefmt in [
         (r'Stand: (\d\d.\d\d.\d\d\d\d, \d\d:\d\d) ?Uhr', '%d.%m.%Y, %H:%M'),
+        (r'Stand: (\d\d.\d\d.\d\d\d\d, \d\d.\d\d) ?Uhr', '%d.%m.%Y, %H.%M'),
         (r'Stand: (\d\d.\d\d.\d\d\d\d, \d\d) ?Uhr', '%d.%m.%Y, %H'),
         ]:
     mo = re.search(timere, txt)
