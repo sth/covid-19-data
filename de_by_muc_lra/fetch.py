@@ -42,6 +42,9 @@ if datatime is None:
     print("cannot find datatime in %r" % txt, file=sys.stderr)
     sys.exit(1)
 
+def clean_num(s):
+    return int(s.replace('.', ''))
+
 title = html.find(text=re.compile('Fallzahlen nach Gemeinden')).find_parent('h2')
 
 rows = fetchhelper.text_table(title.find_next_sibling('table'))
@@ -55,7 +58,7 @@ with open(parse.parsedfile, 'w') as outf:
     header = ('Kommune', 'Timestamp', 'Confirmed')
     cout.writerow(header)
     for tds in rows:
-        cout.writerow((tds[0], datatime.isoformat(), int(tds[1])))
+        cout.writerow((tds[0], datatime.isoformat(), clean_num(tds[1])))
 
 parse.deploy_timestamp()
 
