@@ -27,11 +27,11 @@ html = BeautifulSoup(update.rawdata, 'html.parser')
 
 parse = fetchhelper.ParseData(update, 'data')
 
-txt = str(html.find(text=re.compile('Stand: ')))
+txt = str(html.find(text=re.compile('(?:Stand|Datenstand): ')))
 for timere, timefmt in [
-        (r'Stand: (\d\d.\d\d.\d\d\d\d, \d\d:\d\d) ?Uhr', '%d.%m.%Y, %H:%M'),
-        (r'Stand: (\d\d.\d\d.\d\d\d\d, \d\d.\d\d) ?Uhr', '%d.%m.%Y, %H.%M'),
-        (r'Stand: (\d\d.\d\d.\d\d\d\d, \d\d) ?Uhr', '%d.%m.%Y, %H'),
+        (r'(?:Stand|Datenstand): (\d\d.\d\d.\d\d\d\d, \d\d:\d\d) ?Uhr', '%d.%m.%Y, %H:%M'),
+        (r'(?:Stand|Datenstand): (\d\d.\d\d.\d\d\d\d, \d\d.\d\d) ?Uhr', '%d.%m.%Y, %H.%M'),
+        (r'(?:Stand|Datenstand): (\d\d.\d\d.\d\d\d\d, \d\d) ?Uhr', '%d.%m.%Y, %H'),
         ]:
     mo = re.search(timere, txt)
     if mo is None:
