@@ -43,7 +43,7 @@ if datatime is None:
     sys.exit(1)
 
 def clean_num(s):
-    return int(s.replace('.', ''))
+    return int(s.replace('.', '').replace('*', ''))
 
 title = html.find(text=re.compile('Fallzahlen nach Gemeinden')).find_parent('h2')
 
