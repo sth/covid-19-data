@@ -13,7 +13,7 @@ args = ap.parse_args()
 fetchhelper.check_oldfetch(args)
 
 import subprocess, datetime, re, csv, os, sys
-from bs4 import BeautifulSoup
+import bs4
 import dateutil.tz
 
 # helpers 
@@ -153,13 +153,17 @@ update.check_fetch(rawfile=args.rawfile)
 # accidentally duplicated <tr> and other hrml errors
 #update.rawdata = re.sub(r'<tr>\s*<tr>', r'<tr>', update.rawdata)
 update.rawdata = re.sub(r'(<th><span>[^<>]*</span>)</(td|div)>', r'\1</th>', update.rawdata)
-html = BeautifulSoup(update.rawdata, 'html.parser')
+html = bs4.BeautifulSoup(update.rawdata, 'html.parser')
 
 datenode = html.find('script', text=re.compile(r'var publikationsDatum = '))
 if datenode is None:
     print("Cannot find publish date", file=sys.stderr)
     sys.exit(1)
-datemo = re.search(r'["\'](\d\d.\d\d.\d\d\d\d)["\']', datenode.get_text())
+if bs4.__version__.startswith('4.9.'):
+    datescript = datenode.get_text(types=(bs4.Script,))
+else:
+    datescript = datenode.get_text()
+datemo = re.search(r'["\'](\d\d.\d\d.\d\d\d\d)["\']', datescript)
 if datemo is None:
     print("Cannot find publish date", file=sys.stderr)
     sys.exit(2)
