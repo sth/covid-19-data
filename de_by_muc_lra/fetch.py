@@ -58,6 +58,8 @@ with open(parse.parsedfile, 'w') as outf:
     header = ('Kommune', 'Timestamp', 'Confirmed')
     cout.writerow(header)
     for tds in rows:
+        if not tds[0].strip() and not tds[1].strip():
+            continue
         cout.writerow((tds[0], datatime.isoformat(), clean_num(tds[1])))
 
 parse.deploy_timestamp()
