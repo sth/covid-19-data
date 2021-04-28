@@ -93,6 +93,8 @@ def csv_table(fn1):
     return rows
 
 def csv_equal(fn1, fn2, skip=None):
+    if fn2 is None:
+        return False
     dat1 = csv_table(fn1)
     dat2 = csv_table(fn2)
     if skip:
