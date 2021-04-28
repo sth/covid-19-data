@@ -45,6 +45,16 @@ if datatime is None:
 def clean_num(s):
     return int(s.replace('.', '').replace('*', ''))
 
+area_map = {
+        'Garching': 'Garching b. München',
+        'Kirchheim': 'Kirchheim b. München',
+        'Pullach': 'Pullach im Isartal',
+    }
+
+def canonical_area(area):
+    return area_map.get(area, area)
+
+
 title = html.find(text=re.compile('Fallzahlen nach Gemeinden')).find_parent('h2')
 
 rows = fetchhelper.text_table(title.find_next_sibling('table'))
@@ -60,7 +70,7 @@ with open(parse.parsedfile, 'w') as outf:
     for tds in rows:
         if not tds[0].strip() and not tds[1].strip():
             continue
-        cout.writerow((tds[0], datatime.isoformat(), clean_num(tds[1])))
+        cout.writerow((canonical_area(tds[0]), datatime.isoformat(), clean_num(tds[1])))
 
 parse.deploy_timestamp()
 
