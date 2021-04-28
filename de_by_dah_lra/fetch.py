@@ -41,7 +41,10 @@ with open(parse.parsedfile, 'w') as f:
     cw = csv.writer(f)
     cw.writerow(['Kommune', 'Timestamp', 'Confirmed'])
     for jrow in jdat['data'][0][1:]:
-        if jrow[i_kom] in ('Zuordnung fehlt', 'Gesamt', ''):
+        kom = jrow[i_kom]
+        if kom in ('Zuordnung fehlt', 'Gesamt', ''):
+            continue
+        if kom.startswith('Stand vom'):
             continue
         if jrow[i_kom] == 'Pfaffenhofen a.d.Glonn':
             jrow[i_kom] = 'Pfaffenhofen a.d. Glonn'
