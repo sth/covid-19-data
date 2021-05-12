@@ -4,7 +4,7 @@ import sys, os.path
 sys.path.append(os.path.join(os.path.dirname(__file__), '../helper'))
 
 import argparse
-import fetchhelper
+import fetchhelper, csvtools
 
 ap = argparse.ArgumentParser()
 fetchhelper.add_arguments(ap)
@@ -22,77 +22,56 @@ def cleannum(s):
 
 datatz = dateutil.tz.gettz('Europe/Vienna')
 
-update = fetchhelper.Updater('https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html')
-update.check_fetch(rawfile=args.rawfile)
+# page:
+url = 'https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html'
+# iframe:
+url = 'https://info.gesundheitsministerium.gv.at/?re=tabelle'
+# csv:
+url = 'https://info.gesundheitsministerium.gv.at/data/timeline-faelle-bundeslaender.csv'
 
-html = BeautifulSoup(update.rawdata, 'html.parser')
+update = fetchhelper.Updater(url, ext='csv')
+update.check_fetch(rawfile=args.rawfile, checkdh=False)
 
-def strip_footnote(s):
-    return s.rstrip('*')
+coldefs = csvtools.CSVColumns(
+        timestamp=['Datum'],
+        area=['Name'],
+        confirmed=['BestaetigteFaelleBundeslaender'],
+        deaths=['Todesfaelle'],
+        recovered=['Genesen'],
+        hospital=["Hospitalisierung"],
+        intensive=["Intensivstation"],
+        tests=["Testungen"],
+    )
+coldefs.set_type('timestamp', datetime.fromisoformat)
+coldefs.set_type('confirmed', int)
+coldefs.set_type('deaths', int)
+coldefs.set_type('recovered', int)
 
-table = fetchhelper.text_table(html.find('table'))
-# on 10.09.2020 there were additional empty cells
-for tr in table:
-    if tr[-1] == '':
-        tr.pop()
-ths = table[0]
-assert('Bundesland' in ths[0])
-assert('gesamt' in ths[-1])
-trs = table[1:]
-assert('tigte' in trs[0][0])
-assert('Todesf' in trs[1][0])
-assert('Genesen' in trs[2][0])
-assert('Hospital' in trs[3][0])
-assert('Intensiv' in trs[4][0])
-assert('Testungen' in trs[5][0])
-parse = [
-        fetchhelper.ParseData(update, 'confirmed'),
-        fetchhelper.ParseData(update, 'deaths'),
-        fetchhelper.ParseData(update, 'recovered'),
-        fetchhelper.ParseData(update, 'hospital'),
-        fetchhelper.ParseData(update, 'intensivecare'),
-        fetchhelper.ParseData(update, 'tests'),
-    ]
-labels = ['confirmed', 'deceased', 'recovered', 'hospital', 'intensivecare', 'tests']
+with open(update.rawfile, encoding='utf-8-sig') as rf:
+    cr = csv.reader(rf, delimiter=';')
+    header = next(cr)
+    cols = coldefs.build(header)
 
-areas = {
-        'Bgld.': 'Burgenland',
-        'Kt.': 'Kärnten',
-        'Ktn.': 'Kärnten',
-        'NÖ': 'Niederösterreich',
-        'OÖ': 'Oberösterreich',
-        'Sbg.': 'Salzburg',
-        'Stmk.': 'Steiermark',
-        'T': 'Tirol',
-        'Vbg.': 'Vorarlberg',
-        'W': 'Wien'
-    }
+    newest_ts = None
+    newest = []
+    for line in cr:
+        fields = cols.get(line)
+        if newest_ts is None or fields.timestamp > newest_ts:
+            newest_ts = fields.timestamp
+            newest = []
+        newest.append(fields)
 
-parses = []
+parse = fetchhelper.ParseData(update, 'data')
+parse.parsedtime = newest_ts
+with open(parse.parsedfile, 'w') as f:
+    cw = csv.writer(f)
+    cw.writerow(['Area', 'Date', 'Confirmed', 'Deaths', 'Recovered', 'Hospital', 'Intensivecare', 'Tests'])
+    for fields in newest:
+        if fields.area == 'Österreich':
+            continue
+        cw.writerow([fields.area, fields.timestamp.isoformat(),
+            fields.confirmed, fields.deaths, fields.recovered,
+            fields.hospital, fields.intensive, fields.tests])
+parse.deploy_timestamp()
 
-for i, tds in enumerate(trs):
-    assert(len(ths) == len(tds))
-    rowlabel = tds[0]
-    if 'Davon PCR' in rowlabel or 'Davon Antigen' in rowlabel:
-        continue
-    mo = re.search(r'Stand (\d\d\.\d\d\.\d\d\d\d)[,\.][ \xa0]*(\d?\d[:.]\d\d) ?Uhr', tds[0])
-    if mo is None:
-        print("cannot parse date:", tds[0], file=sys.stderr)
-        sys.exit(1)
-    sdate = mo.group(1)
-    stime = mo.group(2).replace('.', ':')
-    if len(stime) == 4:
-        stime = '0'+stime
-    parse = fetchhelper.ParseData(update, labels[i])
-    datadate = parse.parsedtime = datetime.strptime(sdate + ' ' + stime, '%d.%m.%Y %H:%M').replace(tzinfo=datatz)
-    with open(parse.parsedfile, 'w') as f:
-        cw = csv.writer(f)
-        cw.writerow(['Area', 'Date', 'Value'])
-        for col in range(1, len(tds)-1):
-            area = areas[strip_footnote(ths[col])]
-            count = cleannum(tds[col])
-            cw.writerow([area, datadate.isoformat(), count])
-    parse.deploy_timestamp()
-    parses.append(parse)
-
-fetchhelper.git_commit(parses, args)
+fetchhelper.git_commit([parse], args)

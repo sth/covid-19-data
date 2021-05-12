@@ -19,7 +19,7 @@ class Updater(object):
         self.rawfile = self.rawname = self.rawtime = self.rawdata = None
         self.contenttime = None
 
-    def check_fetch(self, rawfile=None, *, binary=False, remotetime=False, compressed=False):
+    def check_fetch(self, rawfile=None, *, binary=False, remotetime=False, compressed=False, checkdh=True):
         if rawfile is None:
             checkdir('raw')
             self.rawfile = 'raw/%s.%s' % (datetime.datetime.now().isoformat(), self.ext)
@@ -29,6 +29,8 @@ class Updater(object):
                 opts += ['-R']
             if compressed:
                 opts += ['--compressed']
+            if not checkdh:
+                opts += ['--ciphers', 'DEFAULT:!DH']
             subprocess.run(['curl', '-sS', '-L', '-o', self.rawfile] + opts + [self.fetchurl])
         else:
             self.rawfile = rawfile
