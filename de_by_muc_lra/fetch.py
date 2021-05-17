@@ -29,14 +29,21 @@ parse = fetchhelper.ParseData(update, 'data')
 
 txt = str(html.find(text=re.compile('(?:Stand|Datenstand): ')))
 for timere, timefmt in [
-        (r'(?:Stand|Datenstand): (\d\d.\d\d.\d\d\d\d, \d\d:\d\d) ?Uhr', '%d.%m.%Y, %H:%M'),
-        (r'(?:Stand|Datenstand): (\d\d.\d\d.\d\d\d\d, \d\d.\d\d) ?Uhr', '%d.%m.%Y, %H.%M'),
-        (r'(?:Stand|Datenstand): (\d\d.\d\d.\d\d\d\d, \d\d) ?Uhr', '%d.%m.%Y, %H'),
+        (r'(?:Stand|Datenstand): (\d\d\.\d\d\.\d\d\d\d, \d\d:\d\d) ?Uhr', '%d.%m.%Y, %H:%M'),
+        (r'(?:Stand|Datenstand): (\d\d\.\d\d\.\d\d\d\d, \d\d\.\d\d) ?Uhr', '%d.%m.%Y, %H.%M'),
+        (r'(?:Stand|Datenstand): (\d\d\.\d\d\.\d\d\d\d, \d\d) ?Uhr', '%d.%m.%Y, %H'),
+        (r'(?:Stand|Datenstand): (\d\d\.\d\d\.\d\d\d\d, \d\d) ?Uhr', '%d.%m.%Y, %H'),
+        (r'(?:Stand|Datenstand): (\d\d\.\d\d\.\d\d\d\d)\)', '%d.%m.%Y'),
         ]:
     mo = re.search(timere, txt)
     if mo is None:
         continue
-    datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(mo.group(1), timefmt).replace(tzinfo=datatz)
+    timestr = mo.group(1)
+    if 'Uhr' not in timestr:
+        timestr += ' %s' % update.rawtime.time().hour
+        timefmt += ' %H'
+    datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(timestr, timefmt).replace(tzinfo=datatz)
+    print(datatime)
 
 if datatime is None:
     print("cannot find datatime in %r" % txt, file=sys.stderr)
