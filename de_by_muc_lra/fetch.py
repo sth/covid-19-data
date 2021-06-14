@@ -40,10 +40,10 @@ for timere, timefmt in [
         continue
     timestr = mo.group(1)
     if 'Uhr' not in timestr:
-        timestr += ' %s' % update.rawtime.time().hour
+        # Usual update time is 14:00
+        timestr += ' 14'
         timefmt += ' %H'
     datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(timestr, timefmt).replace(tzinfo=datatz)
-    print(datatime)
 
 if datatime is None:
     print("cannot find datatime in %r" % txt, file=sys.stderr)
