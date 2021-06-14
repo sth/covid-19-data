@@ -27,6 +27,7 @@ html = BeautifulSoup(update.rawdata, 'html.parser')
 
 parse = fetchhelper.ParseData(update, 'data')
 
+timeguess = False
 txt = str(html.find(text=re.compile('(?:Stand|Datenstand): ')))
 for timere, timefmt in [
         (r'(?:Stand|Datenstand): (\d\d\.\d\d\.\d\d\d\d, \d\d:\d\d) ?Uhr', '%d.%m.%Y, %H:%M'),
@@ -39,11 +40,16 @@ for timere, timefmt in [
     if mo is None:
         continue
     timestr = mo.group(1)
-    if 'Uhr' not in timestr:
-        # Usual update time is 14:00
-        timestr += ' 14'
-        timefmt += ' %H'
-    datatime = parse.parsedtime = update.contenttime = datetime.datetime.strptime(timestr, timefmt).replace(tzinfo=datatz)
+    if 'Uhr' in timestr:
+        ptime = datetime.datetime.strptime(timestr, timefmt)
+    else:
+        timeguess = True
+        ptime = datetime.datetime.strptime(timestr, timefmt)
+        if ptime.date() == update.rawtime.date():
+            ptime.replace(hour=update.rawtime.time().hour)
+        else:
+            ptime.replace(hour=23, minute=59)
+    datatime = parse.parsedtime = update.contenttime = ptime.replace(tzinfo=datatz)
 
 if datatime is None:
     print("cannot find datatime in %r" % txt, file=sys.stderr)
@@ -81,4 +87,9 @@ with open(parse.parsedfile, 'w') as outf:
 
 parse.deploy_timestamp()
 
-fetchhelper.git_commit([parse], args)
+if timeguess and fetchhelper.csv_equal(parse.deployfile, parse.deployfile_previous(), skip=['Timestamp']):
+    os.unlink(parse.deployfile)
+    parse = None
+
+if parse is not None:
+    fetchhelper.git_commit([parse], args)
