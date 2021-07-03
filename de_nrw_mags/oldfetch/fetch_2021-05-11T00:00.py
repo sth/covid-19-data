@@ -10,7 +10,7 @@ ap = argparse.ArgumentParser()
 fetchhelper.add_arguments(ap)
 args = ap.parse_args()
 
-#fetchhelper.check_oldfetch(args)
+fetchhelper.check_oldfetch(args)
 
 import csvtools
 import re, csv, os, sys, dataclasses
@@ -95,9 +95,9 @@ kreise = {
 coldefs = csvtools.CSVColumns(
         kreis=['kreis'],
         date=['datumstd'],
-        confirmed=['anzahlMKumuliert'],
-        deaths=['verstorbenKumuliert'],
-        recovered=['genesenKumuliert'],
+        confirmed=['anzahlM'],
+        deaths=['verstorben'],
+        recovered=['genesen'],
     )
 coldefs.set_type('date', datetime.date.fromisoformat)
 coldefs.set_type('confirmed', int)
@@ -117,22 +117,20 @@ class Cases:
 newest = []
 for kreisid, name in sorted(kreise.items()):
     update = fetchhelper.Updater(f'https://www.lzg.nrw.de/covid19/daten/covid19_{kreisid}.csv', ext=f'{kreisid}.csv')
-    k_rawfile = (None if args.rawfile is None else glob.glob(f'{args.rawfile}.{kreisid}.csv')[0])
-    print(k_rawfile)
-    update.check_fetch(rawfile=k_rawfile)
+    update.check_fetch(rawfile=(None if args.rawfile is None else args.rawfile + f'.k{kreisid}.csv'))
     with open(update.rawfile, 'r', encoding='utf-8-sig') as rf:
         cf = csv.reader(rf)
         header = next(cf)
         cols = coldefs.build(header)
         # newest line is last, so iterate through whole file
         # The data contains several "kummuliert" columns, but those sometimes seem to be rounded
-        # Lets hope thats no longer the case
+        # Lets hope thats not the case with the raw numbers
         cases = Cases(kreisid)
         for line in cf:
             fields = cols.get(line)
-            cases.confirmed = fields.confirmed
-            cases.deaths = fields.deaths
-            cases.recovered = fields.recovered
+            cases.confirmed += fields.confirmed
+            cases.deaths += fields.deaths
+            cases.recovered += fields.recovered
             cases.date = fields.date
         if args.optional and fields.kreis == '5111':
             # Check if this is old already known data
