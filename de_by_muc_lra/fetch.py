@@ -65,6 +65,7 @@ area_map = {
     }
 
 def canonical_area(area):
+    area = area.replace('*', '')
     return area_map.get(area, area)
 
 
