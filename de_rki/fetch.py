@@ -90,7 +90,6 @@ with open(parselk.parsedfile, 'w') as outf:
     for jfeat in sorted(jdat['features'], key=(lambda f: (f['attributes']['BL'], f['attributes']['GEN']))):
         ts_str = jfeat['attributes']['last_update']
         if not ts_str:
-            print(jfeat['attributes']['GEN'])
             continue
         ts = datetime.datetime.strptime(jfeat['attributes']['last_update'], "%d.%m.%Y, %H:%M Uhr").astimezone(datatz)
         if parselk.parsedtime is None or ts > parselk.parsedtime:
