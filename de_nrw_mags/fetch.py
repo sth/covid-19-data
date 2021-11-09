@@ -118,7 +118,6 @@ newest = []
 for kreisid, name in sorted(kreise.items()):
     update = fetchhelper.Updater(f'https://www.lzg.nrw.de/covid19/daten/covid19_{kreisid}.csv', ext=f'{kreisid}.csv')
     k_rawfile = (None if args.rawfile is None else glob.glob(f'{args.rawfile}.{kreisid}.csv')[0])
-    print(k_rawfile)
     update.check_fetch(rawfile=k_rawfile)
     with open(update.rawfile, 'r', encoding='utf-8-sig') as rf:
         cf = csv.reader(rf)
