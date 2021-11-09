@@ -119,6 +119,7 @@ rawlabel_regierungsbezirk = {
 
 rawlabel_landkreis = {
     "Bad Tölz": "Bad Tölz-Wolfratshausen",
+    "Bad-Tölz-Wolfratshausen": "Bad Tölz-Wolfratshausen",
     "Dillingen Donau": "Dillingen an der Donau",
     "Landsberg Lech": "Landsberg am Lech",
     "Mühldorf Inn": "Mühldorf am Inn",
