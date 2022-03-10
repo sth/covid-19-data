@@ -134,6 +134,7 @@ rawlabel_landkreis = {
 def clean_landkreis(rawlabel):
     if rawlabel == 'Berchtesgadener Land*':
         rawlabel = 'Berchtesgadener Land'
+    rawlabel = rawlabel.rstrip('*')
     stripped = re_strip_landkreis.sub('', rawlabel)
     if stripped in rawlabel_landkreis:
         return rawlabel_landkreis[stripped]
@@ -252,6 +253,8 @@ def parse_table(parse, html, kind, *, optional=False):
                         tds[0] = tds[0].rstrip('*')
                     if datatime.date() == datetime.date(2020, 11, 22) or datatime.date() == datetime.date(2020, 11, 23):
                         tds[0] = tds[0].rstrip(' *')
+                    if datatime.date() == datetime.date(2022, 11, 20):
+                        tds[0] = tds[0].rstrip('*')
                 lk = clean_landkreis(tds[0])
                 if re_missing.search(lk):
                     # The sum for the Regierungsbezirk also seems to be wrong
