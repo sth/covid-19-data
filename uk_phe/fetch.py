@@ -216,53 +216,78 @@ else:
 datatime = datetime.datetime.combine(datetime.date.fromisoformat(args.date), datetime.time(23, 59)).replace(tzinfo=datatz)
 
 countrydata = {}
-
-country_data = fetchhelper.Updater(url_countries, ext='country.json')
-country_data.check_fetch(rawfile=args.rawfile[0], compressed=True)
-jdat = json.loads(country_data.rawdata)
-
 parses = []
-parse = fetchhelper.ParseData(country_data, 'countries')
-parse.parsedtime = datatime
-with open(parse.parsedfile, 'w') as f:
-    cw = csv.writer(f)
-    header = ['Code', 'Country', 'Timestamp', 'Confirmed', 'Deaths']
-    cw.writerow(header)
-    for data in sorted(jdat['data'], key=(lambda d: d['areaCode'])):
-        code = data['areaCode']
-        name = data['areaName']
-        confirmed = data['cumCasesByPublishDate']
-        deaths = data['cumDeaths28DaysByPublishDate']
-        cw.writerow([code, name, datatime, confirmed, deaths])
-parse.deploy_timestamp()
-parses.append(parse)
 
-utla_data = fetchhelper.Updater(url_utlas, ext='utla.json')
-utla_data.check_fetch(rawfile=args.rawfile[1], compressed=True)
-jdat = json.loads(utla_data.rawdata)
+def collect_country():
+    country_data = fetchhelper.Updater(url_countries, ext='country.json')
+    country_data.check_fetch(rawfile=args.rawfile[0], compressed=True)
+    if not country_data.rawdata.strip():
+        if datetime.date.today().isoweekday() == 7:
+            # They nowadays turn the servers off on Sundays or sth.
+            pass
+        else:
+            print("Empty country.json")
+        return
 
-parse = fetchhelper.ParseData(utla_data, 'utla')
-parse.parsedtime = datatime
-with open(parse.parsedfile, 'w') as f:
-    cw = csv.writer(f)
-    header = ['Code', 'UTLA', 'Region', 'Timestamp', 'Confirmed', 'Deaths', 'Backdated']
-    cw.writerow(header)
-    for data in sorted(jdat['data'], key=(lambda d: d['areaCode'])):
-        code = data['areaCode']
-        name = data['areaName']
-        confirmed = data['cumCasesByPublishDate']
-        fallback = ''
-        if confirmed is None:
-            confirmed = data['cumCasesBySpecimenDate']
-            if confirmed is not None:
-                fallback += 'C'
-        deaths = data['cumDeaths28DaysByPublishDate']
-        if deaths is None:
-            deaths = data['cumDeaths28DaysByDeathDate']
-            if deaths is not None:
-                fallback += 'D'
-        cw.writerow([code, name, (regions[code][1] if code[0] == 'E' else None), datatime, confirmed, deaths, fallback])
-parse.deploy_timestamp()
-parses.append(parse)
+    jdat = json.loads(country_data.rawdata)
+
+    parse = fetchhelper.ParseData(country_data, 'countries')
+    parse.parsedtime = datatime
+    with open(parse.parsedfile, 'w') as f:
+        cw = csv.writer(f)
+        header = ['Code', 'Country', 'Timestamp', 'Confirmed', 'Deaths']
+        cw.writerow(header)
+        for data in sorted(jdat['data'], key=(lambda d: d['areaCode'])):
+            code = data['areaCode']
+            name = data['areaName']
+            confirmed = data['cumCasesByPublishDate']
+            deaths = data['cumDeaths28DaysByPublishDate']
+            cw.writerow([code, name, datatime, confirmed, deaths])
+    parse.deploy_timestamp()
+    return parse
+
+def collect_utla():
+    utla_data = fetchhelper.Updater(url_utlas, ext='utla.json')
+    utla_data.check_fetch(rawfile=args.rawfile[1], compressed=True)
+    if not utla_data.rawdata.strip():
+        if datetime.date.today().isoweekday() == 7:
+            pass
+        else:
+            print("Empty utla.json")
+        return
+
+    jdat = json.loads(utla_data.rawdata)
+
+    parse = fetchhelper.ParseData(utla_data, 'utla')
+    parse.parsedtime = datatime
+    with open(parse.parsedfile, 'w') as f:
+        cw = csv.writer(f)
+        header = ['Code', 'UTLA', 'Region', 'Timestamp', 'Confirmed', 'Deaths', 'Backdated']
+        cw.writerow(header)
+        for data in sorted(jdat['data'], key=(lambda d: d['areaCode'])):
+            code = data['areaCode']
+            name = data['areaName']
+            confirmed = data['cumCasesByPublishDate']
+            fallback = ''
+            if confirmed is None:
+                confirmed = data['cumCasesBySpecimenDate']
+                if confirmed is not None:
+                    fallback += 'C'
+            deaths = data['cumDeaths28DaysByPublishDate']
+            if deaths is None:
+                deaths = data['cumDeaths28DaysByDeathDate']
+                if deaths is not None:
+                    fallback += 'D'
+            cw.writerow([code, name, (regions[code][1] if code[0] == 'E' else None), datatime, confirmed, deaths, fallback])
+    parse.deploy_timestamp()
+    return parse
+
+parse = collect_country()
+if parse is not None:
+    parses.append(parse)
+
+parse = collect_utla()
+if parse is not None:
+    parses.append(parse)
 
 fetchhelper.git_commit(parses, args)
