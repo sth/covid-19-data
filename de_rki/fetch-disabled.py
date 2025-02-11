@@ -24,6 +24,7 @@ import dateutil.tz
 datatz = dateutil.tz.gettz('Europe/Berlin')
 
 # Bundesländer
+"""
 url_bl = 'https://services7.arcgis.com/mOBPykOjAyBO2ZKk/ArcGIS/rest/services/Coronaf%c3%a4lle_in_den_Bundesl%c3%a4ndern/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=LAN_ew_GEN%2CAktualisierung%2CFallzahl%2CDeath%2CLAN_ew_AGS&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token='
 
 updatebl = fetchhelper.Updater(url_bl, ext='bl.json')
@@ -49,6 +50,7 @@ with open(parsebl.parsedfile, 'w') as outf:
         ])
 
 parsebl.deploy_timestamp()
+"""
 
 # Landkreise
 
@@ -75,7 +77,7 @@ bez_label = {
 }
 
 
-url_lk = 'https://services7.arcgis.com/mOBPykOjAyBO2ZKk/ArcGIS/rest/services/RKI_Landkreisdaten/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=Bl%2Ccounty%2CGEN%2Clast_update%2Ccases%2Cdeaths%2Crecovered%2CAGS_0%2CBEZ&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token='
+url_lk = 'https://services7.arcgis.com/mOBPykOjAyBO2ZKk/ArcGIS/rest/services/RKI_Landkreisdaten/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=Bl%2Ccounty%2CGEN%2Clast_update%2Ccases%2Cdeaths%2Crecovered%2CAGS_0%2CBEZ&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson'
 
 updatelk = fetchhelper.Updater(url_lk, ext='lk.json')
 updatelk.check_fetch(rawfile=args.rawfile[1])
@@ -108,4 +110,5 @@ with open(parselk.parsedfile, 'w') as outf:
 
 parselk.deploy_timestamp()
 
-fetchhelper.git_commit([parsebl, parselk], args)
+#fetchhelper.git_commit([parsebl, parselk], args)
+fetchhelper.git_commit([parselk], args)
